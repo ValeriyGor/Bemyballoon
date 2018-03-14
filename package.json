@@ -1,0 +1,33 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valeriy\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D \u001b[D   \u001b[D\u001b[D\u001b[2~Horbachevskiy Valeriy",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglyfly": "^1.4.2",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.23.2",
+    "gulp-cache": "^1.0.2",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat-css": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uncss": "^1.0.6"
+  }
+}

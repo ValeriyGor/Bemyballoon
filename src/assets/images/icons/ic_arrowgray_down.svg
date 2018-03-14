@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6" height="4" viewBox="0 0 6 4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ic_arrowgray_down" style="fill: #eaeaea;" class="cls-1" d="M275,887l-3,3.993-3-3.993" transform="translate(-269 -887)"/>
+</svg>
