@@ -9181,6 +9181,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
     text-align: center;
     font-size: 16px;
     border-radius: 3px; }
+    .wishlist-page__info a.gray-button {
+      background: #fcfcfc;
+      border: 1px solid #e5e5e5;
+      color: #010101; }
+      .wishlist-page__info a.gray-button:hover {
+        color: #101010; }
     .wishlist-page__info a:after {
       content: '';
       background: url(../images/icons/ic_add-cart.svg) no-repeat 50% 50%;
@@ -10326,8 +10332,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
   background-color: #c7c7c7;
   display: inline-block;
   margin-left: 10px;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
@@ -10774,8 +10778,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
   border-radius: 50%;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: .3a;
-  -o-transition: .3a;
   -webkit-transition: 0.3a;
   -o-transition: 0.3a;
   transition: 0.3a; }
@@ -10825,5 +10827,21 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
   color: #000;
   margin-top: 10px;
   display: block; }
+
+.profile-link a {
+  font-size: 14px;
+  color: #000;
+  line-height: 2em;
+  display: block;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .profile-link a.active, .profile-link a:hover {
+    text-decoration: none;
+    color: #e3a3cc; }
+  .profile-link a.stage-2 {
+    padding-left: 15px; }
+  .profile-link a.stage-1 {
+    margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
