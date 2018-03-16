@@ -88,8 +88,8 @@ gulp.task('webserver', function() {
 
 
 //Слежение
-gulp.task('watch', ['autoprefix', 'scripts'], function() {
-    gulp.watch('./src/assets/sass/**/*.sass', ['autoprefix']);
+gulp.task('watch', ['mincss', 'scripts'], function() {
+    gulp.watch('./src/assets/sass/**/*.sass', ['mincss']);
     gulp.watch('./src/*.html', browsersync.reload);
     gulp.watch(['./src/assets/js/*.js'], ['scripts']);
     gulp.run('webserver');

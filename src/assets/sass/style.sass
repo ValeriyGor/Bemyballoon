@@ -27,8 +27,6 @@ body
 	outline: 0 !important
 
 hr
-	-webkit-box-sizing: content-box
-	-moz-box-sizing: content-box
 	box-sizing: content-box
 	height: 0
 	overflow: visible
@@ -44,8 +42,6 @@ p
 abbr
 	&[data-original-title], &[title]
 		text-decoration: underline
-		-webkit-text-decoration: underline dotted
-		-moz-text-decoration: underline dotted
 		text-decoration: underline dotted
 		cursor: help
 		border-bottom: 0
@@ -153,8 +149,6 @@ label
 	margin-bottom: 0.5rem
 
 button
-	-webkit-border-radius: 0
-	-moz-border-radius: 0
 	border-radius: 0
 	&:focus
 		outline: 1px dotted
@@ -245,12 +239,7 @@ template
 	position: relative
 	display: block
 	box-sizing: border-box
-	-webkit-touch-callout: none
-	-webkit-user-select: none
-	-moz-user-select: none
-	-ms-user-select: none
 	user-select: none
-	-ms-touch-action: pan-y
 	touch-action: pan-y
 	-webkit-tap-highlight-color: transparent
 
@@ -268,10 +257,6 @@ template
 
 .slick-slider
 	.slick-list, .slick-track
-		-webkit-transform: translate3d(0, 0, 0)
-		-moz-transform: translate3d(0, 0, 0)
-		-ms-transform: translate3d(0, 0, 0)
-		-o-transform: translate3d(0, 0, 0)
 		transform: translate3d(0, 0, 0)
 
 .slick-track
@@ -343,10 +328,6 @@ template
 	background: 0 0
 	color: transparent
 	top: 50%
-	-webkit-transform: translate(0, -50%)
-	-ms-transform: translate(0, -50%)
-	-moz-transform: translate(0, -50%)
-	-o-transform: translate(0, -50%)
 	transform: translate(0, -50%)
 	padding: 0
 	border: none
@@ -439,8 +420,6 @@ template
 		padding: 0
 		cursor: pointer
 		background: rgba(255, 255, 255, 0.6)
-		-webkit-border-radius: 50%
-		-moz-border-radius: 50%
 		border-radius: 50%
 		button
 			display: none
@@ -494,17 +473,11 @@ template
 	.owl-dot
 		cursor: pointer
 		cursor: hand
-		-webkit-user-select: none
-		-moz-user-select: none
-		-ms-user-select: none
 		user-select: none
 	.owl-nav
 		.owl-next, .owl-prev
 			cursor: pointer
 			cursor: hand
-			-webkit-user-select: none
-			-moz-user-select: none
-			-ms-user-select: none
 			user-select: none
 	&.owl-loaded
 		display: block
@@ -516,14 +489,9 @@ template
 	&.owl-refresh .owl-item
 		visibility: hidden
 	&.owl-drag .owl-item
-		-webkit-user-select: none
-		-moz-user-select: none
-		-ms-user-select: none
 		user-select: none
 	&.owl-grab
 		cursor: move
-		cursor: -webkit-grab
-		cursor: -moz-grab
 		cursor: grab
 	&.owl-rtl
 		direction: rtl
@@ -535,22 +503,13 @@ template
 
 .owl-carousel
 	.animated
-		-webkit-animation-duration: 1s
-		-moz-animation-duration: 1s
-		-o-animation-duration: 1s
 		animation-duration: 1s
-		-webkit-animation-fill-mode: both
-		-moz-animation-fill-mode: both
-		-o-animation-fill-mode: both
 		animation-fill-mode: both
 	.owl-animated-in
 		z-index: 0
 	.owl-animated-out
 		z-index: 1
 	.fadeOut
-		-webkit-animation-name: fadeOut
-		-moz-animation-name: fadeOut
-		-o-animation-name: fadeOut
 		animation-name: fadeOut
 
 @-webkit-keyframes fadeOut
@@ -586,22 +545,14 @@ template
 
 
 .owl-height
-	-webkit-transition: height .5s ease-in-out
-	-o-transition: height .5s ease-in-out
-	-moz-transition: height .5s ease-in-out
 	transition: height 0.5s ease-in-out
 
 .owl-carousel
 	.owl-item
 		.owl-lazy
 			opacity: 0
-			-webkit-transition: opacity .4s ease
-			-o-transition: opacity .4s ease
-			-moz-transition: opacity .4s ease
 			transition: opacity 0.4s ease
 		img.owl-lazy
-			-webkit-transform-style: preserve-3d
-			-moz-transform-style: preserve-3d
 			transform-style: preserve-3d
 	.owl-video-wrapper
 		position: relative
@@ -618,18 +569,9 @@ template
 		background: url(owl.video.play.png) no-repeat
 		cursor: pointer
 		z-index: 1
-		-webkit-backface-visibility: hidden
-		-webkit-transition: -webkit-transform .1s ease
-		transition: -webkit-transform .1s ease
-		-o-transition: -o-transform .1s ease
-		-moz-transition: transform .1s ease, -moz-transform .1s ease
 		transition: transform .1s ease
 		transition: transform 0.1s ease, -webkit-transform 0.1s ease, -moz-transform 0.1s ease, -o-transform 0.1s ease
 		&:hover
-			-webkit-transform: scale(1.3, 1.3)
-			-moz-transform: scale(1.3, 1.3)
-			-ms-transform: scale(1.3, 1.3)
-			-o-transform: scale(1.3, 1.3)
 			transform: scale(1.3, 1.3)
 	.owl-video-playing
 		.owl-video-play-icon, .owl-video-tn
@@ -640,9 +582,6 @@ template
 		background-position: center center
 		background-repeat: no-repeat
 		background-size: contain
-		-webkit-transition: opacity .4s ease
-		-o-transition: opacity .4s ease
-		-moz-transition: opacity .4s ease
 		transition: opacity 0.4s ease
 	.owl-video-frame
 		position: relative
@@ -651,12 +590,6 @@ template
 		width: 100%
 
 .navbar-nav
-	-webkit-box-orient: horizontal
-	-webkit-box-direction: normal
-	-webkit-flex-direction: row
-	-moz-box-orient: horizontal
-	-moz-box-direction: normal
-	-ms-flex-direction: row
 	flex-direction: row
 
 .mt-lg-0, .my-lg-0
@@ -666,13 +599,7 @@ template
 	margin-bottom: 0 !important
 
 .navbar-expand-lg .navbar-collapse
-	display: -webkit-box !important
-	display: -webkit-flex !important
-	display: -moz-box !important
-	display: -ms-flexbox !important
 	display: flex !important
-	-webkit-flex-basis: auto
-	-ms-flex-preferred-size: auto
 	flex-basis: auto
 
 .dropdown-menu
@@ -709,8 +636,6 @@ header
 			border: none
 			border-bottom: 1px solid #f0f0f0
 			border-top: 3px solid #e3a3cc
-			-webkit-border-radius: 0 4px 4px 0
-			-moz-border-radius: 0 4px 4px 0
 			border-radius: 0 4px 4px 0
 			padding: 0
 			.nav-item
@@ -752,8 +677,6 @@ header
 					color: #e3a3cc
 			.dropdown-menu
 				border: 1px solid #eaeaea
-				-webkit-box-shadow: none
-				-moz-box-shadow: none
 				box-shadow: none
 				left: 50%
 				margin-left: -100px
@@ -761,11 +684,7 @@ header
 				top: 95%
 				padding: 10px 15px
 				box-sizing: border-box
-				-webkit-border-top-left-radius: 0
-				-moz-border-radius-topleft: 0
 				border-top-left-radius: 0
-				-webkit-border-top-right-radius: 0
-				-moz-border-radius-topright: 0
 				border-top-right-radius: 0
 				&:before
 					content: ""
@@ -777,14 +696,7 @@ header
 					bottom: 99%
 					left: 50%
 					margin-left: -8px
-					-webkit-background-size: 100% 100%
-					-moz-background-size: 100%
-					-o-background-size: 100%
 					background-size: 100%
-					-moz-transform: rotate(180deg)
-					-ms-transform: rotate(180deg)
-					-webkit-transform: rotate(180deg)
-					-o-transform: rotate(180deg)
 					transform: rotate(180deg)
 				a
 					color: #000
@@ -818,23 +730,14 @@ header
 					left: 30px
 			.icon-flag-US
 				background: url(../images/icons/ic_eng.svg) no-repeat 50% 50%
-				-webkit-background-size: cover
-				-moz-background-size: cover
-				-o-background-size: cover
 				background-size: cover
 				margin-top: -4px
 			.icon-flag-AE
 				background: url(../images/icons/ic_ar.svg) no-repeat 50% 50%
-				-webkit-background-size: cover
-				-moz-background-size: cover
-				-o-background-size: cover
 				background-size: cover
 				margin-top: -4px
 			.icon-flag-RU
 				background: url(../images/icons/ic_rus.svg) no-repeat 50% 50%
-				-webkit-background-size: cover
-				-moz-background-size: cover
-				-o-background-size: cover
 				background-size: cover
 				margin-top: -4px
 			.activ
@@ -880,8 +783,6 @@ header
 				width: 18px
 				height: 18px
 				display: inline-block
-				-webkit-border-radius: 50%
-				-moz-border-radius: 50%
 				border-radius: 50%
 				text-align: center
 				color: #fff
@@ -897,34 +798,19 @@ header
 				display: inline-block
 				vertical-align: middle
 				margin-top: -4px
-				-webkit-transition: all .5s ease
-				-o-transition: all .5s ease
-				-moz-transition: all .5s ease
 				transition: all 0.5s ease
 			.nav-link
 				&:hover
 					span:before
 						background: url(../images/icons/ic_search_active.svg) no-repeat 50% 50%
-						-webkit-transition: all .5s ease
-						-o-transition: all .5s ease
-						-moz-transition: all .5s ease
 						transition: all 0.5s ease
 					color: #000
-					-webkit-transition: all .5s ease
-					-o-transition: all .5s ease
-					-moz-transition: all .5s ease
 					transition: all 0.5s ease
 				color: #bababa
 				padding: 0 22px 0 22px
-				-webkit-transition: all .5s ease
-				-o-transition: all .5s ease
-				-moz-transition: all .5s ease
 				transition: all 0.5s ease
 				span
 					padding-right: 7px
-					-webkit-transition: all .5s ease
-					-o-transition: all .5s ease
-					-moz-transition: all .5s ease
 					transition: all 0.5s ease
 		.top-header__search-result .top-header__search-conteiner
 			position: absolute
@@ -934,11 +820,7 @@ header
 			width: 600px
 			z-index: 100
 			right: 170px
-			-webkit-border-bottom-left-radius: 3px
-			-moz-border-radius-bottomleft: 3px
 			border-bottom-left-radius: 3px
-			-webkit-border-bottom-right-radius: 3px
-			-moz-border-radius-bottomright: 3px
 			border-bottom-right-radius: 3px
 			.input-group
 				.input-group-text
@@ -952,8 +834,6 @@ header
 					box-sizing: border-box
 					width: 200px
 					&:focus
-						-webkit-box-shadow: none
-						-moz-box-shadow: none
 						box-shadow: none
 					&::-webkit-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &:-ms-input-placeholder
 						color: #bababa
@@ -963,11 +843,7 @@ header
 				font-size: 12px
 				color: #b2b2b2
 				border-top: 1px solid #f0f0f0
-				-webkit-border-bottom-left-radius: 3px
-				-moz-border-radius-bottomleft: 3px
 				border-bottom-left-radius: 3px
-				-webkit-border-bottom-right-radius: 3px
-				-moz-border-radius-bottomright: 3px
 				border-bottom-right-radius: 3px
 				li
 					display: block
@@ -998,8 +874,6 @@ header
 		.top-header__cart .nav-link
 			background: #e3a3cc
 			color: #fff
-			-webkit-border-radius: 0 0 4px 0
-			-moz-border-radius: 0 0 4px 0
 			border-radius: 0 0 4px 0
 			width: 170px
 			text-align: center
@@ -1015,9 +889,6 @@ header
 			.top-header__cart-shopping
 				content: ''
 				background: url(../images/icons/ic_buy_link.svg) no-repeat 50% 50%
-				-webkit-background-size: contain
-				-moz-background-size: contain
-				-o-background-size: contain
 				background-size: contain
 				width: 22px
 				height: 16px
@@ -1031,8 +902,6 @@ header
 				height: 30px
 				background: #d093ba
 				display: inline-block
-				-webkit-border-radius: 50%
-				-moz-border-radius: 50%
 				border-radius: 50%
 				box-sizing: border-box
 				line-height: 30px
@@ -1064,8 +933,6 @@ header
 					img
 						border: 1px solid #ececec
 						width: 97px
-						-webkit-border-radius: 3px
-						-moz-border-radius: 3px
 						border-radius: 3px
 					.name
 						font-size: 16px
@@ -1079,8 +946,6 @@ header
 							width: 40px
 							display: inline-block
 							text-align: center
-							-webkit-border-radius: 2px
-							-moz-border-radius: 2px
 							border-radius: 2px
 							border: 1px solid #e5e5e5
 							height: 30px
@@ -1097,9 +962,6 @@ header
 								width: 8px
 								display: block
 								position: absolute
-								-webkit-background-size: contain
-								-moz-background-size: contain
-								-o-background-size: contain
 								background-size: contain
 								left: 0
 								margin-left: -20px
@@ -1127,9 +989,6 @@ header
 					padding-left: 50px
 					padding-top: 30px
 					padding-bottom: 30px
-					-webkit-background-size: cover
-					-moz-background-size: cover
-					-o-background-size: cover
 					background-size: cover
 					padding-left: 62px
 					.total
@@ -1138,11 +997,7 @@ header
 						height: 50px
 						line-height: 50px
 						padding: 0 15px
-						-webkit-border-bottom-left-radius: 3px
-						-moz-border-radius-bottomleft: 3px
 						border-bottom-left-radius: 3px
-						-webkit-border-top-left-radius: 3px
-						-moz-border-radius-topleft: 3px
 						border-top-left-radius: 3px
 						font-size: 18px
 						width: 168px
@@ -1155,11 +1010,7 @@ header
 						color: #fff
 						background: #e3a3cc
 						padding: 0 15px
-						-webkit-border-top-right-radius: 3px
-						-moz-border-radius-topright: 3px
 						border-top-right-radius: 3px
-						-webkit-border-bottom-right-radius: 3px
-						-moz-border-radius-bottomright: 3px
 						border-bottom-right-radius: 3px
 						font-weight: 600
 						font-size: 18px
@@ -1230,9 +1081,6 @@ header
 		.mobile-category
 			display: none
 			color: #000
-			-webkit-transition: 0s
-			-o-transition: 0s
-			-moz-transition: 0s
 			transition: 0s
 			&:hover
 				text-decoration: none
@@ -1242,20 +1090,8 @@ header
 				border-top: 1px solid #f0f0f0
 				border-bottom: 1px solid #f0f0f0
 				text-align: center
-				-webkit-box-align: center
-				-webkit-align-items: center
-				-moz-box-align: center
-				-ms-flex-align: center
 				align-items: center
-				-webkit-justify-content: space-around
-				-ms-flex-pack: distribute
 				justify-content: space-around
-				-webkit-box-orient: horizontal
-				-webkit-box-direction: normal
-				-webkit-flex-direction: row
-				-moz-box-orient: horizontal
-				-moz-box-direction: normal
-				-ms-flex-direction: row
 				flex-direction: row
 				padding-left: 0
 				li
@@ -1289,8 +1125,6 @@ header
 							color: #e3a3cc
 				.dropdown-menu
 					padding: 20px 30px
-					-webkit-border-radius: 2px
-					-moz-border-radius: 2px
 					border-radius: 2px
 					top: 97%
 					border: none
@@ -1309,14 +1143,7 @@ header
 						margin-bottom: -1px
 						left: 50%
 						margin-left: -8px
-						-webkit-background-size: 100% 100%
-						-moz-background-size: 100%
-						-o-background-size: 100%
 						background-size: 100%
-						-moz-transform: rotate(180deg)
-						-ms-transform: rotate(180deg)
-						-webkit-transform: rotate(180deg)
-						-o-transform: rotate(180deg)
 						transform: rotate(180deg)
 					li
 						line-height: 30px
@@ -1358,9 +1185,6 @@ header
 .top-header.clone
 	position: fixed
 	top: -60px
-	-webkit-transition: .2s top ease-in
-	-o-transition: .2s top ease-in
-	-moz-transition: .2s top ease-in
 	transition: .2s top ease-in
 	background: #fff
 	display: none
@@ -1401,9 +1225,6 @@ body.down .top-header.clone
 	width: 16px
 	height: 16px
 	display: inline-block
-	-webkit-background-size: contain
-	-moz-background-size: contain
-	-o-background-size: contain
 	background-size: contain
 	top: 50%
 	left: 21px
@@ -1471,8 +1292,6 @@ main
 				margin-right: 10px
 				color: #000
 				font-size: 14px
-				-webkit-border-radius: 3px
-				-moz-border-radius: 3px
 				border-radius: 3px
 				&:hover
 					text-decoration: none
@@ -1492,9 +1311,6 @@ main
 				margin-right: 9px
 				a
 					display: block
-					-webkit-transition: all .5s
-					-o-transition: all .5s
-					-moz-transition: all .5s
 					transition: all 0.5s
 					svg path
 						fill: #ddd !important
@@ -1539,9 +1355,6 @@ main
 .top-header.clone
 	position: fixed
 	top: -60px
-	-webkit-transition: all 1s
-	-o-transition: all 1s
-	-moz-transition: all 1s
 	transition: all 1s
 	.fix-nav
 		display: block
@@ -1554,9 +1367,6 @@ body
 		left: 0
 		right: 0
 		z-index: 999
-		-webkit-transition: all 1s
-		-o-transition: all 1s
-		-moz-transition: all 1s
 		transition: all 1s
 	background: #fff
 	font-family: "Open Sans", sans-serif
@@ -1583,8 +1393,6 @@ img
 
 input, select, textarea
 	outline: 0
-	-webkit-appearance: none
-	-moz-appearance: none
 	appearance: none
 
 .inline-block
@@ -1592,9 +1400,6 @@ input, select, textarea
 	vertical-align: top
 
 .transition, a, input[type=submit]
-	-webkit-transition: .3s ease-in-out
-	-o-transition: .3s ease-in-out
-	-moz-transition: .3s ease-in-out
 	transition: 0.3s ease-in-out
 
 .slider-home
@@ -1613,8 +1418,6 @@ input, select, textarea
 		width: 50px
 		background: #fff
 		display: inline-block
-		-webkit-border-radius: 50%
-		-moz-border-radius: 50%
 		border-radius: 50%
 		position: relative
 		&:after
@@ -1634,8 +1437,6 @@ input, select, textarea
 		width: 50px
 		background: #fff
 		display: inline-block
-		-webkit-border-radius: 50%
-		-moz-border-radius: 50%
 		border-radius: 50%
 		&:after
 			content: ""
@@ -1659,16 +1460,12 @@ input, select, textarea
 			background: rgba(255, 255, 255, 0.5)
 			position: relative
 			cursor: pointer
-			-webkit-border-radius: 0
-			-moz-border-radius: 0
 			border-radius: 0
 			vertical-align: middle
 			&.slick-active
 				background: rgba(255, 255, 255, 0.5)
 				width: 86px
 				height: 3px
-				-webkit-border-radius: 0
-				-moz-border-radius: 0
 				border-radius: 0
 				margin-top: 0
 				&:before
@@ -1681,31 +1478,6 @@ input, select, textarea
 					background: #fff
 					animation: animate 5s linear
 					cursor: pointer
-
-@-webkit-keyframes animate
-	from
-		width: 0
-
-	to
-		width: 100%
-
-
-@-moz-keyframes animate
-	from
-		width: 0
-
-	to
-		width: 100%
-
-
-@-o-keyframes animate
-	from
-		width: 0
-
-	to
-		width: 100%
-
-
 @keyframes animate
 	from
 		width: 0
@@ -1733,9 +1505,6 @@ input, select, textarea
 			right: 0
 			position: absolute
 			z-index: 1
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.display-4
 			font-size: 30px
@@ -1785,9 +1554,6 @@ section .section-title
 			left: 50%
 			bottom: 0
 			position: absolute
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 			height: 128px
 			width: 136px
@@ -1801,32 +1567,11 @@ section .section-title
 			height: 140px
 			border: 1px solid #e8e8e8
 			border-radius: 3px
-			display: -webkit-box
-			display: -webkit-flex
-			display: -moz-box
-			display: -ms-flexbox
 			display: flex
-			-webkit-box-pack: end
-			-webkit-justify-content: flex-end
-			-moz-box-pack: end
-			-ms-flex-pack: end
 			justify-content: flex-end
-			-webkit-box-align: center
-			-webkit-align-items: center
-			-moz-box-align: center
-			-ms-flex-align: center
 			align-items: center
-			-webkit-box-orient: vertical
-			-webkit-box-direction: normal
-			-webkit-flex-direction: column
-			-moz-box-orient: vertical
-			-moz-box-direction: normal
-			-ms-flex-direction: column
 			flex-direction: column
 			margin-bottom: 30px
-			-webkit-transition: all .5s
-			-o-transition: all .5s
-			-moz-transition: all .5s
 			transition: all .5s
 			position: relative
 			&:after
@@ -1838,17 +1583,12 @@ section .section-title
 				right: 0
 				background: 0 0
 				opacity: 0
-				-webkit-transition: .3s
-				-o-transition: .3s
-				-moz-transition: .3s
 				transition: .3s
 				z-index: 1
 			&:hover
 				.ocassions__content-name
 					color: #fff
 				&:after
-					-webkit-box-shadow: inset 0 -22px 103px -36px rgba(0, 0, 0, 0.52)
-					-moz-box-shadow: inset 0 -22px 103px -36px rgba(0, 0, 0, 0.52)
 					box-shadow: inset 0 -22px 103px -36px rgba(0, 0, 0, 0.52)
 					opacity: 1
 			.ocassions__content-icon path
@@ -1863,116 +1603,53 @@ section .section-title
 				z-index: 2
 		.ocassions-item--1:after
 			background: url(../images/content/ocassions/1.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--2:after
 			background: url(../images/content/ocassions/2.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--3:after
 			background: url(../images/content/ocassions/3.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--4:after
 			background: url(../images/content/ocassions/4.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--5:after
 			background: url(../images/content/ocassions/5.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--6:after
 			background: url(../images/content/ocassions/6.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--7:after
 			background: url(../images/content/ocassions/7.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--8:after
 			background: url(../images/content/ocassions/8.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--9:after
 			background: url(../images/content/ocassions/9.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--10:after
 			background: url(../images/content/ocassions/10.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--11:after
 			background: url(../images/content/ocassions/11.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--13:after
 			background: url(../images/content/ocassions/12.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--14:after
 			background: url(../images/content/ocassions/13.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--15:after
 			background: url(../images/content/ocassions/14.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		.ocassions-item--16:after
 			background: url(../images/content/ocassions/15.png) no-repeat
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 	.ocassions__bottom
-		display: -webkit-box
-		display: -webkit-flex
-		display: -moz-box
-		display: -ms-flexbox
 		display: flex
-		-webkit-box-pack: flex-center
-		-webkit-justify-content: flex-center
-		-moz-box-pack: flex-center
-		-ms-flex-pack: flex-center
 		justify-content: flex-center
-		-webkit-box-align: center
-		-webkit-align-items: center
-		-moz-box-align: center
-		-ms-flex-align: center
 		align-items: center
-		-webkit-box-orient: vertical
-		-webkit-box-direction: normal
-		-webkit-flex-direction: column
-		-moz-box-orient: vertical
-		-moz-box-direction: normal
-		-ms-flex-direction: column
 		flex-direction: column
 		position: relative
 		margin-top: 18px
@@ -1988,8 +1665,6 @@ section .section-title
 		.ocassions__bottom-content
 			display: inline-block
 			border: 1px solid #e8e8e8
-			-webkit-border-radius: 50px
-			-moz-border-radius: 50px
 			border-radius: 50px
 			background: #fff
 			z-index: 1
@@ -2154,9 +1829,6 @@ section .section-title
 			left: 50%
 			bottom: 0
 			position: absolute
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 			height: 114px
 			width: 100px
@@ -2165,21 +1837,13 @@ section .section-title
 			display: inline-block
 	.categories-bg
 		background: url(../images/content/bg-categories.png) no-repeat top center
-		-webkit-background-size: cover
-		-moz-background-size: cover
-		-o-background-size: cover
 		background-size: cover
 		.categories__content-item
 			height: 500px
 			border: 1px solid #e3e3e3
 			margin-bottom: 34px
 			border-radius: 4px
-			-webkit-box-sizing: content-box
-			-moz-box-sizing: content-box
 			box-sizing: content-box
-			-webkit-background-size: cover !important
-			-moz-background-size: cover !important
-			-o-background-size: cover !important
 			background-size: cover !important
 			.categories__content-element
 				font-family: Marmelad, sans-serif
@@ -2242,9 +1906,6 @@ section .section-title
 			left: 50%
 			bottom: 0
 			position: absolute
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 			height: 124px
 			width: 124px
@@ -2273,28 +1934,17 @@ section .section-title
 					div
 						height: 100%
 						width: 100%
-						-webkit-background-size: cover !important
-						-moz-background-size: cover !important
-						-o-background-size: cover !important
 						background-size: cover !important
 						&:after
 							content: ''
 							display: block
 							height: 100%
 							width: 100%
-							-webkit-box-shadow: none
-							-moz-box-shadow: none
 							box-shadow: none
-							-webkit-transition: all 1s
-							-o-transition: all 1s
-							-moz-transition: all 1s
 							transition: all 1s
 					.slick-dots
 						visibility: hidden
 						opacity: 0
-						-webkit-transition: all 1s
-						-o-transition: all 1s
-						-moz-transition: all 1s
 						transition: all 1s
 				.featured__list-wish
 					background: url(../images/icons/ic_favorite_before.svg) no-repeat 50% 50%
@@ -2303,19 +1953,11 @@ section .section-title
 					position: absolute
 					bottom: 14px
 					left: 17px
-					-webkit-border-radius: 50%
-					-moz-border-radius: 50%
 					border-radius: 50%
-					-webkit-background-size: contain
-					-moz-background-size: contain
-					-o-background-size: contain
 					background-size: contain
 					cursor: pointer
 					opacity: 0
 					visibility: hidden
-					-webkit-transition: all 1s
-					-o-transition: all 1s
-					-moz-transition: all 1s
 					transition: all 1s
 					div
 						opacity: 0
@@ -2330,12 +1972,8 @@ section .section-title
 						margin-top: -18px
 						text-align: center
 						border: 1px solid #e9e9e9
-						-webkit-border-radius: 2px
-						-moz-border-radius: 2px
 						border-radius: 2px
 						-webkit-transition: all 1s
-						-o-transition: all 1s
-						-moz-transition: all 1s
 						transition: all 1s
 						&:before
 							content: ""
@@ -2356,9 +1994,6 @@ section .section-title
 									fill: #e3a3cc !important
 					&.active
 						background: url(../images/icons/ic_favorite_after.svg) no-repeat 50% 50%
-						-webkit-background-size: contain
-						-moz-background-size: contain
-						-o-background-size: contain
 						background-size: contain
 						height: 26px
 						width: 26px
@@ -2372,19 +2007,11 @@ section .section-title
 					position: absolute
 					bottom: 14px
 					right: 17px
-					-webkit-border-radius: 50%
-					-moz-border-radius: 50%
 					border-radius: 50%
-					-webkit-background-size: contain
-					-moz-background-size: contain
-					-o-background-size: contain
 					background-size: contain
 					cursor: pointer
 					visibility: hidden
 					opacity: 0
-					-webkit-transition: all 1s
-					-o-transition: all 1s
-					-moz-transition: all 1s
 					transition: all 1s
 			.featured__list-title
 				color: #000
@@ -2404,9 +2031,6 @@ section .section-title
 			.featured__list-hover
 				position: relative
 				background: #fff
-				-webkit-transition: all .5s
-				-o-transition: all .5s
-				-moz-transition: all .5s
 				transition: all .5s
 				padding-top: 10px
 				.featured__list-htop
@@ -2470,22 +2094,14 @@ section .section-title
 							margin-top: -4px
 							margin-right: 1px
 							margin-left: 5px
-							-webkit-background-size: contain
-							-moz-background-size: contain
-							-o-background-size: contain
 							background-size: contain
 						&.added
 							background: #edddb2
 							&:after
 								background: url(../images/icons/ic_added.svg) no-repeat 50% 50%
-								-webkit-background-size: contain
-								-moz-background-size: contain
-								-o-background-size: contain
 								background-size: contain
 			&:hover
 				.featured__list-carusel div:after
-					-webkit-box-shadow: inset 0 -66px 89px -41px rgba(138, 134, 138, 0.4)
-					-moz-box-shadow: inset 0 -66px 89px -41px rgba(138, 134, 138, 0.4)
 					box-shadow: inset 0 -66px 89px -41px rgba(138, 134, 138, 0.4)
 				.featured__list-hover
 					margin-top: -70px
@@ -2555,9 +2171,6 @@ section .section-title
 	border-radius: 3px
 	border: 1px solid #e6e6e6
 	width: 100%
-	-webkit-background-size: cover
-	-moz-background-size: cover
-	-o-background-size: cover
 	background-size: cover
 	padding: 92px 100px
 	&:before
@@ -2603,9 +2216,6 @@ section .section-title
 			width: 433px
 			height: 366px
 			display: inline-block
-			-webkit-background-size: contain
-			-moz-background-size: contain
-			-o-background-size: contain
 			background-size: contain
 			position: absolute
 			right: 0
@@ -2634,8 +2244,6 @@ section .section-title
 				font-size: 14px
 				padding-left: 4px
 				&:focus
-					-webkit-box-shadow: none
-					-moz-box-shadow: none
 					box-shadow: none
 				&::-webkit-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &:-ms-input-placeholder
 					color: #000
@@ -2645,9 +2253,6 @@ section .section-title
 				color: #fff
 				width: 157px
 				height: 50px
-				-webkit-transition: .3s
-				-o-transition: .3s
-				-moz-transition: .3s
 				transition: 0.3s
 				&:after
 					content: ''
@@ -2702,9 +2307,6 @@ section .section-title
 		font-family: "Open Sans", sans-serif
 		color: #fff
 		border-radius: 3px
-		-webkit-transition: all .5s
-		-o-transition: all .5s
-		-moz-transition: all .5s
 		transition: all .5s
 		text-align: left
 		height: 90px
@@ -2750,18 +2352,12 @@ section .section-title
 			left: 50%
 			bottom: 0
 			position: absolute
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 			height: 96px
 			width: 124px
 			margin-left: -65px
 			margin-bottom: 0
 			display: inline-block
-			-webkit-background-size: contain
-			-moz-background-size: contain
-			-o-background-size: contain
 			background-size: contain
 	.instagram__list
 		margin-top: 3px
@@ -2849,9 +2445,6 @@ section .section-title
 			left: 50%
 			bottom: 0
 			position: absolute
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 			height: 124px
 			width: 124px
@@ -2868,8 +2461,6 @@ section .section-title
 			li
 				height: 12px
 				width: 12px
-				-webkit-border-radius: 50%
-				-moz-border-radius: 50%
 				border-radius: 50%
 				background: #fcceeb
 				margin: 0 4px
@@ -2889,8 +2480,6 @@ section .section-title
 						position: absolute
 						left: -1px
 						top: -1px
-						-webkit-border-radius: 50%
-						-moz-border-radius: 50%
 						border-radius: 50%
 					&:after
 						content: ''
@@ -2900,8 +2489,6 @@ section .section-title
 						position: absolute
 						left: 1px
 						top: 1px
-						-webkit-border-radius: 50%
-						-moz-border-radius: 50%
 						border-radius: 50%
 						border: 1.2px solid #fff
 		.advantages__slider-item
@@ -3072,9 +2659,6 @@ section .section-title
 
 @media screen and (max-width: 992px)
 	.advantages .advantages__slider .advantages__slider-item--contend
-		-webkit-background-size: 50% auto !important
-		-moz-background-size: 50% auto !important
-		-o-background-size: 50% auto !important
 		background-size: 50% auto !important
 		padding-left: 60px
 		padding-top: 25px
@@ -3086,9 +2670,6 @@ section .section-title
 
 @media screen and (max-width: 767px)
 	.advantages .advantages__slider .advantages__slider-item--contend
-		-webkit-background-size: 50% auto !important
-		-moz-background-size: 50% auto !important
-		-o-background-size: 50% auto !important
 		background-size: 50% auto !important
 
 @media (max-width: 575.98px)
@@ -3228,19 +2809,11 @@ section .section-title
 				opacity: 0.5
 			&:focus
 				border: none
-				-webkit-box-shadow: none
-				-moz-box-shadow: none
 				box-shadow: none
 		span.input-group-btn button.btn
 			width: 157px
-			-webkit-border-radius: 0
-			-moz-border-radius: 0
 			border-radius: 0
-			-webkit-border-bottom-right-radius: 3px
-			-moz-border-radius-bottomright: 3px
 			border-bottom-right-radius: 3px
-			-webkit-border-top-right-radius: 3px
-			-moz-border-radius-topright: 3px
 			border-top-right-radius: 3px
 			height: 59px
 			line-height: 60px
@@ -3260,8 +2833,6 @@ section .section-title
 				margin-right: 14px
 			&:focus
 				border: none
-				-webkit-box-shadow: none
-				-moz-box-shadow: none
 				box-shadow: none
 
 .delivery-address__location
@@ -3352,32 +2923,6 @@ section .section-title
 @media screen and (max-width: 767px)
 	.hidden-desktop
 		display: block
-
-@-webkit-keyframes spin
-	from
-		-webkit-transform: rotate(360deg)
-		transform: rotate(360deg)
-
-	to
-		-webkit-transform: rotate(0)
-		transform: rotate(0)
-
-
-@-moz-keyframes spin
-	from
-		transform: rotate(360deg)
-
-	to
-		transform: rotate(0)
-
-
-@-o-keyframes spin
-	from
-		transform: rotate(360deg)
-
-	to
-		transform: rotate(0)
-
 
 @keyframes spin
 	from
@@ -4236,8 +3781,6 @@ section .section-title
 				line-height: 32px
 				width: 60px
 				height: 32px
-				-webkit-border-radius: 0 0 2px 0
-				-moz-border-radius: 0 0 2px 0
 				border-radius: 0 0 2px 0
 				.top-header__cart-shopping
 					width: 16px
@@ -5283,9 +4826,6 @@ section .section-title
 		.title-page__images
 			margin-top: 22px
 			height: 185px
-			-webkit-background-size: 100% 100% !important
-			-moz-background-size: 100% !important
-			-o-background-size: 100% !important
 			background-size: 100% !important
 			margin-bottom: 24px
 		p
@@ -5312,9 +4852,6 @@ section .section-title
 				&:before
 					height: 14px
 					width: 14px
-					-webkit-background-size: contain
-					-moz-background-size: contain
-					-o-background-size: contain
 					background-size: contain
 					margin-right: 8px
 	.delivery-address__map
@@ -5420,9 +4957,6 @@ section .section-title
 				width: 100%
 		.title-page__images
 			height: 150px
-			-webkit-background-size: cover !important
-			-moz-background-size: cover !important
-			-o-background-size: cover !important
 			background-size: cover !important
 			margin-bottom: 24px
 			background-position: 90% 50% !important
@@ -5431,8 +4965,6 @@ section .section-title
 	.delivery-address > div
 		padding: 0 !important
 	.delivery-address__content
-		-webkit-border-radius: 0
-		-moz-border-radius: 0
 		border-radius: 0
 		padding: 15px
 		border: none
@@ -5458,9 +4990,6 @@ section .section-title
 				&:before
 					height: 20px
 					width: 20px
-					-webkit-background-size: contain
-					-moz-background-size: contain
-					-o-background-size: contain
 					background-size: contain
 					margin-right: 0
 	.delivery-address__map
@@ -5556,8 +5085,6 @@ section .section-title
 		padding-top: 10px
 
 .advantages__slider .slick-list
-	-webkit-box-sizing: content-box
-	-moz-box-sizing: content-box
 	box-sizing: content-box
 	padding: 1px 0
 
@@ -5578,47 +5105,11 @@ section .section-title
 	.cotacts
 		margin-top: 16px
 
-@-webkit-keyframes menu
-	from
-		-webkit-transform: translateY(-100%)
-		transform: translateY(-100%)
-
-	to
-		-webkit-transform: translateY(0)
-		transform: translateY(0)
-
-
-@-moz-keyframes menu
-	from
-		-moz-transform: translateY(-100%)
-		transform: translateY(-100%)
-
-	to
-		-moz-transform: translateY(0)
-		transform: translateY(0)
-
-
-@-o-keyframes menu
-	from
-		-o-transform: translateY(-100%)
-		transform: translateY(-100%)
-
-	to
-		-o-transform: translateY(0)
-		transform: translateY(0)
-
-
 @keyframes menu
 	from
-		-webkit-transform: translateY(-100%)
-		-moz-transform: translateY(-100%)
-		-o-transform: translateY(-100%)
 		transform: translateY(-100%)
 
 	to
-		-webkit-transform: translateY(0)
-		-moz-transform: translateY(0)
-		-o-transform: translateY(0)
 		transform: translateY(0)
 
 
@@ -5628,23 +5119,12 @@ header .fixed-menu
 	top: 0
 	left: 0
 	right: 0
-	-webkit-animation-name: menu
-	-moz-animation-name: menu
-	-o-animation-name: menu
 	animation-name: menu
-	-webkit-animation-duration: .5s
-	-moz-animation-duration: .5s
-	-o-animation-duration: .5s
 	animation-duration: .5s
-	-webkit-transition: 3s
-	-o-transition: 3s
-	-moz-transition: 3s
 	transition: 3s
 	.navbar
 		background: #fff
 		border-left: 1px solid #dfdfdf
-		-webkit-border-bottom-left-radius: 4px
-		-moz-border-radius-bottomleft: 4px
 		border-bottom-left-radius: 4px
 	.main-menu
 		display: none
@@ -5660,11 +5140,6 @@ header .fixed-menu
 .join-menu
 	margin-bottom: 0
 	display: none
-	-webkit-box-orient: horizontal
-	-webkit-flex-direction: row
-	-moz-box-orient: horizontal
-	-moz-box-direction: normal
-	-ms-flex-direction: row
 	flex-direction: row
 
 @media screen and (max-width: 767px)
@@ -5704,9 +5179,6 @@ header .fixed-menu
 	width: 17px
 	height: 15px
 	background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAQAAABDj1eZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhAQBQNF2RJZAAAAtklEQVQoz63QMWoCARCF4W9ViFjEQrBUD2AjVhZ6g4DoDbQR7xAhOYIgNp5AIRjSbZ2kUmw8QGLpKVKomF1dK18xMG/+gZkXrMRUxfbc1pGKIS1fPjWjZhTqCj3KC3WSoKG5B5C1MLiEAq8m/1ZSpl6iUNrMc/wDIzPpE5Sz1HNNfW/rHMGq4ENDsr49BcecfpSvAL8qdWRi9sYOJbXknBhraxvfCjNB94NOh4eKYHes72B/GP4BAZQd0DSX1mMAAAAASUVORK5CYII=) no-repeat
-	-webkit-background-size: contain
-	-moz-background-size: contain
-	-o-background-size: contain
 	background-size: contain
 	display: inline-block
 	margin-right: 5px
@@ -5728,9 +5200,6 @@ header .fixed-menu
 			width: 12px
 			height: 14px
 			background: url(../images/icons/compare.svg) no-repeat
-			-webkit-background-size: contain
-			-moz-background-size: contain
-			-o-background-size: contain
 			background-size: contain
 			display: inline-block
 			margin-right: 5px
@@ -5741,8 +5210,6 @@ header .fixed-menu
 		position: absolute
 		width: 24px
 		height: 24px
-		-webkit-border-radius: 50%
-		-moz-border-radius: 50%
 		border-radius: 50%
 		right: -40px
 		top: 0
@@ -5799,9 +5266,6 @@ header .fixed-menu
 	header .top-header .navbar .nav-link
 		height: 32px
 		line-height: 32px
-		-webkit-transition: 0s
-		-o-transition: 0s
-		-moz-transition: 0s
 		transition: 0s
 		font-size: 12px
 
@@ -5840,9 +5304,6 @@ header .fixed-menu
 			&:before
 				width: 13px !important
 				height: 13px !important
-				-webkit-background-size: contain !important
-				-moz-background-size: contain !important
-				-o-background-size: contain !important
 				background-size: contain !important
 
 .right-container
@@ -5899,8 +5360,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	text-transform: uppercase
 	color: #fff
 	font-size: 12px
-	-webkit-border-radius: 10px
-	-moz-border-radius: 10px
 	border-radius: 10px
 	z-index: 99999
 
@@ -5938,18 +5397,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin: 0 auto
 		margin-bottom: 10px
 		opacity: .2
-		-webkit-transition: all .4s
-		-o-transition: all .4s
-		-moz-transition: all .4s
 		transition: all .4s
 		height: 45px
 		width: auto
 	span
 		font-size: 18px
 		&:after
-			-webkit-transition: all .4s
-			-o-transition: all .4s
-			-moz-transition: all .4s
 			transition: all .4s
 			content: ''
 			display: block
@@ -5957,8 +5410,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			height: 8px
 			width: 8px
 			margin-top: 10px
-			-webkit-border-radius: 50%
-			-moz-border-radius: 50%
 			border-radius: 50%
 			background: #e3a3cc
 			opacity: 0
@@ -6296,12 +5747,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		.title-page__images
 			position: relative
 			margin-top: 32px
-			-webkit-border-radius: 6px
-			-moz-border-radius: 6px
 			border-radius: 6px
 			img
-				-webkit-border-radius: 50%
-				-moz-border-radius: 50%
 				border-radius: 50%
 				position: absolute
 				margin: 0
@@ -6338,8 +5785,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			margin-top: 20px
 			margin-bottom: 30px
 	.video__item
-		-webkit-border-radius: 6px
-		-moz-border-radius: 6px
 		border-radius: 6px
 		overflow: hidden
 		height: 580px
@@ -6353,18 +5798,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			left: 0
 			height: 100%
 			width: 100%
-			-webkit-background-size: cover
-			-moz-background-size: cover
-			-o-background-size: cover
 			background-size: cover
 		&:after
 			content: ''
 			background: url(../images/icons/ic-youtube-play.png) no-repeat
 			width: 90px
 			height: 60px
-			-webkit-background-size: contain
-			-moz-background-size: contain
-			-o-background-size: contain
 			background-size: contain
 			display: block
 			top: 50%
@@ -6401,8 +5840,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			width: 50px
 			display: inline-block
 			border: 1px solid #d6d6d6
-			-webkit-border-radius: 50%
-			-moz-border-radius: 50%
 			border-radius: 50%
 			cursor: pointer
 			position: absolute
@@ -6436,8 +5873,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				height: 90px
 				width: 90px
 				display: inline-block
-				-webkit-border-radius: 50%
-				-moz-border-radius: 50%
 				border-radius: 50%
 				background: #e6d197
 				float: left
@@ -6502,8 +5937,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		width: 190px
 		height: 44px
 		border: 1px solid #ededed
-		-webkit-border-radius: 50px
-		-moz-border-radius: 50px
 		border-radius: 50px
 		display: inline-block
 		line-height: 44px
@@ -6578,10 +6011,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				opacity: .1
 				position: absolute
 				right: -65px
-				-webkit-transform: rotate(-180deg)
-				-moz-transform: rotate(-180deg)
-				-o-transform: rotate(-180deg)
-				-ms-transform: rotate(-180deg)
 				transform: rotate(-180deg)
 				bottom: 0
 		.philosophy
@@ -6592,8 +6021,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			.author__image
 				height: 90px
 				width: 90px
-				-webkit-border-radius: 50%
-				-moz-border-radius: 50%
 				border-radius: 50%
 				overflow: hidden
 				float: right
@@ -6842,27 +6269,9 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 @media (max-width: 767.98px)
 	.about .reviews__slider .review
-		-webkit-box-pack: justify
-		-webkit-justify-content: space-between
-		-moz-box-pack: justify
-		-ms-flex-pack: justify
 		justify-content: space-between
-		-webkit-box-align: start
-		-webkit-align-items: start
-		-moz-box-align: start
-		-ms-flex-align: start
 		align-items: start
-		-webkit-box-orient: horizontal
-		-webkit-box-direction: normal
-		-webkit-flex-direction: row
-		-moz-box-orient: horizontal
-		-moz-box-direction: normal
-		-ms-flex-direction: row
 		flex-direction: row
-		display: -webkit-box
-		display: -webkit-flex
-		display: -moz-box
-		display: -ms-flexbox
 		display: flex
 
 @media screen and (max-width: 767px)
@@ -6901,16 +6310,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 @media (max-width: 1023.98px)
 	.about .reviews__slider .review .author__image-men
-		-webkit-background-size: 20px 20px
-		-moz-background-size: 20px
-		-o-background-size: 20px
 		background-size: 20px
 
 @media (max-width: 1023.98px)
 	.about .reviews__slider .review .author__image-woomen
-		-webkit-background-size: 18px 18px
-		-moz-background-size: 18px
-		-o-background-size: 18px
 		background-size: 18px
 
 @media (max-width: 1023.98px)
@@ -6932,9 +6335,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 @media (max-width: 1023.98px)
 	.about .reviews__slider .review .author__rating
-		-webkit-background-size: auto 100%
-		-moz-background-size: auto 100%
-		-o-background-size: auto 100%
 		background-size: auto 100%
 		height: 7px
 		margin-top: -9px
@@ -7006,8 +6406,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 @media (max-width: 767.98px)
 	.about .reviews__feedback-give
-		-webkit-border-radius: 0
-		-moz-border-radius: 0
 		border-radius: 0
 		float: right
 		width: 50%
@@ -7325,9 +6723,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	left: 50%
 	bottom: 0
 	position: absolute
-	-webkit-background-size: cover
-	-moz-background-size: cover
-	-o-background-size: cover
 	background-size: cover
 	height: 124px
 	width: 124px
@@ -7357,9 +6752,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 .product-carousel__item
 	min-height: 306px
-	-webkit-background-size: cover !important
-	-moz-background-size: cover !important
-	-o-background-size: cover !important
 	background-size: cover !important
 	position: relative
 	&:after
@@ -7370,12 +6762,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		left: 0
 		height: 100%
 		width: 100%
-		-webkit-box-shadow: none
-		-moz-box-shadow: none
 		box-shadow: none
-		-webkit-transition: all 1s
-		-o-transition: all 1s
-		-moz-transition: all 1s
 		transition: all 1s
 
 @media screen and (max-width: 1200px)
@@ -7398,9 +6785,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	.slick-dots
 		visibility: hidden
 		opacity: 0
-		-webkit-transition: all 1s
-		-o-transition: all 1s
-		-moz-transition: all 1s
 		transition: all 1s
 		bottom: 33px
 		padding-left: 15px
@@ -7453,22 +6837,13 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	bottom: 14px
 	right: 17px
 	border-radius: 50%
-	-webkit-background-size: contain
-	-moz-background-size: contain
-	-o-background-size: contain
 	background-size: contain
 	cursor: pointer
 	visibility: hidden
 	opacity: 0
-	-webkit-transition: all 1s
-	-o-transition: all 1s
-	-moz-transition: all 1s
 	transition: all 1s
 
 .product__hover
-	-webkit-transition: all .5s
-	-o-transition: all .5s
-	-moz-transition: all .5s
 	transition: all .5s
 	background: #fff
 
@@ -7484,9 +6859,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		z-index: 100
 		opacity: 0
 		visibility: hidden
-		-webkit-transition: all 1s
-		-o-transition: all 1s
-		-moz-transition: all 1s
 		transition: all 1s
 		&:not(.active)
 			height: 26px
@@ -7495,15 +6867,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		background: url(../images/icons/ic_favorite_before.svg) no-repeat 50% 50%
 		height: 26px
 		width: 26px
-		-webkit-border-radius: 50%
-		-moz-border-radius: 50%
 		border-radius: 50%
 		background-size: contain
 		cursor: pointer
 		opacity: 1
-		-webkit-transition: all 1s
-		-o-transition: all 1s
-		-moz-transition: all 1s
 		transition: all 1s
 		display: inline-block
 		vertical-align: middle
@@ -7518,9 +6885,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin-left: 10px
 		opacity: 0
 		visibility: hidden
-		-webkit-transition: all 1s
-		-o-transition: all 1s
-		-moz-transition: all 1s
 		transition: all 1s
 		top: -4px
 		min-width: 120px
@@ -7553,8 +6917,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 .product__status
 	position: absolute
 	font-size: 12px
-	-webkit-border-radius: 50px
-	-moz-border-radius: 50px
 	border-radius: 50px
 	color: #fff
 	padding: 0 10px
@@ -7581,22 +6943,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		opacity: 1
 		visibility: visible
 	.product__hover
-		-webkit-transform: translateY(-62px)
-		-moz-transform: translateY(-62px)
-		-ms-transform: translateY(-62px)
-		-o-transform: translateY(-62px)
 		transform: translateY(-62px)
 	.product-carousel__item:after
-		-webkit-box-shadow: inset 0 -66px 89px -41px rgba(138, 134, 138, 0.4)
-		-moz-box-shadow: inset 0 -66px 89px -41px rgba(138, 134, 138, 0.4)
 		box-shadow: inset 0 -66px 89px -41px rgba(138, 134, 138, 0.4)
 
 @media screen and (max-width: 1200px)
 	.product:hover .product__hover
-		-webkit-transform: translateY(0)
-		-moz-transform: translateY(0)
-		-ms-transform: translateY(0)
-		-o-transform: translateY(0)
 		transform: translateY(0)
 
 .product__title
@@ -7731,8 +7083,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	margin-top: 15px
 	margin-bottom: -63px
 	border-top: 1px solid #e8e8e8
-	-webkit-box-sizing: content-box
-	-moz-box-sizing: content-box
 	box-sizing: content-box
 	overflow: hidden
 
@@ -7769,9 +7119,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			transition: 0.3s
 	&.active svg path
 		fill: #4fbba5 !important
-		-webkit-transition: .3s
-		-o-transition: .3s
-		-moz-transition: .3s
 		transition: 0.3s
 
 @media screen and (max-width: 1200px)
@@ -7813,9 +7160,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin-right: 1px
 		margin-left: 5px
 		background-size: contain
-		-webkit-transition: .3s
-		-o-transition: .3s
-		-moz-transition: .3s
 		transition: 0.3s
 	&:hover
 		text-decoration: none
@@ -7825,15 +7169,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		background: #edddb2
 		&:after
 			background: url(../images/icons/ic_added.svg) no-repeat 50% 50%
-			-webkit-background-size: contain
-			-moz-background-size: contain
-			-o-background-size: contain
 			background-size: contain
 
 @media screen and (max-width: 1200px)
 	.product-buttons__add-cart
-		width: -webkit-calc(100% - 54px)
-		width: -moz-calc(100% - 54px)
 		width: calc(100% - 54px)
 		font-size: 13px
 		line-height: 40px
@@ -7841,8 +7180,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 @media screen and (max-width: 450px)
 	.product-buttons__add-cart
-		width: -webkit-calc(100% - 42px)
-		width: -moz-calc(100% - 42px)
 		width: calc(100% - 42px)
 		max-height: 32px
 		line-height: 32px
@@ -7917,10 +7254,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		bottom: 0
 		top: 0
 		right: 20%
-		background: -webkit-gradient(linear, left top, right top, from(rgba(30, 87, 153, 0)), color-stop(2%, rgba(35, 90, 155, 0)), to(white))
-		background: -webkit-linear-gradient(left, rgba(30, 87, 153, 0) 0, rgba(35, 90, 155, 0) 2%, #fff 100%)
-		background: -moz-linear-gradient(left, rgba(30, 87, 153, 0) 0, rgba(35, 90, 155, 0) 2%, #fff 100%)
-		background: -o-linear-gradient(left, rgba(30, 87, 153, 0) 0, rgba(35, 90, 155, 0) 2%, #fff 100%)
 		background: linear-gradient(to right, rgba(30, 87, 153, 0) 0, rgba(35, 90, 155, 0) 2%, #fff 100%)
 
 .comparison__content--slider-btn
@@ -7959,8 +7292,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin-right: 20px
 		width: 80px
 		height: 80px
-		-webkit-border-radius: 50%
-		-moz-border-radius: 50%
 		border-radius: 50%
 		float: left
 	p
@@ -7998,8 +7329,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		border: none
 		width: 15px
 		height: 15px
-		-webkit-border-radius: 50%
-		-moz-border-radius: 50%
 		border-radius: 50%
 		background: #000
 		margin-right: 5px
@@ -8130,9 +7459,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			position: absolute
 			padding: 10px
 			z-index: 9999
-			-webkit-transition: all .4s
-			-o-transition: all .4s
-			-moz-transition: all .4s
 			transition: all 0.4s
 			&:after
 				position: absolute
@@ -8153,8 +7479,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				font-size: 12px
 			&:hover
 				background: #fff
-				-webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
-				-moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
 				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
 				li
 					display: block
@@ -8314,9 +7638,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin-right: 1px
 		margin-left: 5px
 		background-size: contain
-		-webkit-transition: .3s
-		-o-transition: .3s
-		-moz-transition: .3s
 		transition: 0.3s
 	&:hover
 		color: #fff
@@ -8334,8 +7655,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	.page-content__add-cart
 		margin-left: -15px
 		margin-right: -15px
-		-webkit-border-radius: 0
-		-moz-border-radius: 0
 		border-radius: 0
 		max-width: initial
 		display: block
@@ -8448,8 +7767,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 @media screen and (max-width: 767px)
 	.product-cart-carousel
-		-webkit-box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.24)
-		-moz-box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.24)
 		box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.24)
 
 .product-cart-carousel
@@ -8463,8 +7780,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	.owl-dot
 		width: 8px
 		height: 8px
-		-webkit-border-radius: 50%
-		-moz-border-radius: 50%
 		border-radius: 50%
 		display: inline-block
 		vertical-align: middle
@@ -8501,9 +7816,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		bottom: 0
 		left: 0
 		right: 0
-		-webkit-transition: .3s
-		-o-transition: .3s
-		-moz-transition: .3s
 		transition: .3s
 		background: 0 0
 	&.active:after
@@ -8616,8 +7928,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		width: 30px
 		height: 30px
 		display: block
-		-webkit-border-radius: 50%
-		-moz-border-radius: 50%
 		border-radius: 50%
 		cursor: pointer
 		margin-bottom: 0
@@ -8626,8 +7936,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		content: ''
 		width: 10px
 		height: 10px
-		-webkit-border-radius: 50%
-		-moz-border-radius: 50%
 		border-radius: 50%
 		background: 0 0
 		position: absolute
@@ -8636,9 +7944,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		left: 0
 		right: 0
 		margin: auto
-		-webkit-transition: .3s
-		-o-transition: .3s
-		-moz-transition: .3s
 		transition: 0.3s
 	> :checked ~ label:before
 		background: #f7f7f7
@@ -8937,8 +8242,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			fill: #e6d197
 
 .product-details__status
-	-webkit-border-radius: 20px
-	-moz-border-radius: 20px
 	border-radius: 20px
 	display: inline-block
 	color: #fff
@@ -9079,10 +8382,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin-left: 3px
 	&.active
 		i:after, > a:after
-			-moz-transform: rotate(180deg)
-			-o-transform: rotate(180deg)
-			-ms-transform: rotate(180deg)
-			-webkit-transform: rotate(180deg)
 			transform: rotate(180deg)
 			top: 8px
 			border-bottom-color: #e3a3cc
@@ -9409,9 +8708,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		background: #fff
 		padding-left: 6px
 		padding-right: 6px
-		-webkit-transition: .3s
-		-o-transition: .3s
-		-moz-transition: .3s
 		transition: 0.3s
 
 .modal-form__input--w100
@@ -9448,9 +8744,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		height: 50px
 		border-radius: 3px
 		cursor: pointer
-		-webkit-transition: .3s
-		-o-transition: .3s
-		-moz-transition: .3s
 		transition: 0.3s
 		&:hover
 			opacity: 0.8
@@ -9465,8 +8758,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		font-size: 18px
 		font-family: Marmelad, sans-serif
 		color: #fff
-		background-position: -webkit-calc(100% - 20px) center
-		background-position: -moz-calc(100% - 20px) center
 		background-position: calc(100% - 20px) center
 		padding-left: 24px
 		padding-right: 50px
@@ -9478,8 +8769,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 .modal-form__right
 	padding-left: 25px
-	width: -webkit-calc(100% - 125px)
-	width: -moz-calc(100% - 125px)
 	width: calc(100% - 125px)
 	float: left
 	font-size: 16px
@@ -9755,13 +9044,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			margin-top: -4px
 			margin-right: 1px
 			margin-left: 5px
-			-webkit-background-size: contain
-			-moz-background-size: contain
-			-o-background-size: contain
 			background-size: contain
-			-webkit-transition: .3s
-			-o-transition: .3s
-			-moz-transition: .3s
 			transition: 0.3s
 		&:hover
 			color: #fff
@@ -9791,10 +9074,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		height: 13px
 
 .wishlist-page__info-row
-	-webkit-box-align: center
-	-webkit-align-items: center
-	-moz-box-align: center
-	-ms-flex-align: center
 	align-items: center
 
 @media screen and (max-width: 1200px)
@@ -9884,8 +9163,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	margin-top: 30px
 
 .feed-back-modal__decor-line
-	width: -webkit-calc(100% - 40px)
-	width: -moz-calc(100% - 40px)
 	width: calc(100% - 40px)
 	height: 1px
 	background: #e8e8e8
@@ -9925,9 +9202,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				float: right
 				position: relative
 				background: url(../images/icons/star-off.svg) no-repeat
-				-webkit-background-size: contain
-				-moz-background-size: contain
-				-o-background-size: contain
 				background-size: contain
 				margin-bottom: 0
 				cursor: pointer
@@ -9941,14 +9215,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 					width: 38px
 					height: 34px
 					background: url(../images/icons/star-on.svg) no-repeat
-					-webkit-background-size: contain
-					-moz-background-size: contain
-					-o-background-size: contain
 					background-size: contain
 					opacity: 0
-					-webkit-transition: opacity .2s linear
-					-o-transition: opacity .2s linear
-					-moz-transition: opacity .2s linear
 					transition: opacity 0.2s linear
 	&:not(:hover) > :checked ~ label:before
 		opacity: 1
@@ -9959,8 +9227,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 .modal-choose
 	max-width: 320px
 	.modal-content
-		-webkit-border-radius: 0
-		-moz-border-radius: 0
 		border-radius: 0
 	.modal-body
 		padding: 0
@@ -10063,8 +9329,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			width: 5px
 			height: 5px
 			margin: 0 1.5px
-			-webkit-border-radius: 50%
-			-moz-border-radius: 50%
 			border-radius: 50%
 			&:nth-child(1)
 				background: #e3a3cc
@@ -10217,9 +9481,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			background-color: #ccc
 			margin-left: 9px
 			vertical-align: middle
-			-webkit-transition: .3s
-			-o-transition: .3s
-			-moz-transition: .3s
 			transition: 0.3s
 		&:hover
 			color: #e3a3cc
@@ -10373,30 +9634,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		background: url(../images/icons/wait.svg) no-repeat
 		vertical-align: middle
 		margin-left: 5px
-		-webkit-animation-name: spin
-		-moz-animation-name: spin
-		-o-animation-name: spin
 		animation-name: spin
-		-webkit-animation-duration: 2s
-		-moz-animation-duration: 2s
-		-o-animation-duration: 2s
 		animation-duration: 2s
-		-webkit-animation-iteration-count: infinite
-		-moz-animation-iteration-count: infinite
-		-o-animation-iteration-count: infinite
 		animation-iteration-count: infinite
-		-webkit-animation-timing-function: linear
-		-moz-animation-timing-function: linear
-		-o-animation-timing-function: linear
 		animation-timing-function: linear
-		-webkit-animation-play-state: paused
-		-moz-animation-play-state: paused
-		-o-animation-play-state: paused
 		animation-play-state: paused
 	&.active:after
-		-webkit-animation-play-state: running
-		-moz-animation-play-state: running
-		-o-animation-play-state: running
 		animation-play-state: running
 	input
 		display: none
@@ -10450,9 +9693,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	margin-bottom: 12px
 	cursor: pointer
 	font-size: 14px
-	-webkit-user-select: none
-	-moz-user-select: none
-	-ms-user-select: none
 	user-select: none
 	color: #000
 
@@ -10487,9 +9727,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		background-color: transparent
 		border: 1px solid #b3b3b3
 		box-sizing: border-box
-		-webkit-transition: .3s
-		-o-transition: .3s
-		-moz-transition: .3s
 		transition: 0.3s
 		&:after
 			content: ""
@@ -10500,9 +9737,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			left: 0
 			right: 0
 			opacity: 0
-			-webkit-transition: .3s
-			-o-transition: .3s
-			-moz-transition: .3s
 			transition: 0.3s
 
 @media screen and (max-width: 1200px)
@@ -10930,9 +10164,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		i
 			width: 6px
 			height: 6px
-			-webkit-background-size: contain
-			-moz-background-size: contain
-			-o-background-size: contain
 			background-size: contain
 		span
 			font-size: 30px
@@ -11030,9 +10261,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		height: 10px
 		top: 5px
 		&:after
-			-webkit-background-size: 6px 6px
-			-moz-background-size: 6px
-			-o-background-size: 6px
 			background-size: 6px
 
 @media screen and (max-width: 1200px)
@@ -11096,9 +10324,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			width: 7px
 			height: 2px
 			background-color: #999
-			-webkit-transition: .3s
-			-o-transition: .3s
-			-moz-transition: .3s
 			transition: .3s
 			position: absolute
 			left: 2px
@@ -11219,9 +10444,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			left: 0
 			right: 0
 			margin: auto
-			-webkit-transition: .3s
-			-o-transition: .3s
-			-moz-transition: .3s
 			transition: 0.3s
 
 .order-products-buttons__comparison
@@ -11240,25 +10462,15 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	&:after
 		width: 12px
 		height: 10px
-		-webkit-mask: url(../images/icons/favorite-ico2.svg) no-repeat 100% 100%
-		mask: url(../images/icons/favorite-ico2.svg) no-repeat 100% 100%
-		-webkit-mask-size: cover
 		mask-size: cover
 		background-color: #d2d2d2
 	&.active:after
-		-webkit-transform: scale(1.25, 1.25)
-		-moz-transform: scale(1.25, 1.25)
-		-ms-transform: scale(1.25, 1.25)
-		-o-transform: scale(1.25, 1.25)
 		transform: scale(1.25, 1.25)
 		background-color: #e3a3cc
 
 .order-products-buttons__delete:after
 	width: 10px
 	height: 10px
-	-webkit-mask: url(../images/icons/close.svg) no-repeat 100% 100%
-	mask: url(../images/icons/close.svg) no-repeat 100% 100%
-	-webkit-mask-size: cover
 	mask-size: cover
 	background-color: #d2d2d2
 
@@ -11351,8 +10563,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	img
 		width: 178px
 		height: 178px
-		-webkit-border-radius: 50%
-		-moz-border-radius: 50%
 		border-radius: 50%
 
 .weight-item__button
@@ -11700,3 +10910,212 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				&.price
 					color: #000
 					font-size: 14px
+.payment-page
+	margin-bottom: 58px
+.stages__title
+	&.no-line
+		margin-top: 15px
+
+.payment-list
+	padding: 41px 35px 51px 43px
+	&__item
+		margin-bottom: 58px
+		overflow: visible
+		h4
+			font-size: 18px
+			margin-bottom: 5px
+			padding-top: 8px
+			color: #000
+		p
+			font-size: 14px
+			line-height: 24px
+	&__img
+		width: 90px
+		display: inline-block
+		float: left
+		margin-right: 20px
+	&__text
+		padding-left: 110px
+		.payment-list__form
+			float: right
+			padding-top: 33px
+			&.card-info
+				padding-top: 1px
+			form
+				display: flex
+			&.card-info
+				width: 100%
+				form
+					width: 100%
+					justify-content: space-between
+					input:nth-of-type(1)
+						width: 300px
+						
+					input:nth-of-type(2)
+						width: 200px
+
+			button
+				padding: 0 22px
+				height: 50px
+				background: #e3a3cc
+				font-size: 16px
+				color: #fff
+				transition: all 0.3s
+				&:hover, &:active, &:focus
+					outline: none
+					background: #edb9da
+				&.half-bor-rad
+					border-top-right-radius: 3px
+					border-bottom-right-radius: 3px
+				&.full-bor-rad
+					border-radius: 3px
+					text-align: center
+					margin-left: 35px
+					img
+						margin-left: 10px
+				img
+					width: 16px
+					display: inline-block
+					position: relative
+					top: -1px
+			label
+				background: #fcfcfc
+				border-radius: 3px
+				border: 1px solid #e6e6e6
+				height: 50px
+				padding: 0 13px
+				color: #7E7E7E
+				line-height: 48px
+				font-size: 16px
+				cursor: pointer
+				transition: all 0.3s 
+				position: relative
+				&:hover
+					background: #f1f1f1
+				&:hover .toolbox
+					display: block
+					opacity: 1
+				img
+					width: 20px
+					display: inline-block
+					margin-left: 4px
+				.toolbox
+					position: absolute
+					top: 55px
+					left: 50%
+					font-size: 12px
+					border-radius: 2px
+					border: 1px solid #e9e9e9
+					white-space: nowrap
+					padding: 0 18px
+					text-align: center
+					display: none
+					opacity: 0
+					transition: all 0.3s
+					height: 36px
+					line-height: 34px
+					transform: translate(-50%)
+					&:after
+						content: ""
+						border: 5px solid transparent
+						border-top: 0
+						border-bottom-color: #fff
+						position: absolute
+						top: -5px
+						left: 50%
+						transform: translate(-50%)
+						z-index: 10
+					&:before
+						content: ""
+						border: 7px solid transparent
+						border-top: 0
+						border-bottom-color: #e9e9e9
+						position: absolute
+						top: -7px
+						left: 50%
+						transform: translate(-50%)
+						z-index: 9
+
+
+
+			input
+				width: 218px
+				padding-left: 22px
+				font-size: 16px
+				height: 50px
+				border: 1px solid #e6e6e6
+				&#card-file
+					display: none
+				&.no-right-border
+					border-width: 1px 0 1px 1px
+				&.half-bor-rad
+					border-top-right-radius: 3px
+					border-bottom-right-radius: 3px
+
+.order-page.with-subscribe
+	padding-bottom: 0
+.footer.under-subscribe
+	margin-top: 0
+.subscribe
+	background: #ecc2ec
+	height: 140px
+	padding-right: 25px
+	&__form
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		padding-top: 47px
+		input
+			width: 208px
+			height: 45px
+			background: #d5d0f2
+			padding-left: 19px
+			color: #fff
+			&::-webkit-input-placeholder
+				color: #fff!important
+			&::-moz-placeholder
+				color: #fff!important
+			&:-moz-placeholder
+				color: #fff!important
+			&:-ms-input-placeholder
+				color: #fff!important
+		button
+			height: 45px
+			width: 60px
+			background: #fff
+			text-align: center
+			&.half-bor-rad
+				border-top-right-radius: 3px
+				border-bottom-right-radius: 3px
+			img
+				width: 16px
+				display: inline-block
+				position: relative
+				top: -1px
+	&__text
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 45px 24px
+		p 
+			font-size: 13px
+			line-height: 18px
+			color: #fff
+			margin-bottom: 0
+			margin-top: 5px
+			padding-right: 18px
+
+.news-head
+	font-family: 'Marmelad'
+	font-size: 45px
+	line-height: 45px
+	color: #fff
+	margin-right: 21px
+
+.subscribe-bag
+	position: absolute
+	top: -116px
+	left: 99px
+	width: 158px
+
