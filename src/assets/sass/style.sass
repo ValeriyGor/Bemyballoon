@@ -10915,6 +10915,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 .stages__title
 	&.no-line
 		margin-top: 15px
+		&-transition
+			margin-top: 5px
 
 .payment-list
 	padding: 41px 35px 51px 43px
@@ -11118,4 +11120,318 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	top: -116px
 	left: 99px
 	width: 158px
+
+.account
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 14px 0 14px 18px
+	margin-top: 1px
+	margin-bottom: 30px
+	&>div
+		display: flex
+	&__prof
+		align-items: center
+		img
+			margin-right: 19px
+		span
+			font-size: 16px
+	.social-link
+		margin-top: 0
+		a
+			position: relative
+			.tooltips
+				height: 36px
+				position: absolute
+				top: -38px
+				left: 0	
+				transform: translate(-42%)
+				border: 1px solid #e9e9e9
+				color: #737373
+				display: none
+				line-height: 34px
+				border-radius: 3px
+				padding: 0 11px
+				font-size: 13px
+				background-color: #fff
+				box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.08)
+				white-space: nowrap
+				&:after
+					content: ""
+					border: 5px solid transparent
+					border-bottom: 0
+					border-top-color: #fff
+					position: absolute
+					bottom: -5px
+					left: 50%
+					transform: translate(-50%)
+					z-index: 10
+				&:before
+					content: ""
+					border: 7px solid transparent
+					border-bottom: 0
+					border-top-color: #e9e9e9
+					position: absolute
+					bottom: -7px
+					left: 50%
+					transform: translate(-50%)
+					z-index: 9
+			&:hover .tooltips
+				display: block
+
+
+		a:nth-of-type(1)
+			background-color: #23599b
+			&:hover
+				background-color: #4575b1
+		a:nth-of-type(2)
+			img
+				width: 18px
+			background-color: #fd4233
+			&:hover
+				background-color: #ff5c4f
+		a:nth-of-type(5)
+			img
+				width: 22px
+			background-color: #0ad55e
+			&:hover
+				background-color: #34e17c
+	.socki
+		align-items: center
+		span
+			margin-right: 18px	
+
+.transaction
+	&__list
+		&__item
+			padding: 19px 43px 7px
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+			border-bottom: 1px solid #e8e8e8
+			&:last-child
+				border-bottom: none
+
+	&__text
+		h3
+			font-size: 24px
+			color: #000
+			span
+				color: #999
+		p 
+			color: #000
+			span
+				color: #999
+	&__price
+		padding-right: 45px
+		padding-top: 7px
+		span
+			font-family: "Marmelad"
+			font-size: 24px
+			display: block
+			margin-bottom: 8px
+			text-align: center
+			color: #000
+		a
+			font-size: 12px
+			color: #999
+			transition: all 0.3s 
+			&:hover
+				color: #7b7b7b
+				text-decoration: none
+			img
+				margin: 0 6px 0 4px
+				display: inline-block
+				width: 12px
+
+.you-want
+	margin: 20px 0 30px
+	height: 60px
+	border: 1px solid #e8e8e8
+	border-radius: 3px
+	display: flex
+	position: relative
+	align-items: center
+	justify-content: flex-start
+	padding-left: 24px
+	.phone-ico
+		width: 20px
+		margin-right: 13px 
+	p 
+		margin-bottom: 0
+		color: #000
+		span
+			color: #df91c3
+	.close-block
+		position: absolute
+		right: 19px
+		top: 50%
+		transform: translateY(-50%)
+		cursor: pointer
+
+.history-list
+	&__item
+		padding: 20px 40px 19px
+		border-left: 3px solid #9ddfd1
+		transition: all 0.3s
+		border-bottom: 1px solid #e8e8e8
+		&:last-child
+			border-bottom: none
+		&:hover
+			border-left: 3px solid #e3a3cc
+		&.canceled
+			.renew, .cancel
+				display: block
+		&.delivered
+			.deliv
+				display: block
+	&__info-general
+		margin-bottom: 8px
+		span
+			font-size: 12px
+			color: #999
+			margin-right: 30px
+	&__descript
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&__text
+		h3
+			font-size: 24px
+			color: #000
+			margin-bottom: 8px
+		ul
+			margin-bottom: 3px
+			&.toggled
+				height: 52px
+				overflow: hidden
+		&.open
+			ul
+				&.toggled
+					height: auto
+
+		li
+			color: #000
+			line-height: 26px
+			&:before
+				content: ""
+				background-color: #b7b7b7
+				height: 1px
+				width: 8px
+				margin-right: 8px
+				vertical-align: middle
+				display: inline-block
+		.button-open-list
+			padding-left: 16px
+			color: #e3a3cc
+			cursor: pointer
+			transition: all 0.3s
+			margin-bottom: 0
+			&:hover
+				color: #f4c5e3
+	&__price
+		display: flex
+		padding-right: 55px
+		align-items: center
+		justify-content: flex-end
+		span
+			font-size: 24px
+			font-family: 'Marmelad'
+			margin-left: 20px
+			color: #000
+			line-height: 35px
+			min-width: 51px
+		.renew
+			font-size: 14px
+			background-color: #fcfcfc
+			height: 35px
+			border: 1px solid #e6e6e6
+			border-radius: 3px
+			padding: 0 17px
+			margin-left: 17px
+			line-height: 32px
+			display: none
+			color: #000
+			&:hover
+				text-decoration: none
+		.cancel
+			color: #999
+			font-size: 13px
+			line-height: 35px
+			display: none
+			img
+				display: inline-block
+				width: 14px
+				margin-left: 3px
+		.deliv
+			color: #999
+			display: none
+			img
+				display: inline-block
+				width: 16px
+				margin-left: 2px
+
+.refund
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	padding-top: 75px
+	padding-bottom: 71px
+	&__text
+		flex: 4
+		padding-left: 102px
+		h4
+			font-size: 18px
+			line-height: 20px
+			font-weight: 600
+			color: #000
+		p
+			line-height: 26px
+			margin-top: 10px
+			color: #000
+			max-width: 280px
+	&__form
+		flex: 5
+		padding-right: 100px
+		margin-left: 12px
+		input
+			display: block
+			margin-bottom: 15px
+			width: 100%
+			padding-left: 20px
+			height: 45px
+			border: 1px solid #e6e6e6
+			&::-webkit-input-placeholder
+				color: #585858
+			&::-moz-placeholder
+				color: #585858
+			&:-moz-placeholder
+				color: #585858
+			&:-ms-input-placeholder
+				color: #585858
+		label
+			display: flex
+			justify-content: space-between
+			select
+				width: 216px
+				border: 1px solid #e6e6e6
+				border-radius: 3px
+				outline: none
+				padding-left: 19px
+				-webkit-appearance: none		
+				-moz-appearance: none		
+				appearance: none	
+				background: #fcfcfc url("../images/icons/arrow-down.png") right 15px center no-repeat
+				background-size: 9px
+
+			button
+				width: 135px
+				background-color: #e3a3cc
+				color: #fff	
+				height: 45px
+				margin-left: 10px
+				img
+					display: inline-block
+					width: 16px
+					margin-left: 5px
 
