@@ -299,9 +299,18 @@
 								    	</div>
 								    	<div class="tabs__form">
 								    		<form action="#">
-								    			<input type="text" class="name" placeholder="Enter your full name">
-								    			<input type="text" class="email" placeholder="Enter your e-mail">
-								    			<input type="text" class="phone" placeholder="Enter your phone">
+								    			<div class="form-item">
+													<input type="text" class="form-input name" required>
+													<label class="form-label">Enter your full name</label>
+												</div>
+								    			<div class="form-item">
+													<input type="text" class="form-input email" required>
+													<label class="form-label">Enter your e-mail</label>
+												</div>
+								    			<div class="form-item">
+													<input type="text" class="form-input phone" required>
+													<label class="form-label">Enter your phone</label>
+												</div>								    			
 								    			<button>Send code <img src="assets/images/icons/send-button.png" alt=""></button>
 								    		</form>
 								    	</div>
@@ -320,9 +329,18 @@
 								    	</div>
 								    	<div class="tabs__form">
 								    		<form action="#">
-								    			<input type="text" class="name" placeholder="Enter your full name">
-								    			<input type="password" class="pass" placeholder="Enter your pass">
-								    			<input type="text" class="phone" placeholder="Enter your phone">
+								    			<div class="form-item">
+													<input type="text" class="form-input name" required>
+													<label class="form-label">Enter your full name</label>
+												</div>
+								    			<div class="form-item">
+								    				<input type="password" class="form-input pass" required>
+													<label class="form-label">Enter your pass</label>
+												</div>
+								    			<div class="form-item">
+													<input type="text" class="form-input phone" required>
+													<label class="form-label">Enter your phone</label>
+												</div>		
 								    			<button>Send code <img src="assets/images/icons/send-button.png" alt=""></button>
 								    		</form>
 								    	</div>							    	
@@ -334,10 +352,10 @@
 							<div class="stages">
 								<p class="stages__title">Stages</p>
 								<ul>
-									<li class="active"><a href="#">Shopping cart</a></li>
-									<li><a href="#">Fil in the form</a></li>
-									<li><a href="#">Delivery</a></li>
-									<li><a href="#">Payment</a></li>
+									<li><a href="order.html">Shopping cart</a></li>
+									<li class="active"><span>Fil in the form</span></li>
+									<li><a href="#" class="disabled">Delivery</a></li>
+									<li><a href="#" class="disabled">Payment</a></li>
 								</ul>
 							</div>
 							<div class="order-page__help">

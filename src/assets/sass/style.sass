@@ -10331,12 +10331,22 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			bottom: 0
 			margin: auto
 		a
-			color: #999
+			color: #000
+			&.disabled
+				color: #999
+				pointer-events: none
+				cursor: default
+				&:hover
+					color: #999
+		span
+			color: #e3a3cc
 		&.active:after, &:hover:after
 			background-color: #e3a3cc
 		&.active a, &:hover a
 			color: #e3a3cc
 			text-decoration: none
+		&:hover a.disabled
+			color: #999
 
 @media screen and (max-width: 1200px)
 	.stages ul
@@ -10694,77 +10704,110 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 #tabs-wrap
 	background: #fff
-	.tabs
-		display: flex
-		padding: 50px 100px 52px
-		h3
-			font-size: 19px
-			color: #000		
-			line-height: 24px
-		p
-			color: #000
-			margin-top: 13px
-			line-height: 24px
-			margin-bottom: 5px
-			padding-right: 30px
-		span
-			display: block
-			line-height: 26px
-			margin-left: 1px
-			color: #000	
-			&:before
-				display: inline-block
-				width: 7px
-				height: 1px
-				background: #6b6b6b
-				content: ""
-				vertical-align: middle
-				margin-right: 8px
-		&__text
-			flex: 4
+.tabs
+	display: flex
+	padding: 50px 100px 52px
+	h3
+		font-size: 19px
+		color: #000		
+		line-height: 24px
+	p
+		color: #000
+		margin-top: 13px
+		line-height: 24px
+		margin-bottom: 5px
+		padding-right: 30px
+	span
+		display: block
+		line-height: 26px
+		margin-left: 1px
+		color: #000	
+		&:before
+			display: inline-block
+			width: 7px
+			height: 1px
+			background: #6b6b6b
+			content: ""
+			vertical-align: middle
 			margin-right: 8px
-		&__form
-			flex: 5
-			input
-				height: 45px
-				width: 100%
-				margin-bottom: 15px	
-				border: 1px solid #e6e6e6
-				background: #fff
-				border-radius: 3px
-				font-size: 14px
-				padding-left: 51px
-				&::-webkit-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &:-ms-input-placeholder
-					color: #575757
-				&.name
-					background: url('../images/icons/user-icon.png') center left 16px no-repeat
-					background-size: 20px
-				&.email
-					background: url('../images/icons/mail-icon.png') center left 15px no-repeat
-					background-size: 22px
-				&.phone
-					background: url('../images/icons/phone-icon.png') center left 15px no-repeat
-					background-size: 21px
-				&.pass
-					background: url('../images/icons/pass-icon.png') center left 17px no-repeat
-					background-size: 16px
+	&__text
+		flex: 4
+		margin-right: 8px
+	&__form
+		flex: 5
+		input
+			height: 45px
+			width: 100%
+			margin-bottom: 15px	
+			border: 1px solid #e6e6e6
+			background: #fff
+			border-radius: 3px
+			font-size: 14px
+			padding-left: 51px
+			&::-webkit-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &:-ms-input-placeholder
+				color: #575757
+			&.name
+				background: url('../images/icons/ic_user_input.svg') center left 16px no-repeat
+				background-size: 20px
+			&.email
+				background: url('../images/icons/ic_email.svg') center left 15px no-repeat
+				background-size: 22px
+			&.phone
+				background: url('../images/icons/ic_call.svg') center left 15px no-repeat
+				background-size: 21px
+			&.pass
+				background: url('../images/icons/ic_password.svg') center left 17px no-repeat
+				background-size: 16px
 
-			button
-				width: 100%
-				height: 45px
-				background: #e3a3cc
-				color: #fff
-				font-size: 16px
-				transition: all 0.3s
-				&:hover
-					background: #eeb7da
-				img
-					display: inline-block
-					width: 16px
-					position: relative
-					top: -2px
-					margin-left: 6px
-					vertical-align: middle
+		button
+			width: 100%
+			height: 45px
+			background: #e3a3cc
+			color: #fff
+			font-size: 16px
+			transition: all 0.3s
+			&:hover
+				background: #eeb7da
+			img
+				display: inline-block
+				width: 16px
+				position: relative
+				top: -2px
+				margin-left: 6px
+				vertical-align: middle
+.order-list
+	margin-top: 19px
+	.history-list
+		border-top: 1px solid #e8e8e8
+		border-bottom: 1px solid #e8e8e8
+		margin-left: -1px
+	.you-want
+		margin-bottom: 0
+		border-width: 1px 0 0
+
+.form-item
+	display: block
+	vertical-align: top
+	position: relative
+.form-label
+	position: absolute
+	pointer-events: none
+	left: 45px
+	padding: 0 6px
+	top: 15px
+	line-height: 15px
+	transition: .3s
+	color: #585858
+	background-color: #fff
+	font-size: 14px
+.form-input
+	&:focus ~ .form-label, &:not(:focus):valid ~ .form-label
+		top: -6px
+		font-size: 12px
+		color: #e3a3cc
+		line-height: 12px
+	&:focus ~ label
+		color: #e3a3cc
 .tabs-container
 	margin-top: 30px	
 	border: 1px solid #e8e8e8
@@ -11211,7 +11254,9 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			border-bottom: 1px solid #e8e8e8
 			&:last-child
 				border-bottom: none
-
+			&:hover
+				.transaction__price a 
+					opacity: 1
 	&__text
 		h3
 			font-size: 24px
@@ -11236,6 +11281,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			font-size: 12px
 			color: #999
 			transition: all 0.3s 
+			opacity: 0
 			&:hover
 				color: #7b7b7b
 				text-decoration: none
@@ -11271,19 +11317,26 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 .history-list
 	&__item
-		padding: 20px 40px 19px
+		padding: 20px 40px
 		border-left: 3px solid #9ddfd1
 		transition: all 0.3s
 		border-bottom: 1px solid #e8e8e8
 		&:last-child
 			border-bottom: none
-		&:hover
-			border-left: 3px solid #e3a3cc
 		&.canceled
+			border-left: 3px solid #e3a3cc
 			.renew, .cancel
 				display: block
 		&.delivered
 			.deliv
+				display: block
+		&.issued
+			border-left: 3px solid #e5cb87
+			.issd
+				display: block
+		&.processed
+			border-left: 3px solid #e3a3cc
+			.prcss
 				display: block
 	&__info-general
 		margin-bottom: 8px
@@ -11370,6 +11423,20 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				display: inline-block
 				width: 16px
 				margin-left: 2px
+		.issd
+			color: #999
+			display: none
+			img
+				display: inline-block
+				width: 16px
+				margin-left: 2px
+		.prcss
+			color: #999
+			display: none
+			img
+				display: inline-block
+				width: 16px
+				margin-left: 2px
 
 .refund
 	display: flex
@@ -11435,3 +11502,347 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 					width: 16px
 					margin-left: 5px
 
+.profile
+	&__info
+		padding: 25px 0 0 39px
+	&__item
+		display: flex
+		align-items: center
+		&-name
+			flex: 1
+			display: flex
+			align-items: center
+			margin-right: 73px
+			&-img
+				height: 40px
+				width: 40px
+				border: 1px solid #e4e4e4
+				border-radius: 50%
+				text-align: center
+				display: flex
+				margin-right: 15px
+				position: relative
+				z-index: 8
+				img
+					margin: auto
+			&-title-img
+				color: #999
+		&-title
+			flex: 3
+			padding-top: 14px
+			padding-bottom: 14px
+			border-bottom: 1px solid #f0f0f0
+			min-height: 69px
+			&.edit-name
+				display: flex
+				align-items: center
+				justify-content: space-between
+				label
+					flex: 1
+					margin-right: 10px
+					&:last-child
+						margin-right: 0
+			label
+				margin-bottom: 0
+				width: 100%
+			&.birthday-date
+				display: flex
+				align-items: center
+				justify-content: space-between
+				label
+					&:nth-of-type(1)
+						width: 70px
+					&:nth-of-type(2)
+						width: 265px
+					&:nth-of-type(3)
+						width: 112px
+			input
+				border: 1px solid #e8e8e8
+				background-color: #fff
+				border-radius: 3px
+				height: 40px
+				padding-left: 15px
+				width: 100%
+				background-color: #fff
+			p
+				margin-bottom: 0
+				font-size: 16px
+				line-height: 40px
+				color: #000
+				&.pass-word
+					font-size: 28px
+					letter-spacing: 6px
+			&.gender-edit
+				display: flex
+				input
+					display: none
+
+			.gender-trigger
+				height: 40px
+				width: 50%
+				line-height: 38px
+				cursor: pointer
+				background-color: #fff
+				border: 1px solid #e8e8e8
+				color: #999
+				text-align: center
+				transition: all 0.3s
+				&.active, &:hover
+					color: #e3a3cc
+					background-color: #fcfcfc
+				&:nth-of-type(1)
+					border-top-left-radius: 3px
+					border-bottom-left-radius: 3px
+				&:nth-of-type(2)
+					border-top-right-radius: 3px
+					border-bottom-right-radius: 3px
+			&.width-padd 
+				padding-left: 14px
+			&.sm-txt
+				p
+					font-size: 14px
+			#photo-profile
+				display: none
+			.update-photo, .delete-photo
+				color: #e3a3cc
+				font-size: 14px
+				margin-bottom: 0
+				line-height: 40px
+				margin-right: 40px
+				transition: all 0.3s
+				width: auto
+				&:hover
+					color: #cb78ad
+					transition: all 0.3s
+					cursor: pointer
+				img
+					display: inline-block
+					width: 18px
+					margin-right: 5px
+					vertical-align: sub
+	&__edit
+		margin-top: 21px
+		background-color: #fcfcfc
+		border-top: 1px solid #f0f0f0
+		.buttons-edit
+			background-color: #fff
+			padding: 33px 0
+			display: flex
+			align-items: center
+			justify-content: center
+			text-align: center
+			.cancel-edit, .save-edit
+				height: 45px
+				border-radius: 3px
+				width: 210px
+				margin: 0 5px
+				line-height: 42px
+				font-size: 16px
+			.cancel-edit
+				border-radius: 3px 
+				border: 1px solid #e6e6e6
+				background: #fff
+				color: #000
+				transition: all 0.3s
+				cursor: pointer
+				&:hover
+					color: #222
+					background-color: #f8f8f8
+			.save-edit
+				background: #e3a3cc
+				color: #fff
+
+
+		.profile__item
+			border-bottom: 1px solid #f0f0f0
+			padding: 0 100px 0 38px
+			&.flex-start
+				align-items: flex-start
+				.profile__item-name
+					padding-top: 16px
+					align-items: flex-start
+					span
+						line-height: 40px
+			&-name
+				flex: 2
+			&-title
+				flex: 5
+				border-bottom: 0
+				&-img
+					.helping-text
+						position: relative
+						display: block
+						margin-top: 10px
+						font-size: 12px
+						margin-left: -15px
+						display: none
+						line-height: 40px 
+						&:before
+							position: absolute
+							content: ""
+							top: 15px
+							left: -24px
+							height: 9px
+							width: 9px
+							background-color: #e0e0e0
+							display: block
+							border-radius: 50%
+						&:after
+							content: ""
+							bottom: 30px
+							height: 50px
+							width: 1px
+							left: -20px
+							background-color: #e0e0e0
+							display: block
+							position: absolute
+							bottom: 21px
+							z-index: 2
+
+
+
+
+			&-name-img
+				background-color: #e0e0e0
+
+			.update-photo
+				height: 40px
+				border: 1px solid #e8e8e8
+				background-color: #fff
+				border-radius: 3px
+				padding: 0 17px
+				margin-right: 10px
+			.delete-photo
+				margin-right: 0
+			.upload-photo
+				display: flex
+				align-items: center
+				justify-content: space-between
+				span.recomend
+					font-size: 12px
+					max-width: 115px
+					line-height: 16px
+					color: #999
+					margin-right: 80px
+		.add-address
+			color: #000
+			transition: all 0.3s
+			font-size: 14px
+			line-height: 32px
+			cursor: pointer
+			display: inline-block
+			&-info
+				input
+					margin-bottom: 12px
+			img
+				width: 13px
+				display: inline-block
+				margin: 0 6px
+			&:hover
+				color: #e3a3cc
+	.edit-profile
+		display: block
+		margin: 24px auto 25px
+		background: #fcfcfc
+		border: 1px solid #e6e6e6
+		border-radius: 3px
+		height: 45px
+		line-height: 42px
+		font-size: 16px
+		transition: all 0.3s
+		text-align: center
+		color: #000
+		max-width: 210px
+		cursor: pointer
+		&:hover
+			text-decoration: none
+			background: #efefef
+
+	&__edit, &__info
+		display: none
+		&.actives
+			display: block
+
+
+//select
+
+div.fancy-select
+	position: relative
+	font-size: 14px
+	color: #000
+	&.disabled
+		opacity: 0.5
+	select:focus + div.trigger
+		&.open
+			box-shadow: none
+	div.trigger
+		border-radius: 4px
+		cursor: pointer
+		padding: 9px 24px 9px 14px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		position: relative
+		background: #fff
+		border: 1px solid #e8e8e8
+		color: #000
+		min-width: 100%
+		height: 40px
+		transition: all 240ms ease-out
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			width: 0
+			height: 0
+			border: 4px solid transparent
+			border-top-color: #b2b2b2
+			top: 17px
+			right: 11px
+		&.open
+			background: #fff
+			border: 1px solid #e8e8e8
+			color: #000
+			box-shadow: none 
+			&:after
+				border-top-color: #7A8498
+	ul.options
+		list-style: none
+		margin: 0
+		position: absolute
+		top: 40px
+		left: 0
+		visibility: hidden
+		opacity: 0
+		z-index: 50
+		max-height: 200px
+		overflow: auto
+		background: #fff
+		border-radius: 3px
+		border: 1px solid #e8e8e8
+		min-width: 100%
+		transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out
+		&.open
+			visibility: visible
+			top: 40px
+			opacity: 1
+			transition: opacity 300ms ease-out, top 300ms ease-out
+		&.overflowing
+			top: auto
+			bottom: 40px
+			transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out
+			&.open
+				top: auto
+				bottom: 40px
+				transition: opacity 300ms ease-out, bottom 300ms ease-out
+		li
+			padding: 8px 12px
+			color: #000
+			cursor: pointer
+			white-space: nowrap
+			transition: all 150ms ease-out
+			&.selected
+				background: #e8e8e8
+				color: #222
+			&.hover
+				color: #222
