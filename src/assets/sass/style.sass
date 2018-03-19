@@ -1314,6 +1314,7 @@ main
 					transition: all 0.5s
 					svg path
 						fill: #ddd !important
+						transition: all 0.3s
 					&:hover svg path
 						fill: #fc9dd9 !important
 	.footer__copy
@@ -11714,6 +11715,16 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		.profile__item
 			border-bottom: 1px solid #f0f0f0
 			padding: 0 100px 0 38px
+			position: relative
+			&.verified:after
+				content: ""
+				position: absolute
+				background: url('../images/icons/che.png') center no-repeat
+				height: 16px
+				width: 16px
+				background-size: 16px
+				top: 27px
+				right: 67px
 			&.flex-start
 				align-items: flex-start
 				.profile__item-name
@@ -12178,7 +12189,7 @@ div.fancy-select
 		&__item
 			padding: 6px 22px 9px
 			border-left-width: 2px
-			&.canceled
+			&.canceled, &.processed, &.issued
 				border-left-width: 2px
 		&__info-general 
 			margin-bottom: 2px
@@ -12214,7 +12225,7 @@ div.fancy-select
 				height: 25px
 				padding: 0 10px
 				margin-left: 11px
-			.cancel, .deliv
+			.cancel, .deliv, .prcss, .issd
 				font-size: 9px
 				line-height: 22px
 				img
@@ -12328,3 +12339,143 @@ div.fancy-select
 						li
 							padding: 4px 10px
 							font-size: 10px
+	.profile
+		&__item
+			&-name
+				margin-right: 40px
+				&-img
+					width: 25px
+					height: 25px
+					margin-right: 7px
+					img
+						max-width: 9px
+			&-title
+				padding-top: 5px
+				padding-bottom: 6px
+				min-height: 42px
+				.gender-trigger
+					height: 30px
+					line-height: 28px
+					font-size: 10px
+				input
+					height: 30px
+					padding-left: 8px
+					font-size: 10px
+				&.birthday-date 
+					label:first-of-type
+						width: 43px
+					label:nth-of-type(2)
+						width: 163px
+					label:nth-of-type(3)
+						width: 68px
+				&.sm-txt 
+					p
+						font-size: 10px
+				&.width-padd
+					padding-left: 7px
+				.update-photo, .delete-photo
+					font-size: 9px
+					line-height: 32px
+					margin-right: 18px
+					img
+						width: 10px
+				&-img
+					font-size: 9px
+				p 
+					font-size: 10px
+					line-height: 30px
+					&.pass-word
+						font-size: 14px
+						letter-spacing: 3px
+				&.verified:after, &.verify:after
+					font-size: 9px
+					top: 10px
+					right: 18px
+					padding-right: 15px
+					background-size: 10px
+		&__info
+			padding: 16px 0 0 22px
+		.edit-profile
+			height: 30px
+			margin: 13px auto
+			max-width: 130px
+			line-height: 28px
+			font-size: 12px
+			transform: translateX(-15px)
+		&__edit
+			margin-top: 11px
+			.profile__item
+				padding: 0 68px 0 21px
+				&.verified:after
+					height: 10px
+					width: 10px
+					top: 16px
+					right: 46px
+					background-size: 10px
+				.delete-photo, .delete-photo
+					font-size: 9px
+					line-height: 28px 
+				.update-photo
+					height: 30px
+					line-height: 28px
+					margin-right: 8px
+					padding: 0 10px
+				.upload-photo
+					span.recomend
+						font-size: 9px
+						max-width: 85px
+						line-height: 12px
+						margin-right: 30px
+				&.flex-start 
+					.profile__item-name
+						padding-top: 8px
+						span
+							line-height: 25px
+				.add-address-info 
+					input
+						margin-bottom: 10px
+				&-title-img
+					.helping-text
+						margin-top: 10px
+						font-size: 9px
+						margin-left: -9px
+						line-height: 30px
+						&:before
+							top: 12px
+							left: -13px
+							height: 5px
+							width: 5px
+						&:after
+							height: 45px
+							left: -11px
+							bottom: 16px
+			.add-address
+				font-size: 10px
+				line-height: 22px
+				img
+					margin: 0 5px 0 11px
+					width: 9px
+			.buttons-edit
+				padding: 15px 0
+				.save-edit, .cancel-edit
+					font-size: 12px
+					line-height: 28px
+					margin: 0 4px
+					height: 30px
+					width: 128px
+	
+	div.fancy-select 
+		div.trigger
+			height: 30px
+			font-size: 10px
+			line-height: 10px
+			padding: 9px 10px 9px 8px
+			&:after
+				top: 14px
+				right: 9px
+				border: 3px solid transparent
+				border-top-color: #b2b2b2
+		ul.options 
+			li
+				font-size: 10px
+				padding: 4px 6px

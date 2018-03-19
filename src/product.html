@@ -69,7 +69,7 @@
             <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Instant payment</a></li></ul>
+            <li class="nav-item"><a class="nav-link inst-pay" href="#">Instant payment</a></li></ul>
             <ul class="join-menu">
               <li class="join-menu__items join-menu__home"><a href="#">Home</a></li>
               <li class="join-menu__items"><a href="#">Balloons</a></li>
@@ -777,6 +777,36 @@
         </div>
       </div>
     </footer>
+    <div class="modal fade" id="instantpayment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog by-one-click-modal" role="document">
+        <div class="modal-content">
+          <button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+          <div class="modal-body">
+            <h2 class="by-one-click-modal__title">Instant paymant</h2>
+
+            <div class="by-one-click-modal__message">
+              <p>You can change the currency of payment:</p>
+            </div>            
+            <div class="by-one-click-modal__form">
+              <form class="modal-form">
+                <div class="modal-form__input modal-form__input--phone">
+                  <label>Enter your phone</label>
+                  <input type="text">
+                </div>
+                <div class="modal-form__input modal-form__input--mail">
+                  <label>Enter your mail</label>
+                  <input type="text">
+                </div>
+                <div class="modal-form__send">
+                  <input type="submit">
+                </div>
+              </form>
+            </div>
+            <p>After making a payment to the specified phone number, a message with a unique payment ID will be sent. Please save it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="modal fade" id="one-click" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog by-one-click-modal" role="document">
         <div class="modal-content">
@@ -816,6 +846,7 @@
         </div>
       </div>
     </div>
+    <!--modal feedback-->
     <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog feed-back-modal" role="document">
         <div class="modal-content">
@@ -862,6 +893,7 @@
         </div>
       </div>
     </div>
+
     <div class="modal fade" id="choose-size" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-choose" role="document">
         <div class="modal-content">
