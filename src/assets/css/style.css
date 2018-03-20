@@ -8420,16 +8420,237 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
     line-height: 13px;
     margin-bottom: 28px; } }
 
+.tab-f2 {
+  display: none; }
+
+#special-offer .by-one-click-modal {
+  max-width: 864px !important; }
+  #special-offer .by-one-click-modal__form {
+    margin-top: 24px; }
+  #special-offer .by-one-click-modal .modal-content {
+    background: url("../images/content/left-form-bg.png") top left no-repeat, #fff url("../images/content/right-form-bg.png") top right no-repeat; }
+  #special-offer .by-one-click-modal .modal-body {
+    padding: 30px 85px; }
+
+#special-offer .modal-form__input {
+  width: 59%; }
+
+#special-offer .modal-form__send {
+  width: 37%; }
+  #special-offer .modal-form__send button {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e3a3cc; }
+
+#special-offer p.title-foot {
+  font-size: 13px;
+  margin-top: 26px;
+  margin-bottom: 32px;
+  color: #a1a1a1; }
+
+.tabs-header {
+  display: flex; }
+  .tabs-header div {
+    flex: 1;
+    height: 45px;
+    line-height: 43px;
+    text-align: center;
+    font-size: 16px;
+    color: #737373;
+    transition: all 0.3s;
+    border-style: solid;
+    cursor: pointer;
+    border-color: #e6e6e6; }
+    .tabs-header div:first-child {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      border-width: 1px 0 1px 1px; }
+    .tabs-header div:last-child {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-width: 1px 1px 1px 0; }
+    .tabs-header div:hover {
+      background-color: #e4ccdb; }
+    .tabs-header div.active {
+      background-color: #e3a3cc;
+      color: #fff;
+      border-color: #e3a3cc;
+      position: relative; }
+      .tabs-header div.active:after {
+        content: "";
+        position: absolute;
+        top: 44px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-top-color: #e3a3cc; }
+
+#sign-in .by-one-click-modal {
+  max-width: 436px !important; }
+  #sign-in .by-one-click-modal .modal-body {
+    padding: 30px 62px 47px; }
+  #sign-in .by-one-click-modal__form {
+    margin-top: 24px; }
+
+#sign-in .modal-form {
+  margin-bottom: 30px; }
+  #sign-in .modal-form__input--pass {
+    background: url(../images/icons/pass-icon.png) 20px no-repeat;
+    background-size: 16px; }
+
+#sign-in .modal-form__input {
+  margin-bottom: 24px;
+  margin-right: 0;
+  width: 100%; }
+
+#sign-in .modal-form__send {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #sign-in .modal-form__send button {
+    width: 120px;
+    height: 45px;
+    font-size: 18px;
+    color: #fff;
+    background: #e3a3cc; }
+    #sign-in .modal-form__send button img {
+      display: inline-block;
+      width: 16px; }
+  #sign-in .modal-form__send .frgt-pass {
+    font-size: 14px;
+    color: #585858;
+    border-bottom: 1px solid #e3a3cc;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 5px; }
+
+#sign-in .loginsocial p {
+  font-size: 16px;
+  color: #585858;
+  margin-top: 22px; }
+
+#sign-in .footer-modal-link a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #686868;
+  font-size: 16px;
+  height: 60px;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  padding: 0 25px;
+  margin-top: 30px; }
+  #sign-in .footer-modal-link a img {
+    width: 24px; }
+
+.line-modal {
+  height: 1px;
+  width: 75%;
+  margin: 0 auto;
+  background-color: #e8e8e8; }
+
+#change-pass .by-one-click-modal {
+  max-width: 500px !important;
+  margin-top: 24px; }
+  #change-pass .by-one-click-modal .modal-body {
+    padding: 30px 95px; }
+  #change-pass .by-one-click-modal__post {
+    font-size: 14px;
+    margin-top: 22px;
+    margin-bottom: 0; }
+
+#change-pass .modal-form__input {
+  margin-bottom: 25px;
+  width: 100%; }
+
+#change-pass .modal-form__send {
+  margin: 0 auto;
+  display: block; }
+  #change-pass .modal-form__send button {
+    background-color: #e3a3cc;
+    border-radius: 3px;
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    line-height: 43px; }
+    #change-pass .modal-form__send button img {
+      width: 16px;
+      display: inline-block; }
+
+#instantpayment .by-one-click-modal {
+  max-width: 864px !important; }
+  #instantpayment .by-one-click-modal__message {
+    margin-top: 0; }
+  #instantpayment .by-one-click-modal__form {
+    margin-top: 27px; }
+  #instantpayment .by-one-click-modal__post {
+    font-size: 13px;
+    margin-top: 29px;
+    margin-bottom: 37px; }
+  #instantpayment .by-one-click-modal .modal-body {
+    padding: 30px 63px; }
+  #instantpayment .by-one-click-modal .modal-content {
+    background: url("../images/content/left-form-bg.png") top left no-repeat, #fff url("../images/content/right-form-bg.png") top right no-repeat; }
+
+#instantpayment .modal-form__input--phone {
+  width: 310px; }
+
+#instantpayment .modal-form__input--amount {
+  background: url(../images/icons/amount-icon.png) 14px no-repeat;
+  background-size: 28px;
+  width: 212px; }
+
+#instantpayment .modal-form__send button {
+  width: 170px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #e3a3cc;
+  height: 50px;
+  border-radius: 3px; }
+  #instantpayment .modal-form__send button img {
+    display: inline-block;
+    width: 16px;
+    text-align: center; }
+
+#instantpayment .fancy-select {
+  width: 90px;
+  display: inline-block;
+  vertical-align: middle; }
+  #instantpayment .fancy-select .trigger {
+    border: none;
+    font-size: 14px;
+    color: #000;
+    padding: 0 15px 0 0;
+    height: 30px; }
+    #instantpayment .fancy-select .trigger:after {
+      top: 12px;
+      right: 8px; }
+  #instantpayment .fancy-select ul.options {
+    top: 25px; }
+    #instantpayment .fancy-select ul.options li {
+      padding: 3px 6px;
+      font-size: 13px; }
+
 .by-one-click-modal {
   max-width: 630px !important;
   width: 100%; }
 
 .by-one-click-modal__close {
   position: absolute;
-  top: 10px;
-  right: -81px;
+  top: 6px;
+  right: -77px;
   background: 0 0;
   border: none;
+  font-size: 13px;
   color: #ccc;
   padding: 0;
   cursor: pointer;
@@ -8439,12 +8660,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
     color: #fff; }
   .by-one-click-modal__close:after {
     content: '';
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     position: absolute;
     background: url(../images/icons/close.svg) no-repeat;
-    left: -28px;
-    top: 3px; }
+    left: -24px;
+    top: 4px; }
 
 .by-one-click-modal .modal-content {
   background: url(../images/content/product/modal-bgr.png) #fff top center no-repeat; }
@@ -8458,7 +8679,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
   color: #000;
   font-size: 45px;
   font-family: Marmelad, sans-serif;
-  margin-top: 43px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   display: inline-block;
   position: relative;
   padding-bottom: 20px; }
@@ -8491,17 +8713,23 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
   width: 100%;
   height: 1px;
   background: #e8e8e8;
-  margin-top: 35px; }
+  margin-top: 38px; }
 
 .by-one-click-modal__message {
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
-  margin-top: 35px; }
+  margin-top: 26px; }
   .by-one-click-modal__message p {
     margin-bottom: 0;
     font-size: 16px;
+    line-height: 28px;
     color: #000; }
+
+.by-one-click-modal__post {
+  font-size: 16px; }
+  .by-one-click-modal__post span {
+    font-weight: bold; }
 
 .by-one-click-modal__form {
   margin-top: 30px; }
@@ -8513,35 +8741,36 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
   font-size: 24px;
   margin-top: 15px; }
 
-.popup-pruduct__price span {
-  color: #000;
-  font-size: 26px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 15px; }
-
-.popup-pruduct__price input {
-  width: 46px;
-  height: 30px;
-  background: #f7f7f7;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  box-sizing: border-box;
-  padding-right: 5px;
-  padding-left: 5px;
-  text-align: center;
-  font-size: 14px;
-  color: #000;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 15px; }
-
-.popup-pruduct__price i {
-  display: inline-block;
-  vertical-align: middle;
-  width: 10px;
-  height: 10px;
-  background: url(../images/content/x.png) no-repeat; }
+.popup-pruduct__price {
+  margin-top: 14px; }
+  .popup-pruduct__price span {
+    color: #000;
+    font-size: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    font-family: 'Marmelad'; }
+  .popup-pruduct__price input {
+    width: 46px;
+    height: 30px;
+    background: #f7f7f7;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px; }
+  .popup-pruduct__price i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    background: url(../images/content/x.png) no-repeat; }
 
 .modal-form {
   font-size: 0;
@@ -8554,7 +8783,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
   position: relative;
   margin-right: 19px; }
   .modal-form__input input {
-    font-size: 14px;
+    font-size: 16px;
     display: block;
     color: #000;
     border: 1px solid #e6e6e6;
@@ -8570,7 +8799,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
     border: 1px solid #e6e6e6;
     border-radius: 3px;
     background: 0 0;
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
     padding: 20px;
     resize: none;
@@ -8616,7 +8845,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
   display: inline-block;
   vertical-align: top; }
   .modal-form__send input {
-    background: url(../images/content/send-ico.png) #e3a3cc 20px center no-repeat;
+    background: url(../images/content/send-ico.png) #e3a3cc 18px center no-repeat;
     border: none;
     width: 50px;
     height: 50px;

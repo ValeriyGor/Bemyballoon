@@ -1,981 +1,1145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Product</title>
-    <meta name="author" content="asight.pro">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta name="description" content="Awesome site">
-    <link rel="stylesheet" type="text/css" href="assets/static/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="assets/static/bootstrap-theme.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bundle.min.css">
-  </head><a class="source" href="/">Site map</a>
-  <body>
-    <div class="overlay"></div>
-    <header>
-      <div class="top-header">
-        <div class="container"> 
-          <nav class="navbar navbar-expand-lg"><div class="navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <div class="top-header__overlay"></div>
-            <div class="mr-auto top-header__mobile">
-              <div class="mobile-nav"></div>
-              <div class="mobile-viber">050-359-9640</div>
-              <div class="modal-nav-list">
-                <div class="top-header__logo"><a class="top-header__close" href="#"></a></div>
-                <ul class="top-header__dropdowns"></ul>
-                <ul class="top-header__links">
-                  <li class="single-links"><a href="#">Home</a></li>
-                  <li class="single-links"><a href="">Balloons</a></li>
-                  <li class="single-links"><a href="">Event decoraticon</a></li>
-                  <li class="single-links"><a href="">Party supplies</a></li>
-                  <li class="single-links"><a href="">Corporate</a></li>
-                  <li class="single-links"><a href="">Ocassion</a></li>
-                  <li class="single-links"><a href="">Gift ideas</a></li>
-                  <li class="account"><a href="">Login</a></li>
-                  <li class="account"><a href="">Register</a></li>
-                  <li class="account"><a href="">My account</a></li>
-                  <li class="account"><a href="">About us</a></li>
-                  <li class="account"><a href="">Delivery</a></li>
-                  <li class="account"><a href="">Contacts</a></li>
-                </ul>
-              </div>
-            </div><ul class="navbar-nav mr-auto main-menu">
-            <div class="fix-nav"></div>
-            <li class="nav-item top-header__languages dropdown-hover dropdown-mobile-menu"><a class="nav-link" href="#">Eng</a>
-              <ul class="dropdown-menu">
-                <li class="activ"><a href=""><i class="icon-flag-US"></i> English</a></li>
-                <li><a href=""><i class="icon-flag-AE"></i> Arabic</a></li>
-                <li><a href=""><i class="icon-flag-RU"></i> Russian</a></li>
-              </ul>
-            </li>
-            <li class="nav-item top-header__currency dropdown-hover dropdown-mobile-menu"><a class="nav-link" href="#">US Dollar</a>
-              <ul class="dropdown-menu">
-                <li><a href=""> Euro</a></li>
-                <li><a href=""> AED</a></li>
-                <li class="activ"><a href=""> US Dollar</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
-            <li class="nav-item dropdown-hover top-header__account"><a class="nav-link" href="#">My account</a>
-              <ul class="dropdown-menu">
-                <li><a href=""><i class="icon-ic-lock"></i> Register</a></li>
-                <li><a href=""><i class="icon-ic-vpn"></i> Login</a></li>
-                <li><a href=""><i class="icon-ic-account "></i> My account</a></li>
-                <li><a href="">
-                    <i class="icon-ic-wish"></i> Wish List<span class="cartcontents">3</span></a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
-            <li class="nav-item"><a class="nav-link inst-pay" href="#">Instant payment</a></li></ul>
-            <ul class="join-menu">
-              <li class="join-menu__items join-menu__home"><a href="#">Home</a></li>
-              <li class="join-menu__items"><a href="#">Balloons</a></li>
-              <li class="join-menu__items"><a href="#">Event decoration</a></li>
-              <li class="join-menu__items"><a href="#">Party suppilies</a></li>
-              <li class="join-menu__items"><a href="#">Corporate</a></li>
-              <li class="join-menu__items"><a href="#">Ocassions</a></li>
-              <li class="join-menu__items"><a href="#">Gift ideas</a></li>
-              <li class="join-menu__items join-menu__compare"><a href="#">Compare</a><span class="join-menu__compare--info">3</span></li>
-            </ul>
-            <ul class="nav navbar-nav my-2 my-lg-0 right-container">
-              <li class="nav-item top-header__search"><a class="nav-link" href="#"><span class="glyphicon glyphicon-search"> </span> Search </a></li>
-              <div class="top-header__search-result" style="display:none;">
-                <div class="top-header__search-conteiner">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text"><span class="glyphicon-search"></span></div>
-                    </div><input id="search" type="text" class="searchInput form-control" placeholder="Plain heli|um balloons"  required="">
-                  </div>
-                  <div class="list-result" style="display:none;">Результаты поиска:
-                    <li><a href="">Plain helium balloons</a></li>
-                    <li><a href="">Plain helium</a></li>
-                    <li><a href="">Plain</a></li>
-                  </div>
-                </div>
-              </div>
-              <li class="nav-item dropdown top-header__cart"><a class="nav-link" href="#"><span class="top-header__cart-shopping"></span>View cart<span class="cartcontents">3</span></a></li>
-              <div class="top-header__cart-mini" style="display:none;">
-                <div class="top-header__cart-conteiner rounded">
-                  <li class="row top-header__cart-item">
-                    <div class="col-4"><img src="assets/images/content/mini-cart-1.jpg" alt=""/></div>
-                    <div class="col-6">
-                      <div class="name">The name of the item that occupies two lines</div>
-                      <div class="price">$543.25<span class="quantity">2</span></div>
-                    </div>
-                    <div class="col-2">
-                      <div class="remove close"></div>
-                    </div>
-                  </li>
-                  <li class="row top-header__cart-item">
-                    <div class="col-4"><img src="assets/images/content/mini-cart-2.jpg" alt=""/></div>
-                    <div class="col-6">
-                      <div class="name">The name of the item that occupies </div>
-                      <div class="price">$543.25<span class="quantity">2</span></div>
-                    </div>
-                    <div class="col-2">
-                      <div class="remove close"></div>
-                    </div>
-                  </li>
-                  <li class="row top-header__cart-item">
-                    <div class="col-4"><img src="assets/images/content/mini-cart-3.jpg" alt=""/></div>
-                    <div class="col-6">
-                      <div class="name">The name of the item </div>
-                      <div class="price">$543.25<span class="quantity">2</span></div>
-                    </div>
-                    <div class="col-2">
-                      <div class="remove close"></div>
-                    </div>
-                  </li>
-                  <li class="row top-header__cart-total">
-                    <div class="total">Total: <span>$1 258</span></div><a class="checkout" href="">Checkout </a>
-                  </li>
-                </div>
-              </div>
-            </ul></div>
+	<head>
+		<meta charset="utf-8">
+		<title>Product</title>
+		<meta name="author" content="asight.pro">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="description" content="Awesome site">
+		<link rel="stylesheet" type="text/css" href="assets/static/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="assets/static/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bundle.min.css">
+	</head><a class="source" href="/">Site map</a>
+	<body>
+		<div class="overlay"></div>
+		<header>
+			<div class="top-header">
+				<div class="container"> 
+					<nav class="navbar navbar-expand-lg"><div class="navbar-collapse justify-content-between" id="navbarSupportedContent">
+						<div class="top-header__overlay"></div>
+						<div class="mr-auto top-header__mobile">
+							<div class="mobile-nav"></div>
+							<div class="mobile-viber">050-359-9640</div>
+							<div class="modal-nav-list">
+								<div class="top-header__logo"><a class="top-header__close" href="#"></a></div>
+								<ul class="top-header__dropdowns"></ul>
+								<ul class="top-header__links">
+									<li class="single-links"><a href="#">Home</a></li>
+									<li class="single-links"><a href="">Balloons</a></li>
+									<li class="single-links"><a href="">Event decoraticon</a></li>
+									<li class="single-links"><a href="">Party supplies</a></li>
+									<li class="single-links"><a href="">Corporate</a></li>
+									<li class="single-links"><a href="">Ocassion</a></li>
+									<li class="single-links"><a href="">Gift ideas</a></li>
+									<li class="account"><a href="">Login</a></li>
+									<li class="account"><a href="">Register</a></li>
+									<li class="account"><a href="">My account</a></li>
+									<li class="account"><a href="">About us</a></li>
+									<li class="account"><a href="">Delivery</a></li>
+									<li class="account"><a href="">Contacts</a></li>
+								</ul>
+							</div>
+						</div><ul class="navbar-nav mr-auto main-menu">
+						<div class="fix-nav"></div>
+						<li class="nav-item top-header__languages dropdown-hover dropdown-mobile-menu"><a class="nav-link" href="#">Eng</a>
+							<ul class="dropdown-menu">
+								<li class="activ"><a href=""><i class="icon-flag-US"></i> English</a></li>
+								<li><a href=""><i class="icon-flag-AE"></i> Arabic</a></li>
+								<li><a href=""><i class="icon-flag-RU"></i> Russian</a></li>
+							</ul>
+						</li>
+						<li class="nav-item top-header__currency dropdown-hover dropdown-mobile-menu"><a class="nav-link" href="#">US Dollar</a>
+							<ul class="dropdown-menu">
+								<li><a href=""> Euro</a></li>
+								<li><a href=""> AED</a></li>
+								<li class="activ"><a href=""> US Dollar</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+						<li class="nav-item dropdown-hover top-header__account"><a class="nav-link" href="#">My account</a>
+							<ul class="dropdown-menu">
+								<li><a href=""><i class="icon-ic-lock"></i> Register</a></li>
+								<li><a href=""><i class="icon-ic-vpn"></i> Login</a></li>
+								<li><a href=""><i class="icon-ic-account "></i> My account</a></li>
+								<li><a href="">
+										<i class="icon-ic-wish"></i> Wish List<span class="cartcontents">3</span></a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+						<li class="nav-item"><a class="nav-link inst-pay" href="#">Instant payment</a></li></ul>
+						<ul class="join-menu">
+							<li class="join-menu__items join-menu__home"><a href="#">Home</a></li>
+							<li class="join-menu__items"><a href="#">Balloons</a></li>
+							<li class="join-menu__items"><a href="#">Event decoration</a></li>
+							<li class="join-menu__items"><a href="#">Party suppilies</a></li>
+							<li class="join-menu__items"><a href="#">Corporate</a></li>
+							<li class="join-menu__items"><a href="#">Ocassions</a></li>
+							<li class="join-menu__items"><a href="#">Gift ideas</a></li>
+							<li class="join-menu__items join-menu__compare"><a href="#">Compare</a><span class="join-menu__compare--info">3</span></li>
+						</ul>
+						<ul class="nav navbar-nav my-2 my-lg-0 right-container">
+							<li class="nav-item top-header__search"><a class="nav-link" href="#"><span class="glyphicon glyphicon-search"> </span> Search </a></li>
+							<div class="top-header__search-result" style="display:none;">
+								<div class="top-header__search-conteiner">
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<div class="input-group-text"><span class="glyphicon-search"></span></div>
+										</div><input id="search" type="text" class="searchInput form-control" placeholder="Plain heli|um balloons"  required="">
+									</div>
+									<div class="list-result" style="display:none;">Результаты поиска:
+										<li><a href="">Plain helium balloons</a></li>
+										<li><a href="">Plain helium</a></li>
+										<li><a href="">Plain</a></li>
+									</div>
+								</div>
+							</div>
+							<li class="nav-item dropdown top-header__cart"><a class="nav-link" href="#"><span class="top-header__cart-shopping"></span>View cart<span class="cartcontents">3</span></a></li>
+							<div class="top-header__cart-mini" style="display:none;">
+								<div class="top-header__cart-conteiner rounded">
+									<li class="row top-header__cart-item">
+										<div class="col-4"><img src="assets/images/content/mini-cart-1.jpg" alt=""/></div>
+										<div class="col-6">
+											<div class="name">The name of the item that occupies two lines</div>
+											<div class="price">$543.25<span class="quantity">2</span></div>
+										</div>
+										<div class="col-2">
+											<div class="remove close"></div>
+										</div>
+									</li>
+									<li class="row top-header__cart-item">
+										<div class="col-4"><img src="assets/images/content/mini-cart-2.jpg" alt=""/></div>
+										<div class="col-6">
+											<div class="name">The name of the item that occupies </div>
+											<div class="price">$543.25<span class="quantity">2</span></div>
+										</div>
+										<div class="col-2">
+											<div class="remove close"></div>
+										</div>
+									</li>
+									<li class="row top-header__cart-item">
+										<div class="col-4"><img src="assets/images/content/mini-cart-3.jpg" alt=""/></div>
+										<div class="col-6">
+											<div class="name">The name of the item </div>
+											<div class="price">$543.25<span class="quantity">2</span></div>
+										</div>
+										<div class="col-2">
+											<div class="remove close"></div>
+										</div>
+									</li>
+									<li class="row top-header__cart-total">
+										<div class="total">Total: <span>$1 258</span></div><a class="checkout" href="">Checkout </a>
+									</li>
+								</div>
+							</div>
+						</ul></div>
 </nav>
-          </nav>
-        </div>
-      </div>
-      <div class="center-header hidden-mobile">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col col-12 col-md-3">
-              <div class="center-header__logo"><a href="#"><img src="assets/images/icons/logo.svg" alt=""></a></div>
-            </div>
-            <div class="col col-12 col-md-3">
-              <div class="center-header__phone">
-                <div class="center-header__phone-icon"><img src="assets/images/icons/ic_calling_header.svg" alt=""></div>
-                <div class="center-header__phone-content">
-                  <div>050-359-9640</div>
-                  <div>toll-free right now</div>
-                </div>
-              </div>
-            </div>
-            <div class="col col-12 col-md-3">
-              <div class="center-header__whatsapp">
-                <div class="center-header__whatsapp-icon"><img src="assets/images/icons/ic_chating_header.svg" alt=""></div>
-                <div class="center-header__whatsapp-content">
-                  <div>800-999-9999</div>
-                  <div>Order by Whatsapp</div>
-                </div>
-              </div>
-            </div>
-            <div class="col col-12 col-md-3">
-              <div class="center-header__delivery">
-                <div class="center-header__delivery-icon"><img src="assets/images/icons/ic_delivery_header.svg" alt=""></div>
-                <div class="center-header__delivery-content">
-                  <div>Delivery 24x7</div>
-                  <div>Delivery the same day</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bottom-header hidden-mobile" id="second-menu">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg bottom-header__menu"><a class="mobile-category" href="#"><span class="show_category"></span><span class="hide_category"></span>Categories</a>
-            <div class="navbar-collapse" id="primary-navbar">
-              <ul class="navbar-nav container-fluid">
-                <li class="nav-item active"><a href="#">Home</a></li>
-                <li class="nav-item dropdown-hover"><a href="#">Balloons</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Helium latex ballon</a></li>
-                    <li><a href="">Hearts and stars</a></li>
-                    <li class="nav-item dropdown-hover"><a href="#">Helium foil balloon</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="">Plain helium balloons</a></li>
-                        <li><a href="">Printed helium balloons</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="">Helium bouquets</a></li>
-                    <li><a href="">Helium large balloon</a></li>
-                    <li><a href="">Helium numbers and letter</a></li>
-                    <li><a href="">Personalized ballons</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown-hover"><a href="#">Event decoraticon</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Helium latex ballon</a></li>
-                    <li><a href="">Hearts and stars</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown-hover"><a href="#">Party supplies</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Helium latex ballon</a></li>
-                    <li><a href="">Hearts and stars</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown-hover"><a href="#">Corporate</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Helium latex ballon</a></li>
-                    <li><a href="">Hearts and stars</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown-hover"><a href="#">Ocassion</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Helium latex ballon</a></li>
-                    <li><a href="">Hearts and stars</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown-hover"><a href="#">Gift ideas</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="">Helium latex ballon</a></li>
-                    <li><a href="">Hearts and stars</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="navbar-collapse mobile-category-menu" id="mobile-category">
-            <ul class="navbar-nav container-fluid">
-              <li class="nav-item single-links"><a href="#">Home</a></li>
-              <li class="nav-item single-links"><a href="#">Balloons</a></li>
-              <li class="nav-item single-links"><a href="#">Event decoraticon</a></li>
-              <li class="nav-item single-links"><a href="#">Party supplies</a></li>
-              <li class="nav-item single-links"><a href="#">Corporate</a></li>
-              <li class="nav-item single-links"><a href="#">Ocassion</a></li>
-              <li class="nav-item single-links"><a href="#">Gift ideas</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="product-page">
-      <div class="breadcrumbs">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 page-content__col">
-              <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="home.html">Balloons</a></li>
-                <li><a href="home.html">Helium latex balloon</a></li>
-                <li class="current"><span>Balloon plain Assorti Glamour</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="page-content">
-        <div class="container">
-          <h1 class="page-content__title">Balloon plain Assorti Glamour</h1>
-          <div class="row page-content__row">
-            <div class="col-1 page-content__col page-content__col--hidden-mobile">
-              <div class="owl-thumbs product-cart-carousel-thumbs" data-slider-id="1"><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/bolshoe_serdtse.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/3-2d96ba5cdb4bed8c6cd7ff12408a9316.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba-tumb.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/latexconfetti.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/flamingo-balloon1.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/flamingo-balloon1.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/flamingo-balloon1.png"/></a></div><a class="product-cart-carousel-thumbs__more" href="#">2 more</a>
-            </div>
-            <div class="col-12 col-md-5 page-content__col">
-              <div class="owl-carousel owl-theme product-cart-carousel" data-slider-id="1">
-                <div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
-                </div>
-                <div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
-                </div>
-                <div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
-                </div>
-                <div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
-                </div>
-                <div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
-                </div>
-                <div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
-                </div>
-                <div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 page-content__col page-content__col--hidden-mobile">
-              <div class="row page-content__row">
-                <div class="col-12 page-content__col">
-                  <div class="product-options">
-                    <h3 class="product-options__title">Available options</h3>
-                    <div class="row page-content__row">
-                      <div class="col-6 page-content__col page-content__col--left">
-                        <div class="product-options__item">
-                          <h4 class="product-options__selected">Choose color:<span>No matter</span><a class="product-options__close" href="#"></a></h4>
-                          <div class="color-select">
-                            <ul>
-                              <li class="color-select__item">
-                                <input type="radio" name="color" id="color1">
-                                <label style="background: #e0c554;" for="color1"></label>
-                              </li>
-                              <li class="color-select__item">
-                                <input type="radio" name="color" id="color2">
-                                <label style="background: #f8d2e7;" for="color2"></label>
-                              </li>
-                              <li class="color-select__item">
-                                <input type="radio" name="color" id="color3">
-                                <label style="background: #f3e9dd;" for="color3"></label>
-                              </li>
-                              <li class="color-select__item">
-                                <input type="radio" name="color" id="color4">
-                                <label style="background: #be5bd0;" for="color4"></label>
-                              </li>
-                              <li class="color-select__item">
-                                <input type="radio" name="color" id="color5">
-                                <label style="background: #52ac62;" for="color5"></label>
-                              </li>
-                              <li class="color-select__item">
-                                <input type="radio" name="color" id="color6">
-                                <label style="background: #903f22;" for="color6"></label>
-                              </li>
-                              <li class="color-select__item">
-                                <input type="radio" name="color" id="color7" checked>
-                                <label for="color7"><img src="assets/images/content//product/circle.png"/>
-                                </label>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="product-options__item product-options__item--size">
-                          <h4 class="product-options__selected">Choose size (inch):<span>No matter</span><a class="product-options__close" href="#"></a></h4>
-                          <div class="size-select">
-                            <ul>
-                              <li class="size-select__item"><a href="#">13</a></li>
-                              <li class="size-select__item"><a href="#">23</a></li>
-                              <li class="size-select__item"><a href="#">30</a></li>
-                              <li class="size-select__item"><a class="active" href="#">35</a></li>
-                              <li class="size-select__item"><a href="#">40</a></li>
-                              <li class="size-select__item"><a href="#">45</a></li>
-                              <li class="size-select__item"><a href="#">50</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="product-options__item individual-inscription">
-                          <h4 class="individual-inscription__title">Individual inscription<span>3 pcs. selected</span></h4>
-                          <div class="individual-inscription__fields"></div><a class="individual-inscription__button" href="#">Add description</a>
-                        </div>
-                        <div class="product-options__item product-options__item--price">
-                          <div class="product-options__price"><span>$135.00</span>
-                            <div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
-                              <input type="text" value="2"><a class="product-quantity__add" href="#"></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 page-content__col">
-                        <div class="product-options__item product-details">
-                          <h5 class="product-details__title">Details product:</h5>
-                          <ul class="product-details__list">
-                            <li>Information:<span>
-                                <div class="product-details__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div></span></li>
-                            <li>Availability:<span>In Stock</span></li>
-                            <li>Product Code:<span>9695d0e4fd</span></li>
-                            <li>Brand:<span>BeMyBallons</span></li>
-                          </ul>
-                        </div>
-                        <div class="product-options__item product-options__item--favorite">
-                          <div class="product-favorite"><a href="#">To wish list</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 page-content__col">
-                  <div class="page-content__buttons"><a class="page-content__add-cart" href="#">Add to cart</a><a class="page-content__by_one-click" href="#"> Buy in 1 click</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 page-content__col page-content__col--visible-mobile">
-              <div class="row page-content__row page-content__row--mobile">
-                <div class="col-12">
-                  <div class="product-favorite"><a href="#">To wish list</a></div>
-                  <div class="product-price">
-                    <input type="text" value="2"><span>$135.00</span>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="available-options"><a class="available-options__main-link" href="#">Available options:<span>color, size, descriptions</span></a>
-                    <div class="available-options__list">
-                      <ul class="choose">
-                        <li><a class="choose__color" href="#">Color:<span>No matter</span></a></li>
-                        <li><a class="choose__size" href="#">Size:<span>35 inch</span></a></li>
-                        <li class="choose__description"><a href="#">Individual description:<span>3 pcs. selected</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="page-content__buttons"><a class="page-content__add-cart" href="#">Add to cart</a></div>
-                  <div class="product-details">
-                    <h5 class="product-details__title">Details product:</h5>
-                    <ul class="product-details__list">
-                      <li>Information:<span>
-                          <div class="product-details__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div></span>
-                        <p class="product-details__status product-details__status--new">new</p>
-                        <p class="product-details__status product-details__status--hot">hot</p>
-                      </li>
-                      <li>Availability:<span>In Stock</span></li>
-                      <li>Product Code:<span>9695d0e4fd</span></li>
-                      <li>Brand:<span>BeMyBallons</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 page-content__col">
-              <div class="page-content__decor-line"></div>
-              <div class="page-content__product-description">
-                <p>Do not waste time selecting balls - take the required number of assorted balls without a pattern. We always have balloons of three kinds - pastel, crystal and metal. Pastel - opaque opaque balls. Crystal - bright translucent balls. Metal - shiny bright opaque balls. Order the balls that are best for your holiday! All balloons are treated with a special HiFloat fluid, so they will delight you for a few days, instead of the usual 6-12 hours. Balls without a pattern are universal and suitable for any occasion. Most often they are used in the design of premises.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="baners">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-sm-6 col-md-6">
-              <div class="jumbotron jumbotron-fluid rounded d-flex align-items-end" style="background: #fff url('assets/images/content/banner_1.png') no-repeat 50% 50% ;">
-                <div class="containers">
-                  <div class="display-4">Event Decoration</div>
-                  <p class="lead">Our focus is on creating custom themed...</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6">
-              <div class="jumbotron jumbotron-fluid rounded d-flex align-items-end" style="background: #fff url('assets/images/content/banner_2.png') no-repeat 50% 50% ;">
-                <div class="containers">
-                  <div class="display-4">Wholesale Balloons</div>
-                  <p class="lead">Only the best brands, no minimum order!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about product-reviews">
-        <div class="container">
-          <h2 class="product-reviews__title">Product reviews</h2>
-          <p class="product-reviews__sub-title">Honest opinion of customers</p>
-          <div class="row reviews__slider">
-            <div class="col-lg-4">
-              <div class="review">
-                <div class="review__top author">
-                  <div class="author__image"><img src="assets/images/content/reviews-photo.jpg" alt=""></div>
-                  <div class="author__name">Angelina</div>
-                  <div class="author__create">17 may 2018</div>
-                  <div class="author__rating" data-ratind="3"></div>
-                </div>
-                <div class="review__bottom description">
-                  <div class="author__rating" data-ratind="3"></div>
-                  <p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="review">
-                <div class="review__top author">
-                  <div class="author__image author__image-men"></div>
-                  <div class="author__name">Angelina</div>
-                  <div class="author__create">17 may 2018</div>
-                  <div class="author__rating" data-ratind="2"></div>
-                </div>
-                <div class="review__bottom description">
-                  <div class="author__rating" data-ratind="3"></div>
-                  <p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="review">
-                <div class="review__top author">
-                  <div class="author__image author__image-woomen"></div>
-                  <div class="author__name">Angelina</div>
-                  <div class="author__create">17 may 2018</div>
-                  <div class="author__rating" data-ratind="3"></div>
-                </div>
-                <div class="review__bottom description">
-                  <div class="author__rating" data-ratind="3"></div>
-                  <p class="description__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="review">
-                <div class="review__top author">
-                  <div class="author__image"><img src="assets/images/content/reviews-photo.jpg" alt=""></div>
-                  <div class="author__name">Angelina</div>
-                  <div class="author__create">17 may 2018</div>
-                  <div class="author__rating" data-ratind="3"></div>
-                </div>
-                <div class="review__bottom description">
-                  <div class="author__rating" data-ratind="3"></div>
-                  <p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="review">
-                <div class="review__top author">
-                  <div class="author__image author__image-men"></div>
-                  <div class="author__name">Angelina</div>
-                  <div class="author__create">17 may 2018</div>
-                  <div class="author__rating" data-ratind="2"></div>
-                </div>
-                <div class="review__bottom description">
-                  <div class="author__rating" data-ratind="3"></div>
-                  <p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="review">
-                <div class="review__top author">
-                  <div class="author__image author__image-woomen"></div>
-                  <div class="author__name">Angelina</div>
-                  <div class="author__create">17 may 2018</div>
-                  <div class="author__rating" data-ratind="3"></div>
-                </div>
-                <div class="review__bottom description">
-                  <div class="author__rating" data-ratind="3"></div>
-                  <p class="description__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row reviews__feedback"><a class="reviews__feedback-give" href="">Give feedback</a><a class="reviews__feedback-show" href="">Show more reviews</a></div>
-        </div>
-      </section>
-      <section class="related-products">
-        <div class="container">
-          <h2 class="related-products__title">Related products</h2>
-          <p class="related-products__sub-title">Honest opinion of customers</p>
-        </div>
-        <div class="products">
-          <div class="container">
-            <div class="row products__row">
-              <div class="col-6 col-sm-4 col-md-3 products__items">
-                <div class="product">
-                  <div class="product__images">
-                    <div class="product__carousel product-carousel">
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/1.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/1.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/1.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/1.png') no-repeat;"></div>
-                    </div>
-                    <div class="product__events">
-                      <div class="favorite"><a class="favorite__add" href="#"></a><a class="favorite__link" href="#">To wish list</a></div><a class="product__info" href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__title">
-                    <p>The name of the item that occupies two lines</p>
-                  </div>
-                  <div class="product__description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                  </div>
-                  <div class="product__hover">
-                    <div class="product-info">
-                      <div class="product-info__price">$543.25</div>
-                      <div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div>
-                    </div>
-                    <div class="product-buttons"><a class="product-buttons__comparison" href="#"><img class="svg" src="assets/images/icons/ic_comparison_link.svg" alt=""></a><a class="product-buttons__add-cart" href="#"><span>Add to cart</span></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-4 col-md-3 products__items">
-                <div class="product">
-                  <div class="product__images">
-                    <div class="product__carousel product-carousel">
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/2.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/2.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/2.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/2.png') no-repeat;"></div>
-                    </div>
-                    <div class="product__events">
-                      <div class="favorite"><a class="favorite__add" href="#"></a><a class="favorite__link" href="#">To wish list</a></div><a class="product__info" href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__title">
-                    <p>The name of the item that occupies two lines</p><span class="product__status product__status--sale">Sale</span>
-                  </div>
-                  <div class="product__description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                  </div>
-                  <div class="product__hover">
-                    <div class="product-info">
-                      <div class="product-info__price">$543.25</div>
-                      <div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div>
-                    </div>
-                    <div class="product-buttons"><a class="product-buttons__comparison" href="#"><img class="svg" src="assets/images/icons/ic_comparison_link.svg" alt=""></a><a class="product-buttons__add-cart" href="#"><span>Add to cart</span></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-4 col-md-3 products__items">
-                <div class="product">
-                  <div class="product__images">
-                    <div class="product__carousel product-carousel">
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/3.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/3.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/3.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/3.png') no-repeat;"></div>
-                    </div>
-                    <div class="product__events">
-                      <div class="favorite"><a class="favorite__add" href="#"></a><a class="favorite__link" href="#">To wish list</a></div><a class="product__info" href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__title">
-                    <p>The name of the item that occupies two lines</p>
-                  </div>
-                  <div class="product__description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                  </div>
-                  <div class="product__hover">
-                    <div class="product-info">
-                      <div class="product-info__price">$543.25</div>
-                      <div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div>
-                    </div>
-                    <div class="product-buttons"><a class="product-buttons__comparison" href="#"><img class="svg" src="assets/images/icons/ic_comparison_link.svg" alt=""></a><a class="product-buttons__add-cart" href="#"><span>Add to cart</span></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-4 col-md-3 products__items">
-                <div class="product">
-                  <div class="product__images">
-                    <div class="product__carousel product-carousel">
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/4.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/4.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/4.png') no-repeat;"></div>
-                      <div class="product-carousel__item" style="background: url('assets/images/content/product/related/4.png') no-repeat;"></div>
-                    </div>
-                    <div class="product__events">
-                      <div class="favorite"><a class="favorite__add" href="#"></a><a class="favorite__link" href="#">To wish list</a></div><a class="product__info" href="#"></a>
-                    </div>
-                  </div>
-                  <div class="product__title">
-                    <p>The name of the item that occupies two lines</p><span class="product__status product__status--new">New</span>
-                  </div>
-                  <div class="product__description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                  </div>
-                  <div class="product__hover">
-                    <div class="product-info">
-                      <div class="product-info__price">$543.25</div>
-                      <div class="product-info__old-price">$600.00</div>
-                      <div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div>
-                    </div>
-                    <div class="product-buttons"><a class="product-buttons__comparison" href="#"><img class="svg" src="assets/images/icons/ic_comparison_link.svg" alt=""></a><a class="product-buttons__add-cart" href="#"><span>Add to cart</span></a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="cotacts">
-        <div class="container">
-          <div class="row cotacts__row">
-            <div class="col-12 col-sm-12 col-md-4 cotacts__grid">
-              <div class="cotacts__item cotacts__item-red">
-                <div class="cotacts__item-icon"><img class="svg" src="assets/images/icons/ic_address.svg" alt=""></div>
-                <div class="cotacts__item-box"><span>Address</span><span>123 Flower Street</span></div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 cotacts__grid">
-              <div class="cotacts__item cotacts__item-yellow">
-                <div class="cotacts__item-icon"><img class="svg" src="assets/images/icons/ic_our_email.svg" alt=""></div>
-                <div class="cotacts__item-box"><span>Our Email</span><span>info@bemyballoon.com</span></div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 cotacts__grid">
-              <div class="cotacts__item cotacts__item-green">
-                <div class="cotacts__item-icon"><img class="svg" src="assets/images/icons/ic_follow.svg" alt=""></div>
-                <div class="cotacts__item-box"><span>Follow Us</span><span>#BeMyBalloon</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="container">
-          <div class="row advantages__content">
-            <div class="col-12 col-sm-7 col-md-7">
-              <h3>Lorem ipsum dolor sit amet</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            </div>
-            <div class="col-12 col-sm-5 col-md-5"><img src="assets/images/content/lorem-ipson-home.jpg" alt=""></div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container"> 
-        <div class="row">
-          <div class="col">
-            <div class="footer__logo"><a href="#"><img src="assets/images/icons/logo.svg" alt=""></a></div>
-            <div class="footer__contacts"> 
-              <h4>Connect with us</h4>
-              <div class="footer__whatsapp">800-999-9999<span>Order by Whatsapp</span></div>
-              <div class="footer__link"> <a href="http://">Ask a Question </a><a href="http://">Help</a></div>
-            </div>
-            <div class="footer__social">
-              <h4>Connect social</h4>
-              <ul>
-                <li><a href=""><img class="svg" src="assets/images/icons/ic_fb_link.svg" alt=""></a></li>
-                <li><a href=""><img class="svg" src="assets/images/icons/ic_insta_link.svg" alt=""></a></li>
-                <li><a href=""><img class="svg" src="assets/images/icons/ic_vk_link.svg" alt=""></a></li>
-                <li><a href=""><img class="svg" src="assets/images/icons/ic_youtube_link.svg" alt=""></a></li>
-                <li><a href=""><img class="svg" src="assets/images/icons/ic_twitter_link.svg" alt=""></a></li>
-              </ul>
-            </div>
-            <div class="footer__copy">© 2017 Bemyballons</div>
-          </div>
-          <div class="col">
-            <div class="footer__nav">
-              <h3>Products</h3>
-              <ul>
-                <li><a href="">Best Sellers</a></li>
-                <li><a href="">What's New?</a></li>
-                <li><a href="">Flowers</a></li>
-                <li><a href="">All Roses</a></li>
-                <li><a href="">Plants</a></li>
-                <li><a href="">Jewelry Boutique</a></li>
-                <li><a href="">Gifts</a></li>
-                <li><a href="">Gift Baskets</a></li>
-                <li><a href="">Sweets & Chocolates</a></li>
-                <li><a href="">Same Day Delivery</a></li>
-                <li><a href="">Farm Fresh Flowers</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="footer__nav">
-              <h3>Occasion</h3>
-              <ul>
-                <li><a href="">Anniversary</a></li>
-                <li><a href="">Congratulations</a></li>
-                <li><a href="">Birthday</a></li>
-                <li><a href="">Bosses Week</a></li>
-                <li><a href="">Corporate Gifting</a></li>
-                <li><a href="">Just Because</a></li>
-                <li><a href="">Get Well</a></li>
-                <li><a href="">Fall Collection</a></li>
-                <li><a href="">Halloween</a></li>
-                <li><a href="">Wedding Collection</a></li>
-                <li><a href="">I'm Sorry</a></li>
-                <li><a href="">Sweetest Day</a></li>
-                <li><a href="">Inspirational</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col">
-            <div class="footer__nav">
-              <h3>Gift Ideas</h3>
-              <ul>
-                <li><a href="">Best Sellers</a></li>
-                <li><a href="">Chocolates & Sweets</a></li>
-                <li><a href="">Gourmet Gift Baskets</a></li>
-                <li><a href="">Godiva</a></li>
-                <li><a href="">Starbucks</a></li>
-                <li><a href="">Fresh Fruit</a></li>
-                <li><a href="">Balloons & Bears</a></li>
-                <li><a href="">Spa & Fragrances</a></li>
-                <li><a href="">For Him</a></li>
-                <li><a href="">Wine & Champagne</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="modal fade" id="instantpayment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog by-one-click-modal" role="document">
-        <div class="modal-content">
-          <button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
-          <div class="modal-body">
-            <h2 class="by-one-click-modal__title">Instant paymant</h2>
+					</nav>
+				</div>
+			</div>
+			<div class="center-header hidden-mobile">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col col-12 col-md-3">
+							<div class="center-header__logo"><a href="#"><img src="assets/images/icons/logo.svg" alt=""></a></div>
+						</div>
+						<div class="col col-12 col-md-3">
+							<div class="center-header__phone">
+								<div class="center-header__phone-icon"><img src="assets/images/icons/ic_calling_header.svg" alt=""></div>
+								<div class="center-header__phone-content">
+									<div>050-359-9640</div>
+									<div>toll-free right now</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col-12 col-md-3">
+							<div class="center-header__whatsapp">
+								<div class="center-header__whatsapp-icon"><img src="assets/images/icons/ic_chating_header.svg" alt=""></div>
+								<div class="center-header__whatsapp-content">
+									<div>800-999-9999</div>
+									<div>Order by Whatsapp</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col-12 col-md-3">
+							<div class="center-header__delivery">
+								<div class="center-header__delivery-icon"><img src="assets/images/icons/ic_delivery_header.svg" alt=""></div>
+								<div class="center-header__delivery-content">
+									<div>Delivery 24x7</div>
+									<div>Delivery the same day</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-header hidden-mobile" id="second-menu">
+				<div class="container">
+					<nav class="navbar navbar-expand-lg bottom-header__menu"><a class="mobile-category" href="#"><span class="show_category"></span><span class="hide_category"></span>Categories</a>
+						<div class="navbar-collapse" id="primary-navbar">
+							<ul class="navbar-nav container-fluid">
+								<li class="nav-item active"><a href="#">Home</a></li>
+								<li class="nav-item dropdown-hover"><a href="#">Balloons</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Helium latex ballon</a></li>
+										<li><a href="">Hearts and stars</a></li>
+										<li class="nav-item dropdown-hover"><a href="#">Helium foil balloon</a>
+											<ul class="dropdown-menu">
+												<li><a href="">Plain helium balloons</a></li>
+												<li><a href="">Printed helium balloons</a></li>
+											</ul>
+										</li>
+										<li><a href="">Helium bouquets</a></li>
+										<li><a href="">Helium large balloon</a></li>
+										<li><a href="">Helium numbers and letter</a></li>
+										<li><a href="">Personalized ballons</a></li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown-hover"><a href="#">Event decoraticon</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Helium latex ballon</a></li>
+										<li><a href="">Hearts and stars</a></li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown-hover"><a href="#">Party supplies</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Helium latex ballon</a></li>
+										<li><a href="">Hearts and stars</a></li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown-hover"><a href="#">Corporate</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Helium latex ballon</a></li>
+										<li><a href="">Hearts and stars</a></li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown-hover"><a href="#">Ocassion</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Helium latex ballon</a></li>
+										<li><a href="">Hearts and stars</a></li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown-hover"><a href="#">Gift ideas</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Helium latex ballon</a></li>
+										<li><a href="">Hearts and stars</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<div class="navbar-collapse mobile-category-menu" id="mobile-category">
+						<ul class="navbar-nav container-fluid">
+							<li class="nav-item single-links"><a href="#">Home</a></li>
+							<li class="nav-item single-links"><a href="#">Balloons</a></li>
+							<li class="nav-item single-links"><a href="#">Event decoraticon</a></li>
+							<li class="nav-item single-links"><a href="#">Party supplies</a></li>
+							<li class="nav-item single-links"><a href="#">Corporate</a></li>
+							<li class="nav-item single-links"><a href="#">Ocassion</a></li>
+							<li class="nav-item single-links"><a href="#">Gift ideas</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="product-page">
+			<div class="breadcrumbs">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 page-content__col">
+							<ul>
+								<li><a href="home.html">Home</a></li>
+								<li><a href="home.html">Balloons</a></li>
+								<li><a href="home.html">Helium latex balloon</a></li>
+								<li class="current"><span>Balloon plain Assorti Glamour</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-content">
+				<div class="container">
+					<h1 class="page-content__title">Balloon plain Assorti Glamour</h1>
+					<div class="row page-content__row">
+						<div class="col-1 page-content__col page-content__col--hidden-mobile">
+							<div class="owl-thumbs product-cart-carousel-thumbs" data-slider-id="1"><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/bolshoe_serdtse.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/3-2d96ba5cdb4bed8c6cd7ff12408a9316.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba-tumb.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/latexconfetti.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/flamingo-balloon1.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/flamingo-balloon1.png"/></a><a class="owl-thumb-item product-cart-carousel-thumbs__item" href="#"><img src="assets/images/content/product/flamingo-balloon1.png"/></a></div><a class="product-cart-carousel-thumbs__more" href="#">2 more</a>
+						</div>
+						<div class="col-12 col-md-5 page-content__col">
+							<div class="owl-carousel owl-theme product-cart-carousel" data-slider-id="1">
+								<div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
+								</div>
+								<div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
+								</div>
+								<div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
+								</div>
+								<div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
+								</div>
+								<div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
+								</div>
+								<div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
+								</div>
+								<div class="product-cart-carousel__item"><img src="assets/images/content/product/3-16ce0e3d7bee930eb659a65fec6647ba.png"/>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 page-content__col page-content__col--hidden-mobile">
+							<div class="row page-content__row">
+								<div class="col-12 page-content__col">
+									<div class="product-options">
+										<h3 class="product-options__title">Available options</h3>
+										<div class="row page-content__row">
+											<div class="col-6 page-content__col page-content__col--left">
+												<div class="product-options__item">
+													<h4 class="product-options__selected">Choose color:<span>No matter</span><a class="product-options__close" href="#"></a></h4>
+													<div class="color-select">
+														<ul>
+															<li class="color-select__item">
+																<input type="radio" name="color" id="color1">
+																<label style="background: #e0c554;" for="color1"></label>
+															</li>
+															<li class="color-select__item">
+																<input type="radio" name="color" id="color2">
+																<label style="background: #f8d2e7;" for="color2"></label>
+															</li>
+															<li class="color-select__item">
+																<input type="radio" name="color" id="color3">
+																<label style="background: #f3e9dd;" for="color3"></label>
+															</li>
+															<li class="color-select__item">
+																<input type="radio" name="color" id="color4">
+																<label style="background: #be5bd0;" for="color4"></label>
+															</li>
+															<li class="color-select__item">
+																<input type="radio" name="color" id="color5">
+																<label style="background: #52ac62;" for="color5"></label>
+															</li>
+															<li class="color-select__item">
+																<input type="radio" name="color" id="color6">
+																<label style="background: #903f22;" for="color6"></label>
+															</li>
+															<li class="color-select__item">
+																<input type="radio" name="color" id="color7" checked>
+																<label for="color7"><img src="assets/images/content//product/circle.png"/>
+																</label>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="product-options__item product-options__item--size">
+													<h4 class="product-options__selected">Choose size (inch):<span>No matter</span><a class="product-options__close" href="#"></a></h4>
+													<div class="size-select">
+														<ul>
+															<li class="size-select__item"><a href="#">13</a></li>
+															<li class="size-select__item"><a href="#">23</a></li>
+															<li class="size-select__item"><a href="#">30</a></li>
+															<li class="size-select__item"><a class="active" href="#">35</a></li>
+															<li class="size-select__item"><a href="#">40</a></li>
+															<li class="size-select__item"><a href="#">45</a></li>
+															<li class="size-select__item"><a href="#">50</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="product-options__item individual-inscription">
+													<h4 class="individual-inscription__title">Individual inscription<span>3 pcs. selected</span></h4>
+													<div class="individual-inscription__fields"></div><a class="individual-inscription__button" href="#">Add description</a>
+												</div>
+												<div class="product-options__item product-options__item--price">
+													<div class="product-options__price"><span>$135.00</span>
+														<div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
+															<input type="text" value="2"><a class="product-quantity__add" href="#"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-6 page-content__col">
+												<div class="product-options__item product-details">
+													<h5 class="product-details__title">Details product:</h5>
+													<ul class="product-details__list">
+														<li>Information:<span>
+																<div class="product-details__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div></span></li>
+														<li>Availability:<span>In Stock</span></li>
+														<li>Product Code:<span>9695d0e4fd</span></li>
+														<li>Brand:<span>BeMyBallons</span></li>
+													</ul>
+												</div>
+												<div class="product-options__item product-options__item--favorite">
+													<div class="product-favorite"><a href="#">To wish list</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 page-content__col">
+									<div class="page-content__buttons"><a class="page-content__add-cart" href="#">Add to cart</a><a class="page-content__by_one-click" href="#"> Buy in 1 click</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 page-content__col page-content__col--visible-mobile">
+							<div class="row page-content__row page-content__row--mobile">
+								<div class="col-12">
+									<div class="product-favorite"><a href="#">To wish list</a></div>
+									<div class="product-price">
+										<input type="text" value="2"><span>$135.00</span>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="available-options"><a class="available-options__main-link" href="#">Available options:<span>color, size, descriptions</span></a>
+										<div class="available-options__list">
+											<ul class="choose">
+												<li><a class="choose__color" href="#">Color:<span>No matter</span></a></li>
+												<li><a class="choose__size" href="#">Size:<span>35 inch</span></a></li>
+												<li class="choose__description"><a href="#">Individual description:<span>3 pcs. selected</span></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="page-content__buttons"><a class="page-content__add-cart" href="#">Add to cart</a></div>
+									<div class="product-details">
+										<h5 class="product-details__title">Details product:</h5>
+										<ul class="product-details__list">
+											<li>Information:<span>
+													<div class="product-details__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div></span>
+												<p class="product-details__status product-details__status--new">new</p>
+												<p class="product-details__status product-details__status--hot">hot</p>
+											</li>
+											<li>Availability:<span>In Stock</span></li>
+											<li>Product Code:<span>9695d0e4fd</span></li>
+											<li>Brand:<span>BeMyBallons</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 page-content__col">
+							<div class="page-content__decor-line"></div>
+							<div class="page-content__product-description">
+								<p>Do not waste time selecting balls - take the required number of assorted balls without a pattern. We always have balloons of three kinds - pastel, crystal and metal. Pastel - opaque opaque balls. Crystal - bright translucent balls. Metal - shiny bright opaque balls. Order the balls that are best for your holiday! All balloons are treated with a special HiFloat fluid, so they will delight you for a few days, instead of the usual 6-12 hours. Balls without a pattern are universal and suitable for any occasion. Most often they are used in the design of premises.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="baners">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-6 col-md-6">
+							<div class="jumbotron jumbotron-fluid rounded d-flex align-items-end" style="background: #fff url('assets/images/content/banner_1.png') no-repeat 50% 50% ;">
+								<div class="containers">
+									<div class="display-4">Event Decoration</div>
+									<p class="lead">Our focus is on creating custom themed...</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6">
+							<div class="jumbotron jumbotron-fluid rounded d-flex align-items-end" style="background: #fff url('assets/images/content/banner_2.png') no-repeat 50% 50% ;">
+								<div class="containers">
+									<div class="display-4">Wholesale Balloons</div>
+									<p class="lead">Only the best brands, no minimum order!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about product-reviews">
+				<div class="container">
+					<h2 class="product-reviews__title">Product reviews</h2>
+					<p class="product-reviews__sub-title">Honest opinion of customers</p>
+					<div class="row reviews__slider">
+						<div class="col-lg-4">
+							<div class="review">
+								<div class="review__top author">
+									<div class="author__image"><img src="assets/images/content/reviews-photo.jpg" alt=""></div>
+									<div class="author__name">Angelina</div>
+									<div class="author__create">17 may 2018</div>
+									<div class="author__rating" data-ratind="3"></div>
+								</div>
+								<div class="review__bottom description">
+									<div class="author__rating" data-ratind="3"></div>
+									<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="review">
+								<div class="review__top author">
+									<div class="author__image author__image-men"></div>
+									<div class="author__name">Angelina</div>
+									<div class="author__create">17 may 2018</div>
+									<div class="author__rating" data-ratind="2"></div>
+								</div>
+								<div class="review__bottom description">
+									<div class="author__rating" data-ratind="3"></div>
+									<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="review">
+								<div class="review__top author">
+									<div class="author__image author__image-woomen"></div>
+									<div class="author__name">Angelina</div>
+									<div class="author__create">17 may 2018</div>
+									<div class="author__rating" data-ratind="3"></div>
+								</div>
+								<div class="review__bottom description">
+									<div class="author__rating" data-ratind="3"></div>
+									<p class="description__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="review">
+								<div class="review__top author">
+									<div class="author__image"><img src="assets/images/content/reviews-photo.jpg" alt=""></div>
+									<div class="author__name">Angelina</div>
+									<div class="author__create">17 may 2018</div>
+									<div class="author__rating" data-ratind="3"></div>
+								</div>
+								<div class="review__bottom description">
+									<div class="author__rating" data-ratind="3"></div>
+									<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="review">
+								<div class="review__top author">
+									<div class="author__image author__image-men"></div>
+									<div class="author__name">Angelina</div>
+									<div class="author__create">17 may 2018</div>
+									<div class="author__rating" data-ratind="2"></div>
+								</div>
+								<div class="review__bottom description">
+									<div class="author__rating" data-ratind="3"></div>
+									<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="review">
+								<div class="review__top author">
+									<div class="author__image author__image-woomen"></div>
+									<div class="author__name">Angelina</div>
+									<div class="author__create">17 may 2018</div>
+									<div class="author__rating" data-ratind="3"></div>
+								</div>
+								<div class="review__bottom description">
+									<div class="author__rating" data-ratind="3"></div>
+									<p class="description__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row reviews__feedback"><a class="reviews__feedback-give" href="">Give feedback</a><a class="reviews__feedback-show" href="">Show more reviews</a></div>
+				</div>
+			</section>
+			<section class="related-products">
+				<div class="container">
+					<h2 class="related-products__title">Related products</h2>
+					<p class="related-products__sub-title">Honest opinion of customers</p>
+				</div>
+				<div class="products">
+					<div class="container">
+						<div class="row products__row">
+							<div class="col-6 col-sm-4 col-md-3 products__items">
+								<div class="product">
+									<div class="product__images">
+										<div class="product__carousel product-carousel">
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/1.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/1.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/1.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/1.png') no-repeat;"></div>
+										</div>
+										<div class="product__events">
+											<div class="favorite"><a class="favorite__add" href="#"></a><a class="favorite__link" href="#">To wish list</a></div><a class="product__info" href="#"></a>
+										</div>
+									</div>
+									<div class="product__title">
+										<p>The name of the item that occupies two lines</p>
+									</div>
+									<div class="product__description">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+									</div>
+									<div class="product__hover">
+										<div class="product-info">
+											<div class="product-info__price">$543.25</div>
+											<div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div>
+										</div>
+										<div class="product-buttons"><a class="product-buttons__comparison" href="#"><img class="svg" src="assets/images/icons/ic_comparison_link.svg" alt=""></a><a class="product-buttons__add-cart" href="#"><span>Add to cart</span></a></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 products__items">
+								<div class="product">
+									<div class="product__images">
+										<div class="product__carousel product-carousel">
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/2.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/2.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/2.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/2.png') no-repeat;"></div>
+										</div>
+										<div class="product__events">
+											<div class="favorite"><a class="favorite__add" href="#"></a><a class="favorite__link" href="#">To wish list</a></div><a class="product__info" href="#"></a>
+										</div>
+									</div>
+									<div class="product__title">
+										<p>The name of the item that occupies two lines</p><span class="product__status product__status--sale">Sale</span>
+									</div>
+									<div class="product__description">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+									</div>
+									<div class="product__hover">
+										<div class="product-info">
+											<div class="product-info__price">$543.25</div>
+											<div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div>
+										</div>
+										<div class="product-buttons"><a class="product-buttons__comparison" href="#"><img class="svg" src="assets/images/icons/ic_comparison_link.svg" alt=""></a><a class="product-buttons__add-cart" href="#"><span>Add to cart</span></a></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 products__items">
+								<div class="product">
+									<div class="product__images">
+										<div class="product__carousel product-carousel">
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/3.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/3.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/3.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/3.png') no-repeat;"></div>
+										</div>
+										<div class="product__events">
+											<div class="favorite"><a class="favorite__add" href="#"></a><a class="favorite__link" href="#">To wish list</a></div><a class="product__info" href="#"></a>
+										</div>
+									</div>
+									<div class="product__title">
+										<p>The name of the item that occupies two lines</p>
+									</div>
+									<div class="product__description">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+									</div>
+									<div class="product__hover">
+										<div class="product-info">
+											<div class="product-info__price">$543.25</div>
+											<div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div>
+										</div>
+										<div class="product-buttons"><a class="product-buttons__comparison" href="#"><img class="svg" src="assets/images/icons/ic_comparison_link.svg" alt=""></a><a class="product-buttons__add-cart" href="#"><span>Add to cart</span></a></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6 col-sm-4 col-md-3 products__items">
+								<div class="product">
+									<div class="product__images">
+										<div class="product__carousel product-carousel">
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/4.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/4.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/4.png') no-repeat;"></div>
+											<div class="product-carousel__item" style="background: url('assets/images/content/product/related/4.png') no-repeat;"></div>
+										</div>
+										<div class="product__events">
+											<div class="favorite"><a class="favorite__add" href="#"></a><a class="favorite__link" href="#">To wish list</a></div><a class="product__info" href="#"></a>
+										</div>
+									</div>
+									<div class="product__title">
+										<p>The name of the item that occupies two lines</p><span class="product__status product__status--new">New</span>
+									</div>
+									<div class="product__description">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+									</div>
+									<div class="product__hover">
+										<div class="product-info">
+											<div class="product-info__price">$543.25</div>
+											<div class="product-info__old-price">$600.00</div>
+											<div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div>
+										</div>
+										<div class="product-buttons"><a class="product-buttons__comparison" href="#"><img class="svg" src="assets/images/icons/ic_comparison_link.svg" alt=""></a><a class="product-buttons__add-cart" href="#"><span>Add to cart</span></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cotacts">
+				<div class="container">
+					<div class="row cotacts__row">
+						<div class="col-12 col-sm-12 col-md-4 cotacts__grid">
+							<div class="cotacts__item cotacts__item-red">
+								<div class="cotacts__item-icon"><img class="svg" src="assets/images/icons/ic_address.svg" alt=""></div>
+								<div class="cotacts__item-box"><span>Address</span><span>123 Flower Street</span></div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-4 cotacts__grid">
+							<div class="cotacts__item cotacts__item-yellow">
+								<div class="cotacts__item-icon"><img class="svg" src="assets/images/icons/ic_our_email.svg" alt=""></div>
+								<div class="cotacts__item-box"><span>Our Email</span><span>info@bemyballoon.com</span></div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-4 cotacts__grid">
+							<div class="cotacts__item cotacts__item-green">
+								<div class="cotacts__item-icon"><img class="svg" src="assets/images/icons/ic_follow.svg" alt=""></div>
+								<div class="cotacts__item-box"><span>Follow Us</span><span>#BeMyBalloon</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="container">
+					<div class="row advantages__content">
+						<div class="col-12 col-sm-7 col-md-7">
+							<h3>Lorem ipsum dolor sit amet</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						</div>
+						<div class="col-12 col-sm-5 col-md-5"><img src="assets/images/content/lorem-ipson-home.jpg" alt=""></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container"> 
+				<div class="row">
+					<div class="col">
+						<div class="footer__logo"><a href="#"><img src="assets/images/icons/logo.svg" alt=""></a></div>
+						<div class="footer__contacts"> 
+							<h4>Connect with us</h4>
+							<div class="footer__whatsapp">800-999-9999<span>Order by Whatsapp</span></div>
+							<div class="footer__link"> <a href="http://">Ask a Question </a><a href="http://">Help</a></div>
+						</div>
+						<div class="footer__social">
+							<h4>Connect social</h4>
+							<ul>
+								<li><a href=""><img class="svg" src="assets/images/icons/ic_fb_link.svg" alt=""></a></li>
+								<li><a href=""><img class="svg" src="assets/images/icons/ic_insta_link.svg" alt=""></a></li>
+								<li><a href=""><img class="svg" src="assets/images/icons/ic_vk_link.svg" alt=""></a></li>
+								<li><a href=""><img class="svg" src="assets/images/icons/ic_youtube_link.svg" alt=""></a></li>
+								<li><a href=""><img class="svg" src="assets/images/icons/ic_twitter_link.svg" alt=""></a></li>
+							</ul>
+						</div>
+						<div class="footer__copy">© 2017 Bemyballons</div>
+					</div>
+					<div class="col">
+						<div class="footer__nav">
+							<h3>Products</h3>
+							<ul>
+								<li><a href="">Best Sellers</a></li>
+								<li><a href="">What's New?</a></li>
+								<li><a href="">Flowers</a></li>
+								<li><a href="">All Roses</a></li>
+								<li><a href="">Plants</a></li>
+								<li><a href="">Jewelry Boutique</a></li>
+								<li><a href="">Gifts</a></li>
+								<li><a href="">Gift Baskets</a></li>
+								<li><a href="">Sweets & Chocolates</a></li>
+								<li><a href="">Same Day Delivery</a></li>
+								<li><a href="">Farm Fresh Flowers</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="footer__nav">
+							<h3>Occasion</h3>
+							<ul>
+								<li><a href="">Anniversary</a></li>
+								<li><a href="">Congratulations</a></li>
+								<li><a href="">Birthday</a></li>
+								<li><a href="">Bosses Week</a></li>
+								<li><a href="">Corporate Gifting</a></li>
+								<li><a href="">Just Because</a></li>
+								<li><a href="">Get Well</a></li>
+								<li><a href="">Fall Collection</a></li>
+								<li><a href="">Halloween</a></li>
+								<li><a href="">Wedding Collection</a></li>
+								<li><a href="">I'm Sorry</a></li>
+								<li><a href="">Sweetest Day</a></li>
+								<li><a href="">Inspirational</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="footer__nav">
+							<h3>Gift Ideas</h3>
+							<ul>
+								<li><a href="">Best Sellers</a></li>
+								<li><a href="">Chocolates & Sweets</a></li>
+								<li><a href="">Gourmet Gift Baskets</a></li>
+								<li><a href="">Godiva</a></li>
+								<li><a href="">Starbucks</a></li>
+								<li><a href="">Fresh Fruit</a></li>
+								<li><a href="">Balloons & Bears</a></li>
+								<li><a href="">Spa & Fragrances</a></li>
+								<li><a href="">For Him</a></li>
+								<li><a href="">Wine & Champagne</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-            <div class="by-one-click-modal__message">
-              <p>You can change the currency of payment:</p>
-            </div>            
-            <div class="by-one-click-modal__form">
-              <form class="modal-form">
-                <div class="modal-form__input modal-form__input--phone">
-                  <label>Enter your phone</label>
-                  <input type="text">
-                </div>
-                <div class="modal-form__input modal-form__input--mail">
-                  <label>Enter your mail</label>
-                  <input type="text">
-                </div>
-                <div class="modal-form__send">
-                  <input type="submit">
-                </div>
-              </form>
-            </div>
-            <p>After making a payment to the specified phone number, a message with a unique payment ID will be sent. Please save it.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="one-click" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog by-one-click-modal" role="document">
-        <div class="modal-content">
-          <button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
-          <div class="modal-body">
-            <h2 class="by-one-click-modal__title">Buy in 1 click</h2>
-            <div class="by-one-click-modal__product-list">
-              <div class="by-one-click-modal__image"><img src="assets/images/content/product/product-circle.png"/>
-              </div>
-              <div class="by-one-click-modal__product-info popup-pruduct">
-                <h3 class="popup-pruduct__title">Balloon plain Assorti Glamur</h3>
-                <div class="popup-pruduct__price"><span>$135.00</span><i></i>
-                  <input type="text" value="2">
-                </div>
-              </div>
-            </div>
-            <div class="by-one-click-modal__decor-line"></div>
-            <div class="by-one-click-modal__message">
-              <p>Please provide your name and phone number. We will contact you within 15 minutes to clarify the details of the order.</p>
-            </div>
-            <div class="by-one-click-modal__form">
-              <form class="modal-form">
-                <div class="modal-form__input modal-form__input--mail">
-                  <label>Enter your mail</label>
-                  <input type="text">
-                </div>
-                <div class="modal-form__input modal-form__input--phone">
-                  <label>Enter your phone</label>
-                  <input type="text">
-                </div>
-                <div class="modal-form__send">
-                  <input type="submit">
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--modal feedback-->
-    <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog feed-back-modal" role="document">
-        <div class="modal-content">
-          <button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
-          <div class="modal-body">
-            <h2 class="feed-back-modal__title">Give feedback</h2>
-            <p class="feed-back-modal__rating-title">Select your rating</p><span class="starRating">
-<input id="rating5" type="radio" name="rating" value="5">
-<label for="rating5">5</label>
-<input id="rating4" type="radio" name="rating" value="4">
-<label for="rating4">4</label>
-<input id="rating3" type="radio" name="rating" value="3" checked>
-<label for="rating3">3</label>
-<input id="rating2" type="radio" name="rating" value="2">
-<label for="rating2">2</label>
-<input id="rating1" type="radio" name="rating" value="1">
-<label for="rating1">1</label>
-</span>
-            <div class="feed-back-modal__decor-line"></div>
-            <div class="feed-back-modal__text">Please fill in all the fields to leave a review. <br> We really appreciate your opinion and take it into account.</div>
-            <div class="feed-back-modal__form">
-              <form class="modal-form">
-                <div class="modal-form__left"><a class="modal-form__load-photo" href="#">Upload your avatar</a></div>
-                <div class="modal-form__right">
-                  <div class="modal-form__input modal-form__input--w100 modal-form__input--user">
-                    <label>Enter your name</label>
-                    <input type="text">
-                  </div>
-                  <div class="modal-form__input modal-form__input--w100 modal-form__input--phone">
-                    <label>Enter your phone</label>
-                    <input type="text">
-                  </div>
-                </div>
-                <div class="modal-form__input modal-form__input--w100 modal-form__input--textarea">
-                  <label>Enter feedback</label>
-                  <textarea></textarea>
-                </div>
-                <div class="modal-form__send modal-form__send--big">
-                  <input type="submit" value="Give feedback">
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+			<div>
+			<span class="pass-recovery-modal" style="display: block; text-align: center;">
+				Восстановление пароля модалка
+			</span>
+			<span class="thanks-modal-open" style="display: block; text-align: center;">
+				Благодарность модалка
+			</span>
+			<span class="change-pass-modal-open" style="display: block; text-align: center;">
+				Изменить пароль
+			</span>
+			<span class="special-offer-modal-open" style="display: block; text-align: center;">
+				Специальное предложение
+			</span>
+			<span class="sign-in-modal-open" style="display: block; text-align: center;">
+				Авторизация
+			</span>
+			</div>
 
-    <div class="modal fade" id="choose-size" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-choose" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="available-options active"><i>Choose size:<span>no matter</span></i><a class="modal-choose__close" href="#" data-dismiss="modal" aria-label="Close"></a></div>
-            <div class="size-select">
-              <ul>
-                <li class="size-select__item"><a href="#">13</a></li>
-                <li class="size-select__item"><a href="#">23</a></li>
-                <li class="size-select__item"><a href="#">30</a></li>
-                <li class="size-select__item"><a class="active" href="#">35</a></li>
-                <li class="size-select__item"><a href="#">40</a></li>
-                <li class="size-select__item"><a href="#">45</a></li>
-                <li class="size-select__item"><a href="#">50</a></li>
-              </ul>
-            </div><a class="modal-choose__save" href="#" data-dismiss="modal" aria-label="Close">Save size</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="choose-color" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-choose" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="available-options active"><i>Choose color:<span>Blue</span></i><a class="modal-choose__close" href="#" data-dismiss="modal" aria-label="Close"></a></div>
-            <div class="color-select">
-              <ul>
-                <li class="color-select__item">
-                  <input type="radio" name="color" id="color11">
-                  <label style="background: #e0c554;" for="color11"></label>
-                </li>
-                <li class="color-select__item">
-                  <input type="radio" name="color" id="color21">
-                  <label style="background: #f8d2e7;" for="color21"></label>
-                </li>
-                <li class="color-select__item">
-                  <input type="radio" name="color" id="color31">
-                  <label style="background: #f3e9dd;" for="color31"></label>
-                </li>
-                <li class="color-select__item">
-                  <input type="radio" name="color" id="color41">
-                  <label style="background: #be5bd0;" for="color41"></label>
-                </li>
-                <li class="color-select__item">
-                  <input type="radio" name="color" id="color51">
-                  <label style="background: #52ac62;" for="color51"></label>
-                </li>
-                <li class="color-select__item">
-                  <input type="radio" name="color" id="color61">
-                  <label style="background: #903f22;" for="color61"></label>
-                </li>
-                <li class="color-select__item">
-                  <input type="radio" name="color" id="color71" checked>
-                  <label for="color71"><img src="assets/images/content//product/circle.png"/>
-                  </label>
-                </li>
-              </ul>
-            </div><a class="modal-choose__save" href="#">Save color</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="choose-description" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-choose" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="available-options active"><i>Individual description:<span>3 pcs. selected</span></i><a class="modal-choose__close" href="#" data-dismiss="modal" aria-label="Close"></a></div>
-            <div class="individual-inscription">
-              <div class="individual-inscription__fields"></div><a class="individual-inscription__button" href="#">Add description</a>
-            </div><a class="modal-choose__save" href="#">Save size</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="assets/js/jquery-3.2.1.min.js"> </script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!--script(src="assets/js/bootstrap.bundle.min.js")-->
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/main.min.js"></script>
-    <script src="assets/js/global.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/owl.carousel2.thumbs.min.js"></script>
-    <script src="assets/js/product.min.js"></script>
-  </body>
+		<div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog by-one-click-modal" role="document">
+				<div class="modal-content">
+					<button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+					<div class="modal-body">
+						<h2 class="by-one-click-modal__title">Sign in</h2>
+						<div class="tabs-modal">
+							<div class="tabs-header">
+								<div class="tab-m1 active">Your e-mail</div>
+								<div class="tab-m2">Your phone</div>
+							</div>
+							<div class="by-one-click-modal__form">
+								<form class="modal-form">
+									<div class="tab-f1">
+										<div class="modal-form__input modal-form__input--mail">
+											<label>Enter your mail</label>
+											<input type="text">
+										</div>
+									</div>
+									<div class="tab-f2">									
+										<div class="modal-form__input modal-form__input--phone">
+											<label>Enter your phone</label>
+											<input type="text">
+										</div>
+									</div>
+
+									<div class="modal-form__input modal-form__input--pass">
+										<label>Enter your pass</label>
+										<input type="text">
+									</div>
+									<div class="modal-form__send">
+										<span class="frgt-pass change-pass-modal-open">Forgot your password?</span>
+										<button>Enter <img src="assets/images/icons/send-button.png" alt=""></button>
+									</div>
+								</form>
+								<div class="line-modal"></div>
+								<div class="loginsocial">
+									<p>You can log in through social networks</p>
+									<div class="social-link">
+												<a href="#"><img src="assets/images/icons/fb-icon.png" alt=""></a>
+												<a href="#"><img src="assets/images/icons/gpl-icon.png" alt=""></a>
+												<a href="#"><img src="assets/images/icons/tw-icon.png" alt=""></a>
+												<a href="#"><img src="assets/images/icons/prntrst-icon-red.png" alt=""></a>
+												<a href="#"><img src="assets/images/icons/wtsp-icon.png" alt=""></a>
+											</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="footer-modal-link">
+						<a href="#">If you do not have a profile, go to registration <img src="assets/images/icons/footer-link.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="modal fade" id="change-pass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog by-one-click-modal" role="document">
+				<div class="modal-content">
+					<button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+					<div class="modal-body">
+						<h2 class="by-one-click-modal__title">Change pass</h2>
+						<div class="tabs-modal">
+							<div class="tabs-header">
+								<div class="tab-m1 active">Your e-mail</div>
+								<div class="tab-m2">Your phone</div>
+							</div>
+							<div class="by-one-click-modal__form">
+								<form class="modal-form">
+									<div class="tab-f1">
+										<div class="modal-form__input modal-form__input--mail">
+											<label>Enter your mail</label>
+											<input type="text">
+										</div>
+									</div>
+									<div class="tab-f2">									
+										<div class="modal-form__input modal-form__input--phone">
+											<label>Enter your phone</label>
+											<input type="text">
+										</div>
+									</div>
+									<div class="modal-form__send">
+										<button>Сontinue <img src="assets/images/icons/send-button.png" alt=""></button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<p class="by-one-click-modal__post">We will send instructions to the specified number for password recovery</p>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="modal fade" id="special-offer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog by-one-click-modal" role="document">
+				<div class="modal-content">
+					<button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+					<div class="modal-body">
+						<h2 class="by-one-click-modal__title">Get your coupon instantly</h2>
+						<p class="by-one-click-modal__post"><span>24 844</span> people have signed up last January <span>10%</span></p>
+						<div class="by-one-click-modal__form">
+							<form class="modal-form">
+								<div class="modal-form__input modal-form__input--mail">
+									<label>Enter your mail</label>
+									<input type="text">
+								</div>
+								<div class="modal-form__send">
+									<button>Get your instant coupon</button>
+								</div>
+							</form>
+						</div>
+						<p class="title-foot">*Terms & Conditions Apple. Entering your email address makes you eligble to receive future promotional emails.</p>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="modal fade" id="pass-recovery" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog by-one-click-modal" role="document">
+				<div class="modal-content">
+					<button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+					<div class="modal-body">
+						<h2 class="by-one-click-modal__title">Password recovery</h2>
+						<p class="by-one-click-modal__post">Recovery instructions sent to number <span>8 (915) 546-24-51</span></p>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="modal fade" id="thanks-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog by-one-click-modal" role="document">
+				<div class="modal-content">
+					<button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+					<div class="modal-body">
+						<h2 class="by-one-click-modal__title">You are awesome!</h2>
+						<p class="by-one-click-modal__post">You have successfully subscribed to this newsletter.</p>
+					</div>
+				</div>
+			</div>
+		</div>    
+		<div class="modal fade" id="instantpayment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog by-one-click-modal" role="document">
+				<div class="modal-content">
+					<button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+					<div class="modal-body">
+						<h2 class="by-one-click-modal__title">Instant paymant</h2>
+
+						<div class="by-one-click-modal__message">
+							<p>You can change the currency of payment: 
+								<select name="" class="select-pro" id="">
+									<option value="dollar">US Dollar</option>
+									<option value="euro">Euro</option>
+									<option value="aed">AED</option>
+								</select>
+							</p>
+						</div>            
+						<div class="by-one-click-modal__form">
+							<form class="modal-form">
+								<div class="modal-form__input modal-form__input--phone">
+									<label>Enter your phone</label>
+									<input type="text">
+								</div>
+								<div class="modal-form__input modal-form__input--amount">
+									<label>Enter amount</label>
+									<input type="text">
+								</div>
+								<div class="modal-form__send">
+									<button>Pay now <img src="assets/images/icons/send-button.png" alt=""></button>
+								</div>
+							</form>
+						</div>
+						<p class="by-one-click-modal__post">After making a payment to the specified phone number, a message with a unique payment ID will be sent. Please save it.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="one-click" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog by-one-click-modal" role="document">
+				<div class="modal-content">
+					<button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+					<div class="modal-body">
+						<h2 class="by-one-click-modal__title">Buy in 1 click</h2>
+						<div class="by-one-click-modal__product-list">
+							<div class="by-one-click-modal__image"><img src="assets/images/content/product/product-circle.png"/>
+							</div>
+							<div class="by-one-click-modal__product-info popup-pruduct">
+								<h3 class="popup-pruduct__title">Balloon plain Assorti Glamur</h3>
+								<div class="popup-pruduct__price"><span>$135.00</span><i></i>
+									<input type="text" value="2">
+								</div>
+							</div>
+						</div>
+						<div class="by-one-click-modal__decor-line"></div>
+						<div class="by-one-click-modal__message">
+							<p>Please provide your name and phone number. We will contact you within 15 minutes to clarify the details of the order.</p>
+						</div>
+						<div class="by-one-click-modal__form">
+							<form class="modal-form">
+								<div class="modal-form__input modal-form__input--mail">
+									<label>Enter your mail</label>
+									<input type="text">
+								</div>
+								<div class="modal-form__input modal-form__input--phone">
+									<label>Enter your phone</label>
+									<input type="text">
+								</div>
+								<div class="modal-form__send">
+									<input type="submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--modal feedback-->
+		<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog feed-back-modal" role="document">
+				<div class="modal-content">
+					<button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+					<div class="modal-body">
+						<h2 class="feed-back-modal__title">Give feedback</h2>
+						<p class="feed-back-modal__rating-title">Select your rating</p><span class="starRating">
+						<input id="rating5" type="radio" name="rating" value="5">
+						<label for="rating5">5</label>
+						<input id="rating4" type="radio" name="rating" value="4">
+						<label for="rating4">4</label>
+						<input id="rating3" type="radio" name="rating" value="3" checked>
+						<label for="rating3">3</label>
+						<input id="rating2" type="radio" name="rating" value="2">
+						<label for="rating2">2</label>
+						<input id="rating1" type="radio" name="rating" value="1">
+						<label for="rating1">1</label>
+						</span>
+						<div class="feed-back-modal__decor-line"></div>
+						<div class="feed-back-modal__text">Please fill in all the fields to leave a review. <br> We really appreciate your opinion and take it into account.</div>
+						<div class="feed-back-modal__form">
+							<form class="modal-form">
+								<div class="modal-form__left"><a class="modal-form__load-photo" href="#">Upload your avatar</a></div>
+								<div class="modal-form__right">
+									<div class="modal-form__input modal-form__input--w100 modal-form__input--user">
+										<label>Enter your name</label>
+										<input type="text">
+									</div>
+									<div class="modal-form__input modal-form__input--w100 modal-form__input--phone">
+										<label>Enter your phone</label>
+										<input type="text">
+									</div>
+								</div>
+								<div class="modal-form__input modal-form__input--w100 modal-form__input--textarea">
+									<label>Enter feedback</label>
+									<textarea></textarea>
+								</div>
+								<div class="modal-form__send modal-form__send--big">
+									<input type="submit" value="Give feedback">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="choose-size" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-choose" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="available-options active"><i>Choose size:<span>no matter</span></i><a class="modal-choose__close" href="#" data-dismiss="modal" aria-label="Close"></a></div>
+						<div class="size-select">
+							<ul>
+								<li class="size-select__item"><a href="#">13</a></li>
+								<li class="size-select__item"><a href="#">23</a></li>
+								<li class="size-select__item"><a href="#">30</a></li>
+								<li class="size-select__item"><a class="active" href="#">35</a></li>
+								<li class="size-select__item"><a href="#">40</a></li>
+								<li class="size-select__item"><a href="#">45</a></li>
+								<li class="size-select__item"><a href="#">50</a></li>
+							</ul>
+						</div><a class="modal-choose__save" href="#" data-dismiss="modal" aria-label="Close">Save size</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="choose-color" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-choose" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="available-options active"><i>Choose color:<span>Blue</span></i><a class="modal-choose__close" href="#" data-dismiss="modal" aria-label="Close"></a></div>
+						<div class="color-select">
+							<ul>
+								<li class="color-select__item">
+									<input type="radio" name="color" id="color11">
+									<label style="background: #e0c554;" for="color11"></label>
+								</li>
+								<li class="color-select__item">
+									<input type="radio" name="color" id="color21">
+									<label style="background: #f8d2e7;" for="color21"></label>
+								</li>
+								<li class="color-select__item">
+									<input type="radio" name="color" id="color31">
+									<label style="background: #f3e9dd;" for="color31"></label>
+								</li>
+								<li class="color-select__item">
+									<input type="radio" name="color" id="color41">
+									<label style="background: #be5bd0;" for="color41"></label>
+								</li>
+								<li class="color-select__item">
+									<input type="radio" name="color" id="color51">
+									<label style="background: #52ac62;" for="color51"></label>
+								</li>
+								<li class="color-select__item">
+									<input type="radio" name="color" id="color61">
+									<label style="background: #903f22;" for="color61"></label>
+								</li>
+								<li class="color-select__item">
+									<input type="radio" name="color" id="color71" checked>
+									<label for="color71"><img src="assets/images/content//product/circle.png"/>
+									</label>
+								</li>
+							</ul>
+						</div><a class="modal-choose__save" href="#">Save color</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="choose-description" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-choose" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="available-options active"><i>Individual description:<span>3 pcs. selected</span></i><a class="modal-choose__close" href="#" data-dismiss="modal" aria-label="Close"></a></div>
+						<div class="individual-inscription">
+							<div class="individual-inscription__fields"></div><a class="individual-inscription__button" href="#">Add description</a>
+						</div><a class="modal-choose__save" href="#">Save size</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="assets/js/jquery-3.2.1.min.js"> </script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!--script(src="assets/js/bootstrap.bundle.min.js")-->
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/fancySelect.js"></script>
+		<script src="assets/js/main.min.js"></script>
+		<script src="assets/js/global.min.js"></script>
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="assets/js/owl.carousel2.thumbs.min.js"></script>
+		<script src="assets/js/product.min.js"></script>
+	</body>
 </html>
