@@ -643,7 +643,7 @@ header
 			.nav-link
 				color: #000
 				height: 47px
-				line-height: 48px
+				line-height: 45px
 				padding: 0 12px 0 20px
 				font-size: 14px
 				position: relative
@@ -880,6 +880,8 @@ header
 			font-size: 16px
 			padding: 0
 			line-height: 44px
+			height: 48px
+			margin-bottom: -1px
 			&:hover
 				background: #e3a3cc
 				color: #fff
@@ -913,7 +915,7 @@ header
 		.top-header__cart-mini .top-header__cart-conteiner
 			position: absolute
 			right: 0
-			background: url(../images/content/bg-mini-cart.png)
+			background: #fff
 			top: 63px
 			width: 460px
 			z-index: 101
@@ -1031,6 +1033,8 @@ header
 		.row
 			padding: 38px 0
 			padding-bottom: 36px
+		&__logo
+			max-width: 228px
 		.center-header__phone
 			padding: 10px 4px
 			.center-header__phone-icon
@@ -1093,7 +1097,10 @@ header
 				align-items: center
 				justify-content: space-around
 				flex-direction: row
-				padding-left: 0
+				padding-left: 0				
+				&>li
+					padding: 0 30px
+					cursor: pointer
 				li
 					line-height: 69px
 					position: relative
@@ -1119,8 +1126,8 @@ header
 					&:hover >
 						a:after
 							border-top: 4px solid #e3a3cc
-						.dropdown-menu
-							display: block
+						/* .dropdown-menu
+							display: block */
 						a
 							color: #e3a3cc
 				.dropdown-menu
@@ -1179,8 +1186,8 @@ header
 					color: #e3a3cc
 
 @media (min-width: 768px)
-	header .top-header .navbar .dropdown-hover:hover .dropdown-menu
-		display: block
+	//header .top-header .navbar .dropdown-hover:hover .dropdown-menu
+	//	display: block
 
 .top-header.clone
 	position: fixed
@@ -1296,6 +1303,7 @@ main
 				&:hover
 					text-decoration: none
 					background: #e3a3cc
+					border: 1px solid #e3a3cc
 					opacity: .8
 					color: #fff
 	.footer__social
@@ -1564,6 +1572,8 @@ section .section-title
 	.ocassions__content
 		> div:nth-child(n+9)
 			display: none
+		a, a:hover
+			text-decoration: none
 		.ocassions-item
 			height: 140px
 			border: 1px solid #e8e8e8
@@ -1615,37 +1625,37 @@ section .section-title
 			background: url(../images/content/ocassions/4.png) no-repeat
 			background-size: cover
 		.ocassions-item--5:after
-			background: url(../images/content/ocassions/5.png) no-repeat
-			background-size: cover
-		.ocassions-item--6:after
 			background: url(../images/content/ocassions/6.png) no-repeat
 			background-size: cover
-		.ocassions-item--7:after
+		.ocassions-item--6:after
 			background: url(../images/content/ocassions/7.png) no-repeat
 			background-size: cover
-		.ocassions-item--8:after
+		.ocassions-item--7:after
 			background: url(../images/content/ocassions/8.png) no-repeat
 			background-size: cover
-		.ocassions-item--9:after
+		.ocassions-item--8:after
 			background: url(../images/content/ocassions/9.png) no-repeat
+			background-size: cover
+		.ocassions-item--9:after
+			background: url(../images/content/ocassions/11.png) no-repeat
 			background-size: cover
 		.ocassions-item--10:after
 			background: url(../images/content/ocassions/10.png) no-repeat
 			background-size: cover
 		.ocassions-item--11:after
-			background: url(../images/content/ocassions/11.png) no-repeat
+			background: url(../images/content/ocassions/5.png) no-repeat
 			background-size: cover
-		.ocassions-item--13:after
-			background: url(../images/content/ocassions/12.png) no-repeat
-			background-size: cover
-		.ocassions-item--14:after
-			background: url(../images/content/ocassions/13.png) no-repeat
-			background-size: cover
-		.ocassions-item--15:after
+		.ocassions-item--12:after
 			background: url(../images/content/ocassions/14.png) no-repeat
 			background-size: cover
-		.ocassions-item--16:after
+		.ocassions-item--13:after
 			background: url(../images/content/ocassions/15.png) no-repeat
+			background-size: cover
+		.ocassions-item--14:after
+			background: url(../images/content/ocassions/12.png) no-repeat
+			background-size: cover
+		.ocassions-item--15:after
+			background: url(../images/content/ocassions/13.png) no-repeat
 			background-size: cover
 	.ocassions__bottom
 		display: flex
@@ -1654,6 +1664,7 @@ section .section-title
 		flex-direction: column
 		position: relative
 		margin-top: 18px
+		cursor: pointer
 		&:before
 			content: ''
 			position: absolute
@@ -1822,6 +1833,11 @@ section .section-title
 
 .categories
 	margin-bottom: 7px
+	&__content
+		a:hover
+			text-decoration: none
+			.categories__content-item
+				box-shadow: inset 0 0px 200px rgba(0, 0,0, 0.1)
 	.categories__head h2
 		position: relative
 		&:before
@@ -1840,6 +1856,7 @@ section .section-title
 		background: url(../images/content/bg-categories.png) no-repeat top center
 		background-size: cover
 		.categories__content-item
+			transition: all 0.3s
 			height: 500px
 			border: 1px solid #e3e3e3
 			margin-bottom: 34px
@@ -5139,7 +5156,7 @@ header .fixed-menu
 	padding-right: 0 !important
 
 .join-menu
-	margin-bottom: 0
+	margin-bottom: 3px
 	display: none
 	flex-direction: row
 
@@ -6842,10 +6859,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	cursor: pointer
 	visibility: hidden
 	opacity: 0
-	transition: all 1s
+	transition: all 0.5s
 
 .product__hover
-	transition: all .5s
+	transition: all .2s
 	background: #fff
 
 @media screen and (max-width: 1200px)
@@ -6970,6 +6987,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		bottom: 0
 		height: 1px
 		background: #f3f3f3
+	a
+		color: #000
+		transition: all 0.3s
+		&:hover
+			color: #7cc5b7
+			text-decoration: none
 
 @media screen and (max-width: 1200px)
 	.product__title
@@ -6996,7 +7019,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	font-size: 13px
 	color: #999
 	line-height: 22px
-	margin-top: 15px
+	margin-top: 8px
 	padding-bottom: 12px
 	position: relative
 	&:after
@@ -7017,6 +7040,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	padding-right: 25px
 	text-align: left
 	padding-top: 20px
+	padding-bottom: 6px
 
 @media screen and (max-width: 1200px)
 	.product-info
@@ -11095,6 +11119,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			padding-left: 15px
 		&.stage-1
 			margin-top: 10px
+			font-weight: 600
 
 #tabs
 	overflow: hidden
@@ -11225,11 +11250,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	margin-top: 19px
 	.history-list
 		border-top: 1px solid #e8e8e8
-		border-bottom: 1px solid #e8e8e8
 		margin-left: -1px
 	.you-want
 		margin-bottom: 0
-		border-width: 1px 0 0
+		position: absolute
+		width: calc(100% - 30px)
+		bottom: 0
 
 .form-item
 	display: block
@@ -11550,7 +11576,14 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 .footer.under-subscribe
 	margin-top: 0
 .subscribe
-	background: #ecc2ec
+	background: rgba(243, 194, 235, 1)
+	background: -moz-linear-gradient(left, rgba(243, 194, 235, 1) 0%, rgba(171, 193, 238, 1) 100%)
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(243, 194, 235, 1)), color-stop(100%, rgba(171, 193, 238, 1)))
+	background: -webkit-linear-gradient(left, rgba(243, 194, 235, 1) 0%, rgba(171, 193, 238, 1) 100%)
+	background: -o-linear-gradient(left, rgba(243, 194, 235, 1) 0%, rgba(171, 193, 238, 1) 100%)
+	background: -ms-linear-gradient(left, rgba(243, 194, 235, 1) 0%, rgba(171, 193, 238, 1) 100%)
+	background: linear-gradient(to right, rgba(243, 194, 235, 1) 0%, rgba(171, 193, 238, 1) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c2eb', endColorstr='#abc1ee', GradientType=1 )
 	height: 140px
 	padding-right: 25px
 	&__form
@@ -11562,7 +11595,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		input
 			width: 208px
 			height: 45px
-			background: #d5d0f2
+			background: rgba(225, 225, 225, 0.33)
 			padding-left: 19px
 			color: #fff
 			&::-webkit-input-placeholder
@@ -11586,7 +11619,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				display: inline-block
 				position: relative
 				top: -1px
-	&__text
+	&__text2
 		display: flex
 		align-items: center
 		justify-content: space-between
@@ -11884,10 +11917,13 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			font-size: 13px
 			line-height: 35px
 			display: none
+			position: relative
+			top: -1px
 			img
 				display: inline-block
 				width: 14px
 				margin-left: 3px
+				margin-bottom: 1px
 		.deliv
 			color: #999
 			display: none
@@ -12093,7 +12129,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				transition: all 0.3s
 				&.active, &:hover
 					color: #e3a3cc
-					background-color: #fcfcfc
 				&:nth-of-type(1)
 					border-top-left-radius: 3px
 					border-bottom-left-radius: 3px
@@ -12249,6 +12284,20 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			&-info
 				input
 					margin-bottom: 12px
+				#inputs-list
+					label
+						position: relative
+					.close-input
+						position: absolute
+						top: 12px
+						right: 12px
+						width: 16px
+						height: 16px	
+						background: url('../images/icons/ic_close_gray.svg') center no-repeat
+						transaction: all 0.3s
+						cursor: pointer
+						&:hover
+							opacity: 0.8
 			img
 				width: 13px
 				display: inline-block
@@ -12690,7 +12739,7 @@ div.fancy-select
 			font-size: 10px
 	.subscribe
 		height: 85px
-		&__text
+		&__text2
 			padding: 0 0 0 15px
 			p
 				padding-right: 0
