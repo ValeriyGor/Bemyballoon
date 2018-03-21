@@ -2508,7 +2508,7 @@ section .section-title
 						left: 1px
 						top: 1px
 						border-radius: 50%
-						border: 1.2px solid #fff
+						border: 2px solid #fff
 		.advantages__slider-item
 			border: 1px solid #e3e3e3
 			border-radius: 4px
@@ -5766,6 +5766,27 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			position: relative
 			margin-top: 32px
 			border-radius: 6px
+			&-text
+				p:first-child
+					font-size: 30px
+					color: #fff
+					line-height: 30px
+					padding: 44px 0 0
+					margin: 0
+
+				img
+					position: static!important
+					margin: 3px auto!important
+					display: block
+					width: 430px
+					border-radius: 0!important
+				p:nth-of-type(2)
+					font-size: 18px
+					font-weight: 500
+					color: #fff
+					margin: 0 auto
+					line-height: 30px
+					padding: 10px 0 
 			img
 				border-radius: 50%
 				position: absolute
@@ -5897,9 +5918,9 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				margin-right: 22px
 				margin-top: -12px
 			.author__image-men
-				background: #b6f0e4 url(/assets/images/icons/ic-rewiew-man.svg) no-repeat 50% 50%
+				background: #b6f0e4 url(../../assets/images/icons/ic-rewiew-man.svg) no-repeat 50% 50%
 			.author__image-woomen
-				background: #fcceeb url(/assets/images/icons/ic-rewiew-woomen.svg) no-repeat 50% 50%
+				background: #fcceeb url(../../assets/images/icons/ic-rewiew-woomen.svg) no-repeat 50% 50%
 			.author__name
 				font-size: 18px
 				font-weight: 600
@@ -5912,7 +5933,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				color: #999
 				display: block
 			.author__rating
-				background: url(/assets/images/icons/ic-rewiew-rating.svg) repeat-x
+				background: url(../../assets/images/icons/ic-rewiew-rating.svg) repeat-x
 				height: 15px
 				display: inline-block
 				margin-top: 5px
@@ -5964,7 +5985,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		background: #fff
 		&:after
 			content: ''
-			background: url(/assets/images/icons/ic-chars.svg) no-repeat 50% 50%
+			background: url(../../assets/images/icons/ic-chars.svg) no-repeat 50% 50%
 			display: inline-block
 			height: 20px
 			width: 26px
@@ -5976,7 +5997,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	.reviews__feedback-show
 		display: none
 	.teams
-		background: url(/assets/images/content/bg-team.png) no-repeat 50% 50%
+		background: url(../../assets/images/content/bg-team.png) no-repeat 50% 50%
 		margin-top: 36px
 		padding-top: 36px
 		margin-bottom: 43px
@@ -6278,7 +6299,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 @media (max-width: 1023.98px)
 	.about .reviews__slider .carousel-next:before
 		border-left: 3px solid #ccc
-		margin-left: -2px
+		margin-left: -5px
 
 @media screen and (max-width: 767px)
 	.about .reviews__slider .review
@@ -6878,6 +6899,9 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		opacity: 0
 		visibility: hidden
 		transition: all 1s
+		&.active
+			opacity: 1
+			visibility: visible
 		&:not(.active)
 			height: 26px
 			width: 26px
@@ -9882,9 +9906,9 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			&:hover
 				text-decoration: none
 		&.active
-			color: #999
+			color: #000
 			a
-				color: #999
+				color: #000
 
 @media screen and (max-width: 1200px)
 	.category-page__grid-sorting li
@@ -9953,10 +9977,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			vertical-align: middle
 			transition: 0.3s
 		&:hover
-			color: #e3a3cc
+			color: #000
 			text-decoration: none
 			&:after
-				background-color: #e3a3cc
+				background-color: #000
 	.switch-list
 		margin-right: 30px
 		a:after
@@ -10758,7 +10782,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin-top: 31px
 
 .other-product__title
-	font-size: 14px
+	font-size: 16px
 	color: #000
 	margin-bottom: 30px
 
@@ -11387,7 +11411,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			margin-bottom: 0
 .city-deliver
 	display: flex
-	margin-bottom: 105px
+	margin-bottom: 60px
 	&__text
 		padding: 25px 20px 10px 42px
 		flex: 6
@@ -11443,9 +11467,11 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			margin-bottom: 5px
 			padding-top: 8px
 			color: #000
+			font-weight: 600
 		p
 			font-size: 14px
 			line-height: 24px
+			color: #000
 	&__img
 		width: 90px
 		display: inline-block
@@ -11575,7 +11601,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	padding-bottom: 0
 .footer.under-subscribe
 	margin-top: 0
-.subscribe
+.subscribe-foot
 	background: rgba(243, 194, 235, 1)
 	background: -moz-linear-gradient(left, rgba(243, 194, 235, 1) 0%, rgba(171, 193, 238, 1) 100%)
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(243, 194, 235, 1)), color-stop(100%, rgba(171, 193, 238, 1)))
@@ -12737,7 +12763,7 @@ div.fancy-select
 			width: 8px	
 		p 
 			font-size: 10px
-	.subscribe
+	.subscribe-foot
 		height: 85px
 		&__text2
 			padding: 0 0 0 15px
