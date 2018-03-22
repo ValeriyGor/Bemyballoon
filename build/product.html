@@ -292,35 +292,35 @@
 										<div class="row page-content__row">
 											<div class="col-6 page-content__col page-content__col--left">
 												<div class="product-options__item">
-													<h4 class="product-options__selected">Choose color:<span>No matter</span><a class="product-options__close" href="#"></a></h4>
+													<h4 class="product-options__selected">Choose color:<span>No matter</span><div class="product-options__close"></div></h4>
 													<div class="color-select">
 														<ul>
 															<li class="color-select__item">
-																<input type="radio" name="color" id="color1">
+																<input type="radio" name="color" data-color="orange" id="color1">
 																<label style="background: #e0c554;" for="color1"></label>
 															</li>
 															<li class="color-select__item">
-																<input type="radio" name="color" id="color2">
+																<input type="radio" name="color" data-color="light-blue" id="color2">
 																<label style="background: #f8d2e7;" for="color2"></label>
 															</li>
 															<li class="color-select__item">
-																<input type="radio" name="color" id="color3">
+																<input type="radio" name="color" data-color="light-grey" id="color3">
 																<label style="background: #f3e9dd;" for="color3"></label>
 															</li>
 															<li class="color-select__item">
-																<input type="radio" name="color" id="color4">
+																<input type="radio" name="color" data-color="blue" id="color4">
 																<label style="background: #be5bd0;" for="color4"></label>
 															</li>
 															<li class="color-select__item">
-																<input type="radio" name="color" id="color5">
+																<input type="radio" name="color" data-color="green" id="color5">
 																<label style="background: #52ac62;" for="color5"></label>
 															</li>
 															<li class="color-select__item">
-																<input type="radio" name="color" id="color6">
+																<input type="radio" name="color" data-color="red" id="color6">
 																<label style="background: #903f22;" for="color6"></label>
 															</li>
-															<li class="color-select__item">
-																<input type="radio" name="color" id="color7" checked>
+															<li class="color-select__item no-matter-color">
+																<input type="radio" name="color" data-color="No matter" id="color7" value="" checked>
 																<label for="color7"><img src="assets/images/content//product/circle.png"/>
 																</label>
 															</li>
@@ -341,16 +341,8 @@
 														</ul>
 													</div>
 												</div>
-												<div class="product-options__item individual-inscription">
+												<div class="product-options__item">
 													<h4 class="individual-inscription__title">Individual inscription<span>3 pcs. selected</span></h4>
-													<div class="individual-inscription__fields"></div><a class="individual-inscription__button" href="#">Add description</a>
-												</div>
-												<div class="product-options__item product-options__item--price">
-													<div class="product-options__price"><span>$135.00</span>
-														<div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
-															<input type="text" value="2"><a class="product-quantity__add" href="#"></a>
-														</div>
-													</div>
 												</div>
 											</div>
 											<div class="col-6 page-content__col">
@@ -366,6 +358,20 @@
 												</div>
 												<div class="product-options__item product-options__item--favorite">
 													<div class="product-favorite"><a href="#">To wish list</a></div>
+												</div>
+											</div>
+											<div class="col-12">												
+												<div class="product-options__item individual-inscription2">
+													
+													<div class="individual-inscription__fields"></div>
+													<a class="individual-inscription__button" href="#">Add description</a>
+												</div>
+												<div class="product-options__item product-options__item--price">
+													<div class="product-options__price"><span>$135.00</span>
+														<div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
+															<input type="text" value="2"><a class="product-quantity__add" href="#"></a>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -424,20 +430,20 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-sm-6 col-md-6">
-							<div class="jumbotron jumbotron-fluid rounded d-flex align-items-end" style="background: #fff url('assets/images/content/banner_1.png') no-repeat 50% 50% ;">
+							<a href=""><div class="jumbotron jumbotron-fluid rounded d-flex align-items-end" style="background: #fff url('assets/images/content/banner_1.png') no-repeat 50% 50% ;">
 								<div class="containers">
 									<div class="display-4">Event Decoration</div>
 									<p class="lead">Our focus is on creating custom themed...</p>
 								</div>
-							</div>
+							</div></a>
 						</div>
 						<div class="col-12 col-sm-6 col-md-6">
-							<div class="jumbotron jumbotron-fluid rounded d-flex align-items-end" style="background: #fff url('assets/images/content/banner_2.png') no-repeat 50% 50% ;">
+							<a href=""><div class="jumbotron jumbotron-fluid rounded d-flex align-items-end" style="background: #fff url('assets/images/content/banner_2.png') no-repeat 50% 50% ;">
 								<div class="containers">
 									<div class="display-4">Wholesale Balloons</div>
 									<p class="lead">Only the best brands, no minimum order!</p>
 								</div>
-							</div>
+							</div></a>
 						</div>
 					</div>
 				</div>
@@ -457,7 +463,7 @@
 								</div>
 								<div class="review__bottom description">
 									<div class="author__rating" data-ratind="3"></div>
-									<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
+									<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt! quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
 								</div>
 							</div>
 						</div>
@@ -471,7 +477,7 @@
 								</div>
 								<div class="review__bottom description">
 									<div class="author__rating" data-ratind="3"></div>
-									<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
+									<p class="description__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla suorem ipsum dolor sit amet consectetur adipisicing elit. Qui sed quasi tempore velit reiciendis repudiandae deleniti aperiam et nulla sunt!</p><a class="description__read-more" href="">Read more...</a>
 								</div>
 							</div>
 						</div>
@@ -848,31 +854,31 @@
                           <div class="color-select">
                             <ul>
                               <li class="color-select__item">
-                                <input type="radio" name="color" id="color1-1">
+                                <input type="radio" name="color" id="color1-1"  data-color="orange">
                                 <label style="background: #e0c554;" for="color1-1"></label>
                               </li>
                               <li class="color-select__item">
-                                <input type="radio" name="color" id="color2-1">
+                                <input type="radio" name="color" id="color2-1"  data-color="light-blue">
                                 <label style="background: #f8d2e7;" for="color2-1"></label>
                               </li>
                               <li class="color-select__item">
-                                <input type="radio" name="color" id="color3-1">
+                                <input type="radio" name="color" id="color3-1"  data-color="light-grey">
                                 <label style="background: #f3e9dd;" for="color3-1"></label>
                               </li>
                               <li class="color-select__item">
-                                <input type="radio" name="color" id="color4-1">
+                                <input type="radio" name="color" id="color4-1"  data-color="blue">
                                 <label style="background: #be5bd0;" for="color4-1"></label>
                               </li>
                               <li class="color-select__item">
-                                <input type="radio" name="color" id="color5-1">
+                                <input type="radio" name="color" id="color5-1"  data-color="green">
                                 <label style="background: #52ac62;" for="color5-1"></label>
                               </li>
                               <li class="color-select__item">
-                                <input type="radio" name="color" id="color6-1">
+                                <input type="radio" name="color" id="color6-1"  data-color="red">
                                 <label style="background: #903f22;" for="color6-1"></label>
                               </li>
                               <li class="color-select__item">
-                                <input type="radio" name="color" id="color7-1" checked>
+                                <input type="radio" name="color" id="color7-1"  data-color="No matter">
                                 <label for="color7-1"><img src="assets/images/content//product/circle.png"/>
                                 </label>
                               </li>
@@ -1214,9 +1220,15 @@
 							</div>
 							<div class="by-one-click-modal__product-info popup-pruduct">
 								<h3 class="popup-pruduct__title">Balloon plain Assorti Glamur</h3>
-								<div class="popup-pruduct__price"><span>$135.00</span><i></i>
-									<input type="text" value="2">
+								<div class="flex-rapos">
+									<div class="popup-pruduct__price"><span>$135.00</span><i></i>
+									
+									</div>
+									<div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
+											<input type="text" value="2"><a class="product-quantity__add" href="#"></a>
+										</div>
 								</div>
+								
 							</div>
 						</div>
 						<div class="by-one-click-modal__decor-line"></div>
@@ -1265,7 +1277,7 @@
 						<div class="feed-back-modal__text">Please fill in all the fields to leave a review. <br> We really appreciate your opinion and take it into account.</div>
 						<div class="feed-back-modal__form">
 							<form class="modal-form">
-								<div class="modal-form__left"><a class="modal-form__load-photo" href="#">Upload your avatar</a></div>
+								<div class="modal-form__left"><label for="upload-photo-feedback" class="modal-form__load-photo" href="#">Upload your avatar</label><input type="file" id="upload-photo-feedback" style="display: none;"></div>
 								<div class="modal-form__right">
 									<div class="modal-form__input modal-form__input--w100 modal-form__input--user">
 										<label>Enter your name</label>
@@ -1314,35 +1326,35 @@
 			<div class="modal-dialog modal-choose" role="document">
 				<div class="modal-content">
 					<div class="modal-body">
-						<div class="available-options active"><i>Choose color:<span>Blue</span></i><a class="modal-choose__close" href="#" data-dismiss="modal" aria-label="Close"></a></div>
+						<div class="available-options active">Choose color:<span>No matter</span><div class="product-options__close"></div></div>
 						<div class="color-select">
 							<ul>
 								<li class="color-select__item">
-									<input type="radio" name="color" id="color11">
+									<input type="radio" name="color1" data-color="orange" id="color11">
 									<label style="background: #e0c554;" for="color11"></label>
 								</li>
 								<li class="color-select__item">
-									<input type="radio" name="color" id="color21">
+									<input type="radio" name="color1" data-color="light-blue" id="color21">
 									<label style="background: #f8d2e7;" for="color21"></label>
 								</li>
 								<li class="color-select__item">
-									<input type="radio" name="color" id="color31">
+									<input type="radio" name="color1" data-color="light-grey" id="color31">
 									<label style="background: #f3e9dd;" for="color31"></label>
 								</li>
 								<li class="color-select__item">
-									<input type="radio" name="color" id="color41">
+									<input type="radio" name="color1" data-color="blue" id="color41">
 									<label style="background: #be5bd0;" for="color41"></label>
 								</li>
 								<li class="color-select__item">
-									<input type="radio" name="color" id="color51">
+									<input type="radio" name="color1" data-color="green" id="color51">
 									<label style="background: #52ac62;" for="color51"></label>
 								</li>
 								<li class="color-select__item">
-									<input type="radio" name="color" id="color61">
+									<input type="radio" name="color1" data-color="red" id="color61">
 									<label style="background: #903f22;" for="color61"></label>
 								</li>
-								<li class="color-select__item">
-									<input type="radio" name="color" id="color71" checked>
+								<li class="color-select__item no-matter-color">
+									<input type="radio" name="color1" id="color71" data-color="No matter">
 									<label for="color71"><img src="assets/images/content//product/circle.png"/>
 									</label>
 								</li>

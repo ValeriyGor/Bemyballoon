@@ -55,12 +55,12 @@
                 <li class="activ"><a href=""> US Dollar</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+            <li class="nav-item"><a class="nav-link sign-in-modal-open" href="#">Login</a></li>
+            <li class="nav-item"><a class="nav-link register-modal-open" href="#">Register</a></li>
             <li class="nav-item dropdown-hover top-header__account"><a class="nav-link" href="#">My account</a>
               <ul class="dropdown-menu">
-                <li><a href=""><i class="icon-ic-lock"></i> Register</a></li>
-                <li><a href=""><i class="icon-ic-vpn"></i> Login</a></li>
+                <li><a href="" class="register-modal-open"><i class="icon-ic-lock"></i> Register</a></li>
+                <li><a href="" class="sign-in-modal-open"><i class="icon-ic-vpn"></i> Login</a></li>
                 <li><a href=""><i class="icon-ic-account "></i> My account</a></li>
                 <li><a href="">
                     <i class="icon-ic-wish"></i> Wish List<span class="cartcontents">3</span></a></li>
@@ -69,7 +69,7 @@
             <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Instant payment</a></li></ul>
+            <li class="nav-item"><a class="nav-link inst-pay" href="#">Instant payment</a></li></ul>
             <ul class="join-menu">
               <li class="join-menu__items join-menu__home"><a href="#">Home</a></li>
               <li class="join-menu__items"><a href="#">Balloons</a></li>
@@ -269,20 +269,22 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-sm-6 col-md-6">
+              <a href="#">
               <div class="jumbotron jumbotron-fluid rounded d-flex align-items-end" style="background: #fff url('assets/images/content/banner_1.png') no-repeat 50% 50% ;">
                 <div class="containers">
                   <div class="display-4">Event Decoration</div>
                   <p class="lead">Our focus is on creating custom themed...</p>
                 </div>
-              </div>
+              </div></a>
             </div>
             <div class="col-12 col-sm-6 col-md-6">
+              <a href="#">
               <div class="jumbotron jumbotron-fluid rounded d-flex align-items-end" style="background: #fff url('assets/images/content/banner_2.png') no-repeat 50% 50% ;">
                 <div class="containers">
                   <div class="display-4">Wholesale Balloons</div>
                   <p class="lead">Only the best brands, no minimum order!</p>
                 </div>
-              </div>
+              </div></a>
             </div>
           </div>
         </div>
@@ -921,11 +923,176 @@
         </div>
       </div>
     </footer>
+<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog by-one-click-modal" role="document">
+        <div class="modal-content">
+          <button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+          <div class="modal-body">
+            <h2 class="by-one-click-modal__title">Registration</h2>
+            <p class="by-one-click-modal__post">Log in through the social network <br>to skip the registration</p>
+            <div class="social-link">
+              <a href="#"><img src="assets/images/icons/fb-icon.png" alt=""></a>
+              <a href="#"><img src="assets/images/icons/gpl-icon.png" alt=""></a>
+              <a href="#"><img src="assets/images/icons/tw-icon.png" alt=""></a>
+              <a href="#"><img src="assets/images/icons/prntrst-icon-red.png" alt=""></a>
+              <a href="#"><img src="assets/images/icons/wtsp-icon.png" alt=""></a>
+            </div>              
+            <div class="line-modal"></div>
+            <div class="by-one-click-modal__form">
+              <form class="modal-form">
+                  <div class="modal-form__input modal-form__input--name">
+                    <label>Enter your first name</label>
+                    <input type="text">
+                  </div>
+                  <div class="modal-form__input modal-form__input--name">
+                    <label>Enter your second name</label>
+                    <input type="text">
+                  </div>
+                  <div class="modal-form__input modal-form__input--mail">
+                    <label>Enter your mail</label>
+                    <input type="text">
+                  </div>
+                  <div class="modal-form__input modal-form__input--pass">
+                    <label>Enter your pass</label>
+                    <input type="text">
+                  </div>              
+                  <div class="modal-form__input modal-form__input--phone">
+                    <label>Enter your phone</label>
+                    <input type="text">
+                  </div>
+                  <div class="upload-photo-step1">
+                    <label for="photo-usera">
+                      <input type="file" id="photo-usera">
+                      <img src="assets/images/icons/photo.svg" alt="">
+                      Upload your avatar
+                    </label>
+                    <span>Upload your avatar to use in your reviews on the site</span>
+                  </div>
+                  <div class="upload-photo-step2">
+                    <div class="upload-photo-step2__img" style="background: url(assets/images/content/prifile-ava.png) center no-repeat; background-size: contain;">
+                    </div>
+                    <div class="upload-photo-step2__text">
+                      <span>Your avatar now</span>
+                      <p>You can <a href="">delete</a> or <a href="">update</a></p>
+                      <span>Avatar size must be at least 400x400</span>
+                    </div>
+                  </div>
+                <div class="modal-form__send">
+                  <button>Registration <img src="assets/images/icons/send-button.png" alt=""></button>
+                </div>
+              </form>                              
+            </div>
+          </div>
+          
+          <div class="footer-modal-link">
+            <a href="#">If you already have a profile on site, you can enter it without registering <img src="assets/images/icons/footer-link.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog by-one-click-modal" role="document">
+        <div class="modal-content">
+          <button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+          <div class="modal-body">
+            <h2 class="by-one-click-modal__title">Sign in</h2>
+            <div class="tabs-modal">
+              <div class="tabs-header">
+                <div class="tab-m1 active">Your e-mail</div>
+                <div class="tab-m2">Your phone</div>
+              </div>
+              <div class="by-one-click-modal__form">
+                <form class="modal-form">
+                  <div class="tab-f1">
+                    <div class="modal-form__input modal-form__input--mail">
+                      <label>Enter your mail</label>
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="tab-f2">                  
+                    <div class="modal-form__input modal-form__input--phone">
+                      <label>Enter your phone</label>
+                      <input type="text">
+                    </div>
+                  </div>
+
+                  <div class="modal-form__input modal-form__input--pass">
+                    <label>Enter your pass</label>
+                    <input type="text">
+                  </div>
+                  <div class="modal-form__send">
+                    <span class="frgt-pass change-pass-modal-open">Forgot your password?</span>
+                    <button>Enter <img src="assets/images/icons/send-button.png" alt=""></button>
+                  </div>
+                </form>
+                <div class="line-modal"></div>
+                <div class="loginsocial">
+                  <p>You can log in through social networks</p>
+                  <div class="social-link">
+                        <a href="#"><img src="assets/images/icons/fb-icon.png" alt=""></a>
+                        <a href="#"><img src="assets/images/icons/gpl-icon.png" alt=""></a>
+                        <a href="#"><img src="assets/images/icons/tw-icon.png" alt=""></a>
+                        <a href="#"><img src="assets/images/icons/prntrst-icon-red.png" alt=""></a>
+                        <a href="#"><img src="assets/images/icons/wtsp-icon.png" alt=""></a>
+                      </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-modal-link">
+            <a href="#">If you do not have a profile, go to registration <img src="assets/images/icons/footer-link.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="modal fade" id="instantpayment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog by-one-click-modal" role="document">
+        <div class="modal-content">
+          <button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+          <div class="modal-body">
+            <h2 class="by-one-click-modal__title">Instant paymant</h2>
+
+            <div class="by-one-click-modal__message">
+              <p>You can change the currency of payment: 
+                <select name="" class="select-pro" id="">
+                  <option value="dollar">US Dollar</option>
+                  <option value="euro">Euro</option>
+                  <option value="aed">AED</option>
+                </select>
+              </p>
+            </div>            
+            <div class="by-one-click-modal__form">
+              <form class="modal-form">
+                <div class="modal-form__input modal-form__input--phone">
+                  <label>Enter your phone</label>
+                  <input type="text">
+                </div>
+                <div class="modal-form__input modal-form__input--amount">
+                  <label>Enter amount</label>
+                  <input type="text">
+                </div>
+                <div class="modal-form__send">
+                  <button>Pay now <img src="assets/images/icons/send-button.png" alt=""></button>
+                </div>
+              </form>
+            </div>
+            <p class="by-one-click-modal__post">After making a payment to the specified phone number, a message with a unique payment ID will be sent. Please save it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="assets/js/jquery-3.2.1.min.js"> </script>
     <script src="assets/js/bootstrap.min.js"></script>
     <!--script(src="assets/js/bootstrap.bundle.min.js")-->
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.min.js"></script>
     <script src="assets/js/global.min.js"></script>
+    <script src="assets/js/fancySelect.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/owl.carousel2.thumbs.min.js"></script>
+    <script src="assets/js/product.min.js"></script>
   </body>
 </html>

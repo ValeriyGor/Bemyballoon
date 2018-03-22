@@ -1274,6 +1274,7 @@ main
 	.footer__logo
 		margin-bottom: 11px
 		margin-top: 5px
+		max-width: 228px
 	.footer__contacts
 		padding-top: 7px
 		color: #000
@@ -1497,6 +1498,11 @@ input, select, textarea
 
 .baners
 	margin-top: 10px
+	a
+		&:hover
+			text-decoration: none
+			.jumbotron
+				box-shadow: inset 0 0 250px rgba(0,0,0,.15)
 	.jumbotron
 		height: 290px
 		text-align: left
@@ -1505,6 +1511,7 @@ input, select, textarea
 		box-sizing: border-box
 		overflow: hidden
 		padding-bottom: 25px
+		transition: all 0.3s
 		&:after
 			content: ''
 			background: url(../images/icons/banner-shadow.svg) no-repeat bottom
@@ -1687,6 +1694,7 @@ section .section-title
 				color: #8b8b8b
 				cursor: pointer
 				font-size: 16px
+				display: block
 				span
 					color: #7cc5b7
 					font-size: 16px
@@ -2766,10 +2774,11 @@ section .section-title
 	text-align: left
 	ul
 		margin-bottom: 10px
-		margin-top: -2px
+		margin-top: -10px
 		li
 			font-size: 13px
 			display: inline-block
+			padding-bottom: 10px
 			span
 				color: #999
 			a
@@ -2777,6 +2786,7 @@ section .section-title
 				margin-right: 26px
 				position: relative
 				padding-right: 13px
+				display: block
 				&:after
 					content: '/'
 					margin-left: 17px
@@ -2784,6 +2794,55 @@ section .section-title
 					color: #999
 					text-decoration: none
 					position: absolute
+			&.dropdown-hover>a
+				padding-right: 20px
+				&:before
+					content: ''
+					margin-left: 0
+					width: 0px
+					height: 0
+					border: 3px solid transparent
+					border-top-color: #e3a3cc
+					border-top-width: 5px
+					position: absolute
+					top: 9px
+					right: 8px
+				&:after
+					margin-left: 27px
+			ul
+				padding: 15px 0
+				li
+					display: block
+					padding: 0 30px
+					&.dropdown-hover
+						position: relative
+						&>a:after
+							content: ""
+							width: 0px
+							height: 0
+							border: 4px solid transparent
+							border-left-color: #e3a3cc
+							border-left-width: 6px
+							display: inline-block
+							vertical-align: middle
+							top: 10px
+							margin-left: 7px
+						&>a:before
+							display: none
+
+						.dropdown-menu
+							top: 0 
+							left: 90%
+							width: 100%
+					a
+						font-size: 13px
+						line-height: 28px
+						&:after
+							display: none
+						&:hover
+							color: #e3a3cc
+							text-decoration: none
+
 
 .title-page
 	h2
@@ -3254,6 +3313,7 @@ section .section-title
 		padding-top: 38px
 		.footer__logo
 			margin-bottom: 0
+			max-width: 228px
 		.footer__contacts
 			padding-top: 8px
 			h4
@@ -5900,13 +5960,13 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			&:before
 				border-right: 5px solid #ccc
 				margin-left: -8px
-				margin-top: -3px
+				margin-top: -5px
 		.carousel-next
 			right: -50px
 			&:before
 				border-left: 5px solid #ccc
 				margin-left: -2px
-				margin-top: -3px
+				margin-top: -5px
 		.review
 			.author__image
 				height: 90px
@@ -5953,6 +6013,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				display: inline-block
 				margin: 0
 				padding: 0
+				height: 84px
+				overflow: hidden
+				&.open
+					height: auto
 			.description__read-more
 				color: #e3a3cc
 				display: inline-block
@@ -6966,6 +7030,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	z-index: 100
 	bottom: -10px
 	left: 14px
+	display: inline-block
 
 @media screen and (max-width: 1200px)
 	.product__status
@@ -7943,14 +8008,29 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	background: url(../images/icons/icon-close.svg) no-repeat
 	display: inline-block
 	margin-left: 10px
+	display: none
+	cursor: pointer
 
 .product-options__price
 	padding-left: 4px
+	display: flex
+	justify-content: flex-start
+	align-items: center
 	span
 		font-size: 36px
 		font-family: Marmelad, sans-serif
 		color: #000
 		line-height: 28px
+		margin-right: 0
+		&:after 
+			width: 8px
+			height: 8px
+			content: ""
+			display: inline-block
+			background: url('../images/icons/icon-close.svg') no-repeat
+			background-size: contain
+			margin-left: 20px
+			margin-bottom: 9px
 
 @media screen and (max-width: 1200px)
 	.product-options__price span
@@ -8044,6 +8124,31 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 .individual-inscription
 	margin-top: 29px
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-wrap: wrap
+	&2
+		margin-top: 5px
+	&__fields
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+		min-width: 0
+		margin-top: 5px
+
+	
+	&__field-item
+		width: 270px
+.flex-rapos
+	display: flex
+	align-items: center
+	justify-content: flex-start
+
+#one-click
+	.product-quantity
+		margin-top: 14px
 
 @media screen and (max-width: 1200px)
 	.individual-inscription
@@ -8072,7 +8177,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 .individual-inscription__button
 	display: block
-	width: 100%
+	width: 270px
+	max-width: 100%
 	text-align: center
 	color: #000
 	font-size: 14px
@@ -8080,7 +8186,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	border: 1px solid #e6e6e6
 	box-sizing: border-box
 	padding: 12px 10px
-	margin-top: 15px
+	margin-top: 5px
 	border-radius: 3px
 	&:before
 		content: '+'
@@ -8108,11 +8214,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin-top: -1px
 
 .individual-inscription__field-item
-	width: 100%
 	border: 1px solid #e6e6e6
 	position: relative
 	border-radius: 3px
 	margin-bottom: 5px
+	&:nth-of-type(2n+1)
+		margin-right: 30px
 	&:last-child
 		margin-bottom: 0
 	input
@@ -8141,7 +8248,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 .product-quantity
 	display: inline-block
 	float: right
-	border: 1px solid #e5e5e5
+	background-color: transparent
 	border-radius: 3px
 	max-height: 30px
 	font-size: 0
@@ -8153,6 +8260,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		background: #fcfcfc
 		vertical-align: middle
 		position: relative
+		visibility: hidden
 		&:after
 			text-align: center
 			line-height: 28px
@@ -8171,6 +8279,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		max-height: 28px
 		vertical-align: middle
 		text-align: center
+		border: 1px solid #e5e5e5
+		background-color: #fff
 
 @media screen and (max-width: 1200px)
 	.product-quantity
@@ -8196,7 +8306,9 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 .product-quantity__add
 	font-size: 20px
-	border-left: 1px solid #e5e5e5
+	border: 1px solid #e5e5e5
+	margin-left: -1px
+	display: none
 	&:after
 		content: "+"
 
@@ -8206,10 +8318,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 .product-quantity__remove
 	font-size: 28px
-	border-right: 1px solid #e5e5e5
+	border: 1px solid #e5e5e5
+	margin-right: -1px
+	display: none
 	&:after
 		content: '-'
-		margin-top: -3px
+		margin-top: -3px 
 
 @media screen and (max-width: 1200px)
 	.product-quantity__remove
@@ -8351,7 +8465,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 .product-price
 	display: inline-block
-	float: right
 	padding-right: 5px
 	font-size: 20px
 	color: #000
@@ -8656,10 +8769,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				height: 0
 				border: 6px solid transparent
 				border-top-color: #e3a3cc
-
+#change-pass, #special-offer, #instantpayment
+	.modal-dialog
+		top: 13%!important
 #fast-seen	
 	.modal-dialog
-		margin: 28px auto 0
+		margin: 28px auto 30px
 	.prev-product, .next-product
 		height: 45px
 		width: 45px
@@ -8670,7 +8785,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		border-radius: 50%
 		z-index: 1045
 		cursor: pointer
-
+	.individual-inscription__field-item:nth-of-type(odd)
+		margin-right: 0
 	.prev-product
 		left: -183px
 		&:before
@@ -8685,6 +8801,15 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			right: 50%
 			transform: translate(2px, -4px)
 			transition: all 0.3s
+		&:after
+			content: 'Last product'
+			font-size: 13px
+			color: #fff
+			position: absolute
+			line-height: 20px
+			top: 1px
+			right: -65px
+			width: 50px
 		&:hover
 			&:before
 				border-right-color: #e3a3cc
@@ -8702,6 +8827,17 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			top: 50%
 			left: 50%
 			transform: translate(-2px, -4px)
+
+		&:after
+			content: 'Next product'
+			text-align: right
+			font-size: 13px
+			color: #fff
+			position: absolute
+			line-height: 20px
+			top: 1px
+			left: -65px
+			width: 50px
 		&:hover
 			&:before
 				border-left-color: #e3a3cc
@@ -8726,6 +8862,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			padding-left: 64px
 		.col-gallery-img
 			padding-right: 0
+			padding-left: 10px
 		.col-help
 			padding-left: 32px
 			padding-right: 60px
@@ -8857,7 +8994,9 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 
 	.social-link
 		margin-bottom: 25px
-
+#pass-recovery, #thanks-modal
+	.modal-dialog
+		top: 25%!important
 #sign-in
 	.by-one-click-modal
 		max-width: 436px!important
@@ -9016,9 +9155,15 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				right: 8px
 		ul.options 
 			top: 25px
+			padding: 5px 0
 			li
-				padding: 3px 6px 
+				padding: 0 6px 
+				transition: all 0.3s
 				font-size: 13px
+				text-align: left
+				&.selected, &:hover
+					color: #bababa
+					background: #fff
 
 	
 
@@ -9279,6 +9424,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	color: #7e7e7e
 	padding: 20px
 	position: relative
+	cursor: pointer
 	&:before
 		content: ''
 		width: 45px
@@ -9299,8 +9445,13 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	&:last-child
 		margin-bottom: 30px
 	&:hover .product-list__events
-		opacity: 1
-		visibility: visible
+		.product-list__favorite, .product-list__wichlist
+			opacity: 1
+			visibility: visible
+	.product-list__favorite, .product-list__wichlist
+		&.active
+			opacity: 1
+			visibility: visible
 
 @media screen and (max-width: 1200px)
 	.product-list__item
@@ -9436,10 +9587,11 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 .product-list__events
 	font-size: 0
 	margin-top: 20px
-	opacity: 0
-	visibility: hidden
 	transition: .3s
 	max-height: 13px
+	.product-list__favorite, .product-list__wichlist		
+		opacity: 0
+		visibility: hidden
 
 @media screen and (max-width: 1200px)
 	.product-list__events
@@ -9768,6 +9920,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin-bottom: 0
 		border: none
 		position: relative
+		align-items: center
 		&:after
 			content: ''
 			position: absolute
@@ -10024,8 +10177,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	.category-filter__title
 		font-size: 21px
 
-.category-filter__title--decor:before
-	content: ''
+.category-filter__title--decor-link-arrow
 	width: 9px
 	height: 14px
 	background: url(../images/icons/str.svg) no-repeat
@@ -10051,6 +10203,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		color: #000
 		font-size: 13px
 		display: block
+		transition: all 0.3s
 		span
 			font-size: 9px
 			color: #ccc
@@ -10060,6 +10213,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			margin-top: -5px
 		&:hover
 			text-decoration: none
+			color: #e3a3cc
 	> li > a
 		font-size: 14px
 		padding-top: 6px
