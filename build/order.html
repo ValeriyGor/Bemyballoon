@@ -103,7 +103,12 @@
                     <div class="col-4"><img src="assets/images/content/mini-cart-1.jpg" alt=""/></div>
                     <div class="col-6">
                       <div class="name">The name of the item that occupies two lines</div>
-                      <div class="price">$543.25<span class="quantity">2</span></div>
+                      <div class="flex-row">
+                        <div class="price">$543.25 </div>
+                        <div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
+                          <input type="text" value="2"><a class="product-quantity__add" href="#"></a>
+                        </div>
+                      </div>
                     </div>
                     <div class="col-2">
                       <div class="remove close"></div>
@@ -113,7 +118,13 @@
                     <div class="col-4"><img src="assets/images/content/mini-cart-2.jpg" alt=""/></div>
                     <div class="col-6">
                       <div class="name">The name of the item that occupies </div>
-                      <div class="price">$543.25<span class="quantity">2</span></div>
+                      <div class="flex-row">
+                        <div class="price">$543.25 </div>
+                        <div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
+                          <input type="text" value="2"><a class="product-quantity__add" href="#"></a>
+                        </div>
+                      </div>
+                      
                     </div>
                     <div class="col-2">
                       <div class="remove close"></div>
@@ -123,7 +134,12 @@
                     <div class="col-4"><img src="assets/images/content/mini-cart-3.jpg" alt=""/></div>
                     <div class="col-6">
                       <div class="name">The name of the item </div>
-                      <div class="price">$543.25<span class="quantity">2</span></div>
+                      <div class="flex-row">
+                        <div class="price">$543.25 </div>
+                        <div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
+                          <input type="text" value="2"><a class="product-quantity__add" href="#"></a>
+                        </div>
+                      </div>
                     </div>
                     <div class="col-2">
                       <div class="remove close"></div>
@@ -284,59 +300,101 @@
                 <div class="row product-list__row">
                   <div class="col-12">
                     <div class="product-list__item">
-                      <div class="product-list__image"><a href="#"><img src="assets/images/content/product/product-circle-1.png"/></a></div>
-                      <div class="product-list__content">
-                        <div class="product-list__stats">
-                          <div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div><span class="product__status product__status--sale">Sale</span>
-                        </div><a class="product-list__title" href="#">Balloon plain Assorti Glamour</a>
-                        <ul class="product-list__options order-products__options">
-                          <li>Helium latex balloons</li>
-                          <li>Color:<a href="#">Red</a></li>
-                          <li>Size:<a href="#">27 in.</a></li>
-                        </ul>
+                      <div>
+                        <div class="product-list__image"><a href="#"><img src="assets/images/content/product/product-circle-1.png"/></a></div>
+                        <div class="product-list__content">
+                          <div class="product-list__stats">
+                            <div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div><span class="product__status product__status--sale">Sale</span>
+                          </div><a class="product-list__title" href="#">Balloon plain Assorti Glamour</a>
+                          <ul class="product-list__options order-products__options">
+                            <li>Helium latex balloons</li>
+                            <li class="standart-select">Color:
+                                <select name="" class="select-pro" id="">
+                                  <option value="dollar">Black</option>
+                                  <option value="euro">White</option>
+                                  <option value="aed">Yellow</option>
+                                </select></li>
+                              <li class="standart-select">Size:
+                                <select name="" class="select-pro" id="">
+                                  <option value="dollar">21 in.</option>
+                                  <option value="euro">23 in.</option>
+                                  <option value="aed">25 in.</option>
+                                </select></li>
+                          </ul>
+                        </div>
                       </div>
                       <div class="order-products__events"><a class="product-list__favorite active" href="#"></a><a class="product-list__wichlist" href="#"></a><a class="order-products__delete" href="#"></a></div>
                       <div class="order-products__info">
                         <div class="popup-pruduct__price"><span>$546</span><i></i>
-                          <input type="text" value="2">
+                          <div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
+                            <input type="text" value="2"><a class="product-quantity__add" href="#"></a>
+                          </div>
                         </div><span class="product-list__old-price">$600.00</span>
                       </div>
                     </div>
                     <div class="product-list__item">
-                      <div class="product-list__image"><a href="#"><img src="assets/images/content/product/product-circle-2.png"/></a></div>
-                      <div class="product-list__content">
-                        <div class="product-list__stats">
-                          <div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div><span class="product__status product__status--new">New</span>
-                        </div><a class="product-list__title" href="#">Balloon plain</a>
-                        <ul class="product-list__options order-products__options">
-                          <li>Helium latex balloons</li>
-                          <li>Color:<a href="#">Pink</a></li>
-                          <li>Size:<a href="#">21 in.</a></li>
-                        </ul>
+                      <div>
+                        <div class="product-list__image"><a href="#"><img src="assets/images/content/product/product-circle-2.png"/></a></div>
+                        <div class="product-list__content">
+                          <div class="product-list__stats">
+                            <div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div><span class="product__status product__status--new">New</span>
+                          </div><a class="product-list__title" href="#">Balloon plain</a>
+                          <ul class="product-list__options order-products__options">
+                            <li>Helium latex balloons</li>
+                            <li class="standart-select">Color:
+                              <select name="" class="select-pro" id="">
+                                <option value="dollar">Black</option>
+                                <option value="euro">White</option>
+                                <option value="aed">Yellow</option>
+                              </select></li>
+                            <li class="standart-select">Size:
+                              <select name="" class="select-pro" id="">
+                                <option value="dollar">21 in.</option>
+                                <option value="euro">23 in.</option>
+                                <option value="aed">25 in.</option>
+                              </select></li>
+                          </ul>
+                        </div>
                       </div>
                       <div class="order-products__events"><a class="product-list__favorite" href="#"></a><a class="product-list__wichlist" href="#"></a><a class="order-products__delete" href="#"></a></div>
                       <div class="order-products__info">
                         <div class="popup-pruduct__price"><span>$48</span><i></i>
-                          <input type="text" value="2">
+                          <div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
+                            <input type="text" value="2"><a class="product-quantity__add" href="#"></a>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="product-list__item">
-                      <div class="product-list__image"><a href="#"><img src="assets/images/content/product/product-circle-3.png"/></a></div>
-                      <div class="product-list__content">
-                        <div class="product-list__stats">
-                          <div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div><span class="product__status product__status--sale">Sale</span>
-                        </div><a class="product-list__title" href="#">Balloon plain Assorti</a>
-                        <ul class="product-list__options order-products__options">
-                          <li>Helium latex balloons</li>
-                          <li>Color:<a href="#">Black</a></li>
-                          <li>Size:<a href="#">21 in.</a></li>
-                        </ul>
+                      <div>
+                        <div class="product-list__image"><a href="#"><img src="assets/images/content/product/product-circle-3.png"/></a></div>
+                        <div class="product-list__content">
+                          <div class="product-list__stats">
+                            <div class="product-info__rating"><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""><img class="svg" src="assets/images/icons/ic_stat.svg" alt=""></div><span class="product__status product__status--sale">Sale</span>
+                          </div><a class="product-list__title" href="#">Balloon plain Assorti</a>
+                          <ul class="product-list__options order-products__options">
+                            <li>Helium latex balloons</li>
+                            <li class="standart-select">Color:
+                              <select name="" class="select-pro" id="">
+                                <option value="dollar">Black</option>
+                                <option value="euro">White</option>
+                                <option value="aed">Yellow</option>
+                              </select></li>
+                            <li class="standart-select">Size:
+                              <select name="" class="select-pro" id="">
+                                <option value="dollar">21 in.</option>
+                                <option value="euro">23 in.</option>
+                                <option value="aed">25 in.</option>
+                              </select></li>
+                          </ul>
+                        </div>
                       </div>
                       <div class="order-products__events"><a class="product-list__favorite" href="#"></a><a class="product-list__wichlist" href="#"></a><a class="order-products__delete" href="#"></a></div>
                       <div class="order-products__info">
                         <div class="popup-pruduct__price"><span>$1500</span><i></i>
-                          <input type="text" value="11">
+                          <div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
+                            <input type="text" value="2"><a class="product-quantity__add" href="#"></a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -699,35 +757,35 @@
               <div class="select-weight-modal__item col-4 weight-item">
                 <div class="weight-item__image"><img src="assets/images/content/order/weight-1.png"/><a class="weight-item__button weight-item__button--add" href="#"></a><a class="weight-item__button weight-item__button--remove" href="#"></a>
                 </div>
-                <p class="weight-item__name">Silver weight</p><span class="weight-item__price">$1.00</span>
+                <p class="weight-item__name">Silver weight<i></i><span class="weight-item__counter">1</span></p><span class="weight-item__price">$1.00</span>
               </div>
               <div class="select-weight-modal__item col-4 weight-item">
                 <div class="weight-item__image"><img src="assets/images/content/order/weight-2.png"/><a class="weight-item__button weight-item__button--add" href="#"></a><a class="weight-item__button weight-item__button--remove" href="#"></a>
                 </div>
-                <p class="weight-item__name">Green weight<i></i>3</p><span class="weight-item__price">$1.00</span>
+                <p class="weight-item__name">Green weight<i></i><span class="weight-item__counter">1</span></p><span class="weight-item__price">$1.00</span>
               </div>
               <div class="select-weight-modal__item col-4 weight-item">
                 <div class="weight-item__image"><img src="assets/images/content/order/weight-3.png"/><a class="weight-item__button weight-item__button--add" href="#"></a><a class="weight-item__button weight-item__button--remove" href="#"></a>
                 </div>
-                <p class="weight-item__name">Red weight</p><span class="weight-item__price">$1.00</span>
+                <p class="weight-item__name">Red weight<i></i><span class="weight-item__counter">1</span></p><span class="weight-item__price">$1.00</span>
               </div>
               <div class="select-weight-modal__item col-4 weight-item">
                 <div class="weight-item__image"><img src="assets/images/content/order/weight-4.png"/><a class="weight-item__button weight-item__button--add" href="#"></a><a class="weight-item__button weight-item__button--remove" href="#"></a>
                 </div>
-                <p class="weight-item__name">Two-color weight</p><span class="weight-item__price">$1.00</span>
+                <p class="weight-item__name">Two-color weight<i></i><span class="weight-item__counter">1</span></p><span class="weight-item__price">$1.00</span>
               </div>
               <div class="select-weight-modal__item col-4 weight-item">
                 <div class="weight-item__image"><img src="assets/images/content/order/weight-5.png"/><a class="weight-item__button weight-item__button--add" href="#"></a><a class="weight-item__button weight-item__button--remove" href="#"></a>
                 </div>
-                <p class="weight-item__name">Weight with ribbon</p><span class="weight-item__price">$1.00</span>
+                <p class="weight-item__name">Weight with ribbon<i></i><span class="weight-item__counter">1</span></p><span class="weight-item__price">$1.00</span>
               </div>
               <div class="select-weight-modal__item col-4 weight-item">
                 <div class="weight-item__image"><img src="assets/images/content/order/weight-6.png"/><a class="weight-item__button weight-item__button--add" href="#"></a><a class="weight-item__button weight-item__button--remove" href="#"></a>
                 </div>
-                <p class="weight-item__name">Pink weight<i></i><span>1</span></p><span class="weight-item__price">$1.00</span>
+                <p class="weight-item__name">Pink weight<i></i><span class="weight-item__counter">1</span></p><span class="weight-item__price">$1.00</span>
               </div>
             </div>
-            <div class="select-weight-modal__decor"></div><a class="select-weight-modal__button" href="#">Add to order<span>4 selected weight</span></a>
+            <div class="select-weight-modal__decor"></div><a class="select-weight-modal__button" href="#">Add to order<span><span id="all-counter">0</span> selected weight</span></a>
           </div>
         </div>
       </div>
@@ -739,5 +797,6 @@
     <script src="assets/js/main.min.js"></script>
     <script src="assets/js/global.min.js"></script>
     <script src="assets/js/order.min.js"></script>
+    <script src="assets/js/fancySelect.js"></script>
   </body>
 </html>

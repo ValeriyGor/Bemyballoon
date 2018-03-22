@@ -425,10 +425,21 @@ template
 			display: none
 		&.slick-active
 			background: #fff
-			height: 15px
-			width: 15px
+			height: 11px
+			width: 11px
 			vertical-align: middle
 			margin-top: -4px
+			position: relative
+.product .slick-dots .slick-active
+	&:after
+		position: absolute
+		top: -2px
+		left: -2px				
+		background: #fff
+		height: 15px
+		width: 15px
+		content: ""
+		border-radius: 50%
 
 .owl-carousel
 	display: none
@@ -617,7 +628,7 @@ template
 
 header
 	margin-top: 10px
-	&[class*=" icon-"], &[class^=icon-]
+	[class*=" icon-"], [class^=icon-]
 		display: inline-block
 		width: 18px
 		height: 14px
@@ -969,6 +980,54 @@ header
 								margin-left: -20px
 								top: 50%
 								margin-top: -5px
+					.flex-row
+						display: flex
+						justify-content: space-between
+						align-items: center
+						max-width: 150px
+					.product-quantity
+						position: relative
+						a
+							height: 30px
+							width: 30px
+						&__remove
+							left: -29px
+							top: 0
+						&__add
+							right: -29px
+							top: 0
+
+
+
+						input
+							background: #f7f7f7
+							width: 40px
+							display: inline-block
+							text-align: center
+							border-radius: 2px
+							border: 1px solid #e5e5e5
+							height: 30px
+							max-height: 30px
+							line-height: 30px
+							font-size: 14px
+							box-sizing: border-box
+							position: relative
+							font-family: "Open Sans", sans-serif
+						a
+							position: absolute
+						&:before
+							content: ''
+							background: url(../images/icons/ic_close_gray.svg) no-repeat 50% 50%
+							height: 8px
+							width: 8px
+							display: block
+							position: absolute
+							background-size: contain
+							left: 0
+							margin-left: -20px
+							top: 50%
+							margin-top: -5px
+
 					.remove
 						background: url(../images/icons/ic_close_gray.svg) no-repeat 50% 50%
 						height: 30px
@@ -1259,6 +1318,7 @@ main
 .footer
 	position: relative
 	background: url(../images/content/bg-foooter.png) no-repeat bottom center
+	background-size: contain
 	padding-top: 58px
 	padding-bottom: 35px
 	margin-top: 30px
@@ -1845,7 +1905,7 @@ section .section-title
 		a:hover
 			text-decoration: none
 			.categories__content-item
-				box-shadow: inset 0 0px 200px rgba(0, 0,0, 0.1)
+				box-shadow: inset 0 0px 200px rgba(255, 255,255, 1)
 	.categories__head h2
 		position: relative
 		&:before
@@ -2485,38 +2545,54 @@ section .section-title
 			padding: 0 30px
 			bottom: 52px
 			li
-				height: 12px
-				width: 12px
+				height: 10px
+				width: 10px
 				border-radius: 50%
 				background: #fcceeb
-				margin: 0 4px
+				margin: 0 5px
 				vertical-align: middle
+				position: relative
+				z-index: 199 
+				button
+					display: block
+					font-size: 0
+					width: 10px
+					height: 10px
+					background: inherit
+					border-radius: 50%
+					position: relative
+					z-index: 399
+					outline: none
 				&:nth-child(3n-1)
 					background: #ffe8a8
 				&:nth-child(3n+3)
 					background: #b6f0e4
 				&.slick-active
 					margin-top: 0
+					position: relative
+					z-index: 199
 					&:before
 						content: ''
 						height: 14px
 						width: 14px
-						background: inherit
+						background: #fff
 						display: inline-block
 						position: absolute
-						left: -1px
-						top: -1px
+						left: -2px
+						top: -2px
 						border-radius: 50%
+						z-index: 99
 					&:after
 						content: ''
-						height: 10px
-						width: 10px
+						height: 18px
+						width: 18px
 						display: inline-block
 						position: absolute
-						left: 1px
-						top: 1px
+						left: -4px
+						top: -4px
 						border-radius: 50%
-						border: 2px solid #fff
+						background: inherit
+						z-index: 80
 		.advantages__slider-item
 			border: 1px solid #e3e3e3
 			border-radius: 4px
@@ -2901,13 +2977,14 @@ section .section-title
 			margin-right: -1px
 			&:before
 				content: ''
-				background: url(../images/icons/ic-delivery-search.svg) no-repeat 50% 50%
+				background: url('../images/icons/ic-delivery-search.svg') no-repeat 50% 50%
 				height: 24px
 				width: 24px
 				display: inline-block
 				vertical-align: middle
-				margin-top: -4px
-				margin-right: 14px
+				position: relative
+				top: -2px
+				margin-right: 10px
 			&:focus
 				border: none
 				box-shadow: none
@@ -3430,6 +3507,9 @@ section .section-title
 			line-height: 44px
 			a
 				font-size: 14px
+		.bottom-header .bottom-header__menu ul.navbar-nav>li
+			padding: 0 10px
+
 	.slider-home
 		.carousel .carousel-inner
 			height: 308px
@@ -5956,13 +6036,13 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		.carousel-prev
 			&:hover
 				border: 1px solid #e6d197
-			left: -50px
+			left: -85px
 			&:before
 				border-right: 5px solid #ccc
 				margin-left: -8px
 				margin-top: -5px
 		.carousel-next
-			right: -50px
+			right: -85px
 			&:before
 				border-left: 5px solid #ccc
 				margin-left: -2px
@@ -6042,7 +6122,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		border: 1px solid #ededed
 		border-radius: 50px
 		display: inline-block
-		line-height: 44px
+		line-height: 40px
 		text-decoration: none
 		color: #7f7f7f
 		font-size: 16px
@@ -6130,10 +6210,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				margin-left: 23px
 			.author__name
 				font-size: 20px
-				line-height: 28px
+				line-height: 20px
 				font-weight: 600
 				float: left
-				margin-top: 20px
+				margin-top: 22px
 				color: #000
 			.author__post
 				font-size: 13px
@@ -7332,6 +7412,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		font-size: 20px
 		margin: 0
 		padding-bottom: 10px
+		font-weight: 600
 	.filter
 		padding-left: 10px
 		li
@@ -7384,15 +7465,17 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		right: -1px
 		&:before
 			content: url(../images/icons/arrow-next.svg)
+			font-size: 12px
 	.slick-prev
 		border-left: none
 		left: 0
 		&:before
 			content: url(../images/icons/arrow-prev.svg)
+			font-size: 12px
 
 .comparison__content--slider-item--title
 	position: relative
-	padding: 35px
+	padding: 35px 15px
 	padding-bottom: 19px
 	border-bottom: 1px solid #f0f0f0
 	border-right: 1px solid #f0f0f0
@@ -7413,8 +7496,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		line-height: 28px
 	.del
 		position: absolute
-		top: 20px
-		right: 20px
+		top: 18px
+		right: 15px
 		display: block
 		color: #ccc
 		cursor: pointer
@@ -7431,8 +7514,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	.price
 		font-weight: 700
 	li
-		padding: 15px 0
-		padding-left: 60px
+		padding: 15px 20px
+		padding-left: 45px
 		border-bottom: 1px solid #f0f0f0
 		border-right: 1px solid #f0f0f0
 		&:nth-child(2n+1)
@@ -7448,7 +7531,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin-right: 5px
 
 .comparison__content--slider-item-add
-	padding-left: 60px
+	padding-left: 45px
 	padding-top: 15px
 	padding-bottom: 15px
 	.add_cart
@@ -8029,8 +8112,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			display: inline-block
 			background: url('../images/icons/icon-close.svg') no-repeat
 			background-size: contain
-			margin-left: 20px
+			margin-left: 14px
 			margin-bottom: 9px
+	.product-quantity
+		margin-left: -10px
 
 @media screen and (max-width: 1200px)
 	.product-options__price span
@@ -8272,7 +8357,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	input
 		width: 42px
 		font-size: 14px
-		color: #c977ac
+		color: #000
 		padding: 5px
 		box-sizing: border-box
 		border: none
@@ -8281,6 +8366,9 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		text-align: center
 		border: 1px solid #e5e5e5
 		background-color: #fff
+		transition: all 0.3s
+		&:focus
+			color: #c977ac
 
 @media screen and (max-width: 1200px)
 	.product-quantity
@@ -9164,7 +9252,40 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				&.selected, &:hover
 					color: #bababa
 					background: #fff
-
+.standart-select
+	.fancy-select
+		min-width: 60px
+		display: inline-block
+		vertical-align: middle
+		.trigger
+			border: none
+			font-size: 14px
+			color: #000
+			padding: 0 15px 0 0
+			height: 30px
+			line-height: 28px
+			text-align: center
+			&:after
+				top: 12px
+				right: 8px
+			&.open
+				border: none
+				background: #fff
+				box-shadow: none
+		ul.options 
+			top: 30px
+			padding: 5px 0
+			&.open
+				top: 30px
+			li
+				padding: 0 6px 
+				transition: all 0.3s
+				font-size: 13px
+				line-height: 22px
+				text-align: left
+				&.selected, &:hover
+					color: #bababa
+					background: #fff
 	
 
 .by-one-click-modal
@@ -9279,6 +9400,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	input
 		width: 46px
 		height: 30px
+		max-height: 30px
 		background: #f7f7f7
 		border: 1px solid #e5e5e5
 		border-radius: 3px
@@ -9290,7 +9412,23 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		color: #000
 		display: inline-block
 		vertical-align: middle
+		margin-left: 0
+	.product-quantity
 		margin-left: 15px
+		margin-right: 10px
+		position: relative
+		margin-top: -3px
+		a
+			position: absolute
+			width: 30px
+			height: 30px
+			&.product-quantity__add
+				right: -29px
+				top: 0
+			&.product-quantity__remove
+				left: -29px
+				top: 0
+
 	i
 		display: inline-block
 		vertical-align: middle
@@ -9441,7 +9579,9 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	border-radius: 3px
 	margin-bottom: 19px
 	padding: 19px
-	overflow: hidden
+	overflow: visible
+	display: flex
+	justify-content: space-between
 	&:last-child
 		margin-bottom: 30px
 	&:hover .product-list__events
@@ -10775,12 +10915,17 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		border: 2px solid transparent
 		border-top: 3px solid #ccc
 
+.product-list__item:hover .order-products__events
+	>a
+		opacity: 1
+
 .order-products__events
 	position: absolute
 	top: 18px
 	right: 15px
 	a
 		display: inline-block
+		opacity: 0
 
 @media screen and (max-width: 1200px)
 	.order-products__events
@@ -10808,14 +10953,14 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin-top: 32px
 		padding-right: 6px
 		input
-			margin-left: 11px
+			margin-left: 0
 		i
-			width: 6px
-			height: 6px
+			width: 8px
+			height: 8px
 			background-size: contain
 		span
 			font-size: 30px
-			margin-right: 9px
+			margin-right: 13px
 	.product-list__old-price
 		margin-top: 7px
 		padding-left: 12px
@@ -11207,6 +11352,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			opacity: 1
 		.weight-item__image
 			border-color: #eaeaea
+			opacity: 1
+		.weight-item__name
+			i, span
+				display: inline-block
 
 .weight-item__image
 	width: 180px
@@ -11218,6 +11367,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	position: relative
 	margin-right: auto
 	margin-left: auto
+	opacity: 0.5
+	cursor: pointer
 	img
 		width: 178px
 		height: 178px
@@ -11275,6 +11426,9 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		background-size: contain
 		margin-left: 9px
 		margin-right: 9px
+		display: none
+	span
+		display: none
 
 .weight-item__price
 	font-size: 20px
