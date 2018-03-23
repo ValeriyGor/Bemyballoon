@@ -54,11 +54,9 @@ table {
   width: 100%; }
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
 * {
@@ -66,8 +64,4 @@ html {
 
 @media (prefers-reduced-motion: reduce) {
   * {
-    -webkit-transition: none !important;
-    -o-transition: none !important;
     transition: none !important; } }
-
-/*# sourceMappingURL=reset.css.map */

@@ -6243,6 +6243,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	.about .container
 		padding: 0 5px !important
 
+@media (min-width: 767.98px)
+	.hidden-desktop
+		display: none!important
+
 @media (max-width: 767.98px)
 	.about .row
 		margin-right: -5px
@@ -10142,7 +10146,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		text-align: center
 		line-height: 0
 		font-size: 0
-		border-bottom: 2px solid #f0f0f0
+		border-bottom: 1px solid #f0f0f0
 		margin: -4px -15px 0
 		padding-bottom: 13px
 		margin-bottom: 13px
@@ -11162,7 +11166,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			width: 7px
 			height: 2px
 			background-color: #999
-			transition: .3s
+			transition: .15s
 			position: absolute
 			left: 2px
 			top: 0
@@ -11170,6 +11174,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			margin: auto
 		a
 			color: #000
+			transition: .15s
 			&.disabled
 				color: #999
 				pointer-events: none
@@ -11845,6 +11850,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			padding-top: 33px
 			&.card-info
 				padding-top: 1px
+				button
+					font-size: 0
 			form
 				display: flex
 			&.card-info
@@ -11872,6 +11879,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				&.half-bor-rad
 					border-top-right-radius: 3px
 					border-bottom-right-radius: 3px
+					border-top-left-radius: 0
+					border-bottom-left-radius: 0
 				&.full-bor-rad
 					border-radius: 3px
 					text-align: center
@@ -12050,6 +12059,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			border-radius: 50%
 		span
 			font-size: 16px
+		p
+			margin-bottom: 0
 	.social-link
 		margin-top: 0
 		a
@@ -13371,6 +13382,9 @@ div.fancy-select
 				padding: 4px 6px
 
 @media screen and (max-width: 768px)
+	body
+		background: url(../images/1.png) center top
+		background-size: 320px
 
 	.order-page 
 		.wishlist-page__decor-line
@@ -13459,3 +13473,197 @@ div.fancy-select
 		left: 35px
 		top: 12px
 		font-size: 12px
+	.with-border
+		margin-top: 2px
+		border: none
+	.search-city 
+		padding: 0 15px
+		.curr-local
+			flex-direction: column
+			margin-top: 11px
+			p
+				font-size: 9px
+				padding-left: 0
+			a
+				height: 35px
+				font-size: 12px
+				width: 100%
+				margin-top: 10px
+				line-height: 32px
+
+		form
+			input
+				height: 40px
+				padding-left: 13px
+				padding-right: 13px
+				margin-bottom: 15px
+				width: 84%
+			button
+				font-size: 0
+				height: 40px
+				width: 16%
+				img
+					margin-right: 0
+					width: 18px
+					vertical-align: middle
+
+		p
+			font-size: 12px
+			text-align: center
+			margin-bottom: 14px
+	.map
+		iframe
+			height: 320px!important
+	.city-deliver
+		flex-direction: column
+		&__text
+			padding: 20px 15px 6px 16px
+			margin-top: 9px
+			border: 1px solid #f0f0f0
+			border-width: 1px 0
+			margin-bottom: 5px
+			h2
+				font-size: 18px
+				line-height: 24px
+				margin-bottom: 3px
+			p
+				font-size: 10px
+				line-height: 18px
+		.city-deliver__table
+			padding-left: 19px
+			p
+				font-size: 10px
+				line-height: 28px
+				span
+					font-size: 10px
+					padding-right: 4px
+					font-size: 10px
+	.order-page
+		padding-bottom: 0
+	.payment-page
+		margin-bottom: 10px
+	.payment-list
+		padding: 4px 0 10px 0
+		&__img
+			width: 60px
+			margin-right: 16px
+			margin-top: 8px
+		p 
+			line-height: 16px
+		&__item 
+			padding: 0 12px 0 15px
+			margin-bottom: 11px
+			padding-bottom: 16px
+			border-bottom: 1px solid #f0f0f0
+			p
+				margin-bottom: 16px
+				min-height: 50px
+			&:nth-of-type(1)
+				input
+					width: 84%
+				button
+					width: 16%
+
+		&__text
+			.payment-list__form
+				margin-left: -76px
+				width: calc(100% + 76px)
+				input
+					height: 40px
+					font-size: 12px
+				button
+					height: 40px
+					font-size: 12px
+					img
+						width: 14px
+					&.full-bor-rad 
+						width: 100%
+						img
+							margin-left: 5px
+				&.card-info
+					width: calc(100% + 76px)
+					form
+						flex-direction: column
+						input
+							width: 100%
+							&:first-of-type, &:nth-of-type(2)
+								height: 40px
+								width: 100%					
+								margin-bottom: 10px
+								font-size: 12px
+						label
+							height: 40px
+							line-height: 38px
+							width: 100%					
+							margin-bottom: 10px
+							text-align: center
+							font-size: 12px
+							&:hover
+								.toolbox
+									display: none
+							img
+								width: 15px
+						button
+							font-size: 12px
+							img
+								width: 15px
+								margin-left: 4px
+
+
+	.mobile-decor 
+		ul
+			margin-bottom: 5px
+
+	.account
+		margin-top: -10px 
+		flex-direction: column
+		align-items: flex-start
+		margin-bottom: 27px
+		.socki
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+	.account__prof
+		width: 100%
+		background: #fcfcfc
+		border: 1px solid #e2e2e2
+		border-width: 1px 0
+		padding: 15px 15px 13px
+		img
+			width: 40px
+			height: 40px
+			margin-right: 14px 
+		span.hidden-desktop
+			font-size: 9px
+			color: #999
+			line-height: 9px
+			margin-bottom: 7px
+	.socki
+		width: 100%
+		& span.socki-mob-button
+			display: block
+			font-size: 12px
+			color: #000
+			line-height: 38px
+			padding-left: 15px
+			width: 100%
+			height: 39px
+			border-bottom: 1px solid #e2e2e2 
+		.social-profile
+			display: none
+	#tabs a
+		height: 38px
+		line-height: 36px
+	.order-list
+		margin-top: 6px
+	.history-list
+		&__info
+			&-general
+				height: 16px
+				span
+					font-size: 8px
+		&__text 
+			h3
+				font-size: 14px
+		&__item
+			padding: 7px 15px 9px
