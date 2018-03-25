@@ -1,4 +1,4 @@
-﻿@charset "UTF-8"
+@charset "UTF-8"
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 @import url("https://fonts.googleapis.com/css?family=Marmelad");
 
@@ -207,6 +207,8 @@ legend
 
 progress
 	vertical-align: baseline
+
+
 
 [type=number]
 	&::-webkit-inner-spin-button, &::-webkit-outer-spin-button
@@ -555,6 +557,13 @@ template
 		opacity: 0
 
 
+@keyframes changewidth
+	0% 
+		width: 115px
+	100%
+		width: 600px
+
+
 .owl-height
 	transition: height 0.5s ease-in-out
 
@@ -828,12 +837,18 @@ header
 			margin-left: -185px
 			background: #fff
 			top: 1px
-			width: 600px
+			width: 115px
 			z-index: 100
 			right: 170px
 			border-bottom-left-radius: 4px
 			border-bottom-right-radius: 4px
+			&.opened
+				animation-name: changewidth
+				animation-duration: 0.5s
+				width: 600px
 			.input-group
+				align-items: center
+				justify-content: flex-end
 				.input-group-text
 					background: #fff
 					border: none
@@ -843,7 +858,7 @@ header
 					border: none
 					padding: 12px 3px
 					box-sizing: border-box
-					width: 200px
+					width: calc(100% - 100px)
 					&:focus
 						box-shadow: none
 					&::-webkit-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &:-ms-input-placeholder
@@ -878,8 +893,8 @@ header
 					background: url(../images/icons/ic_search_active.svg) no-repeat 50% 50%
 			.close
 				background: url(../images/icons/ic_close_gray.svg) no-repeat 50% 50%
-				height: 30px
-				width: 30px
+				height: 30px!important
+				width: 30px!important
 				display: inline-block
 				margin-right: 10px
 		.top-header__cart .nav-link
@@ -1937,6 +1952,7 @@ section .section-title
 	.categories-bg
 		background: url(../images/content/bg-categories.png) no-repeat top center
 		background-size: cover
+		box-shadow: inset 0px -75px 175px 5px rgba(255,255,255,1)
 		.categories__content-item
 			transition: all 0.3s
 			height: 500px
@@ -3083,7 +3099,7 @@ section .section-title
 
 @media screen and (max-width: 767px)
 	.hidden-mobile
-		display: none
+		display: none!important
 
 .hidden-desktop
 	display: none
@@ -4026,7 +4042,10 @@ section .section-title
 					margin-right: 10px
 					margin-top: -4px
 					display: inline-block
+					transition: all 0.3s
 					vertical-align: middle
+					&.open
+						background: url(../images/icons/ic-mobile-close_category.svg) center left no-repeat!important
 				&:after
 					content: ''
 					background: url(../images/icons/ic_Categories.svg) no-repeat bottom center
@@ -4569,14 +4588,18 @@ section .section-title
 				cursor: pointer
 				span.show_category
 					content: ''
-					background: url(../images/icons/ic-mobile-nav-pink.svg) no-repeat center left
+					background: url(../images/icons/ic-mobile-nav-pink.svg) no-repeat center
 					background-size: contain
-					height: 12px
+					height: 14px
 					width: 30px
-					margin-right: 10px
-					margin-top: -4px
+					margin-right: 6px
+					margin-top: -2px
 					display: inline-block
 					vertical-align: middle
+					transition: all 0.3s
+					&.open
+						background: url(../images/icons/ic-mobile-close_category.svg) center no-repeat!important
+						background-size: contain 
 				&:after
 					content: ''
 					background: url(../images/icons/ic_Categories.svg) no-repeat bottom center
@@ -4597,12 +4620,6 @@ section .section-title
 					border-bottom: 2px solid #eee
 					&:before
 						display: none
-					span.hide_category
-						background: url(../images/icons/ic-mobile-close_category.svg) no-repeat center left
-						height: 12px
-						width: 30px
-						display: inline-block
-						background-size: contain
 			.navbar-collapse .navbar-nav
 				display: none
 			ul.navbar-nav
@@ -7068,6 +7085,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		&:not(.active)
 			height: 26px
 			width: 26px
+		&:hover
+			.favorite__link
+				opacity: 1
+				visibility: visible
 	.favorite__add
 		background: url(../images/icons/ic_favorite_before.svg) no-repeat 50% 50%
 		height: 26px
@@ -7179,7 +7200,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		color: #000
 		transition: all 0.3s
 		&:hover
-			color: #7cc5b7
+			color: #e3a3cc
 			text-decoration: none
 
 @media screen and (max-width: 1200px)
@@ -8331,7 +8352,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	border: 1px solid #e6e6e6
 	position: relative
 	border-radius: 3px
-	margin-bottom: 5px 
+	margin-bottom: 20px 
 	position: relative
 	.close-input
 		position: absolute
@@ -9780,26 +9801,23 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	width: 14px
 	height: 12px
 	margin-right: 7px
-	-webkit-mask: url(../images/icons/favorite-ico2.svg) no-repeat 100% 100%
-	mask: url(../images/icons/favorite-ico2.svg) no-repeat 100% 100%
-	-webkit-mask-size: cover
-	mask-size: cover
-	background-color: #d2d2d2
+	background: #fff url(../images/icons/favorite-ico2.svg) no-repeat 100% 100%
 	display: inline-block
 	&.active, &:hover
-		background-color: #e3a3cc
+		background: #fff url(../images/icons/favorite.svg) no-repeat 100% 100%
+	&.active
+		opacity: 1
 
 .product-list__wichlist
 	width: 11px
 	height: 13px
-	-webkit-mask: url(../images/icons/wishlist-ico.svg) no-repeat 100% 100%
-	mask: url(../images/icons/wishlist-ico.svg) no-repeat 100% 100%
-	-webkit-mask-size: cover
-	mask-size: cover
-	background-color: #d2d2d2
+	background: url(../images/icons/wishlist-ico.svg) no-repeat 100% 100%
 	display: inline-block
+
 	&.active, &:hover
-		background-color: #e3a3cc
+		background: url(../images/icons/wishlist-ico2.svg) no-repeat 100% 100%
+	&.active
+		opacity: 1
 
 .product-list__stats .product__status
 	position: inherit
@@ -12105,38 +12123,38 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 					left: 50%
 					transform: translate(-50%)
 					z-index: 9
-			&.comein:hover .tooltips
+			&>&.comein:hover .tooltips
 				display: block
 
-		a.comein
+		&>a.comein
 			.no-come
 				display: none
 			.come
 				display: inline-block
 
-		a.comein:nth-of-type(1)
+		&>a.comein:nth-of-type(1)
 			background-color: #23599b
 			&:hover
 				background-color: #4575b1
-		a.comein:nth-of-type(2)
+		&>a.comein:nth-of-type(2)
 			img
 				width: 18px
 			background-color: #fd4233
 			&:hover
 				background-color: #ff5c4f
-		a.comein:nth-of-type(3)
+		&>a.comein:nth-of-type(3)
 			img
 				width: 16px
 			background-color: #00aef0
 			&:hover
 				background-color: #039ed9
-		a.comein:nth-of-type(4)
+		&>a.comein:nth-of-type(4)
 			img
 				width: 14px
 			background-color: #FF0211
 			&:hover
 				background-color: #fe2f3b
-		a.comein:nth-of-type(5)
+		&>a.comein:nth-of-type(5)
 			img
 				width: 22px
 			background-color: #0ad55e
@@ -12732,6 +12750,26 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		&.actives
 			display: block
 
+#gallerry-product
+	.modal-body
+		display: block!important
+	.slider-for
+		width: 400px
+		height: 400px
+		margin: 0 auto 20px
+		&__item
+			width: 400px
+			height: 400px
+			align-items: center
+			justify-content: center
+	.slider-nav		
+		&__item
+			height: 90px
+			background-size: cover
+			margin: 15px
+	.slider-product
+		display: block
+		
 
 //select
 
@@ -13381,10 +13419,7 @@ div.fancy-select
 				font-size: 10px
 				padding: 4px 6px
 
-@media screen and (max-width: 768px)
-	body
-		background: url(../images/1.png) center top
-		background-size: 320px
+@media screen and (max-width: 767px)
 
 	.order-page 
 		.wishlist-page__decor-line
@@ -13618,7 +13653,7 @@ div.fancy-select
 		margin-top: -10px 
 		flex-direction: column
 		align-items: flex-start
-		margin-bottom: 27px
+		margin-bottom: 18px
 		.socki
 			display: flex
 			flex-direction: column
@@ -13629,6 +13664,23 @@ div.fancy-select
 		border: 1px solid #e2e2e2
 		border-width: 1px 0
 		padding: 15px 15px 13px
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			display: block
+			width: 17px
+			height: 13px
+			top: 27px
+			right: 22px
+			background: url(../images/icons/menu-account.png) center no-repeat
+			background-size: contain
+			transition: all 0.3s
+		&.open
+			z-index: 199
+			&:after
+				background: url(../images/icons/ic_close_pink.png) center no-repeat
+				background-size: contain 
 		img
 			width: 40px
 			height: 40px
@@ -13640,6 +13692,9 @@ div.fancy-select
 			margin-bottom: 7px
 	.socki
 		width: 100%
+		background: #fff		
+		&.open
+			z-index: 799
 		& span.socki-mob-button
 			display: block
 			font-size: 12px
@@ -13649,21 +13704,389 @@ div.fancy-select
 			width: 100%
 			height: 39px
 			border-bottom: 1px solid #e2e2e2 
+			position: relative
+			&:after
+				content: "connect soc. networks"
+				display: inline-block
+				color: #999
+				margin-left: 5px
+			&:before
+				content: ""
+				display: block
+				width: 0
+				height: 0
+				border: 3px solid transparent
+				border-top-width: 4px
+				border-bottom-width: 0
+				border-top-color: #e3a3cc
+				position: absolute
+				top: 19px
+				right: 17px
+				transition: all 0.3s
+			&.open
+				&:before
+					transform: scale(1, -1);
+		a
+			position: relative
+			display: block
+			&:nth-of-type(5)
+				.link-soc
+					border-bottom: none
+			.link-soc
+				position: absolute
+				top: 0
+				left: 34px  
+				white-space: nowrap
+				margin-bottom: 0
+				width: 767px
+				line-height: 22px
+				padding-bottom: 7px
+				text-align: left
+				border-bottom: 1px solid #e2e2e2
+				span
+					white-space: nowrap
+					color: #999
+					font-size: 12px
+			&.comein
+				.link-soc
+					span
+						color: #000
+		.social-link
+			width: 100%
+			a
+				height: 25px
+				width: 25px
+				margin: 10px 0 15px 16px
+			.done
+				height: 40px
+				font-size: 15px
+				background-color: #e3a3cc
+				color: #fff
+				text-align: center
+				line-height: 38px
+				width: 100%
+				margin-top: -9px
+
+
 		.social-profile
 			display: none
 	#tabs a
 		height: 38px
 		line-height: 36px
 	.order-list
-		margin-top: 6px
+		margin-top: 12px
+		.you-want
+			display: none
 	.history-list
+		margin-bottom: 0
 		&__info
 			&-general
 				height: 16px
+				margin-bottom: 5px
 				span
 					font-size: 8px
 		&__text 
 			h3
 				font-size: 14px
+				margin-bottom: 1px
 		&__item
-			padding: 7px 15px 9px
+			padding: 7px 12px 9px 15px
+		&__price
+			flex-direction: column-reverse
+			align-items: flex-end
+			padding-right: 0
+			margin-top: -6px
+			.cancel, .deliv, .issd, .prcss
+				line-height: 20px
+				img
+					width: 12px
+					margin-left: 4px
+	.drop-account
+		position: absolute
+		top: 70px
+		left: 0
+		width: 100%
+		background: #fff
+		z-index: 999
+		display: none
+		padding-left: 15px
+		padding-bottom: 15px
+		border-bottom: 1px solid #e2e2e2
+		z-index: 999
+		a
+			line-height: 38px
+			display: block
+			height: 40px
+			color: #000
+			font-size: 12px
+			border-bottom: 1px solid #e2e2e2
+			&.active
+				color: #e3a3cc
+			&.stage-1
+				font-weight: 600
+			&.stage-2
+				margin-left: 15px
+			&:hover
+				text-decoration: none
+	.profile .edit-profile
+		height: 40px
+		width: calc(100% + 15px)
+		line-height: 38px
+		max-width: 200%
+		border-radius: 0
+		border-width: 1px 0
+
+	.profile__info 
+		padding: 10px 0 0 15px
+	.profile__item
+		border-bottom: 1px solid #f0f0f0
+	.profile__item-name
+		margin-right: 4px
+
+	.profile__item-name-img
+		width: 20px
+		height: 20px
+		img
+			max-width: 7px
+	.profile__item-title
+		border-bottom: 0
+		flex: 2
+		padding-top: 0
+		padding-bottom: 0
+		min-height: 35px
+		.delete-photo img, .update-photo img
+			top: 0
+		&.verified:after, &.verify:after
+			top: 7px
+			width: 13px
+			font-size: 0
+	.profile__edit
+		margin-top: 0
+		border-top: 0
+		background-color: #fff
+		.profile__item, .profile__item-name
+			flex-direction: column
+			align-items: flex-start
+		.profile__item
+			padding: 0 0 0 15px
+			width: 100%
+			border-bottom: 0
+			.upload-photo
+				flex-direction: row
+				align-items: center
+				justify-content: space-between					
+				border-bottom: 1px solid #e2e2e2
+				margin-left: 15px
+				padding: 5px 25px 5px 0
+				img
+					height: auto
+				span.recomend
+					margin-right: 12px
+			.add-address-info 
+				input
+					margin-bottom: 0
+			&-name
+				width: 100%
+				&-img
+					display: none
+			.add-address
+				img
+					height: auto
+					margin-left: 15px
+			&-title
+				flex-direction: column
+				width: 100%
+				&.birthday-date
+					flex-direction: row
+					padding: 5px 10px 2px 15px
+					label
+						&nth-of-type(1)
+							width: 17%
+						&nth-of-type(2)
+							width: 54%
+						&nth-of-type(3)
+							width: 20%
+				&.gender-edit
+					flex-direction: row
+					padding-top: 5px
+					padding-bottom: 5px
+					margin-left: 15px
+					border-bottom: 1px solid #e2e2e2
+					padding-right: 30px
+				.gender-trigger
+					border: 0
+					font-size: 12px
+					&:first-of-type
+						border-right: 1px solid #e2e2e2
+
+				&-img
+					font-size: 12px
+					font-weight: 600
+					color: #000
+					line-height: 39px
+					width: 100%
+					border-bottom: 1px solid #e2e2e2
+				&.edit-name
+					padding-left: 3px
+					width: 100%
+					label
+						width: 100%
+						margin: 0
+				img
+					height: 29px
+				input
+					font-size: 12px
+					height: 40px 
+					margin-left: 15px
+					padding-left: 0
+					border: none
+					border-radius: 0
+					border-bottom: 1px solid #e2e2e2
+					width: 100%
+			&.verified:after
+				height: 14px
+				width: 14px
+				top: 12px
+				right: 12px
+				background-size: 13px
+	.helping-text
+		display: none!important
+	div.fancy-select 
+		div.trigger
+			font-size: 12px
+	.subscribe
+		&-foot
+			height: 150px
+			padding: 18px 12px
+			background: #cec1ed url(../images/content/subscribe.png) bottom 20px right 12px no-repeat
+			background-size: 70px
+			margin-bottom: 25px
+			&__text2
+				flex-direction: column
+				align-items: flex-start
+				p
+					width: 65%
+					font-size: 9px
+					margin-top: 3px
+					padding-left: 3px
+			&__form
+				padding: 11px 0
+				justify-content: flex-start
+				width: 62%
+				input
+					width: 78%
+
+	.news-head
+		font-size: 23px
+	.tabs-container
+		margin-bottom: 25px
+	.footer
+		background: #fff
+		&:before
+			background: #fff url(../images/content/footer-img.png) top repeat-x
+	.history-list
+		&-page
+			margin-bottom: 30px
+			.history-list__item:last-child
+				border-bottom: 1px solid #e8e8e8
+		&__item
+			padding: 7px 12px 9px 18px
+			position: relative
+			&.canceled
+				margin-bottom: 28px
+		&__info-general
+			margin-bottom: 7px
+		&__text
+			h3
+				margin-bottom: 3px
+		&__price
+			.renew
+				position: absolute
+				bottom: -29px
+				left: -2px
+				margin-left: 0
+				width: calc(100% + 2px)
+				height: 30px
+				text-align: center
+				font-size: 10px
+				border-radius: 0
+				border-width: 1px 0
+				line-height: 26px
+	.transaction
+		&__text 
+			h3
+				font-size: 14px
+		&__price
+			padding-right: 0
+			a
+				opacity: 1!important
+		&__list
+			&__item
+				padding: 9px 15px 5px
+			border-width: 1px 0
+			border: 1px solid #e8e8e8
+	.refund
+		flex-direction: column
+		padding-top: 0
+		padding-bottom: 0
+		margin-bottom: 30px
+		&__text
+			padding-left: 30px
+			h4
+				line-height: 12px
+				margin-bottom: 3px
+			p
+				margin-top: 0
+				line-height: 17px
+				margin-bottom: 18px
+		&__form
+			padding: 0
+			width: 100%
+			margin-left: 0
+			input
+				font-size: 12px
+				height: 40px
+				margin-bottom: 15px
+				padding-left: 24px
+				border-radius: 0
+				border-width: 1px 0
+			label
+				flex-direction: column
+				button
+					height: 40px
+					font-size: 12px
+					line-height: 36px
+					width: 100%
+					margin-left: 0
+					img
+						width: 13px
+				.fancy-select 
+					width: 100%
+					.trigger
+						height: 40px
+						font-size: 12px
+						padding-left: 24px
+						margin-bottom: 15px
+						line-height: 20px
+						border-radius: 0
+						border-width: 1px 0
+						&:after
+							top: 18px
+							right: 15px
+					ul.options 
+						li.selected
+							background-color: #fff
+							color: #e3a3cc
+	header .top-header .top-header__cart-mini .top-header__cart-conteiner li.row 
+		.flex-row
+			max-width: 120px
+		.product-quantity
+			z-index: 998
+			top: -7px
+			&:before
+				margin-top: 1px
+			a:after
+				line-height: 28px
+				z-index: 999
+
+

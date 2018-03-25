@@ -87,7 +87,7 @@
 									<div class="input-group">
 										<div class="input-group-prepend">
 											<div class="input-group-text"><span class="glyphicon-search"></span></div>
-										</div><input id="search" type="text" class="searchInput form-control" placeholder="Plain heli|um balloons"  required="">
+										</div><input autocomplete="off" id="search" type="text" class="searchInput form-control" placeholder="Plain heli|um balloons"  required="">
 									</div>
 									<div class="list-result" style="display:none;">Результаты поиска:
 										<li><a href="">Plain helium balloons</a></li>
@@ -288,37 +288,49 @@
 			</div>
 			<div class="order-page__content">
 				<div class="container">
-					<div class="row order-page__row hidden-mobile">
-						<div class="col-9 order-page__col">
+					<div class="row order-page__row">
+						<div class="col-md-9 col-xs-12 order-page__col">
 							<div class="with-border account">
 								<div class="account__prof">
 									<img src="assets/images/content/ava.png" alt="">
-									<span>Julia Andrea Barnaba</span>
+									<p>
+										<span>Julia Andrea Barnaba</span>
+										<span class="hidden-desktop">Open profile actions</span>
+									</p>
+									<div class="drop-account hidden-desktop"></div>
+									
 								</div>
 								<div class="socki">
-									<span>Complete your profile:</span>
+									<span class="socki-mob-button">Complete your profile:</span>
 									<div class="social-link social-profile">
 										<a href="#" class="comein">
 											<img class="no-come" src="assets/images/icons/ic_fb_gray.svg" alt="">
 											<img class="come" src="assets/images/icons/ic_fb_alt.svg" alt="">
 											<span class="tooltips">Profile: Evgenia Jakson</span>
-										</a>
+											<p class="link-soc hidden-desktop"><span>fb.com/ juliabarnaba</span></p></a>
+										
+										
 										<a href="#" class="comein">
 											<img class="no-come" src="assets/images/icons/ic_google_gray.svg" alt="">
 											<img class="come" src="assets/images/icons/ic_google_alt.svg" alt="">
-											<span class="tooltips">Profile: Evgenia Jakson</span></a>
+											<span class="tooltips">Profile: Evgenia Jakson</span>
+											<p class="link-soc hidden-desktop"><span>google.com/barnabashka</span></p></a>
 										<a href="#" class="">
 											<img class="no-come" src="assets/images/icons/ic_twitter_gray.svg" alt="">
 											<img class="come" src="assets/images/icons/ic_twitter_white.svg" alt="">
-											<span class="tooltips">Profile: Evgenia Jakson</span></a>
+											<span class="tooltips">Profile: Evgenia Jakson</span>
+										<p class="link-soc hidden-desktop"><span>Connect profile...</span></p></a>
 										<a href="#" class="">
 											<img class="no-come" src="assets/images/icons/prntrst-icon-gray.png" alt="">
 											<img class="come" src="assets/images/icons/prntrst-icon.png" alt="">
-											<span class="tooltips">Profile: Evgenia Jakson</span></a>
+											<span class="tooltips">Profile: Evgenia Jakson</span>
+										<p class="link-soc hidden-desktop"><span>Connect profile...</span></p></a>
 										<a href="#" class="comein">
 											<img class="no-come" src="assets/images/icons/ic_whatsapp_gray.svg" alt="">
 											<img class="come" src="assets/images/icons/ic_whatsapp_alt.svg" alt="">
-											<span class="tooltips">Profile: Evgenia Jakson</span></a>
+											<span class="tooltips">Profile: Evgenia Jakson</span>
+										<p class="link-soc hidden-desktop"><span>+4 200 546 33 22</span></p></a>
+										<div class="done hidden-desktop">Done</div>
 									</div>
 								</div>
 							</div>
@@ -345,7 +357,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3 order-page__col">
+						<div class="col-3 order-page__col  hidden-mobile">
 							<div class="stages profile-link">
 								<p class="stages__title no-line-transition">Profile actions</p>
 								<a href="#" class="stage-1">Account</a>
@@ -374,7 +386,7 @@
 								<button class="half-bor-rad"><img src="assets/images/icons/send-button2.png" alt=""></button>
 							</form>
 						</div>
-						<div class="col-sm-2 col-lg-3">
+						<div class="col-sm-2 col-lg-3 hidden-mobile">
 							<img class="subscribe-bag" src="assets/images/content/subscribe.png" alt="">
 						</div>
 					</div>
