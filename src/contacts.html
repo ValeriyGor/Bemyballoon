@@ -5,6 +5,7 @@
     <title>Contacts</title>
     <meta name="author" content="asight.pro">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
     <meta name="description" content="Awesome site">
     <link rel="stylesheet" type="text/css" href="assets/static/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/static/bootstrap-theme.css">
@@ -67,7 +68,7 @@
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li> 
             <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Instant payment</a></li></ul>
             <ul class="join-menu">
@@ -87,7 +88,7 @@
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <div class="input-group-text"><span class="glyphicon-search"></span></div>
-                    </div><input autocomplete="off" id="search" type="text" class="searchInput form-control" placeholder="Plain heli|um balloons"  required="">
+                    </div><input autocomplete="off" id="search" type="text" class="searchInput form-control" required="">
                   </div>
                   <div class="list-result" style="display:none;">Результаты поиска:
                     <li><a href="">Plain helium balloons</a></li>
@@ -100,9 +101,9 @@
               <div class="top-header__cart-mini" style="display:none;">
                 <div class="top-header__cart-conteiner rounded">
                   <li class="row top-header__cart-item">
-                    <div class="col-4"><img src="assets/images/content/mini-cart-1.jpg" alt=""/></div>
+                    <div class="col-4"><a href=""><img src="assets/images/content/mini-cart-1.jpg" alt=""/></a></div>
                     <div class="col-6">
-                      <div class="name">The name of the item that occupies two lines</div>
+                      <a href="" class="name">The name of the item that occupies two lines</a>
                       <div class="flex-row">
                         <div class="price">$543.25 </div>
                         <div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
@@ -115,9 +116,9 @@
                     </div>
                   </li>
                   <li class="row top-header__cart-item">
-                    <div class="col-4"><img src="assets/images/content/mini-cart-2.jpg" alt=""/></div>
+                    <div class="col-4"><a href=""><img src="assets/images/content/mini-cart-2.jpg" alt=""/></a></div>
                     <div class="col-6">
-                      <div class="name">The name of the item that occupies </div>
+                      <a href="" class="name">The name of the item that occupies </a>
                       <div class="flex-row">
                         <div class="price">$543.25 </div>
                         <div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
@@ -131,9 +132,9 @@
                     </div>
                   </li>
                   <li class="row top-header__cart-item">
-                    <div class="col-4"><img src="assets/images/content/mini-cart-3.jpg" alt=""/></div>
+                    <div class="col-4"><a href=""><img src="assets/images/content/mini-cart-3.jpg" alt=""/></a></div>
                     <div class="col-6">
-                      <div class="name">The name of the item </div>
+                      <a href="" class="name">The name of the item</a>
                       <div class="flex-row">
                         <div class="price">$543.25 </div>
                         <div class="product-quantity"><a class="product-quantity__remove" href="#"></a>
@@ -399,11 +400,20 @@
         </div>
         <div class="contacts__socials">
           <div class="row">
-            <div class="col-lg-4 col-sm-4"><a class="contacts__socials--fb" href="#"><img src="assets/images/icons/contacts_fb.png" alt="">
+            <div class="col-lg-4 col-sm-4"><a class="contacts__socials--fb" href="#">
+              <div class="icon-socki">
+                <img src="assets/images/icons/fb2.png" alt="">
+              </div>
                 <p> <span>We are on facebook</span>5331 Subscribers</p></a></div>
-            <div class="col-lg-4 col-sm-4"><a class="contacts__socials--vk" href="#"><img src="assets/images/icons/contacts_vk.png" alt="">
+            <div class="col-lg-4 col-sm-4"><a class="contacts__socials--vk" href="#">
+              <div class="icon-socki">
+                <img src="assets/images/icons/vk.png" alt="">
+              </div>              
                 <p> <span>We are in vkontakte</span>543 Subscribers</p></a></div>
-            <div class="col-lg-4 col-sm-4"><a class="contacts__socials--ins" href="#"><img src="assets/images/icons/contacts_ins.png" alt="">
+            <div class="col-lg-4 col-sm-4"><a class="contacts__socials--ins" href="#">
+              <div class="icon-socki">
+                <img src="assets/images/icons/instagram2.png" alt="">
+              </div>              
                 <p> <span>We are on instagram</span>Publications 753</p></a></div>
           </div>
         </div>
