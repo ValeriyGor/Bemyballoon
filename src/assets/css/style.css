@@ -586,6 +586,18 @@ template {
   100% {
     width: 228%; } }
 
+@-webkit-keyframes changewidth4 {
+  0% {
+    width: 60px; }
+  100% {
+    width: 161%; } }
+
+@keyframes changewidth4 {
+  0% {
+    width: 60px; }
+  100% {
+    width: 161%; } }
+
 .owl-height {
   -webkit-transition: height 0.5s ease-in-out;
   -o-transition: height 0.5s ease-in-out;
@@ -15636,5 +15648,219 @@ div.fancy-select {
   header .top-header .top-header__cart-mini .top-header__cart-conteiner li.top-header__cart-total .total {
     height: 40px;
     line-height: 38px; } }
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  header .top-header .top-header__search-result .top-header__search-conteiner {
+    right: 73px;
+    height: 37px; }
+  header .top-header .top-header__search-result .top-header__search-conteiner .input-group-text {
+    line-height: 36px; }
+  header .top-header .top-header__cart .nav-link .cartcontents {
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin-top: -6px;
+    font-size: 13px;
+    margin-left: 7px; }
+  header .top-header .top-header__mobile .mobile-nav {
+    height: 34px;
+    width: 44px;
+    background-size: 20px; }
+  header .top-header .top-header__mobile .mobile-viber:before {
+    margin-left: 15px;
+    margin-right: 5px; }
+  header .top-header .navbar .top-header__search .nav-link {
+    font-size: 12px !important;
+    height: 36px;
+    line-height: 35px;
+    padding-right: 18px !important; }
+  header .top-header .top-header__search span:before {
+    width: 20px !important;
+    height: 14px !important;
+    background-size: contain;
+    margin-top: -2px; }
+  header .top-header .top-header__cart .nav-link {
+    line-height: 40px;
+    width: 73px;
+    height: 37px;
+    padding-right: 0; }
+  header .bottom-header .bottom-header__menu .mobile-category span.show_category {
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s; }
+    header .bottom-header .bottom-header__menu .mobile-category span.show_category.open {
+      background-size: 10px !important; }
+  header .center-header__logo {
+    max-width: 267px;
+    margin: 5px auto 17px;
+    position: relative; }
+    header .center-header__logo:after {
+      content: "balloon delivery in Dubai";
+      left: 0;
+      right: 0;
+      top: 65px;
+      line-height: 30px;
+      text-align: center;
+      color: #e680c0;
+      font-size: 11px;
+      text-transform: uppercase;
+      position: absolute;
+      display: block;
+      letter-spacing: 1px; }
+  header .bottom-header .bottom-header__menu .mobile-category {
+    line-height: 48px;
+    height: 50px;
+    font-size: 17px; }
+    header .bottom-header .bottom-header__menu .mobile-category:after {
+      right: 0;
+      bottom: 3px;
+      width: 66px;
+      height: 38px; }
+    header .bottom-header .bottom-header__menu .mobile-category span.show_category {
+      height: 14px;
+      width: 22px;
+      margin-right: 8px;
+      margin-top: -3px; }
+  header .top-header .top-header__search-result .top-header__search-conteiner.opened {
+    -webkit-animation-name: changewidth4;
+    animation-name: changewidth4;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    width: 161%; }
+    header .top-header .top-header__search-result .top-header__search-conteiner.opened .input-group input.form-control {
+      width: 25px; }
+    header .top-header .top-header__search-result .top-header__search-conteiner.opened .list-result {
+      padding: 5px 10px;
+      padding-left: 30px;
+      font-size: 8px; }
+      header .top-header .top-header__search-result .top-header__search-conteiner.opened .list-result li {
+        font-size: 10px;
+        margin-top: 0; }
+  header .top-header .top-header__mobile .mobile-viber {
+    font-size: 12px;
+    padding-left: 3px; }
+  .baners .jumbotron {
+    height: 172px;
+    padding: 11px 16px; }
+  .baners .slick-slide {
+    padding-left: 16px;
+    padding-right: 0; }
+  main {
+    padding: 10px 0; }
+  .baners .jumbotron .display-4 {
+    font-size: 21px; }
+  .baners .jumbotron p.lead {
+    font-size: 12px; }
+  section .section-title h2 {
+    font-size: 29px;
+    line-height: 31px;
+    margin-top: 110px; }
+  section .section-title p {
+    font-size: 12px;
+    margin-bottom: 20px; }
+  .ocassions .ocassions__content > div .ocassions-item {
+    height: 27vw;
+    margin-bottom: 18px !important; }
+  .ocassions .ocassions__content > div .ocassions-item .ocassions__content-name {
+    font-size: 13px;
+    margin-bottom: 13px; }
+  .ocassions .ocassions__bottom {
+    margin-top: 18px; }
+    .ocassions .ocassions__bottom .ocassions__bottom-content {
+      width: 180px;
+      height: 30px;
+      line-height: 28px; }
+    .ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all {
+      font-size: 11px; }
+      .ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all span {
+        font-size: 11px; }
+  .categories .categories__head h2 {
+    margin-top: 89px; }
+  .categories .categories-bg .categories__content-item {
+    height: 340px;
+    height: 90vw; }
+    .categories .categories-bg .categories__content-item .categories__content-element {
+      font-size: 28px;
+      margin-top: 25px;
+      margin-bottom: 9px; }
+    .categories .categories-bg .categories__content-item .categories__content-title {
+      font-size: 16px;
+      margin-bottom: 10px;
+      padding-bottom: 10px; }
+    .categories .categories-bg .categories__content-item .categories__content-descript {
+      font-size: 12px;
+      padding: 0 6%; } }
+
+@media screen and (max-width: 359px) {
+  header .top-header .top-header__mobile .mobile-nav {
+    height: 30px;
+    width: 34px;
+    background-size: 17px; }
+  header .top-header .top-header__mobile .mobile-viber:before {
+    margin-left: 15px;
+    margin-right: 5px;
+    height: 16px;
+    width: 16px;
+    margin-left: 18px; }
+  header .top-header .navbar .top-header__search .nav-link {
+    font-size: 10px !important; }
+  header .top-header .top-header__search span:before {
+    width: 20px !important;
+    height: 11px !important;
+    background-size: contain;
+    margin-top: -2px; }
+  header .top-header .top-header__cart .nav-link {
+    line-height: 32px; }
+  header .bottom-header .bottom-header__menu .mobile-category span.show_category {
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s; }
+    header .bottom-header .bottom-header__menu .mobile-category span.show_category.open {
+      background-size: 10px !important; }
+  header .center-header__logo {
+    max-width: 225px;
+    margin: 0 auto 10px;
+    position: relative; }
+    header .center-header__logo:after {
+      content: "balloon delivery in Dubai";
+      left: 0;
+      right: 0;
+      top: 60px;
+      line-height: 16px;
+      text-align: center;
+      color: #e680c0;
+      font-size: 9px;
+      text-transform: uppercase;
+      position: absolute;
+      display: block;
+      letter-spacing: 1px; }
+  header .bottom-header .bottom-header__menu .mobile-category {
+    line-height: 38px;
+    height: 42px; }
+    header .bottom-header .bottom-header__menu .mobile-category:after {
+      right: 0;
+      bottom: 3px;
+      width: 66px;
+      height: 38px; }
+    header .bottom-header .bottom-header__menu .mobile-category span.show_category {
+      height: 10px;
+      width: 19px;
+      margin-right: 10px;
+      margin-top: -3px; }
+  header .top-header .top-header__search-result .top-header__search-conteiner.opened {
+    -webkit-animation-name: changewidth4;
+    animation-name: changewidth4;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    width: 161%; }
+    header .top-header .top-header__search-result .top-header__search-conteiner.opened .input-group input.form-control {
+      width: 25px; }
+    header .top-header .top-header__search-result .top-header__search-conteiner.opened .list-result {
+      padding: 5px 10px;
+      padding-left: 30px;
+      font-size: 8px; }
+      header .top-header .top-header__search-result .top-header__search-conteiner.opened .list-result li {
+        font-size: 10px;
+        margin-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */
