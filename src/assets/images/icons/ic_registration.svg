@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e4a7ce;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ic_registration" class="cls-1" d="M695,75a8,8,0,1,0,8,8A8.024,8.024,0,0,0,695,75Zm4,8.8h-3.2V87h-1.6V83.8H691V82.2h3.2V79h1.6v3.2H699v1.6Z" transform="translate(-687 -75)"/>
+</svg>

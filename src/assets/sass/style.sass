@@ -566,7 +566,7 @@ template
 	0% 
 		width: 41px
 	100%
-		width: 630px
+		width: 390px
 @keyframes changewidth3
 	0% 
 		width: 41px
@@ -738,9 +738,13 @@ header
 					font-size: 14px
 					padding: 4px 0
 					display: inline-block
+					i
+						transition: all 0.3s
 					&:hover
 						color: #e4a7ce
 						text-decoration: none
+						svg path
+							fill: #e4a7ce
 				.activ a
 					color: #bababa
 					cursor: default
@@ -796,23 +800,51 @@ header
 				width: 150px
 				&:before
 					left: 50%
+				path
+					transition: all 0.3s
 			.icon-ic-lock
-				background: url(../images/icons/ic-lock-open-black.svg) no-repeat 50% 50%
 				height: 18px
 				margin-top: -4px
-				opacity: 0.2
+				fill: #ccc
+				path
+					transition: all 0.3s
 			.icon-ic-account
-				background: url(../images/icons/ic-account-circle-black.svg) no-repeat 50% 50%
 				height: 18px
 				margin-top: -2px
-				opacity: 0.2
+				fill: #ccc
+				padding-left: 2px
+				stroke: #000006 
+				stroke-linecap: round
+				stroke-linejoin: round
+				stroke-width: 0
+				fill-rule: evenodd
 			.icon-ic-vpn
-				background: url(../images/icons/ic-vpn-key-black.svg) no-repeat 50% 50%
-				opacity: .2
+				background-size: contain
 				margin-top: -2px
+				fill: #ccc
+				width: 18px
+				height: 18px
+				stroke: #000006 
+				stroke-linecap: round
+				stroke-linejoin: round
+				stroke-width: 0
+				fill-rule: evenodd
+			.icon-ic-logout
+				margin-top: -2px
+				fill: #ccc
+				width: 16px
+				height: 16px
+				stroke: #000006
+				stroke-linecap: round
+				stroke-linejoin: round
+				stroke-width: 0
+				fill-rule: evenodd
 			.icon-ic-wish
-				background: url(../images/icons/ic-wish.svg) no-repeat 50% 50%
 				margin-top: -2px
+				height: 13px
+				background-size: contain
+				fill: #ccc
+				fill-rule: evenodd
 			span.cartcontents
 				background: #e3a3cc
 				width: 18px
@@ -825,20 +857,21 @@ header
 				margin-left: 5px
 				line-height: 18px
 		.top-header__search
-			span:before
-				content: ''
-				background: url(../images/icons/ic_search_link.svg) no-repeat 50% 50%
+			svg.glyphicon-search
 				width: 16px
 				height: 16px
+				margin-right: 7px
 				display: inline-block
 				vertical-align: middle
 				margin-top: -4px
 				transition: all 0.5s ease
+				path
+					fill: #000	
+					transition: all 0.5s				
 			.nav-link
 				&:hover
-					span:before
-						background: url(../images/icons/ic_search_active.svg) no-repeat 50% 50%
-						transition: all 0.5s ease
+					path
+						fill: #d093ba
 					color: #000
 					transition: all 0.5s ease
 				color: #bababa
@@ -856,8 +889,6 @@ header
 			width: 115px
 			z-index: 100
 			right: 170px
-			border-bottom-left-radius: 4px
-			border-bottom-right-radius: 4px
 			&.opened
 				animation-name: changewidth
 				animation-duration: 0.5s
@@ -869,6 +900,7 @@ header
 					background: #fff
 					border: none
 					width: 36px
+					padding: 2px 0 0 11px
 				input.form-control
 					font-size: 14px
 					border: none
@@ -879,6 +911,10 @@ header
 						box-shadow: none
 					&::-webkit-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &:-ms-input-placeholder
 						color: #bababa
+				&:hover
+					svg path 
+						fill: #d093ba
+
 			.list-result
 				padding: 20px
 				padding-left: 47px
@@ -887,6 +923,7 @@ header
 				border-top: 1px solid #f0f0f0
 				border-bottom-left-radius: 4px
 				border-bottom-right-radius: 4px
+				margin-top: 1px
 				li
 					display: block
 					font-size: 14px
@@ -896,17 +933,17 @@ header
 						text-decoration: none
 						&:hover
 							color: #e3a3cc
-			.glyphicon-search
-				&:before
-					content: ''
-					background: url(../images/icons/ic_search_active.svg) no-repeat 50% 50%
-					width: 16px
-					height: 16px
-					display: inline-block
-					vertical-align: middle
-					margin-top: -4px
-				&:hover:before
-					background: url(../images/icons/ic_search_active.svg) no-repeat 50% 50%
+			svg.glyphicon-search
+				width: 16px
+				height: 16px
+				display: inline-block
+				vertical-align: middle
+				margin-right: 7px
+				margin-top: -4px
+				transition: all 0.5s ease
+				path
+					fill: #d093ba	
+					transition: all 0.5s
 			.close
 				background: url(../images/icons/ic_close_gray.svg) no-repeat 50% 50%
 				height: 30px!important
@@ -1050,6 +1087,10 @@ header
 							font-size: 14px
 							box-sizing: border-box
 							position: relative
+							color: #000
+							-webkit-appearance: none!important
+							-moz-appearance: none!important
+							appearance: none!important
 							font-family: "Open Sans", sans-serif
 						a
 							position: absolute
@@ -1592,6 +1633,8 @@ input, select, textarea
 					background: #fff
 					animation: animate 5s linear
 					cursor: pointer
+
+
 @keyframes animate
 	from
 		width: 0
@@ -2400,7 +2443,7 @@ section .section-title
 				transition: 0.3s
 				&:after
 					content: ''
-					background: url(../images/icons/send-button.png) no-repeat 50% 50%
+					background: url(../images/icons/ic_send_white.svg) no-repeat 50% 50%
 					background-size: 16px
 					height: 20px
 					width: 20px
@@ -3016,18 +3059,17 @@ section .section-title
 	margin-bottom: 20px
 	.input-group
 		margin: 16px 0
-		border: 1px solid #e6e6e6
 		border-radius: 3px
 		input.form-control
 			height: 59px
 			line-height: 60px
-			border: none
+			border: 1px solid #e6e6e6
+			border-width: 1px 0 1px 1px
 			padding-left: 26px
 			&::-webkit-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &:-ms-input-placeholder
 				color: #000
 				opacity: 0.5
 			&:focus
-				border: none
 				box-shadow: none
 		span.input-group-btn button.btn
 			width: 157px
@@ -3035,7 +3077,7 @@ section .section-title
 			border-bottom-right-radius: 3px
 			border-top-right-radius: 3px
 			height: 59px
-			line-height: 60px
+			line-height: 57px
 			padding: 0
 			font-size: 18px
 			background: #e3a3cc
@@ -3049,11 +3091,16 @@ section .section-title
 				display: inline-block
 				vertical-align: middle
 				position: relative
+				transition: all 0.3s
 				top: -2px
 				margin-right: 10px
 			&:focus
 				border: none
 				box-shadow: none
+
+			&:hover
+				background: #F2B2DB
+
 
 .delivery-address__location
 	clear: both
@@ -3078,6 +3125,9 @@ section .section-title
 		border-radius: 3px
 		font-size: 16px
 		text-decoration: none
+		transition: all 0.3s
+		&:hover
+			background: #f5f5f5
 	&:after
 		content: ''
 		clear: both
@@ -3236,7 +3286,8 @@ section .section-title
 				font-size: 17px
 				line-height: 18px
 			.center-header__delivery-content div:last-child, .center-header__phone-content div:last-child, .center-header__whatsapp-content div:last-child
-				font-size: 10px
+				font-size: 9px
+				line-height: 13px
 		.bottom-header .bottom-header__menu ul.navbar-nav li
 			line-height: 44px
 			a
@@ -3514,6 +3565,8 @@ section .section-title
 		padding: 0 15px
 	main
 		padding-top: 13px
+	header .top-header .navbar .dropdown-hover>a:after
+		top: 47% 
 	header
 		.container
 			padding: 0
@@ -3525,21 +3578,22 @@ section .section-title
 							width: 16px
 							margin-right: 5px
 							background-size: contain
-			.top-header__search .nav-link:hover span:before
-				background-size: contain
+			.top-header__search 
+				svg.glyphicon-search
+					margin-top: 0
+					height: 13px
+					width: 13px
+					margin-right: 0
 			.top-header__search-result .top-header__search-conteiner
 				width: 350px
 				left: inherit
 				.input-group-text
 					line-height: 34px
-					padding: 0 0 0 20px
-					.glyphicon-search
-						&:before
-							background-size: contain
-							height: 12px
-							width: 12px
-						&:hover:before
-							background-size: contain
+					padding: 0 0 0 15px
+					svg.glyphicon-search
+						margin-top: 0
+						height: 28px
+						width: 13px
 			.top-header__cart .nav-link .cartcontents
 				height: 20px
 				width: 20px
@@ -3585,13 +3639,14 @@ section .section-title
 			padding: 10px 0
 			padding-bottom: 8px
 			.center-header__delivery-icon, .center-header__phone-icon, .center-header__whatsapp-icon
-				width: 25px
+				width: 27px
 				margin-right: 5px
 			.center-header__delivery-content div:first-child, .center-header__phone-content div:first-child, .center-header__whatsapp-content div:first-child
 				font-size: 17px
 				line-height: 18px
 			.center-header__delivery-content div:last-child, .center-header__phone-content div:last-child, .center-header__whatsapp-content div:last-child
-				font-size: 10px
+				font-size: 9px
+				line-height: 13px
 		.bottom-header .bottom-header__menu ul.navbar-nav li
 			line-height: 44px
 			a
@@ -3602,6 +3657,7 @@ section .section-title
 	.slider-home
 		.carousel .carousel-inner
 			height: 308px
+			border-radius: 3px
 		.carousel-control-next-icon, .carousel-control-prev-icon
 			height: 33px
 			width: 33px
@@ -3613,6 +3669,7 @@ section .section-title
 				&.slick-active
 					width: 56px
 					height: 2px
+					border-radius: 1px
 		.carousel-control-next-icon:after
 			border: 3px solid transparent
 			border-left: 4px solid #ccc
@@ -3623,6 +3680,8 @@ section .section-title
 			border-right: 4px solid #ccc
 			margin-left: -6px
 			margin-top: -2px
+		.slick-dots li
+			border-radius: 0.5px!important
 			
 
 	.baners
@@ -3660,10 +3719,15 @@ section .section-title
 			height: 115px
 			margin-bottom: 24px
 			.ocassions__content-icon svg
-				width: 47px
+				width: 35px
+				height: 40px
 			.ocassions__content-name
 				font-size: 15px
 				margin-bottom: 20px
+	.slider-home .carousel-control-next-icon:after
+		left: 48%
+	.slider-home .carousel-control-prev-icon:after
+		margin-left: -5px
 	.categories
 		margin-top: 28px
 		margin-bottom: 58px
@@ -3923,6 +3987,7 @@ section .section-title
 					top: 0
 					margin-left: -15px
 					display: none
+					height: 100vh
 					>
 						div
 							background: #fff url(../images/icons/bg-modal-nav-list.png) no-repeat center center
@@ -4010,6 +4075,11 @@ section .section-title
 								margin-top: 3px
 						&:after
 							display: none
+						.dropdown-menu
+							margin-left: 0px
+							li:after
+								display: none
+					.top-header__currency						
 						.dropdown-menu
 							margin-left: -150px
 							li:after
@@ -4479,6 +4549,7 @@ section .section-title
 					top: 0
 					margin-left: -15px
 					display: none
+					height: 100vh
 					>
 						div
 							background: #fff url(../images/icons/bg-modal-nav-list.png) no-repeat center center
@@ -4566,10 +4637,6 @@ section .section-title
 								margin-top: 3px
 						&:after
 							display: none
-						.dropdown-menu
-							margin-left: -150px
-							li:after
-								display: none
 					.dropdown-menu
 						position: relative !important
 						width: 300px
@@ -4592,6 +4659,12 @@ section .section-title
 								font-size: 11px
 						&:before
 							display: none
+							
+					.top-header__currency						
+						.dropdown-menu
+							margin-left: -150px
+							li:after
+								display: none
 				.mobile-viber
 					display: inline-block
 					font-size: 10px
@@ -5178,6 +5251,9 @@ section .section-title
 			height: 30px
 			line-height: 30px
 			font-size: 12px
+			transition: all 0.3s
+			&:hover
+				background: #f8f8f8
 	.delivery-advantages
 		padding: 20px 0
 		h3
@@ -5466,7 +5542,7 @@ header .fixed-menu
 		font-size: 14px
 		color: #000
 		&:hover
-			color: #3AA690
+			color: #e3a3cc
 			text-decoration: none
 
 @media screen and (max-width: 1100px)
@@ -5477,6 +5553,14 @@ header .fixed-menu
 	.join-menu__items a
 		font-size: 12px
 
+	
+	.slider-home
+		.slick-dots li
+			borser-radius: 1px
+			&.slick-active
+				&:before
+					height: 2px
+
 @media screen and (max-width: 1050px)
 	.join-menu__items a
 		font-size: 10px
@@ -5485,22 +5569,30 @@ header .fixed-menu
 	.join-menu__items a
 		font-size: 8.5px
 
-.join-menu__home a:before
-	content: ''
-	width: 17px
-	height: 15px
-	background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAQAAABDj1eZAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhAQBQNF2RJZAAAAtklEQVQoz63QMWoCARCF4W9ViFjEQrBUD2AjVhZ6g4DoDbQR7xAhOYIgNp5AIRjSbZ2kUmw8QGLpKVKomF1dK18xMG/+gZkXrMRUxfbc1pGKIS1fPjWjZhTqCj3KC3WSoKG5B5C1MLiEAq8m/1ZSpl6iUNrMc/wDIzPpE5Sz1HNNfW/rHMGq4ENDsr49BcecfpSvAL8qdWRi9sYOJbXknBhraxvfCjNB94NOh4eKYHes72B/GP4BAZQd0DSX1mMAAAAASUVORK5CYII=) no-repeat
-	background-size: contain
-	display: inline-block
-	margin-right: 5px
-	position: relative
-	top: 3px
+.join-menu__home a
+	svg
+		width: 17px
+		height: 14px
+		fill: #ccc
+		display: inline-block
+		transition: all 0.3s
+		margin-right: 5px
+		position: relative
+		top: 2px
+		path
+			fill: #ccc
+			fill-rule: evenodd
+
+	&:hover svg path
+			fill: #3AA690
 
 @media screen and (max-width: 860px)
-	.join-menu__home a:before
+	.join-menu__home a svg
 		width: 11px
-		height: 10px
+		transform: scale(1)
+		height: 11px
 		top: 2px
+		margin-right: 0
 
 .join-menu__compare
 	position: relative
@@ -5516,6 +5608,8 @@ header .fixed-menu
 			margin-right: 5px
 			position: relative
 			top: 3px
+		&:hover
+			color: #3AA690
 	span
 		display: block
 		position: absolute
@@ -5575,12 +5669,13 @@ header .fixed-menu
 
 @media screen and (max-width: 980px)
 	header .top-header .navbar .nav-link
-		height: 32px
+		height: 33px
 		line-height: 30px
 		transition: 0s
+		margin-bottom: -1px
 		font-size: 12px
 	.join-menu
-		margin-bottom: 4px
+		margin-bottom: 3px
 
 @media screen and (max-width: 980px)
 	.main-menu .dropdown-menu a
@@ -5794,7 +5889,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		letter-spacing: -0.1px
 
 .contacts__info--description-btn
-	padding: 12px 19px
+	padding: 11px 19px  13px
 	display: inline-block
 	background: #e3a3cc
 	font-size: 16px
@@ -6204,10 +6299,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			left: 50%
 			border: 5px solid transparent
 		.carousel-next:hover
-			border: 1px solid #e6d197
+			border: 1px solid #d1d1d1
 		.carousel-prev
 			&:hover
-				border: 1px solid #e6d197
+				border: 1px solid #d1d1d1
 			left: -85px
 			&:before
 				border-right: 5px solid #ccc
@@ -7307,8 +7402,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		visibility: visible
 	.product__hover
 		transform: translateY(-62px)
-	.product-carousel__item:after
-		box-shadow: inset 0 -66px 89px -41px rgba(138, 134, 138, 0.4)
 
 @media screen and (max-width: 1200px)
 	.product:hover .product__hover
@@ -7321,6 +7414,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	margin-top: 18px
 	line-height: 24px
 	font-size: 16px
+	height: 63px
 	text-align: left
 	padding-bottom: 15px
 	position: relative
@@ -7726,8 +7820,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		border-radius: 3px
 		display: inline-block
 		font-size: 16px
+		transition: all 0.3s
 		&:hover
 			text-decoration: none
+			background: #FEBEE7
 		i:after
 			position: relative
 			top: 2px
@@ -8637,6 +8733,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		border: 1px solid #e5e5e5
 		background-color: #fff
 		transition: all 0.3s
+		-webkit-appearance: none!important
 		&:focus
 			color: #c977ac
 
@@ -9921,7 +10018,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	color: #000
 	display: block
 	margin-top: 7px
-	line-height: 23px
+	line-height: 30px
 	&:hover
 		text-decoration: none
 		color: #e3a3cc
@@ -9930,6 +10027,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	.product-list__title
 		font-size: 16px
 		margin-top: -1px
+		line-height: 24px
 
 .product-list__description
 	font-size: 14px
@@ -10046,6 +10144,35 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 .wishlist-page
 	text-align: left
 	margin-bottom: 58px
+
+svg.burger
+  cursor: pointer
+  height: 45px
+  width: 45px
+  margin-top: -3px
+  vertical-align: middle
+  path
+    stroke-width: 20
+    stroke-linecap: round
+    stroke: #e3a3cc
+    fill: none
+    -webkit-transition: all .5s ease-in-out
+    transition: all .5s ease-in-out
+
+
+.top_bar, .bottom_bar
+  stroke-dasharray: 240px 910px
+
+.middle_bar
+  stroke-dasharray: 240px 240px
+
+
+.open
+  .top_bar, .bottom_bar
+    stroke-dashoffset: -650px
+  .middle_bar
+    stroke-dasharray: 0px 220px
+    stroke-dashoffset: -120px
 
 @media screen and (min-width: 1201px)
 	.product-list__favorite
@@ -10597,6 +10724,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 .category-filter__title
 	font-size: 24px
 	color: #000
+	font-family: "Marmelad"
 	margin-bottom: 0
 
 @media screen and (max-width: 1200px)
@@ -10747,6 +10875,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	color: #000
 	margin-top: 22px
 	margin-bottom: 0
+	font-weight: 600
 
 @media screen and (max-width: 1200px)
 	.filter-checkbox__title
@@ -10960,7 +11089,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	.order-page__col
 		padding-left: 7px
 		padding-right: 7px
-
+		margin-bottom: 30px
+	
 @media screen and (max-width: 767px)
 	.order-page__mobile-list
 		margin-top: 19px
@@ -11044,7 +11174,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	margin-right: 30px
 	&:hover
 		color: #000
-		background: #f1f1f1
+		background: #f5f5f5
 		text-decoration: none
 
 @media screen and (max-width: 1200px)
@@ -11328,7 +11458,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	margin-right: 30px
 	&:hover
 		color: #000
-		background: #f1f1f1
+		background: #f5f5f5
 		text-decoration: none
 
 @media screen and (max-width: 1200px)
@@ -11535,6 +11665,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		font-size: 10px
 		margin-top: 5px
 		padding-left: 10px
+		line-height: 18px
 
 .order-products-buttons
 	font-size: 0
@@ -11684,10 +11815,12 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	margin-left: auto
 	opacity: 0.5
 	cursor: pointer
+
 	img
 		width: 178px
 		height: 178px
 		border-radius: 50%
+		padding: 3px
 
 .weight-item__button
 	position: absolute
@@ -12032,10 +12165,10 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			font-size: 16px
 			border: 1px solid #e6e6e6
 			transition: all 0.15s
-			line-height: 43px
+			line-height: 41px
 			&:hover
 				text-decoration: none
-				background-color: #e6e6e6
+				background-color: #f5f5f5
 		p
 			padding-left: 8px
 			margin-bottom: 0
@@ -12682,6 +12815,9 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 				margin-left: 10px
 				border-radius: 3px
 				outline: none
+				transition: all 0.3s
+				&:hover
+					background-color: #F0B0D9
 				img
 					display: inline-block
 					width: 16px
@@ -13119,7 +13255,9 @@ div.fancy-select
 
 	header
 		.top-header .top-header__search-result .top-header__search-conteiner .input-group
-			margin-top: -1px
+			margin-top: -1px		
+		.top-header .top-header__search-result .top-header__search-conteiner .list-result
+			margin-top: 0
 		.bottom-header .bottom-header__menu ul.navbar-nav 
 			padding-right: 10px
 			padding-left: 5px
@@ -13136,6 +13274,10 @@ div.fancy-select
 			font-size: 8px
 			line-height: 14px
 			margin-left: 5px
+		.top-header .top-header__account 
+			.icon-ic-lock, .icon-ic-vpn, .icon-ic-account, .icon-ic-wish, .icon-ic-logout
+				transform: scale(0.8)
+				margin-top: 0	
 		.bottom-header .bottom-header__menu ul.navbar-nav .dropdown-menu 
 			width: 174px
 			margin-left: -87px
@@ -13410,7 +13552,7 @@ div.fancy-select
 						width: 12px
 	.social-profile 
 		a
-			line-height: 22px
+			line-height: 20px 
 			&.comein
 				line-height: 22px
 	.stages
@@ -13738,7 +13880,7 @@ div.fancy-select
 				&.opened
 					animation-name: changewidth2
 					animation-duration: 0.5s
-					width: 630px
+					width: 390px
 	.by-one-click
 		&-modal__title
 			font-size: 25px
@@ -13759,14 +13901,14 @@ div.fancy-select
 				padding: 15px 30px
 			&__close
 				top: 3px
-				right: -33px
-				font-size: 8px
+				right: -40px
+				font-size: 10px
 				padding-left: 15px
 				line-height: 10px
 				&:after
-					width: 6px
-					height: 6px
-					left: 6px
+					width: 7px
+					height: 7px
+					left: 4px
 					top: 2px
 			&__form
 				margin-top: 15px
@@ -14310,6 +14452,12 @@ div.fancy-select
 				height: 20px
 				font-size: 9px
 				width: 30px
+				padding: 0
+				line-height: 20px
+				color: #000
+				appearance: none
+				-webkit-appearance: none
+
 			&:before
 				width: 6px
 				height: 6px
@@ -14421,13 +14569,18 @@ div.fancy-select
 		border-top: 3px solid #e3a3cc
 	.categories__content-item
 		box-shadow: none
-
+	header		
+		.top-header .top-header__search-result .top-header__search-conteiner .list-result
+			margin-top: 0
 .starRating:not(old)
 	>input
 		display: none
 
 @media screen and (max-width: 767px)
-
+	
+	header .top-header .top-header__mobile .modal-nav-list>ul li
+		margin-top: 0
+		margin-bottom: 0
 	.order-page 
 		.wishlist-page__decor-line
 			display: none
@@ -14724,7 +14877,7 @@ div.fancy-select
 			button
 				font-size: 0
 				margin-right: 0
-				background: #e3a3cc url('../images/icons/send-button.png') center no-repeat
+				background: #e3a3cc url('../images/icons/ic_send_white.svg') center no-repeat
 				background-size: 10px
 				border-radius: 0 3px 3px 0
 
@@ -15332,9 +15485,10 @@ div.fancy-select
 					li.top-header__cart-total .total
 						height: 40px
 						line-height: 38px
-	
 
-@media screen and (min-width: 360px) and (max-width: 768px)
+@media screen and (min-width: 360px) and (max-width: 767px)
+	main
+		padding: 10px 0 25px
 	header 
 		.top-header .top-header__search-result .top-header__search-conteiner
 			right: 73px
@@ -15366,12 +15520,13 @@ div.fancy-select
 				height: 36px
 				line-height: 35px
 				padding-right: 18px !important
-			.top-header__search 
-				span:before
+			.top-header__search 				
+				svg.glyphicon-search
 					width: 20px!important
 					height: 14px!important
 					background-size: contain
 					margin-top: -2px
+					margin-right: 0
 			.top-header__cart 
 				.nav-link
 					line-height: 40px
@@ -15382,10 +15537,8 @@ div.fancy-select
 		.bottom-header 
 			.bottom-header__menu 
 				.mobile-category 
-					span.show_category
-						transition: all 0.6s
-						&.open
-							background-size: 10px!important
+					span
+						padding-right: 15px
 
 		.center-header__logo
 			max-width: 267px
@@ -15413,13 +15566,8 @@ div.fancy-select
 					&:after
 						right: 0
 						bottom: 3px
-						width: 66px
-						height: 38px
-					span.show_category
-						height: 14px
-						width: 22px
-						margin-right: 8px
-						margin-top: -3px
+						width: 90px
+						height: 46px
 		.top-header
 			.top-header__search-result .top-header__search-conteiner
 				&.opened
@@ -15444,9 +15592,7 @@ div.fancy-select
 		padding: 11px 16px
 	.baners .slick-slide
 		padding-left: 16px
-		padding-right: 0
-	main
-		padding: 10px 0
+		padding-right: 0 
 	.baners .jumbotron .display-4
 		font-size: 21px
 	.baners .jumbotron p.lead
@@ -15490,9 +15636,162 @@ div.fancy-select
 		.categories__content-descript
 			font-size: 12px
 			padding: 0 6%
+	header .top-header .top-header__search-result .top-header__search-conteiner svg.glyphicon-search
+		height: 38px
+
+	.products 
+		h2
+			&:before
+				height: 89px
+				width: 74px
+				top: -75px
+				background-size: contain
+				margin-left: -40px
+	section.products .section-title h2
+		margin-top: 116px
+	.product-carousel__item
+		min-height: 186px
+	.product__images
+		height: 187px
+	.product__title
+		font-size: 11px
+		line-height: 15px
+		margin-top: 0
+		min-height: 48px
+		height: 48px
+	.product-info
+		padding-top: 10px
+		padding-bottom: 7px
+	.product-info__price
+		font-size: 17px
+	.product-info__old-price
+		font-size: 9px
+	.product-buttons__add-cart
+		width: calc(100% - 55px)
+		max-height: 40px
+		font-size: 12px
+		line-height: 40px
+	.product-buttons__comparison
+		width: 54px
+		height: 40px
+	.subscribe .subscribe__box
+		padding: 15px!important
+		.subscribe__box-newsletter 
+			padding: 15px
+			background-size: auto 3px
+			h2
+				font-size: 26px 
+			p
+				font-size: 11px 
+				line-height: 17px
+				padding-top: 0
+			.subscribe__box-form 
+				button.btn
+					height: 38px
+					width: 50px
+				.input-group-text:after
+					margin-top: 1px
+				input.form-control
+					font-size: 11px
+					padding-left: 8px
+	.cotacts .cotacts__item
+		height: 63px
+		padding: 13px 24px
+		.cotacts__item-box span:last-child
+			font-size: 17px
+	.instagram 
+		.instagram__head h2
+			margin-top: 82px
+		.instagram__content 
+			margin-top: 18px
+			a
+				font-size: 12px
+				padding: 6px 16px
+			.instagram__content-left
+				font-size: 8px
+			.instagram__content-right
+				font-size: 8px
+	.advantages 
+		.advantages__head 
+			h2
+				margin-top: 72px
+		.advantages__slider 
+			.advantages__slider-item--contend
+				padding: 10px 40px 30px
+			.advantages__slider-item 
+				.advantages__slider-slid 
+					h3
+						font-size: 21px
+					p
+						font-size: 11px
+						line-height: 19px
+			.slick-dots
+				bottom: 33px
+			.slick-dots li
+				margin-left: 4px
+				margin-right: 5px
+		.advantages__content
+			margin-top: 24px
+			h3
+				font-size: 18px
+				margin-bottom: 10px
+			p
+				font-size: 11px
+				line-height: 18px
+				margin-bottom: 17px
+	.footer .row 
+		.footer__social ul li a svg
+			height: 32px
+			width: 32px
+		.footer__contacts 
+			.footer__whatsapp
+				font-size: 18px
+			h4
+				font-size: 11px
+	.product .slick-dots .slick-active
+		margin-top: 0
+		&:after
+			width: 10px
+			height: 10px
+			top: -2px
+			left: -2px
+	header .top-header 
+		.navbar
+			.dropdown-hover.open>a
+				color: #e3a3cc
+	header .top-header .top-header__mobile .modal-nav-list .dropdown-menu li
+		border-top: 0
+	.top-header__currency
+		border-left: 1px solid #ececec 
+	header .top-header .top-header__mobile .modal-nav-list>ul li.account a
+		height: 32px
+		line-height: 32px
+		font-size: 12px
+	.top-header__dropdowns
+		display: flex
+		flex-direction: row-reverse
+		align-items: flex-start
+
+
 
 @media screen and (max-width: 359px)
+
+	.product .slick-dots .slick-active
+		margin-top: 0
+		&:after
+			width: 10px
+			height: 10px
+			top: -2px
+			left: -2px
+	.subscribe .subscribe__box
+		.subscribe__box-newsletter 
+			background-size: auto 3px
 	header 
+		.top-header .top-header__search-result .top-header__search-conteiner svg.glyphicon-search
+			height: 34px
+			width: 12px
+		svg.burger
+			margin-top: -5px
 		.top-header 
 			.top-header__mobile 
 				.mobile-nav
@@ -15508,12 +15807,13 @@ div.fancy-select
 						margin-left: 18px
 			.navbar .top-header__search .nav-link
 				font-size: 10px!important
-			.top-header__search 
-				span:before
+			.top-header__search 				
+				svg.glyphicon-search
 					width: 20px!important
 					height: 11px!important
 					background-size: contain
 					margin-top: -2px
+					margin-right: 0
 			.top-header__cart 
 				.nav-link
 					line-height: 32px
@@ -15550,8 +15850,9 @@ div.fancy-select
 					&:after
 						right: 0
 						bottom: 3px
-						width: 66px
-						height: 38px
+						width: 70px
+						height: 46px
+						background-size: 54px
 					span.show_category
 						height: 10px
 						width: 19px
@@ -15572,3 +15873,6 @@ div.fancy-select
 						li
 							font-size: 10px
 							margin-top: 0
+
+	.product__title
+		margin-top: 0
