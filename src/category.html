@@ -342,11 +342,32 @@
           <div class="mobile-filter hidden-desktop">
             <div class="row mobile-filter__row justify-content-between"><a class="mobile-filter__buttons mobile-filter--category" href="#">Category</a><a class="mobile-filter__buttons mobile-filter--filter" href="#">Filter</a></div>
             <div class="mobile-filter__filter-content">
-              <ul>
-                <li><a href="#">Sort by:<span>Ascending price</span></a></li>
-                <li><a href="#">Flower type:<span>All type</span></a></li>
-                <li><a href="#">Priec rangers:<span>$80.00 - $100.00</span></a></li>
-                <li><a href="#">Color:<span>Orange</span></a></li>
+              <ul id="filter-list">
+                <div class="overlay-filter"></div>
+                <li><a href="#">Sort by:<span>Ascending price</span></a>
+                  <div class="modal-list modal-list-sort">
+                    <div class="insert">
+                      <ul></ul>
+                    </div>
+                    <div class="apply-filter">Apply filter</div>
+                  </div>
+                </li>
+                <li><a href="#">Flower type:<span>All type</span></a>
+                  <div class="modal-list modal-list-type">
+                    <div class="insert"></div>
+                    <div class="apply-filter">Apply filter</div>
+                  </div>
+                </li>
+                <li><a href="#">Price rangers:<span>$80.00 - $100.00</span></a>
+                  <div class="modal-list modal-list-price">
+                    <div class="insert"></div>
+                    <div class="apply-filter">Apply filter</div>
+                  </div></li>
+                <li><a href="#">Color:<span>Orange</span></a>
+                  <div class="modal-list modal-list-color">
+                    <div class="insert"></div>
+                    <div class="apply-filter">Apply filter</div>
+                  </div></li>
               </ul>
             </div>
             <div class="mobile-filter__category-content">
@@ -675,7 +696,7 @@
                   <form class="filter-checkbox">
                     <div class="filter-checkbox__section">
                       <h6 class="filter-checkbox__title">Flower type</h6>
-                      <ul>
+                      <ul class="type-section">
                         <li>
                           <label class="filter-checkbox__item">All type<span class="filter-checkbox__item-count">0</span>
                             <input type="checkbox" checked><span class="checkmark"></span>
@@ -693,7 +714,7 @@
                         </li>
                       </ul>
                       <h6 class="filter-checkbox__title">Price rangers</h6>
-                      <ul>
+                      <ul class="price-section">
                         <li>
                           <label class="filter-checkbox__item">$80.00 - $100.00<span class="filter-checkbox__item-count">1</span>
                             <input type="checkbox" checked><span class="checkmark"></span>
@@ -706,7 +727,7 @@
                         </li>
                       </ul>
                       <h6 class="filter-checkbox__title">Color</h6>
-                      <ul>
+                      <ul class="color-section">
                         <li>
                           <label class="filter-checkbox__item">Orange
                             <input type="checkbox" checked><span class="checkmark"></span>
