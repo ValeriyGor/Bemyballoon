@@ -3260,7 +3260,7 @@ section .section-title {
     width: 290px;
     height: 45px;
     text-align: center;
-    line-height: 45px;
+    line-height: 41px;
     color: #000;
     border: 1px solid #e6e6e6;
     border-radius: 3px;
@@ -5303,7 +5303,7 @@ section .section-title {
         font-size: 12px; }
       .delivery-address__search .input-group span.input-group-btn button.btn {
         height: 36px;
-        line-height: 36px;
+        line-height: 32px;
         width: 96px;
         font-size: 12px; }
         .delivery-address__search .input-group span.input-group-btn button.btn:before {
@@ -10428,20 +10428,32 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
   width: 14px;
   height: 12px;
   margin-right: 7px;
-  background: #fff url(../images/icons/favorite-ico2.svg) no-repeat 100% 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="12px"> <path fill-rule="evenodd" opacity="0.439" fill="rgb(153, 153, 153)" d="M4.075,0.665 C5.180,0.665 6.285,1.139 7.000,1.908 C7.715,1.139 8.820,0.665 9.925,0.665 C11.940,0.665 13.500,2.086 13.500,3.921 C13.500,6.171 11.290,8.006 7.910,10.729 L7.000,11.499 L6.090,10.729 C2.775,7.947 0.500,6.112 0.500,3.921 C0.500,2.086 2.060,0.665 4.075,0.665 Z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   display: inline-block; }
   .product-list__favorite.active {
-    background: #fff url(../images/icons/favorite.svg) no-repeat 100% 100%; }
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="12px"> <path fill-rule="evenodd"  fill="rgb(227, 163, 204)" d="M4.075,0.665 C5.180,0.665 6.285,1.139 7.000,1.908 C7.715,1.139 8.820,0.665 9.925,0.665 C11.940,0.665 13.500,2.086 13.500,3.921 C13.500,6.171 11.290,8.006 7.910,10.729 L7.000,11.499 L6.090,10.729 C2.775,7.947 0.500,6.112 0.500,3.921 C0.500,2.086 2.060,0.665 4.075,0.665 Z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
   .product-list__favorite.active {
     opacity: 1; }
 
 .product-list__wichlist {
   width: 11px;
   height: 13px;
-  background: url(../images/icons/wishlist-ico.svg) no-repeat 100% 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="13px"> <path fill-rule="evenodd"  opacity="0.439" fill="rgb(153, 153, 153)" d="M8.594,13.000 L8.594,5.062 L10.750,5.062 L10.750,13.000 L8.594,13.000 ZM4.344,0.750 L6.469,0.750 L6.469,13.000 L4.344,13.000 L4.344,0.750 ZM0.031,8.687 L2.187,8.687 L2.187,13.000 L0.031,13.000 L0.031,8.687 Z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   display: inline-block; }
   .product-list__wichlist.active {
-    background: url(../images/icons/wishlist-ico2.svg) no-repeat 100% 100%; }
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="13px"> <path fill-rule="evenodd"  opacity="1" fill="rgb(153, 153, 153)" d="M8.594,13.000 L8.594,5.062 L10.750,5.062 L10.750,13.000 L8.594,13.000 ZM4.344,0.750 L6.469,0.750 L6.469,13.000 L4.344,13.000 L4.344,0.750 ZM0.031,8.687 L2.187,8.687 L2.187,13.000 L0.031,13.000 L0.031,8.687 Z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
   .product-list__wichlist.active {
     opacity: 1; }
 
@@ -10483,9 +10495,15 @@ svg.burger {
 
 @media screen and (min-width: 1201px) {
   .product-list__favorite:hover {
-    background: #fff url(../images/icons/favorite.svg) no-repeat 100% 100%; }
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="12px"> <path fill-rule="evenodd"  fill="rgb(227, 163, 204)" d="M4.075,0.665 C5.180,0.665 6.285,1.139 7.000,1.908 C7.715,1.139 8.820,0.665 9.925,0.665 C11.940,0.665 13.500,2.086 13.500,3.921 C13.500,6.171 11.290,8.006 7.910,10.729 L7.000,11.499 L6.090,10.729 C2.775,7.947 0.500,6.112 0.500,3.921 C0.500,2.086 2.060,0.665 4.075,0.665 Z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
   .product-list__wichlist:hover {
-    background: url(../images/icons/wishlist-ico2.svg) no-repeat 100% 100%; } }
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="13px"> <path fill-rule="evenodd"  opacity="1" fill="rgb(153, 153, 153)" d="M8.594,13.000 L8.594,5.062 L10.750,5.062 L10.750,13.000 L8.594,13.000 ZM4.344,0.750 L6.469,0.750 L6.469,13.000 L4.344,13.000 L4.344,0.750 ZM0.031,8.687 L2.187,8.687 L2.187,13.000 L0.031,13.000 L0.031,8.687 Z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; } }
 
 @media screen and (max-width: 1200px) {
   .wishlist-page {
@@ -11672,7 +11690,8 @@ svg.burger {
 
 @media screen and (max-width: 1200px) {
   .order-products__options {
-    margin-top: -1px; } }
+    margin-top: -1px;
+    padding-left: 0; } }
 
 @media screen and (max-width: 1200px) {
   .order-products__options li {
@@ -12362,7 +12381,7 @@ svg.burger {
         background-size: 22px; }
       .tabs__form input.phone {
         background: url("../images/icons/ic_call.svg") center left 15px no-repeat;
-        background-size: 21px; }
+        background-size: 20px; }
       .tabs__form input.pass {
         background: url("../images/icons/ic_password.svg") center left 17px no-repeat;
         background-size: 16px; }
@@ -12393,11 +12412,16 @@ svg.burger {
   .order-list .history-list {
     border-top: 1px solid #e8e8e8;
     margin-left: -1px; }
+    .order-list .history-list-page {
+      margin-bottom: 20px; }
   .order-list .you-want {
     margin-bottom: 0;
     position: absolute;
     width: calc(100% - 30px);
     bottom: 30px; }
+
+.history-list-page {
+  margin-bottom: 20px; }
 
 .form-item {
   display: block;
@@ -14201,11 +14225,12 @@ div.fancy-select {
         font-size: 8px;
         line-height: 15px; }
     .subscribe-foot-bag {
-      top: -70px;
-      left: 27px;
-      width: 95px; }
+      top: -67px;
+      left: -24px;
+      width: 200px;
+      max-width: 202px; }
     .subscribe-foot__form {
-      padding: 28px 9px 28px; }
+      padding: 30px 22px 20px 9px; }
       .subscribe-foot__form button.half-bor-rad {
         width: 38px;
         height: 30px; }
@@ -14439,7 +14464,7 @@ div.fancy-select {
     animation-duration: 0.5s;
     width: 390px; }
   .by-one-click-modal__title {
-    font-size: 25px;
+    font-size: 28px;
     margin-top: 16px;
     margin-bottom: 16px;
     padding-bottom: 10px; }
@@ -14447,10 +14472,10 @@ div.fancy-select {
     font-size: 12px;
     line-height: 14px; }
   .by-one-click-modal {
-    max-width: 500px !important; }
+    max-width: 550px !important; }
     .by-one-click-modal__post {
-      font-size: 12px;
-      margin-bottom: 7px; }
+      font-size: 13px;
+      margin-bottom: 10px; }
     .by-one-click-modal .modal-body {
       padding: 15px 30px; }
     .by-one-click-modal__close {
@@ -14469,12 +14494,12 @@ div.fancy-select {
   .social-link {
     margin-top: 9px; }
   #instantpayment .by-one-click-modal {
-    max-width: 500px !important; }
+    max-width: 550px !important; }
     #instantpayment .by-one-click-modal__post {
       margin-top: 15px;
-      margin-bottom: 19px;
-      font-size: 9px;
-      line-height: 14px; }
+      margin-bottom: 15px;
+      font-size: 11px;
+      line-height: 16px; }
     #instantpayment .by-one-click-modal .modal-body {
       padding: 15px 30px; }
   #instantpayment .fancy-select {
@@ -14484,40 +14509,40 @@ div.fancy-select {
       height: 14px;
       line-height: 14px; }
       #instantpayment .fancy-select .trigger:after {
-        top: 4px;
+        top: 6px;
         right: 5px; }
     #instantpayment .fancy-select ul.options {
-      top: 12px;
+      top: 16px;
       padding: 5px;
       min-width: 75px; }
       #instantpayment .fancy-select ul.options li {
-        font-size: 10px;
-        line-height: 16px; }
+        font-size: 11px;
+        line-height: 18px; }
   #instantpayment .modal-form__input {
     margin-right: 10px; }
     #instantpayment .modal-form__input--phone {
-      width: 170px;
+      width: 190px;
       background-size: 15px;
       background-position: left 8px center; }
     #instantpayment .modal-form__input--amount {
-      width: 120px;
+      width: 135px;
       background-size: 14px;
       background-position: left 7px center; }
     #instantpayment .modal-form__input input, #instantpayment .modal-form__input textarea {
-      font-size: 10px; }
+      font-size: 12px; }
     #instantpayment .modal-form__input input {
-      padding: 3px 5px 3px 27px; }
+      padding: 6px 5px 6px 27px; }
     #instantpayment .modal-form__input label {
       left: 22px;
-      line-height: 28px;
-      font-size: 9px; }
+      line-height: 34px;
+      font-size: 12px; }
   #instantpayment .modal-form .focus label {
     font-size: 7px;
     line-height: 12px; }
   #instantpayment .modal-form__send button {
-    width: 128px;
-    font-size: 12px;
-    height: 30px; }
+    width: 142px;
+    font-size: 13px;
+    height: 34px; }
     #instantpayment .modal-form__send button img {
       width: 10px; }
   .modal-form__input {
@@ -14532,13 +14557,13 @@ div.fancy-select {
       background-size: 13px;
       background-position: left 8px center; }
     .modal-form__input input, .modal-form__input textarea {
-      font-size: 10px; }
+      font-size: 12px; }
     .modal-form__input input {
-      padding: 4px 5px 4px 27px; }
+      padding: 6px 5px 6px 27px; }
     .modal-form__input label {
       left: 22px;
-      line-height: 28px;
-      font-size: 9px; }
+      line-height: 34px;
+      font-size: 12px; }
   .modal-form .focus label {
     font-size: 7px;
     line-height: 12px; }
@@ -14644,12 +14669,12 @@ div.fancy-select {
     background-size: 8px;
     background-position: left 10px center; }
   #special-offer .modal-form__send button {
-    height: 30px;
-    font-size: 12px; }
+    height: 34px;
+    font-size: 13px; }
   #special-offer .by-one-click-modal {
     max-width: 650px !important; }
     #special-offer .by-one-click-modal__form {
-      margin-top: 12px; }
+      margin-top: 15px; }
     #special-offer .by-one-click-modal .modal-body {
       padding: 15px 45px; }
   #special-offer p.title-foot {
@@ -14659,28 +14684,28 @@ div.fancy-select {
   #sign-in .by-one-click-modal .modal-body {
     padding: 15px 31px 24px; }
   .tabs-header div {
-    height: 30px;
-    line-height: 28px;
-    font-size: 12px; }
+    height: 35px;
+    line-height: 32px;
+    font-size: 13px; }
     .tabs-header div.active:after {
-      top: 27px; }
+      top: 34px; }
   #sign-in .by-one-click-modal {
-    max-width: 300px !important; }
+    max-width: 330px !important; }
     #sign-in .by-one-click-modal__form {
-      margin-top: 12px; }
+      margin-top: 15px; }
   #sign-in .modal-form {
     margin-bottom: 15px; }
     #sign-in .modal-form__input {
       margin-bottom: 12px; }
     #sign-in .modal-form__send .frgt-pass {
-      font-size: 9px;
+      font-size: 10px;
       margin-left: 10px;
-      line-height: 12px; }
+      line-height: 13px; }
     #sign-in .modal-form__send button {
-      height: 30px;
-      font-size: 12px; }
+      height: 35px;
+      font-size: 13px; }
       #sign-in .modal-form__send button img {
-        width: 10px; }
+        width: 11px; }
   #sign-in .loginsocial p {
     font-size: 10px;
     margin-top: 11px;
@@ -14694,29 +14719,29 @@ div.fancy-select {
       .footer-modal-link a img {
         width: 14px; }
   #change-pass .modal-form__send button {
-    height: 30px;
-    line-height: 28px;
-    font-size: 12px; }
+    height: 34px;
+    line-height: 22px;
+    font-size: 13px; }
     #change-pass .modal-form__send button img {
-      width: 10px; }
+      width: 12px; }
   #change-pass .by-one-click-modal {
-    max-width: 330px !important; }
+    max-width: 360px !important; }
     #change-pass .by-one-click-modal .modal-body {
       padding: 15px 45px; }
   #change-pass .by-one-click-modal__post {
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 12px; }
   #change-pass .modal-form__input {
     margin-bottom: 13px; }
   #register-modal .by-one-click-modal {
-    max-width: 400px !important; }
+    max-width: 440px !important; }
     #register-modal .by-one-click-modal .modal-body {
       padding: 15px 50px; }
     #register-modal .by-one-click-modal .modal-form {
       margin-bottom: 9px; }
       #register-modal .by-one-click-modal .modal-form__send button {
-        font-size: 12px;
-        height: 30px; }
+        font-size: 13px;
+        height: 40px; }
         #register-modal .by-one-click-modal .modal-form__send button img {
           width: 10px; }
   #register-modal .upload-photo-step1 {
@@ -14726,9 +14751,9 @@ div.fancy-select {
       padding: 0 12px;
       line-height: 13px; }
     #register-modal .upload-photo-step1 label {
-      height: 30px;
-      font-size: 10px;
-      line-height: 28px; }
+      height: 35px;
+      font-size: 12px;
+      line-height: 32px; }
       #register-modal .upload-photo-step1 label img {
         width: 14px;
         margin-right: 4px;
@@ -14736,9 +14761,9 @@ div.fancy-select {
   #register-modal .upload-photo-step2 {
     margin-bottom: 13px; }
     #register-modal .upload-photo-step2__text span {
-      font-size: 8px;
+      font-size: 9px;
       margin-bottom: 1px;
-      line-height: 21px; }
+      line-height: 23px; }
     #register-modal .upload-photo-step2__text p {
       font-size: 12px; }
     #register-modal .upload-photo-step2__img {
@@ -14771,7 +14796,7 @@ div.fancy-select {
   .by-one-click-modal__message {
     margin-top: 13px; }
     .by-one-click-modal__message p {
-      font-size: 10px; }
+      font-size: 12px; }
   .by-one-click-modal__decor-line {
     margin-top: 19px; }
   .modal-form__input {
@@ -14807,16 +14832,16 @@ div.fancy-select {
   .modal-form__left {
     width: 76px; }
   .modal-form__load-photo {
-    width: 76px;
-    height: 76px;
-    padding: 10px 8px;
-    font-size: 9px;
-    line-height: 13px; }
+    width: 82px;
+    height: 83px;
+    padding: 10px;
+    font-size: 10px;
+    line-height: 14px; }
     .modal-form__load-photo:before {
       display: block;
-      margin: 2px auto 5px;
-      width: 23px;
-      height: 18px;
+      margin: 4px auto 7px;
+      width: 28px;
+      height: 22px;
       background-size: contain; }
   .modal-form__input--user {
     background-position: left 8px center;
@@ -15029,8 +15054,8 @@ div.fancy-select {
     width: calc(100% - 15px);
     bottom: 6px; }
   .subscribe-bag {
-    top: -68px;
-    left: -11px;
+    top: -67px;
+    left: -24px;
     width: 200px;
     max-width: 202px; }
   .comparison__content {

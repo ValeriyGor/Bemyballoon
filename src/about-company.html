@@ -614,6 +614,54 @@
         </div>
       </div>
     </footer>
+
+        <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog feed-back-modal" role="document">
+        <div class="modal-content">
+          <button class="by-one-click-modal__close" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+          <div class="modal-body">
+            <h2 class="feed-back-modal__title">Give feedback</h2>
+            <p class="feed-back-modal__rating-title">Select your rating</p><span class="starRating">
+            <input id="rating5" type="radio" name="rating" value="5">
+            <label for="rating5">5</label>
+            <input id="rating4" type="radio" name="rating" value="4">
+            <label for="rating4">4</label>
+            <input id="rating3" type="radio" name="rating" value="3" checked>
+            <label for="rating3">3</label>
+            <input id="rating2" type="radio" name="rating" value="2">
+            <label for="rating2">2</label>
+            <input id="rating1" type="radio" name="rating" value="1">
+            <label for="rating1">1</label>
+            </span>
+            <div class="feed-back-modal__decor-line"></div>
+            <div class="feed-back-modal__text">Please fill in all the fields to leave a review. <br> We really appreciate your opinion and take it into account.</div>
+            <div class="feed-back-modal__form">
+              <form class="modal-form">
+                <div class="modal-form__left"><label for="upload-photo-feedback" class="modal-form__load-photo" href="#">Upload your avatar</label><input type="file" id="upload-photo-feedback" style="display: none;"></div>
+                <div class="modal-form__right">
+                  <div class="modal-form__input modal-form__input--w100 modal-form__input--user">
+                    <label>Enter your name</label>
+                    <input type="text">
+                  </div>
+                  <div class="modal-form__input modal-form__input--w100 modal-form__input--phone">
+                    <label>Enter your phone</label>
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="modal-form__input modal-form__input--w100 modal-form__input--textarea">
+                  <label>Enter feedback</label>
+                  <textarea></textarea>
+                </div>
+                <div class="modal-form__send modal-form__send--big">
+                  <input type="submit" value="Give feedback">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <script src="assets/js/jquery-3.2.1.min.js"> </script>
     <script src="assets/js/bootstrap.min.js"></script>
     <!--script(src="assets/js/bootstrap.bundle.min.js")-->
