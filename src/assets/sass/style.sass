@@ -1354,7 +1354,7 @@ body.down .top-header.clone
 	display: none
 
 @media (min-width: 768px)
-	.top-header__overlay
+	.top-header__overlay, .desc-hide
 		display: none !important
 
 .top-header__dropdowns
@@ -1688,6 +1688,8 @@ input, select, textarea
 		padding-left: 5px
 		padding-right: 5px
 
+
+	
 section .section-title
 	text-align: center
 	h2
@@ -7161,12 +7163,13 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		&:after
 			content: ''
 			width: 100%
-			height: 4px
-			background: url(../images/content/subscribe-border.png) repeat-x
+			height: 5px
+			background: url(../images/content/subscribe-border.png) center repeat-x
+			background-size: cover
 			position: absolute
 			left: 0
 			right: 0
-			bottom: 0
+			bottom: -5px
 	a
 		font-size: 15px
 		color: #000
@@ -8037,8 +8040,6 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		width: 100%
 		&:after
 			display: none
-	.comparison__content--slider-btn
-		display: none
 	.comparison__content--slider-item--title
 		padding-top: 15px
 		img
@@ -10224,7 +10225,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 	display: inline-block
 
 	&.active
-		background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="13px"> <path fill-rule="evenodd"  opacity="1" fill="rgb(153, 153, 153)" d="M8.594,13.000 L8.594,5.062 L10.750,5.062 L10.750,13.000 L8.594,13.000 ZM4.344,0.750 L6.469,0.750 L6.469,13.000 L4.344,13.000 L4.344,0.750 ZM0.031,8.687 L2.187,8.687 L2.187,13.000 L0.031,13.000 L0.031,8.687 Z"/></svg>');
+		background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="13px"> <path fill-rule="evenodd"  opacity="1" fill="rgb(79, 187, 165)" d="M8.594,13.000 L8.594,5.062 L10.750,5.062 L10.750,13.000 L8.594,13.000 ZM4.344,0.750 L6.469,0.750 L6.469,13.000 L4.344,13.000 L4.344,0.750 ZM0.031,8.687 L2.187,8.687 L2.187,13.000 L0.031,13.000 L0.031,8.687 Z"/></svg>');
 		background-size: contain
 		background-repeat: no-repeat
 		background-position: center
@@ -10278,7 +10279,7 @@ svg.burger
 
 	.product-list__wichlist
 		&:hover
-			background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="13px"> <path fill-rule="evenodd"  opacity="1" fill="rgb(153, 153, 153)" d="M8.594,13.000 L8.594,5.062 L10.750,5.062 L10.750,13.000 L8.594,13.000 ZM4.344,0.750 L6.469,0.750 L6.469,13.000 L4.344,13.000 L4.344,0.750 ZM0.031,8.687 L2.187,8.687 L2.187,13.000 L0.031,13.000 L0.031,8.687 Z"/></svg>');
+			background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="13px"> <path fill-rule="evenodd"  opacity="1" fill="rgb(79, 187, 165)" d="M8.594,13.000 L8.594,5.062 L10.750,5.062 L10.750,13.000 L8.594,13.000 ZM4.344,0.750 L6.469,0.750 L6.469,13.000 L4.344,13.000 L4.344,0.750 ZM0.031,8.687 L2.187,8.687 L2.187,13.000 L0.031,13.000 L0.031,8.687 Z"/></svg>');
 			background-size: contain
 			background-repeat: no-repeat
 			background-position: center
@@ -11808,8 +11809,10 @@ svg.burger
 		width: 12px
 		height: 10px
 		background: #fff url(../images/icons/favorite-ico2.svg)center no-repeat
+		background-size: contain
 	&.active:after
 		background: #fff url(../images/icons/favorite.svg)center no-repeat
+		background-size: contain
 
 .order-products-buttons__delete:after
 	width: 10px
@@ -14728,6 +14731,23 @@ div.fancy-select
 		display: none
 
 @media screen and (max-width: 767px)
+	.row.instagram__content
+		.instagram__content-left
+			max-width: 30%
+			flex: 0 0 30%
+			font-size: 10px!important
+		.instagram__content-right
+			max-width: 28%
+			flex: 0 0 28%
+			font-size: 10px!important
+		.instagram__button
+			max-width: 42%
+			flex: 0 0 42%
+		a
+			padding: 6px 10px!important
+
+	.baners a:hover .jumbotron
+		box-shadow: none
 	.history-list__item, .history-list__item.canceled, .history-list__item.issued, .history-list__item.processed
 		border-left-width: 3px
 	#filter-list
@@ -14797,6 +14817,9 @@ div.fancy-select
 		&__content
 			.container
 				padding: 0 15px!important
+				&.no-padding
+					padding: 0!important
+
 			.tabs-container
 				border-radius: 0
 				border-width: 1px 0
@@ -15348,6 +15371,7 @@ div.fancy-select
 			a
 				height: 25px
 				width: 25px
+				line-height: 22px
 				margin: 10px 0 15px 16px
 			.done
 				height: 40px
@@ -15395,7 +15419,7 @@ div.fancy-select
 					margin-left: 4px
 	.drop-account
 		position: absolute
-		top: 70px
+		top: 69px
 		left: 0
 		width: 100%
 		background: #fff
@@ -15535,6 +15559,14 @@ div.fancy-select
 					border-radius: 0
 					border-bottom: 1px solid #e2e2e2
 					width: 100%
+					::-webkit-input-placeholder
+						color: #999
+					::-moz-placeholder
+						color: #999
+					:-moz-placeholder
+						color: #999
+					:-ms-input-placeholder
+						color: #999
 			&.verified:after
 				height: 14px
 				width: 14px
@@ -15585,7 +15617,7 @@ div.fancy-select
 			padding: 7px 12px 9px 18px
 			position: relative
 			&.canceled
-				margin-bottom: 28px
+				margin-bottom: 38px
 		&__info-general
 			margin-bottom: 7px
 		&__text
@@ -15595,9 +15627,9 @@ div.fancy-select
 			.renew
 				position: absolute
 				bottom: -29px
-				left: -2px
+				left: -3px
 				margin-left: 0
-				width: calc(100% + 2px)
+				width: calc(100% + 3px)
 				height: 30px
 				text-align: center
 				font-size: 10px
@@ -15623,14 +15655,23 @@ div.fancy-select
 		padding-bottom: 0
 		margin-bottom: 30px
 		&__text
-			padding-left: 30px
+			padding-left: 33px
+			width: 100%
 			h4
 				line-height: 12px
 				margin-bottom: 3px
+				font-size: 14px
+				line-height: 17px
+				span
+					display: inline-block
+					
 			p
 				margin-top: 0
-				line-height: 17px
-				margin-bottom: 18px
+				font-size: 11px
+				line-height: 20px
+				margin-bottom: 21px
+				max-width: 100%
+				padding-right: 20px
 		&__form
 			padding: 0
 			width: 100%
@@ -15703,6 +15744,58 @@ div.fancy-select
 						line-height: 38px
 
 @media screen and (max-width: 767px)
+	.product .product-carousel__item:after 
+		box-shadow: inset 0 -60px 100px -48px rgba(0,0,0,.7)
+	.about
+		padding-top: 20px
+	.title-page h2
+		font-size: 24px
+		line-height: 36px
+		margin-bottom: 10px
+	.mobile-decor.no-border 
+		ul
+			border-bottom: 0
+			padding-bottom: 0
+	.about 
+		.title-page 
+			p
+				font-size: 19px
+				line-height: 30px
+				padding: 4px 10px
+			&__images
+				height: 175px
+				margin-top: 21px!important				
+				&-text 
+					p:first-child
+						font-family: 'Marmelad'
+						padding-top: 26px!important
+					img
+						height: 63px!important
+				&-text p:nth-of-type(2)
+					font-size: 11px
+		.video h2, .reviews h2, .teams h2
+			font-size: 21px
+		
+	.wishlist-page 
+		.product__events
+			display: block
+			.favorite
+				bottom: 10px
+				left: 10px
+				visibility: visible
+				opacity: 1
+				&.active
+					bottom: 10px
+					left: 10px					
+				transition: all 0.3s
+				&__add, &:not(.active)
+					height: 18px
+					width: 18px
+				&:hover .favorite__link
+					opacity: 0
+					visibility: hidden
+		.favorite__link, .product__info
+			display: none
 	.right-container
 		position: absolute
 		top: 0
@@ -15887,8 +15980,79 @@ div.fancy-select
 		opacity: 0.5
 	.weight-item.active .weight-item__image
 		opacity: 1!important
+	.order-products-buttons
+		border-bottom-left-radius: 4px
+		border-bottom-right-radius: 4px
+	.available-options__list ul.choose
+		.available-options__swicher
+			border-top: 0
+	.available-options__swicher .switchery
+		margin-top: 3px
+	.mob-hide
+		display: none!important
+	.tabs-container
+		border-bottom: 0
+	.delivery-address__location p
+		width: 100%	
+	.refund__form label button
+		border-radius: 0
+	.comparison__content--slider-item--title-add a
+		font-weight: 500
+	.comparison__content--slider-btn .slick-next, .comparison__content--slider-btn .slick-prev
+		top: 36px
+		height: 73px
+	.comparison__content--title .filter li
+		font-weight: 500
 
 @media screen and (min-width: 360px) and (max-width: 767px)
+	.mobile-filter__compare
+		font-size: 14px
+		padding: 10px 5px
+	.refund__form input
+		font-size: 14px
+		height: 48px
+		padding-left: 28px
+	.refund__form label .fancy-select .trigger
+		font-size: 14px
+		height: 48px
+		padding-left: 28px
+		line-height: 26px
+		&.open
+			border: 0
+	.refund__form label .fancy-select .trigger:after
+		border-width: 4px
+		top: 22px
+		right: 18px
+	.refund__form label .fancy-select ul.options li
+		font-size: 12px
+	.refund__form label button
+		font-size: 14px
+		height: 48px
+		img
+			width: 15px
+
+	.delivery-address__search
+		font-size: 13px
+	.delivery-address__location p
+		font-size: 11px
+	.delivery-terms table tr td .delivery-terms__name
+		font-size: 11px
+	.delivery-terms table tr td .delivery-terms__time
+		font-size: 12px
+	.delivery-terms table tr td .delivery-terms__title
+		font-size: 18px
+	.delivery-terms table tr td .delivery-terms__desc
+		font-size: 10px
+
+	.profile__edit .buttons-edit .save-edit
+		width: 100%
+		height: 45px
+		line-height: 42px
+		font-size: 14px
+		margin: 0
+		border-radius: 0
+	.weight-item__name
+		font-size: 12px
 	main
 		padding: 10px 0 25px
 	.contacts__info--description p
@@ -16195,8 +16359,250 @@ div.fancy-select
 	
 	.ocassions .ocassions__content>div .ocassions-item .ocassions__content-icon svg
 		max-width: 50px
+	.wishlist-page__info a
+		font-size: 14px
+		padding-top: 10px
+		padding-bottom: 9px
+	.wishlist-page__info a:after
+		width: 15px
+		height: 15px
+	.wishlist-page__title
+		font-size: 24px
+		line-height: 26px
+		margin-bottom: 16px
+		padding-top: 15px
+	.mobile-decor ul 
+		padding-bottom: 18px
+		margin-bottom: 19px
+		li
+			display: inline-block
+			width: 6px
+			height: 6px
+			margin: 0 2px
+	.wishlist-page__info p
+		margin-bottom: 14px
+		line-height: 19px
+		font-size: 12px
+	.order-products-buttons__favorite:after
+		width: 13px
+		height: 12px
+		background-size: contain
+	.order-page .wishlist-page__title
+		margin-bottom: 13px
+	.account__prof img
+		width: 50px
+		height: 50px
+	.account__prof span.hidden-desktop
+		font-size: 10px
+		line-height: 16px
+	.account__prof span
+		font-size: 15px
+	.account__prof:after
+		width: 21px
+		height: 15px
+		top: 30px
+		right: 26px
+	.socki span.socki-mob-button
+		height: 46px
+		font-size: 14px
+		line-height: 44px
+		&:before
+			top: 21px
+			right: 22px
+	.transaction__list__item
+		padding: 11px 15px 5px
+	.transaction__price
+		padding-top: 21px
+		span
+			font-size: 21px
+			line-height: 30px
+			padding-left: 10px
+		a 
+			font-size: 11px
+			line-height: 11px
+			img
+				width: 12px
+	.history-list__info-general 
+		margin-bottom: 12px
+		span
+			font-size: 10px
+	.transaction__text h3
+		font-size: 16px
+		margin-bottom: 5px
+	.transaction__text p
+		font-size: 11px
+		span
+			display: none
+	.subscribe-foot
+		height: 168px
+		padding: 24px 12px
+		margin-bottom: 30px
+		background: #cec1ed url(../images/content/subscribe.png) bottom 13px right -43px no-repeat
+		background-size: 141px
+		.col-md-4
+			padding-left: 0!important
+	.subscribe-foot__text2
+		padding: 0
+	.news-head
+		font-size: 27px
+	.subscribe-foot__text2 p
+		font-size: 10px
+		margin-top: 6px
+		line-height: 16px
+		padding-left: 4px
+	.subscribe-foot__form
+		padding: 16px 0 0
+		width: 64%
+		input
+			width: 77%
+			height: 35px
+			font-size: 11px
+		button.half-bor-rad
+			height: 35px
+			width: 47px
+	.page-content__title 
+		font-size: 24px
+		text-align: center
+		line-height: 32px
+		margin-bottom: 15px
+		margin-top: 12px
+	.product-price
+		float: right
+		padding-right: 10px
+		span
+			font-size: 24px
+			font-family: 'Marmelad'
+		.product-quantity
+			float: none
+			vertical-align: middle	
+			margin-top: 0		
+			input
+				margin-right: 0
+				width: 34px
+				max-height: 24px
+				font-size: 11px
+		.product-quantity a
+			height: 24px
+			width: 24px
+			line-height: 22px
+	.product-favorite 
+		a
+			font-size: 12px
+			display: block
+			padding-top: 6px
+			margin-bottom: 3px
+			&:before
+				margin-right: 8px
+	.available-options>a
+		font-size: 15px
+		font-weight: 600
+		span
+			font-weight: 500
+	.available-options>a, .available-options__swicher, .available-options i
+		padding: 13px 15px
+	.page-content__add-cart
+		padding-top: 10px
+		padding-bottom: 13px
+		font-size: 17px
+		margin-bottom: 35px
+		&:after
+			margin-left: 8px
+			margin-right: 10px
+	.product-details__title
+		font-size: 14px
+	.product-details__list
+		margin-top: 15px
+		li
+			padding-left: 5px
+			font-size: 11px
+			padding-top: 10px
+			padding-bottom: 10px
+
+
 
 @media screen and (max-width: 359px)
+	.product-price
+		float: right
+		padding-right: 7px
+		span
+			font-size: 20px
+			font-family: 'Marmelad'
+		.product-quantity
+			float: none
+			vertical-align: middle	
+			margin-top: 0		
+			input
+				margin-right: 0
+				width: 28px
+				max-height: 20px
+				font-size: 10px
+		.product-quantity a
+			height: 20px
+			width: 20px
+			line-height: 18px
+	.product-favorite 
+		a
+			font-size: 10px
+			display: block
+			padding-top: 4px
+			margin-bottom: 2px
+			&:before
+				margin-right: 7px
+	.available-options>a
+		font-size: 13px
+		font-weight: 600
+		span
+			font-weight: 500
+	.available-options>a, .available-options__swicher, .available-options i
+		padding: 11px 15px
+	.page-content__add-cart
+		padding-top: 8px
+		padding-bottom: 12px
+		font-size: 15px
+		margin-bottom: 30px
+		&:after
+			margin-left: 7px
+			margin-right: 8px
+	.product-details__title
+		font-size: 12px
+	.product-details__list
+		margin-top: 12px
+		li
+			padding-left: 3px
+			font-size: 10px
+			padding-top: 8px
+			padding-bottom: 8px
+
+	.subscribe-foot
+		background: #cec1ed url(../images/content/subscribe.png) bottom 16px right -39px no-repeat
+		background-size: 121px		
+		&__text2
+			padding: 0
+			p
+				width: 70%
+		.col-md-4
+			padding-left: 0!important
+
+	.subscribe-foot__form
+		width: 64%
+		input
+			width: 80%
+	.refund__text
+		padding-left: 20px
+
+	.profile__edit .buttons-edit .save-edit
+		width: 100%
+		height: 40px
+		line-height: 38px
+		font-size: 12px
+		margin: 0
+		border-radius: 0
+
+	.wishlist-page__info a
+		font-size: 12px
+		padding-top: 7px
+		padding-bottom: 6px
+
 	.ocassions .ocassions__content>div .ocassions-item .ocassions__content-icon svg
 		max-width: 45px
 	.product .slick-dots .slick-active
@@ -16280,8 +16686,8 @@ div.fancy-select
 						right: 0
 						bottom: 3px
 						width: 70px
-						height: 46px
-						background-size: 54px
+						height: 39px
+						background-size: 40px
 					span.show_category
 						height: 10px
 						width: 19px
@@ -16325,3 +16731,24 @@ div.fancy-select
 			.subscribe__box-form 
 				input.form-control
 					padding-bottom: 8px
+	.about 
+		.title-page 
+			p
+				font-size: 16px
+				line-height: 26px
+				padding: 3px 8px
+			&__images
+				height: 160px
+				margin-top: 17px!important				
+				&-text 
+					p:first-child
+						font-family: 'Marmelad'
+						padding-top: 23px!important
+					img
+						height: 60px!important
+				&-text p:nth-of-type(2)
+					font-size: 10px
+		.video h2, .reviews h2, .teams h2
+			font-size: 18px
+	.product__title
+		height: 42px
