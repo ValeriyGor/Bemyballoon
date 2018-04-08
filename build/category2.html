@@ -340,18 +340,39 @@
             </ul>
           </div>
           <div class="mobile-filter hidden-desktop">
-            <div class="row mobile-filter__row justify-content-between"><a class="mobile-filter__buttons mobile-filter--category" href="#">Category</a><a class="mobile-filter__buttons mobile-filter--filter" href="#">Filter</a></div>
+            <div class="row mobile-filter__row justify-content-between"><a class="mobile-filter__buttons mobile-filter--category" href="#">Helium latex balloon <span>126</span></a><a class="mobile-filter__buttons mobile-filter--filter" href="#">Filter</a></div>
             <div class="mobile-filter__filter-content">
-              <ul>
-                <li><a href="#">Sort by:<span>Ascending price</span></a></li>
-                <li><a href="#">Flower type:<span>All type</span></a></li>
-                <li><a href="#">Priec rangers:<span>$80.00 - $100.00</span></a></li>
-                <li><a href="#">Color:<span>Orange</span></a></li>
+              <ul id="filter-list">
+                <div class="overlay-filter"></div>
+                <li><a href="#">Sort by:<span>Ascending price</span></a>
+                  <div class="modal-list modal-list-sort">
+                    <div class="insert">
+                      <ul></ul>
+                    </div>
+                    <div class="apply-filter">Apply filter</div>
+                  </div>
+                </li>
+                <li><a href="#">Flower type:<span>All type</span></a>
+                  <div class="modal-list modal-list-type">
+                    <div class="insert"></div>
+                    <div class="apply-filter">Apply filter</div>
+                  </div>
+                </li>
+                <li><a href="#">Price rangers:<span>$80.00 - $100.00</span></a>
+                  <div class="modal-list modal-list-price">
+                    <div class="insert"></div>
+                    <div class="apply-filter">Apply filter</div>
+                  </div></li>
+                <li><a href="#">Color:<span>Orange</span></a>
+                  <div class="modal-list modal-list-color">
+                    <div class="insert"></div>
+                    <div class="apply-filter">Apply filter</div>
+                  </div></li>
               </ul>
             </div>
             <div class="mobile-filter__category-content">
               <ul class="category-filter__list">
-                <li class="category-filter__has-child"><a href="#">Helium Latex Balloon</a>
+                <li class="category-filter__has-child"><a href="#">Helium Latex Balloon<span class="desc-hide">42</span></a>
                   <ul class="category-filter__child">
                     <li><a href="#">Plain Helium Balloons<span>42</span></a></li>
                     <li><a href="#">Printed Helium Balloons<span>84</span></a></li>
@@ -359,7 +380,7 @@
                 </li>
                 <li><a href="#">Personalized balloons<span>0</span></a></li>
                 <li><a href="#">Helium foil balloon<span>249</span></a></li>
-                <li class="category-filter__has-child"><a href="#">Helium numbers and letter</a>
+                <li class="category-filter__has-child"><a href="#">Helium numbers and letter<span class="desc-hide">84</span></a>
                   <ul class="category-filter__child">
                     <li><a href="#">Plain Helium Balloons<span>42</span></a></li>
                     <li><a href="#">Printed Helium Balloons<span>84</span></a></li>

@@ -474,9 +474,102 @@
 									<div class="available-options"><a class="available-options__main-link" href="#">Available options:<span>color, size, descriptions</span></a>
 										<div class="available-options__list">
 											<ul class="choose">
-												<li><a class="choose__color" href="#">Color:<span>No matter</span></a></li>
-												<li><a class="choose__size" href="#">Size:<span>35 inch</span></a></li>
-												<li class="choose__description"><a href="#">Individual description:<span>3 pcs. selected</span></a></li>
+                        <div class="choose-overlay"></div>
+												<li><a class="open-drop" href="#">Color:<span>No matter</span></a>
+                          <div class="choose__dropdowns">
+                            <h4 class="product-options__selected">Choose color:<span>No matter</span><a class="product-options__close colores" href="#"></a></h4>
+                          <div class="color-select">
+                            <ul>
+                              <li class="color-select__item">
+                                <input type="radio" name="color" id="color1-4"  data-color="orange">
+                                <label style="background: #e0c554;" for="color1-4"></label>
+                              </li>
+                              <li class="color-select__item">
+                                <input type="radio" name="color" id="color2-4"  data-color="light-blue">
+                                <label style="background: #f8d2e7;" for="color2-4"></label>
+                              </li>
+                              <li class="color-select__item">
+                                <input type="radio" name="color" id="color3-4"  data-color="light-grey">
+                                <label style="background: #f3e9dd;" for="color3-4"></label>
+                              </li>
+                              <li class="color-select__item">
+                                <input type="radio" name="color" id="color4-4"  data-color="blue">
+                                <label style="background: #be5bd0;" for="color4-4"></label>
+                              </li>
+                              <li class="color-select__item">
+                                <input type="radio" name="color" id="color5-4"  data-color="green">
+                                <label style="background: #52ac62;" for="color5-4"></label>
+                              </li>
+                              <li class="color-select__item">
+                                <input type="radio" name="color" id="color6-4"  data-color="red">
+                                <label style="background: #903f22;" for="color6-4"></label>
+                              </li>
+                              <li class="color-select__item">
+                                <input type="radio" name="color" id="color7-4"  data-color="No matter">
+                                <label for="color7-4"><img src="assets/images/content//product/circle.png"/>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                          <a class="modal-choose__save exit-modal" href="#">Save color</a>
+                          </div>
+                        </li>
+												<li><a class="open-drop" href="#">Size:<span>35 inch</span></a>
+                          <div class="choose__dropdowns">
+                            <h4 class="product-options__selected">Choose size:<span>No matter</span><a class="product-options__close sizes" href="#"></a></h4>
+                            <div class="size-select">
+                              <ul>
+                                <li class="size-select__item">
+                                  <input type="radio" name="size" data-size="13" id="size1-2">
+                                  <label for="size1-2">13</label>
+                                </li>
+                                <li class="size-select__item">
+                                  <input type="radio" name="size" data-size="23" id="size2-2">
+                                  <label for="size2-2"> 23</label>
+                                </li>
+                                <li class="size-select__item">
+                                  <input type="radio" name="size" data-size="30" id="size3-2">
+                                  <label for="size3-2">30</label>
+                                </li>
+                                <li class="size-select__item">
+                                  <input type="radio" name="size" data-size="35" id="size4-2">
+                                  <label for="size4-2">35</label>
+                                </li>
+                                <li class="size-select__item">
+                                  <input type="radio" name="size" data-size="40" id="size5-2">
+                                  <label for="size5-2">40</label>
+                                </li>
+                                <li class="size-select__item">
+                                  <input type="radio" name="size" data-size="45" id="size6-2">
+                                  <label for="size6-2">45</label>
+                                </li>
+                                <li class="size-select__item">
+                                  <input type="radio" name="size" data-size="50" id="size7-2">
+                                  <label for="size7-2">50</label>
+                                </li>
+                              </ul>
+                            </div>
+                            <a class="modal-choose__save exit-modal" href="#">Save size</a>
+                          </div>
+                        </li>
+												<li><a href="#" class="open-drop">Individual description:<span>3 pcs. selected</span></a>
+                          <div class="choose__dropdowns">
+                            <h4 class="product-options__selected">Individual description:<span>3 pcs. selected</span><a class="product-options__close colores" href="#"></a></h4>
+                            <div class="individual-inscription">
+                              <div class="individual-inscription__fields">
+                                <div class="individual-inscription__field-item">
+                                  <input type="text" placeholder="Enter the inscription...">
+                                </div>
+                                <div class="individual-inscription__field-item">
+                                  <input type="text" placeholder="Enter the inscription...">
+                                </div>
+                                <div class="individual-inscription__field-item">
+                                  <input type="text" placeholder="Enter the inscription...">
+                                </div>       
+                              </div><!-- <a class="individual-inscription__button" href="#">Add description</a> -->
+                            </div><a class="modal-choose__save exit-modal" href="#">Save descriptions</a>
+                          </div>
+                        </li>
 											</ul>
 										</div>
 									</div>
@@ -1167,7 +1260,7 @@
           </div>
           
           <div class="footer-modal-link">
-            <a href="#"  class="sign-in-modal-open addclassbody"  aria-label="Close" data-dismiss="modal">If you already have a profile on site, you can enter it without registering <img src="assets/images/icons/footer-link.png" alt=""></a>
+            <a href="#"  class="sign-in-modal-open addclassbody"  aria-label="Close" data-dismiss="modal"><span class="desc-hide">Log in if you have a profile</span><span class="mob-hide">If you already have a profile on site, you can enter it without registering </span><img src="assets/images/icons/footer-link.png" alt=""></a>
           </div>
         </div>
       </div>
@@ -1434,81 +1527,6 @@
 								</div>
 							</form>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="choose-size" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-choose" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<div class="available-options active"><i>Choose size:<span>no matter</span></i><a class="modal-choose__close" href="#" data-dismiss="modal" aria-label="Close"></a></div>
-						<div class="size-select">
-							<ul>
-								<li class="size-select__item"><a href="#">13</a></li>
-								<li class="size-select__item"><a href="#">23</a></li>
-								<li class="size-select__item"><a href="#">30</a></li>
-								<li class="size-select__item"><a class="active" href="#">35</a></li>
-								<li class="size-select__item"><a href="#">40</a></li>
-								<li class="size-select__item"><a href="#">45</a></li>
-								<li class="size-select__item"><a href="#">50</a></li>
-							</ul>
-						</div><a class="modal-choose__save" href="#" data-dismiss="modal" aria-label="Close">Save size</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="choose-color" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-choose" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<div class="available-options active">Choose color:<span>No matter</span><div class="product-options__close"></div></div>
-						<div class="color-select">
-							<ul>
-								<li class="color-select__item">
-									<input type="radio" name="color1" data-color="orange" id="color11">
-									<label style="background: #e0c554;" for="color11"></label>
-								</li>
-								<li class="color-select__item">
-									<input type="radio" name="color1" data-color="light-blue" id="color21">
-									<label style="background: #f8d2e7;" for="color21"></label>
-								</li>
-								<li class="color-select__item">
-									<input type="radio" name="color1" data-color="light-grey" id="color31">
-									<label style="background: #f3e9dd;" for="color31"></label>
-								</li>
-								<li class="color-select__item">
-									<input type="radio" name="color1" data-color="blue" id="color41">
-									<label style="background: #be5bd0;" for="color41"></label>
-								</li>
-								<li class="color-select__item">
-									<input type="radio" name="color1" data-color="green" id="color51">
-									<label style="background: #52ac62;" for="color51"></label>
-								</li>
-								<li class="color-select__item">
-									<input type="radio" name="color1" data-color="red" id="color61">
-									<label style="background: #903f22;" for="color61"></label>
-								</li>
-								<li class="color-select__item no-matter-color">
-									<input type="radio" name="color1" id="color71" data-color="No matter">
-									<label for="color71"><img src="assets/images/content//product/circle.png"/>
-									</label>
-								</li>
-							</ul>
-						</div><a class="modal-choose__save" href="#">Save color</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="choose-description" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-choose" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<div class="available-options active"><i>Individual description:<span>3 pcs. selected</span></i><a class="modal-choose__close" href="#" data-dismiss="modal" aria-label="Close"></a></div>
-						<div class="individual-inscription">
-							<div class="individual-inscription__fields"></div><a class="individual-inscription__button" href="#">Add description</a>
-						</div><a class="modal-choose__save" href="#">Save size</a>
 					</div>
 				</div>
 			</div>

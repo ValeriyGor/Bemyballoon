@@ -9,7 +9,7 @@
 		<meta name="description" content="Awesome site">
 		<link rel="stylesheet" type="text/css" href="assets/static/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="assets/static/bootstrap-theme.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bundle.min.css">
 	</head><a class="source" href="/">Site map</a>
 	<body>
 		<div class="overlay"></div>
@@ -509,6 +509,10 @@
 											<div class="edit-profile">Edit profile</div>
 								    	</div>
 								    	<div class="profile__edit">
+                        <div class="tabs-link-edit desc-hide">
+                          <a href="" class="cancel-button-edit"><img src="assets/images/icons/edit-cancel.png" alt=""> Cancel changes</a>
+                          <a href="">Save changes <img src="assets/images/icons/edit-save.png" alt=""></a>
+                        </div>
 										    <form action="">
 													<div class="profile__item verified">
 														<div class="profile__item-name">
@@ -585,7 +589,7 @@
 																<span>Birthday</span>
 															</div>								    				
 														</div>
-														<div class="profile__item-title birthday-date">
+														<div class="profile__item-title birthday-date mob-hide">
 															<label for="">
 																<select name="" id="date" class="pro-date select-pro">
 																	<option value="1">1</option>
@@ -671,6 +675,9 @@
 																</select>
 															</label>
 														</div>
+                            <div class="profile__item-title birthday-date desc-hide">
+                              <input id="date" type="date" value="2017-06-01">
+                            </div>
 													</div>
 													<div class="profile__item verified">
 														<div class="profile__item-name">
@@ -696,11 +703,14 @@
 															</div>								    				
 														</div>
 														<div class="profile__item-title sm-txt upload-photo">
+                              <div class="upload-photo__img desc-hide">
+                                <img src="assets/images/content/reviews-photo.jpg" alt="">
+                              </div>
 															<label for="photo-profile" class="update-photo">
 																<img src="assets/images/icons/uploa.png" alt=""><span>Update photo</span>
 															</label>
 															<input id="photo-profile" type="file">
-															<span class="recomend">Avatar size must be at least 400x400</span>
+															<span class="recomend mob-hide">Avatar size must be at least 400x400</span>
 															<label for="" class="delete-photo"><img src="assets/images/icons/remove.png" alt=""><span>Delete photo</span></label>
 														</div>
 													</div>
@@ -733,7 +743,7 @@
 
 								    </div>
 								    <div id="tab2" class="order-list">
-								    	<div class="history-list">
+								    	<div class="history-list width-last-border">
 											<div class="history-list__item processed">
 												<div class="history-list__info-general">
 													<span class="history-list__date">25.05.2017</span>
@@ -855,17 +865,17 @@
 			<div class="subscribe-foot">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-6 subscribe-foot__text2">
+						<div class="col-md-6 subscribe-foot__text2">
 							<span class="news-head">Newsletter</span>
 							<div><p>Receive our emails and be the first to know about exclusive offers, promotions, and more!</p></div>
 						</div>
-						<div class="col-sm-4 col-lg-3">
+						<div class="col-md-4 col-lg-3">
 							<form action="#" class="subscribe-foot__form">
 								<input class="half-bor-rad no-right-border" type="text" placeholder="Enter your mail">
 								<button class="half-bor-rad"><img src="assets/images/icons/send-button2.png" alt=""></button>
 							</form>
 						</div>
-						<div class="col-sm-2 col-lg-3 hidden-mobile">
+						<div class="col-md-2 col-lg-3 hidden-mobile">
 							<img class="subscribe-bag" src="assets/images/content/subscribe-paket.png" alt="">
 						</div>
 					</div>
