@@ -6371,7 +6371,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 					height: auto
 			.description__read-more
 				color: #e3a3cc
-				display: inline-block
+				display: block
 	.reviews__feedback
 		display: block
 		text-align: center
@@ -11080,7 +11080,6 @@ svg.burger
 		margin-left: 5px
 		position: relative
 		top: -1px
-		transition: all 0.3s
 	&.active
 		color: #e3a3cc
 		&:after
@@ -11739,7 +11738,7 @@ svg.burger
 @media screen and (min-width: 1200px)
 	.questions ul li a:hover
 		color: #999
-	header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-menu li:hover a
+	header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-menu li:hover>a
 		color: #e3a3cc
 
 @media screen and (max-width: 1200px)
@@ -14887,8 +14886,6 @@ div.fancy-select
 				margin-bottom: 29px
 			&__form 
 				input
-					border-radius: 0
-					border-width: 1px 0
 					height: 40px
 					margin-bottom: 10px
 					font-size: 12px
@@ -15075,12 +15072,13 @@ div.fancy-select
 		margin-top: 19px
 	.product
 		margin-bottom: 18px
-
 	.order-page__mobile-cost
 		margin-top: 3px
-		border-top: 1px solid #f1f1f1
-		border-bottom: 1px solid #f1f1f1
+		border-radius: 3px
+		border: 1px solid #f1f1f1
 		padding: 14px 0
+		margin-left: 0
+		margin-right: 0
 		span
 			color: #000
 			font-size: 12px
@@ -15453,6 +15451,7 @@ div.fancy-select
 		line-height: 36px
 	.order-list
 		margin-top: 12px
+		padding: 0 15px
 		.you-want
 			display: none
 	.history-list
@@ -15673,11 +15672,13 @@ div.fancy-select
 	.history-list
 		&-page
 			margin-bottom: 30px
+			padding: 0 15px
 			.history-list__item:last-child
 				border-bottom: 1px solid #e8e8e8
 		&__item
 			padding: 7px 12px 9px 18px
 			position: relative
+			border-right: 1px solid #e8e8e8
 			&.canceled
 				margin-bottom: 38px
 		&__info-general
@@ -15691,12 +15692,12 @@ div.fancy-select
 				bottom: -29px
 				left: -3px
 				margin-left: 0
-				width: calc(100% + 3px)
+				width: calc(100% + 4px)
 				height: 30px
 				text-align: center
 				font-size: 10px
 				border-radius: 0
-				border-width: 1px 0
+				border-width: 1px
 				line-height: 26px
 	.transaction
 		&__text 
@@ -15744,7 +15745,7 @@ div.fancy-select
 				margin-bottom: 15px
 				padding-left: 24px
 				border-radius: 0
-				border-width: 1px 0
+				border-width: 1px
 			label
 				flex-direction: column
 				button
@@ -15764,7 +15765,7 @@ div.fancy-select
 						margin-bottom: 15px
 						line-height: 20px
 						border-radius: 0
-						border-width: 1px 0
+						border-width: 1px
 						&:after
 							top: 18px
 							right: 15px
@@ -15805,7 +15806,21 @@ div.fancy-select
 						height: 40px
 						line-height: 38px
 
+	.order-page__proceed, .available-options__main-link, .available-options__list
+		margin-left: 0!important
+		margin-right: 0!important
+	.available-options__main-link, .available-options__list
+		border-right: 1px solid #f5f5f5
+		border-left: 1px solid #f5f5f5
+	.refund__form
+		padding-left: 15px!important
+		padding-right: 15px!important
+
 @media screen and (max-width: 767px)	
+	#tabs li
+		border-width: 0 0px 1px 1px
+	#tabs li:last-child
+		border-right: 1px solid #e5e5e5
 	.available-options__list
 
 		.color-select
