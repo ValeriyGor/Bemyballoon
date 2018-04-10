@@ -101,7 +101,7 @@ a
 	-webkit-text-decoration-skip: objects
 	&:hover
 		color: #0056b3
-		text-decoration: underline
+		text-decoration: none
 	&:not([href]):not([tabindex])
 		color: inherit
 		text-decoration: none
@@ -687,7 +687,6 @@ header
 				&:hover
 					background: 0 0
 					border: none
-					color: #e3a3cc
 			.open
 				.caret
 					color: #e3a3cc
@@ -709,7 +708,6 @@ header
 				&:hover > a
 					&:after
 						border-top: 4px solid #e3a3cc
-					color: #e3a3cc
 			.dropdown-menu
 				border: 1px solid #eaeaea
 				box-shadow: none
@@ -1250,8 +1248,6 @@ header
 						position: relative
 						font-size: 18px
 						font-family: Marmelad, sans-serif
-						&:hover
-							color: #e3a3cc
 				.dropdown-hover
 					> a:after
 						content: ""
@@ -1263,13 +1259,8 @@ header
 						right: 0
 						margin-right: -15px
 						margin-top: 0
-					&:hover >
-						a:after
-							border-top: 4px solid #e3a3cc
 						/* .dropdown-menu
 							display: block */
-						a
-							color: #e3a3cc
 				.dropdown-menu
 					padding: 20px 30px
 					border-radius: 2px
@@ -1308,11 +1299,6 @@ header
 							right: 0
 							margin-right: -18px
 							margin-top: -3px
-						&:hover > a
-							&:after
-								border: 5px solid transparent
-								border-left: 5px solid #e3a3cc
-							color: #e3a3cc
 						ul
 							top: 0
 							left: 97%
@@ -3030,7 +3016,6 @@ section .section-title
 						&:after
 							display: none
 						&:hover
-							color: #e3a3cc
 							text-decoration: none
 
 
@@ -6525,6 +6510,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		margin-left: -5px
 
 @media (max-width: 1199.98px)
+	.about
+		padding-top: 0
 	.about .title-page .title-page__images
 		background-position: 50% 50% !important
 
@@ -7789,7 +7776,14 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 		bottom: 0
 		top: 0
 		right: 20%
-		background: linear-gradient(to right, rgba(30, 87, 153, 0) 0, rgba(35, 90, 155, 0) 2%, #fff 100%)
+		background: rgba(255, 255, 255, 0.25)
+		background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.49) 47%, rgba(255, 255, 255, 0.8) 100%)
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0.25)), color-stop(47%, rgba(255, 255, 255, 0.49)), color-stop(100%, rgba(255, 255, 255, 0.8)))
+		background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.49) 47%, rgba(255, 255, 255, 0.8) 100%)
+		background: -o-linear-gradient(left, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.49) 47%, rgba(255, 255, 255, 0.8) 100%)
+		background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.49) 47%, rgba(255, 255, 255, 0.8) 100%)
+		background: linear-gradient(to right, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.49) 47%, rgba(255, 255, 255, 0.8) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 )
 
 .comparison__content--slider-btn
 	z-index: 999
@@ -10869,7 +10863,6 @@ svg.burger
 			margin-top: -5px
 		&:hover
 			text-decoration: none
-			color: #e3a3cc
 	> li > a
 		font-size: 14px
 		padding-top: 6px
@@ -10913,7 +10906,7 @@ svg.burger
 		border-top: 6px solid #ccc
 		margin-left: 9px
 		vertical-align: middle
-	&.active > a, a:hover
+	&.active > a
 		color: #e3a3cc
 		&:after
 			border-top-color: #e3a3cc
@@ -11082,9 +11075,18 @@ svg.burger
 		display: inline-block
 		border: 4px solid transparent
 		border-top: 6px solid #ccc
+		border-bottom: 0
+		transform: rotate(-180deg)
 		margin-left: 5px
 		position: relative
-		top: 3px
+		top: -1px
+		transition: all 0.3s
+	&.active
+		color: #e3a3cc
+		&:after
+			transform: rotate(0deg)
+			border-top-color: #e3a3cc
+
 
 .mobile-filter__compare
 	font-size: 12px
@@ -11729,11 +11731,16 @@ svg.burger
 				vertical-align: middle
 			&:hover
 				text-decoration: none
-				color: #999
 		&.active a
 			color: #999
 			&:after
 				border-top-color: #e3a3cc
+
+@media screen and (min-width: 1200px)
+	.questions ul li a:hover
+		color: #999
+	header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-menu li:hover a
+		color: #e3a3cc
 
 @media screen and (max-width: 1200px)
 	.questions ul
@@ -13391,8 +13398,46 @@ div.fancy-select
 				color: #222
 			&.hover
 				color: #222
+.contacts__tabs
+	.slick-track
+		transform: translate3d(0px, 0px, 0px)!important
 
-@media screen and (max-width: 1200px)
+@media screen and (min-width: 1200px)	
+	header .bottom-header .bottom-header__menu ul.navbar-nav 
+		.dropdown-hover:hover>a
+			color: #e3a3cc
+			a:after
+				border-top: 4px solid #e3a3cc
+	header .top-header .navbar .open a:hover
+		color: #e3a3cc
+	header .top-header .navbar .dropdown-hover:hover>a, header .top-header .navbar .nav-link:hover
+		color: #e3a3cc
+	.category-filter__has-child.active>a, .category-filter__has-child a:hover
+		color: #e3a3cc
+	.category-filter__list a:hover
+		color: #e3a3cc
+
+
+
+@media screen and (max-width: 1200px)	
+	header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover.open>a
+		color: #e3a3cc
+		&:after				
+			border-top: 3px solid #e3a3cc
+
+	header .top-header .navbar .dropdown-hover.open>a
+		color: #e3a3cc
+
+	.ocassions .ocassions__content .ocassions-item:hover:after
+		opacity: 0
+	.ocassions .ocassions__content .ocassions-item:hover .ocassions__content-name
+		color: #000
+	#one-click .product-quantity
+		margin-top: 6px
+	.product-quantity input
+		width: 32px
+		max-height: 20px
+		font-size: 10px
 	.tabs-container
 		margin-top: 15px
 		margin-bottom: 50px
@@ -13422,8 +13467,6 @@ div.fancy-select
 				border: 2px solid transparent
 				border-top: 3px solid #b2b2b2
 				margin-right: -10px
-			.dropdown-hover:hover>a:after				
-				border-top: 3px solid #e3a3cc
 		.top-header .top-header__account span.cartcontents
 			width: 14px
 			height: 14px
@@ -13452,7 +13495,12 @@ div.fancy-select
 				border-left: 3px solid #e3a3cc
 				margin-right: -10px
 				margin-top: -1px
-				
+		
+		.bottom-header .bottom-header__menu ul.navbar-nav .nav-item:last-of-type .dropdown-menu 
+			right: -10px
+			left: auto
+			&:before
+				left: 73%
 
 		.top-header .navbar .dropdown-menu a
 			padding: 0
@@ -14747,7 +14795,7 @@ div.fancy-select
 			max-width: 42%
 			flex: 0 0 42%
 		a
-			padding: 6px 10px!important
+			padding: 6px 7px!important
 
 	.baners a:hover .jumbotron
 		box-shadow: none
@@ -15907,7 +15955,7 @@ div.fancy-select
 	.product .product-carousel__item:after 
 		box-shadow: inset 0 -60px 100px -48px rgba(0,0,0,.7)
 	.about
-		padding-top: 30px
+		padding-top: 0px
 	.title-page h2
 		font-size: 24px
 		line-height: 36px
@@ -16199,10 +16247,20 @@ div.fancy-select
 			display: none
 	.available-options__list .modal-choose__save, .modal-choose__save
 		border-bottom: 0
-
+	.ocassions .ocassions__content .ocassions-item:hover .ocassions__content-name
+		color: #000
+	.mobile-filter__category-content ul
+		li.category-filter__has-child:last-of-type
+			border-bottom-width: 0!important
+	.available-options__list ul.choose .available-options__swicher
+		margin: 0
+		padding: 13px 0 13px 30px
 
 
 @media screen and (min-width: 360px) and (max-width: 767px)
+	.mobile-filter__category-content ul
+		li.category-filter__has-child:last-of-type
+			border-bottom-width: 0!important
 	.profile__edit .add-address-info #inputs-list .close-input
 		top: 15px
 		right: 13px
@@ -16441,7 +16499,7 @@ div.fancy-select
 		width: calc(100% - 55px)
 		max-height: 40px
 		font-size: 12px
-		line-height: 36px
+		line-height: 38px
 	.product-buttons__comparison
 		width: 54px
 		height: 40px
@@ -16809,6 +16867,10 @@ div.fancy-select
 
 
 @media screen and (max-width: 359px)
+	.row.instagram__content .instagram__content-left
+		font-size: 8px!important
+	.row.instagram__content .instagram__content-right
+		font-size: 9px!important
 	.modal-choose .individual-inscription__field-item, .available-options__list .individual-inscription__field-item
 		width: 100%
 		padding-left: 14px
