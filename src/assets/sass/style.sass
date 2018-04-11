@@ -9110,9 +9110,83 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 .product-reviews
 	padding-top: 134px
 
+.cart-counter
+	height: 60px
+	border: 1px solid #e5e5e5
+	border-radius: 3px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 0 20px
+	margin-bottom: 23px
+	p
+		padding: 0
+		margin: 0
+		font: 16px/28px 'Open Sans', sans-serif
+		color: #000
+		span
+			font-weight: bold
+		img
+			display: inline-block
+			margin-right: 13px
+			position: relative
+			top: -1px
+	a
+		color: #999
+		&:hover
+			color: #e3a3cc
+
 @media screen and (max-width: 1200px)
 	.product-reviews
 		padding-top: 46px
+	.cart-counter
+		height: 45px
+		padding: 0 15px
+		margin-bottom: 14px
+		a
+		font-size: 10px
+		p
+			font-size: 11px
+			text-align: center
+			img
+				margin-right: 9px
+				width: 15px
+
+@media screen and (max-width: 767px)
+	.cart-counter
+		margin-top: 20px
+		height: auto
+		padding: 0
+		margin-bottom: 14px
+		display: block
+		margin-top: 0 
+		&__wrap 
+			margin-right: 7px
+			margin-left: 7px
+			width: 100%
+		a
+			font-size: 11px
+			background: #fcfcfc
+			display: block
+			padding: 7px 0
+			text-align: center
+		p
+			font-size: 12px
+			padding: 10px 0
+			border-bottom: 1px solid #e7e7e7
+
+			img
+				margin-right: 9px
+				width: 15px
+
+
+@media screen and (max-width: 359px)
+	.cart-counter
+		a 
+			font-size: 10px
+		p
+			font-size: 11px
+
 
 .product-reviews__title
 	font-size: 36px
@@ -13301,8 +13375,21 @@ svg.burger
 			margin: 15px
 	.slider-product
 		display: flex
+		.page-content__col:nth-of-type(1)
+			border-right: 1px solid #e5e5e5
 		.page-content__col:nth-of-type(2)
-			margin-left: 25%
+			margin-left: 10%
+			display: flex
+			.owl-theme .product-cart-carousel2
+				margin: auto
+			.owl-carousel.owl-loaded
+				display: block
+			.flex-col
+				margin: auto
+				width: 100%
+				overflow: hideen
+			.owl-stage-outer
+				margin: auto
 		.product-cart-carousel__item
 			display: flex
 			align-items: center
@@ -13312,6 +13399,24 @@ svg.burger
 			margin: auto
 			max-width: 100%
 			max-height: 100%
+
+	.product-cart-carousel-thumbs
+		height: calc(100vh - 80px)
+		overflow-y: hidden
+		&__item:nth-child(n+6)
+			display: block
+	.owl-dots
+		padding: 25px 0
+		.owl-dot
+			width: 12px
+			height: 12px
+			background: #f0f0f0
+			display: inline-block
+			border-radius: 50%
+			margin: 0 5px
+
+			&.active
+				background: #e6d197
 		
 
 //select
