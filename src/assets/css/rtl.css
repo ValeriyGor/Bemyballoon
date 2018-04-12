@@ -1,0 +1,9 @@
+.dir-rtl {
+  direction: rtl; }
+
+.slider-home {
+  direction: ltr; }
+
+header .top-header .top-header__cart .nav-link .cartcontents {
+  margin-right: 12px;
+  margin-left: 0; }

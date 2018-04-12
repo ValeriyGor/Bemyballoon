@@ -25,6 +25,13 @@ gulp.task('sass', ['clean-css'], function () {
         .pipe(gulp.dest('./src/assets/css'));
 });
 
+
+gulp.task('sassrtl', ['clean-cssrtl'], function () {
+      return gulp.src('./src/assets/sassrtl/*.sass')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./src/assets/css'));
+});
+
 gulp.task('mincss', ['sass'], function () {
     return gulp.src('./src/assets/css/**/*.css')
         .pipe(concatCss("bundle.css"))
@@ -74,6 +81,10 @@ gulp.task('clean-css', function () {
     return gulp.src('./src/assets/css*', {read: false})
         .pipe(clean());
 });
+gulp.task('clean-cssrtl', function () {
+    return gulp.src('./src/assets/css/rtl.css', {read: false})
+        .pipe(clean());
+});
 
 //Запуск сервера 
 gulp.task('webserver', function() {
@@ -89,7 +100,8 @@ gulp.task('webserver', function() {
 
 //Слежение
 gulp.task('watch', ['mincss', 'scripts'], function() {
-    gulp.watch('./src/assets/sass/**/*.sass', ['mincss']);
+    gulp.watch('./src/assets/sass/**/*.sass', ['mincss']);    
+    gulp.watch('./src/assets/sassrtl/*.sass', ['sassrtl']);
     gulp.watch('./src/*.html', browsersync.reload);
     gulp.watch(['./src/assets/js/*.js'], ['scripts']);
     gulp.run('webserver');
