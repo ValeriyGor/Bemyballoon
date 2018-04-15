@@ -107,7 +107,7 @@ gulp.task('watch', ['mincss', 'scripts'], function() {
     gulp.run('webserver');
 });
 
-gulp.task('build', ['clean', 'autoprefix', 'images'], function() {
+gulp.task('build', ['clean', 'autoprefix', 'sassrtl', 'images'], function() {
     var buildCss = gulp.src('./src/assets/css/bundle.min.css')
         .pipe(gulp.dest('./build/assets/css'));
 
