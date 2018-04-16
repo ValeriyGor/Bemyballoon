@@ -32,8 +32,9 @@ gulp.task('sassrtl', ['clean-cssrtl'], function () {
         .pipe(gulp.dest('./src/assets/css'));
 });
 
+
 gulp.task('mincss', ['sass'], function () {
-    return gulp.src('./src/assets/css/**/*.css')
+    return gulp.src(['./src/assets/css/*.css', '!./src/assets/css/rtl.css'])
         .pipe(concatCss("bundle.css"))
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(rename("bundle.min.css"))
@@ -41,6 +42,9 @@ gulp.task('mincss', ['sass'], function () {
     
     .pipe(gulp.dest('./src/assets/css'));
 });
+
+
+
 
 //Проставление префиксов для кроссбраузерности 
 gulp.task('autoprefix', ['mincss'], function () {

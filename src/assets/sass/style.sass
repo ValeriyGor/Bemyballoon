@@ -1140,8 +1140,10 @@ header
 						font-size: 18px
 						width: 168px
 						background: #fff
-						span
+						span, &>div
 							font-weight: 700
+							display: inline-block
+							direction: ltr
 					a.checkout
 						height: 50px
 						line-height: 46px
@@ -13551,7 +13553,7 @@ div.fancy-select
 
 @media screen and (min-width: 1200px)	
 	.comparison, .contacts, .about
-		padding-top: 10px
+		padding-top: 35px
 	header .bottom-header .bottom-header__menu ul.navbar-nav 
 		.dropdown-hover:hover>a
 			color: #e3a3cc
@@ -17478,3 +17480,5 @@ div.fancy-select
 	
 	.product__title
 		height: 42px
+	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
+		padding-top: 8px

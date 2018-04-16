@@ -32,7 +32,7 @@ header .top-header .mr-auto .nav-item
 header .top-header .top-header__cart .nav-link
 	display: flex
 	align-items: center
-	justify-content: space-around
+	justify-content: space-around 
 .center-header
 	.align-items-center div
 		text-align: right
@@ -88,6 +88,7 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-menu .dropdow
 	margin-left: 1px
 	margin-right: 5px
 	margin-top: 2px
+	transform: scaleX(-1)
 .product-info
 	text-align: right
 	&__rating
@@ -192,13 +193,14 @@ header .top-header .top-header__search-result .top-header__search-conteiner
 	margin-left: 0
 header .top-header .top-header__search-result .top-header__search-conteiner .input-group .input-group-text
 	padding: 2px 11px 0 0
-header .top-header .top-header__search-result .top-header__search-conteiner svg.glyphicon-search
+header .top-header .top-header__search svg.glyphicon-search
 	margin-left: 7px
 	margin-right: 0 
+header .top-header .top-header__cart .nav-link
+	border-radius: 4px 0 0 4px
 header .top-header .top-header__search .nav-link
 	display: flex
 	align-items: center
-	flex-direction: row-reverse
 header .top-header .top-header__search-result .top-header__search-conteiner .close
 	margin-left: 10px
 	margin-right: 0
@@ -222,7 +224,7 @@ header .top-header .top-header__cart-mini .top-header__cart-conteiner li.top-hea
 		border-bottom-left-radius: 3px
 		border-top-left-radius: 3px
 		&:before
-			margin-top: 2px
+			margin-top: 4px
 			transform: scaleX(-1)
 			margin-left: 10px
 			margin-right: 0
@@ -231,6 +233,13 @@ header .top-header .top-header__cart-mini .top-header__cart-conteiner li.row .pr
 header .top-header .top-header__account .dropdown-menu
 	width: 180px
 	margin-left: -90px
+.product-buttons__add-cart
+	&.added
+		&:after
+			transform: none
+	&:after
+		transition: all 0s
+		
 .ocassions__content-icon
 	transform: scaleX(-1)
 .mr-auto, .mx-auto
@@ -246,7 +255,39 @@ header .top-header .top-header__account .dropdown-menu
 	right: auto
 .product__events .favorite__link
 	left: -140px
-
+.subscribe .subscribe__box:before
+	right: 0
+	transform: scaleX(-1)
+	margin-right: -36px
+.advantages .advantages__content h3
+	text-align: right
+.categories .categories-bg .categories__content-item .categories__content-element
+	font-weight: 700
+.footer
+	background: url('../images/content/bg-foooter-rtl.png') no-repeat bottom
+.product__events .favorite__link:after
+	top: 1px
+.slick-dots li.slick-active
+	margin-top: 0
+.ocassions .ocassions__bottom .ocassions__bottom-content
+	width: auto
+	padding: 0 15px
+.instagram .instagram__head h2, section .section-title h2
+	margin-bottom: 10px
+header .top-header .navbar
+	border-radius: 4px 0 0 4px
+.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form button.btn:after
+	margin-top: 4px
+.product-info__rating svg
+	margin-left: 3px
+	margin-right: 0
+.input-group-prepend
+	margin-left: -2px
+	margin-right: 0
+header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover>a:after
+	margin-left: -15px
+	left: 0
+	right: auto
 
 @media (max-width: 1199.98px) and (min-width: 1024px)
 	header .top-header .mr-auto .nav-link
@@ -266,6 +307,29 @@ header .top-header .top-header__account .dropdown-menu
 		font-size: 11px
 	header .top-header .top-header__cart-mini .top-header__cart-conteiner li.row .remove
 		margin-left: 0
+	.ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all span.return:before
+		border-bottom: 5px solid #999
+		top: 3px
+
+	.product-buttons__comparison
+		border-width: 1px
+		border-bottom-left-radius: 0
+		border-bottom-right-radius: 3px
+	.product-buttons__comparison
+		width: 55px
+	.product-buttons__add-cart
+		margin-right: -1px
+	header .top-header .top-header__cart-mini .top-header__cart-conteiner li.top-header__cart-total
+		padding-right: 36px
+		padding-left: 0
+		.total
+			padding: 0
+	.top-header__cart
+		span
+			font-size: 12px
+	header .top-header .top-header__cart .nav-link
+		border-radius: 0px 0 0 4px
+
 
 @media screen and (max-width: 1023.98px) and (min-width: 768px)
 	header .bottom-header .bottom-header__menu ul.navbar-nav li a
@@ -282,15 +346,33 @@ header .top-header .top-header__account .dropdown-menu
 		padding-top: 0
 	.ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all span
 		padding-left: 12px
-		padding-right: 20px
+		padding-right: 20px 
 	header .center-header .row .center-header__delivery-content div:first-child, header .center-header .row .center-header__phone-content div:first-child, header .center-header .row .center-header__whatsapp-content div:first-child
 		font-size: 14px
 	header .top-header .navbar .nav-link
 		font-size: 7px!important
 	header .top-header .mr-auto .dropdown-hover > a
 		padding-left: 8px
+	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form button.btn:after
+		margin-top: 0
+	.product-info__rating svg
+		margin-left: 1px
+	header .top-header .top-header__cart .nav-link
+		border-radius: 0px 0 0 4px
+	header .top-header .top-header__search-result .top-header__search-conteiner
+		left: 108px
+	.ocassions .ocassions__bottom .ocassions__bottom-content
+		padding: 0 20px
+
+
 
 @media screen and (max-width: 767px)
+	header .top-header .top-header__mobile .mobile-viber
+		vertical-align: middle
+	.ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all span.return
+		vertical-align: middle
+	header .top-header .top-header__cart .nav-link
+		border-radius: 4px 0 0 4px
 	.right-container
 		left: 0
 		right: auto
@@ -323,9 +405,8 @@ header .top-header .top-header__account .dropdown-menu
 	header .top-header .top-header__mobile .mobile-viber
 		position: relative
 		&:before
-			position: absolute
-			left: -34px
-			top: 4px
+			margin-right: 10px
+			margin-left: 8px
 	header .top-header .top-header__mobile .modal-nav-list .dropdown-menu
 		left: -150px
 	header .top-header .top-header__mobile .modal-nav-list .top-header__currency .dropdown-menu
@@ -357,7 +438,8 @@ header .top-header .top-header__account .dropdown-menu
 	.advantages .advantages__slider .advantages__slider-item--contend
 		padding: 10px 40px 30px
 	.footer .row .footer__social ul li
-		margin-right: 4px
+		margin-right: 0
+		margin-left: 6px
 	.product-buttons__comparison
 		border-width: 1px 1px 1px 0
 		border-bottom-left-radius: 0
@@ -368,3 +450,83 @@ header .top-header .top-header__account .dropdown-menu
 		margin-top: 25px	
 	header .top-header .top-header__cart-mini .top-header__cart-conteiner li.top-header__cart-total
 		padding-right: 15px
+	header .top-header .top-header__mobile .modal-nav-list .top-header__currency a:after
+		margin-right: 5px
+		margin-top: 6px
+	header .top-header .top-header__cart-mini .top-header__cart-conteiner li.row .remove
+		margin-left: -15px
+	header .top-header .top-header__cart .nav-link .top-header__cart-shopping
+		margin-right: 7px
+	header .top-header .top-header__cart .nav-link .cartcontents
+		margin-top: -4px
+		margin-left: 7px
+		margin-right: 6px
+	header .top-header .top-header__search-result .top-header__search-conteiner.opened .list-result
+		padding-right: 30px
+	.input-group-prepend
+		margin-right: 0
+	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form .input-group-text
+		border-radius: 0 3px 3px 0
+	header .top-header .top-header__search-result .top-header__search-conteiner svg.glyphicon-search
+		margin-left: 4px
+	header .top-header .top-header__cart .nav-link
+		display: flex
+		justify-content: center
+		align-items: center
+		.cartcontents, .top-header__cart-shopping
+			display: block
+	header .top-header .top-header__cart .nav-link .cartcontents
+		margin-left: 0px
+		margin-right: 10px
+	header .top-header .navbar
+		margin-left: -1px
+	header .top-header .top-header__cart .nav-link .top-header__cart-shopping
+		margin-right: 0
+	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form button.btn
+		outline: none
+		&:after
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			margin-top: 0
+			margin-right: 2px
+	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
+		padding-top: 10px
+	.product .slick-dots .slick-active
+		margin-top: 6px
+	.product-info__rating svg
+		margin-left: 1px
+	header .top-header .top-header__mobile .mobile-nav
+		transform: scaleX(-1)
+	header .top-header .top-header__mobile .mobile-viber:before
+		background-size: contain
+		margin-top: 0
+	.ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all span
+		vertical-align: top
+	.ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all span.return:before
+		border-bottom: 3px solid #999
+
+@media screen and (max-width: 575.98px)
+	.baners .jumbotron
+		transform: translateX(64px)
+	.categories .categories-bg .categories__content-item
+		transform: translateX(99px)
+	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
+		line-height: 18px
+
+
+@media screen and (max-width: 359px)
+	.baners .jumbotron
+		transform: translateX(75px)
+	.categories .categories-bg .categories__content-item
+		transform: translateX(100px)
+	.product-buttons__comparison
+		width: 43px
+	.product-buttons__add-cart
+		font-size: 9px
+	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
+		line-height: 10px
