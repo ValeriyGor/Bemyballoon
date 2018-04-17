@@ -22,7 +22,7 @@ header
 
 
 header .top-header .mr-auto .dropdown-hover>a
-	padding-left: 13px
+	padding-left: 13px 
 	padding-right: 0
 	&:after
 		left: 0
@@ -197,7 +197,7 @@ header .top-header .top-header__search svg.glyphicon-search
 	margin-left: 7px
 	margin-right: 0 
 header .top-header .top-header__cart .nav-link
-	border-radius: 4px 0 0 4px
+	border-radius: 0 0 0 4px
 header .top-header .top-header__search .nav-link
 	display: flex
 	align-items: center
@@ -297,8 +297,25 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover>a:after
 		margin-left: 0
 	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form button.btn:after
 		margin-right: 0
+	.categories .categories-bg .categories__content-item
+		height: 400px
+	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
+		padding-bottom: 6px
+	header .top-header .top-header__search-result .top-header__search-conteiner .input-group input.form-control
+		max-height: 46px
 
 @media screen and (max-width: 1200px)
+	header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-menu .dropdown-hover>a:after
+		border-right: 3px solid #b9b9b9
+	header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-menu .dropdown-hover:hover>a:after
+		border-right: 3px solid #e3a3cc
+		border-left: 0
+	header .bottom-header .bottom-header__menu ul.navbar-nav .nav-item:last-of-type .dropdown-menu
+		margin-left: 0
+		left: -10px
+		right: auto
+	header .bottom-header .bottom-header__menu ul.navbar-nav .nav-item:last-of-type .dropdown-menu:before
+		left: 27%
 	.footer .footer__contacts .footer__link a
 		margin-left: 8px
 	.footer .footer__social ul li
@@ -310,6 +327,11 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover>a:after
 	.ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all span.return:before
 		border-bottom: 5px solid #999
 		top: 3px
+	header .top-header .top-header__languages .dropdown-menu
+		right: -15px
+		left: auto
+	header .top-header .top-header__languages .dropdown-menu:before
+		margin-left: 25px
 
 	.product-buttons__comparison
 		border-width: 1px
@@ -329,6 +351,19 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover>a:after
 			font-size: 12px
 	header .top-header .top-header__cart .nav-link
 		border-radius: 0px 0 0 4px
+
+	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form button.btn
+		outline: none
+		&:after
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			margin-top: 0
+			margin-right: 2px
 
 
 @media screen and (max-width: 1023.98px) and (min-width: 768px)
@@ -372,7 +407,7 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover>a:after
 	.ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all span.return
 		vertical-align: middle
 	header .top-header .top-header__cart .nav-link
-		border-radius: 4px 0 0 4px
+		border-radius: 0 0 0 4px
 	.right-container
 		left: 0
 		right: auto
@@ -423,7 +458,7 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover>a:after
 		padding-right: 0
 	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form .input-group-text:after
 		margin-left: 0
-		margin-right: 13px
+		margin-right: 11px
 	.ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all span
 		padding-left: 10px
 		padding-right: 18px
@@ -478,8 +513,6 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover>a:after
 	header .top-header .top-header__cart .nav-link .cartcontents
 		margin-left: 0px
 		margin-right: 10px
-	header .top-header .navbar
-		margin-left: -1px
 	header .top-header .top-header__cart .nav-link .top-header__cart-shopping
 		margin-right: 0
 	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form button.btn
@@ -509,6 +542,9 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover>a:after
 		vertical-align: top
 	.ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all span.return:before
 		border-bottom: 3px solid #999
+	header .top-header .top-header__mobile .modal-nav-list .top-header__languages a, header .top-header .top-header__mobile .modal-nav-list .top-header__currency a
+		padding-left: 0
+		padding-right: 0
 
 @media screen and (max-width: 575.98px)
 	.baners .jumbotron
@@ -517,6 +553,8 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover>a:after
 		transform: translateX(99px)
 	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
 		line-height: 18px
+		padding-bottom: 0
+		padding-top: 4px
 
 
 @media screen and (max-width: 359px)
@@ -530,3 +568,7 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover>a:after
 		font-size: 9px
 	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
 		line-height: 10px
+		padding-bottom: 0
+		padding-top: 6px
+	header .top-header .top-header__search-result .top-header__search-conteiner
+		left: 60px
