@@ -351,6 +351,22 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-hover > a:aft
   left: 0;
   right: auto; }
 
+.breadcrumbs {
+  text-align: right; }
+  .breadcrumbs ul li a {
+    margin-left: 22px;
+    padding-left: 13px;
+    margin-right: 0;
+    padding-right: 0; }
+    .breadcrumbs ul li a:after {
+      margin-right: 17px;
+      transform: scaleX(-1); }
+
+.page-content__title {
+  text-align: right;
+  font-weight: 700;
+  font-size: 44px; }
+
 @media (max-width: 1199.98px) and (min-width: 1024px) {
   header .top-header .mr-auto .nav-link {
     font-size: 10px !important; }
