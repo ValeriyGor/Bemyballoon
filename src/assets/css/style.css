@@ -10214,7 +10214,7 @@ svg.burger {
       transition: 0.3s; }
     .wishlist-page__info a:hover {
       text-decoration: none;
-      background: #f5f5f5; }
+      background: #ecb4d8; }
 
 @media screen and (max-width: 1200px) {
   .wishlist-page__info p {
