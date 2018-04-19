@@ -9413,8 +9413,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			right: 50%
 			transform: translate(2px, -4px)
 			transition: all 0.3s
-		&:after
-			content: 'Last product'
+		span
 			font-size: 13px
 			color: #fff
 			position: absolute
@@ -9440,8 +9439,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
 			left: 50%
 			transform: translate(-2px, -4px)
 
-		&:after
-			content: 'Next product'
+		span
 			text-align: right
 			font-size: 13px
 			color: #fff
@@ -13059,8 +13057,7 @@ svg.burger
 			border-bottom: 1px solid #f0f0f0
 			min-height: 69px
 			position: relative
-			&.verified:after
-				content: "Verified"
+			&.verified .verif
 				position: absolute
 				top: 23px
 				right: 30px
@@ -13069,8 +13066,7 @@ svg.burger
 				color: #999
 				background: url(../images/icons/issued.png) center right no-repeat
 				background-size: 16px 
-			&.verify:after
-				content: "Verify"
+			&.verify .verif
 				position: absolute 
 				font-size: 12px
 				color: #999
@@ -14182,7 +14178,7 @@ div.fancy-select
 					&.pass-word
 						font-size: 14px
 						letter-spacing: 3px
-				&.verified:after, &.verify:after
+				&.verified .verif, &.verify .verif
 					font-size: 9px
 					top: 10px
 					right: 18px
@@ -15756,7 +15752,7 @@ div.fancy-select
 		min-height: 35px
 		.delete-photo img, .update-photo img
 			top: 0
-		&.verified:after, &.verify:after
+		&.verified .verif, &.verify .verif
 			top: 7px
 			width: 13px
 			font-size: 0

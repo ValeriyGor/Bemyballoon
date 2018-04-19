@@ -9223,8 +9223,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
     right: 50%;
     transform: translate(2px, -4px);
     transition: all 0.3s; }
-  #fast-seen .prev-product:after {
-    content: 'Last product';
+  #fast-seen .prev-product span {
     font-size: 13px;
     color: #fff;
     position: absolute;
@@ -9249,8 +9248,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
     top: 50%;
     left: 50%;
     transform: translate(-2px, -4px); }
-  #fast-seen .next-product:after {
-    content: 'Next product';
+  #fast-seen .next-product span {
     text-align: right;
     font-size: 13px;
     color: #fff;
@@ -12841,8 +12839,7 @@ svg.burger {
     border-bottom: 1px solid #f0f0f0;
     min-height: 69px;
     position: relative; }
-    .profile__item-title.verified:after {
-      content: "Verified";
+    .profile__item-title.verified .verif {
       position: absolute;
       top: 23px;
       right: 30px;
@@ -12851,8 +12848,7 @@ svg.burger {
       color: #999;
       background: url(../images/icons/issued.png) center right no-repeat;
       background-size: 16px; }
-    .profile__item-title.verify:after {
-      content: "Verify";
+    .profile__item-title.verify .verif {
       position: absolute;
       font-size: 12px;
       color: #999;
@@ -13886,7 +13882,7 @@ div.fancy-select {
       .profile__item-title p.pass-word {
         font-size: 14px;
         letter-spacing: 3px; }
-    .profile__item-title.verified:after, .profile__item-title.verify:after {
+    .profile__item-title.verified .verif, .profile__item-title.verify .verif {
       font-size: 9px;
       top: 10px;
       right: 18px;
@@ -15323,7 +15319,7 @@ div.fancy-select {
     min-height: 35px; }
     .profile__item-title .delete-photo img, .profile__item-title .update-photo img {
       top: 0; }
-    .profile__item-title.verified:after, .profile__item-title.verify:after {
+    .profile__item-title.verified .verif, .profile__item-title.verify .verif {
       top: 7px;
       width: 13px;
       font-size: 0; }
