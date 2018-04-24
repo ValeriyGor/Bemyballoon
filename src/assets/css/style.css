@@ -2221,7 +2221,7 @@ section .section-title {
             margin-left: 5px;
             background-size: contain; }
           .featured .featured__list .featured__list-item .featured__list-hover .featured__list-hbottom .add-cart.added {
-            background: #edddb2; }
+            background: #f3dfa8; }
             .featured .featured__list .featured__list-item .featured__list-hover .featured__list-hbottom .add-cart.added:after {
               background: url(../images/icons/ic_added.svg) no-repeat 50% 50%;
               background-size: contain; }
@@ -7523,7 +7523,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
     color: #fff;
     opacity: 0.8; }
   .product-buttons__add-cart.added {
-    background: #edddb2; }
+    background: #f3dfa8; }
     .product-buttons__add-cart.added:after {
       background: url(../images/icons/ic_added.svg) no-repeat 50% 50%;
       background-size: contain; }
@@ -10942,14 +10942,14 @@ svg.burger {
     border: 4px solid transparent;
     border-top: 6px solid #ccc;
     border-bottom: 0;
-    transform: rotate(-180deg);
+    transform: rotate(0deg);
     margin-left: 5px;
     position: relative;
     top: -1px; }
   .mobile-filter__buttons.active {
     color: #e3a3cc; }
     .mobile-filter__buttons.active:after {
-      transform: rotate(0deg);
+      transform: rotate(-180deg);
       border-top-color: #e3a3cc; }
 
 .mobile-filter__compare {
@@ -12017,6 +12017,9 @@ svg.burger {
 
 .history-list-page {
   margin-bottom: 20px; }
+
+.payment-list__text .payment-list__form.card-info button span {
+  display: none; }
 
 .form-item {
   display: block;
@@ -15179,11 +15182,11 @@ div.fancy-select {
       height: 39px;
       border-bottom: 1px solid #e2e2e2;
       position: relative; }
-      .socki span.socki-mob-button:after {
-        content: "connect soc. networks";
+      .socki span.socki-mob-button span.desc-hide {
         display: inline-block;
         color: #999;
-        margin-left: 5px; }
+        margin-left: 5px;
+        font-size: 14px; }
       .socki span.socki-mob-button:before {
         content: "";
         display: block;
@@ -15587,6 +15590,11 @@ div.fancy-select {
     font-size: 8px; } }
 
 @media screen and (max-width: 767px) {
+  .contacts__img-mobile img {
+    margin-left: auto;
+    margin-right: auto; }
+  .payment-list__text .payment-list__form.card-info button span {
+    display: inline-block; }
   .transaction__list {
     margin-left: 15px;
     margin-right: 15px; }
@@ -16583,6 +16591,8 @@ div.fancy-select {
     padding-top: 40px; } }
 
 @media screen and (max-width: 359px) {
+  .socki span.socki-mob-button span.desc-hide {
+    font-size: 12px; }
   .row.instagram__content .instagram__content-left {
     font-size: 8px !important; }
   .row.instagram__content .instagram__content-right {
