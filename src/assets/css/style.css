@@ -4423,7 +4423,7 @@ section .section-title {
       top: 0;
       margin-left: -15px;
       display: none;
-      height: 100vh; }
+      height: 120vh; }
       header .top-header .top-header__mobile .modal-nav-list > div {
         background: #fff url(../images/icons/bg-modal-nav-list.png) no-repeat center center;
         height: 66px;
@@ -5320,7 +5320,9 @@ section .section-title {
   padding: 1px 0; }
 
 .show-menu {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  height: 100%; }
 
 @media screen and (max-width: 768px) {
   .cotacts__row {
