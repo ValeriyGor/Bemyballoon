@@ -8,8 +8,8 @@
 
 .dir-rtl
 	direction: rtl
-.slider-home, .advantages__slider
-	direction: ltr
+// .slider-home, .advantages__slider
+// 	direction: ltr
 header 
 	.top-header 
 		.top-header__cart 
@@ -24,7 +24,7 @@ header
 header .top-header .mr-auto .dropdown-hover>a
 	padding-left: 13px 
 	padding-right: 0
-	&:after 
+	&:after    
 		left: 0   
 		right: auto
 header .top-header .mr-auto .nav-item
@@ -71,8 +71,6 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-menu .dropdow
 	font-size: 40px
 	padding-top: 18px
 	line-height: 50px
-.product__images
-	direction: ltr
 .ocassions .ocassions__bottom .ocassions__bottom-content .ocassions__bottom-all span
 	padding-right: 30px
 	padding-left: 18px
@@ -151,6 +149,8 @@ header .bottom-header .bottom-header__menu ul.navbar-nav .dropdown-menu .dropdow
 	border-top-left-radius: 0
 .subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
 	border-right: 0
+	border-top-right-radius: 0
+	border-bottom-right-radius: 0
 .subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form button.btn
 	border-bottom-right-radius: 0
 	border-top-right-radius: 0
@@ -966,8 +966,8 @@ div.fancy-select ul.options
 .individual-inscription__field-item input
 	padding-right: 34px
 	padding-left: 5px
-.product-cart-carousel2, .product-cart-carousel
-	direction: ltr
+// .product-cart-carousel2, .product-cart-carousel
+// 	direction: ltr
 #gallerry-product .by-one-click-modal__close
 	left: 30px
 	right: auto
@@ -1106,7 +1106,7 @@ div.fancy-select ul.options
 	display: flex
 	align-items: center
 	justify-content: center
-	flex-direction: row-reverse
+	flex-direction: row
 .author__create
 	direction: rtl
 .page-content__product-description
@@ -1209,9 +1209,9 @@ div.fancy-select ul.options
 	transform: scaleX(1)
 .about .teams__philosophy .philosophy__quote:after
 	left: -75px
-	bottom: -10px
+	bottom: -50px
 	right: auto
-	transform: scaleX(1) rotate(180deg)
+	transform: scaleX(1)
 #tabs-wrap .social-link
 	justify-content: flex-start
 
@@ -1279,6 +1279,12 @@ div.fancy-select ul.options
 		background-position: center right 7px
 	.tabs__form input.pass
 		background-position: center right 9px
+	.tabs__form input.phone
+		background-size: 13px
+	.tabs__form input.email
+		background-size: 14px
+	.tabs__form input.name
+		background-size: 12px
 
 
 	.order-products__info .popup-pruduct__price input
@@ -1533,20 +1539,20 @@ div.fancy-select ul.options
 			padding-right: 7px
 
 	.starRating:not(old) > label
-		margin-left: 5px
+		margin-left: 7px
 		padding: 0
 
 	.starRating:not(old)>label[for=rating5]
 		padding-left: 0
 		padding-right: 0
-		margin-left: 0
+		margin-left: 0 
 
 @media screen and (max-width: 1023.98px) and (min-width: 768px)
 	.about .teams__philosophy .philosophy__quote:before
 		right: -37px
 	.about .teams__philosophy .philosophy__quote:after
 		left: -42px
-		bottom: -30px
+		bottom: -50px
 	.delivery-terms table tr td .delivery-terms__title
 		font-size: 20px
 	.color-select__item
@@ -1634,17 +1640,30 @@ div.fancy-select ul.options
 		padding-right: 20px
 	.refund__form label .fancy-select .trigger:after
 		left: 6px
-		right: auto
+		right: auto 
 	.about .contacts__info--data
 		padding: 15px 24px 13px 0
 		height: 100%
 	.payment-list__text .payment-list__form button img
 		margin-top: 2px
  
+@media screen and (max-width: 992px)
+	.advantages .advantages__slider .slick-dots li.slick-active:before
+		left: -3px
+	.advantages .advantages__slider .slick-dots li.slick-active:after
+		left: -5px
+
+
 @media screen and (max-width: 767px)
+	.order-page .tabs__form input.email, .order-page .tabs__form input.phone
+		background-size: 16px
+	.order-page .tabs__form input.name
+		background-size: 14px
+	.slick-slide
+		float: right 
 	.search-city form button 
 		position: relative
-		img
+		img 
 			position: absolute
 			top: 50%
 			left: 50%
@@ -1778,8 +1797,8 @@ div.fancy-select ul.options
 	.about .teams__philosophy .philosophy__quote:after
 		left: -8px
 		right: auto
-		transform: scaleX(1) rotate(180deg)
-		bottom: -30px
+		transform: scaleX(1) 
+		bottom: -45px
 	.about .reviews__slider .review .description
 		padding-left: 0
 		padding-right: 7px
@@ -1838,9 +1857,9 @@ div.fancy-select ul.options
 	header .top-header .top-header__search-result .top-header__search-conteiner
 		left: 73px
 		margin-right: -73px
-	.baners .slick-slider, .categories-bg
-		.slick-list
-			direction: ltr  
+	// .baners .slick-slider, .categories-bg
+	// 	.slick-list
+	// 		direction: ltr  
 	.jumbotron 
 		direction: rtl
 	header .top-header .top-header__mobile .modal-nav-list>ul li.account a, header .top-header .top-header__mobile .modal-nav-list>ul li a
@@ -2164,7 +2183,7 @@ div.fancy-select ul.options
 	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
 		line-height: 18px
 		padding-bottom: 0
-		padding-top: 4px
+		padding-top: 0
 
 
 @media screen and (max-width: 359px)
@@ -2181,7 +2200,7 @@ div.fancy-select ul.options
 	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
 		line-height: 10px
 		padding-bottom: 0
-		padding-top: 6px
+		padding-top: 0px
 	header .top-header .top-header__search-result .top-header__search-conteiner
 		left: 60px
 	header .top-header .top-header__cart .nav-link
