@@ -1539,6 +1539,9 @@ div.fancy-select ul.options {
   margin-left: 8px;
   margin-right: 0; }
 
+.slider-home {
+  direction: rtl; }
+
 @media (max-width: 1199.98px) and (min-width: 1024px) {
   header .top-header .mr-auto .nav-link {
     font-size: 10px !important; }
@@ -1569,25 +1572,32 @@ div.fancy-select ul.options {
   .account__prof img {
     margin-left: 11px; }
   .delivery-terms .delivery-terms__title {
-    font-size: 32px; } }
+    font-size: 32px; }
+  .subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control {
+    padding-top: 0;
+    padding-bottom: 4px; } }
 
 @media screen and (max-width: 1200px) {
+  .subscribe .subscribe__box .subscribe__box-newsletter p {
+    margin-right: 15px; }
+  .modal-form__input--phone {
+    background-size: 13px; }
   .tabs__form input.name {
-    background-position: center right 8px; }
+    background-position: center right 7px; }
   .form-label {
     right: 25px; }
   .tabs__form input {
     padding-right: 30px; }
   .tabs__form input.email, .tabs__form input.phone {
-    background-position: center right 7px; }
+    background-position: center right 6px; }
   .tabs__form input.pass {
-    background-position: center right 9px; }
+    background-position: center right 8px; }
   .tabs__form input.phone {
     background-size: 13px; }
   .tabs__form input.email {
     background-size: 14px; }
   .tabs__form input.name {
-    background-size: 12px; }
+    background-size: 11px; }
   .order-products__info .popup-pruduct__price input {
     padding: 0; }
   .modal-form__right {
@@ -1835,10 +1845,10 @@ div.fancy-select ul.options {
 
 @media screen and (max-width: 1023.98px) and (min-width: 768px) {
   .about .teams__philosophy .philosophy__quote:before {
-    right: -37px; }
+    right: -40px; }
   .about .teams__philosophy .philosophy__quote:after {
     left: -42px;
-    bottom: -50px; }
+    bottom: -30px; }
   .delivery-terms table tr td .delivery-terms__title {
     font-size: 20px; }
   .color-select__item {
@@ -1930,7 +1940,10 @@ div.fancy-select ul.options {
     padding: 15px 24px 13px 0;
     height: 100%; }
   .payment-list__text .payment-list__form button img {
-    margin-top: 2px; } }
+    margin-top: 1px; }
+  .subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control {
+    padding-top: 0;
+    padding-bottom: 4px; } }
 
 @media screen and (max-width: 992px) {
   .advantages .advantages__slider .slick-dots li.slick-active:before {
@@ -1939,11 +1952,15 @@ div.fancy-select ul.options {
     left: -5px; } }
 
 @media screen and (max-width: 767px) {
+  .wishlist-page .product__events .favorite.active {
+    left: auto; }
+  .wishlist-page .product__events .favorite {
+    bottom: 12px; }
   .order-page .tabs__form input.email, .order-page .tabs__form input.phone {
     background-size: 16px; }
   .order-page .tabs__form input.name {
     background-size: 14px; }
-  .slick-slide {
+  .advantages .advantages__slider .advantages__slider-item {
     float: right; }
   .search-city form button {
     position: relative; }
@@ -2239,7 +2256,8 @@ div.fancy-select ul.options {
   header .top-header .top-header__cart .nav-link {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding-top: 4px; }
     header .top-header .top-header__cart .nav-link .cartcontents, header .top-header .top-header__cart .nav-link .top-header__cart-shopping {
       display: block; }
   header .top-header .top-header__cart .nav-link .cartcontents {

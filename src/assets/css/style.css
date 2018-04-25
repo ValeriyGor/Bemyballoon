@@ -5959,8 +5959,8 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
   .contacts__tabs--body-item--marker-text {
     margin-bottom: 0; }
   .contacts__tabs--body-item-title {
-    padding-top: 18px;
-    padding-bottom: 5px; }
+    padding-top: 30px;
+    padding-bottom: 10px; }
   .contacts__tabs--body-item-img {
     width: 100%; }
   .contacts__info {
@@ -7842,7 +7842,7 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
       position: absolute;
       padding: 10px;
       z-index: 9999;
-      transition: all 0.4s; }
+      transition: 0; }
       .comparison__content--title .filter:after {
         position: absolute;
         right: 0;
@@ -7856,16 +7856,19 @@ header .top-header .top-header__search-result .top-header__search-conteiner .lis
           color: #999; }
       .comparison__content--title .filter .active {
         display: block; }
-        .comparison__content--title .filter .active a {
-          color: #999; }
       .comparison__content--title .filter a {
         font-size: 12px; }
-      .comparison__content--title .filter:hover {
+        .comparison__content--title .filter a a:hover {
+          color: #999; }
+      .comparison__content--title .filter.open {
+        right: 0;
+        left: 0;
+        padding: 10px 15px;
         background: #fff;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
-        .comparison__content--title .filter:hover li {
+        .comparison__content--title .filter.open li {
           display: block; }
-        .comparison__content--title .filter:hover:after {
+        .comparison__content--title .filter.open:after {
           opacity: 0; }
   .comparison__content--description {
     display: none; }
