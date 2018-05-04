@@ -6,7 +6,7 @@
     font-family: "DroidKufiBold"
     src : url("../fonts/DroidKufi-Bold.ttf")
 
-.dir-rtl 
+.dir-rtl
 	direction: rtl
 // .slider-home, .advantages__slider
 // 	direction: ltr
@@ -22,7 +22,7 @@ header
 
 
 header .top-header .mr-auto .dropdown-hover>a
-	padding-left: 13px 
+	padding-left: 13px  
 	padding-right: 0
 	&:after    
 		left: 0   
@@ -1206,7 +1206,8 @@ div.fancy-select ul.options
 .about .teams__philosophy .philosophy__quote:before
 	right: -75px
 	left: auto
-	transform: scaleX(1)
+	top: -80px
+	transform: scale(-1, -1)
 .about .teams__philosophy .philosophy__quote:after
 	left: -75px
 	bottom: -50px
@@ -1214,7 +1215,8 @@ div.fancy-select ul.options
 	transform: scaleX(1)
 #tabs-wrap .social-link
 	justify-content: flex-start
-
+.delivery-address__search .input-group span.input-group-btn button.btn
+	padding: 0 38px
 
 .advantages__slider .slick-dots
 	display: block
@@ -1230,13 +1232,11 @@ div.fancy-select ul.options
 	border-top-left-radius: 0
 	border-top-right-radius: 3px
 	border-bottom-right-radius: 3px
-
+.search-city form button
+	padding: 0 25px
 .tabs span:before
 	margin-left: 8px
 	margin-right: 0
-
-.slider-home
-	direction: rtl
 
 @media (max-width: 1199.98px) and (min-width: 1024px)
 	header .top-header .mr-auto .nav-link
@@ -1269,32 +1269,27 @@ div.fancy-select ul.options
 		margin-left: 11px
 	.delivery-terms .delivery-terms__title
 		font-size: 32px
-	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
-		padding-top: 0
-		padding-bottom: 4px
+	.delivery-address__search .input-group span.input-group-btn button.btn:before
+		padding: 15px 0
 
 
 @media screen and (max-width: 1200px)
-	.subscribe .subscribe__box .subscribe__box-newsletter p
-		margin-right: 15px
-	.modal-form__input--phone
-		background-size: 13px
 	.tabs__form input.name
-		background-position: center right 7px
+		background-position: center right 8px
 	.form-label
 		right: 25px
 	.tabs__form input
 		padding-right: 30px
 	.tabs__form input.email, .tabs__form input.phone
-		background-position: center right 6px
+		background-position: center right 7px
 	.tabs__form input.pass
-		background-position: center right 8px
+		background-position: center right 9px
 	.tabs__form input.phone
 		background-size: 13px
 	.tabs__form input.email
 		background-size: 14px
 	.tabs__form input.name
-		background-size: 11px
+		background-size: 12px
 
 
 	.order-products__info .popup-pruduct__price input
@@ -1558,11 +1553,19 @@ div.fancy-select ul.options
 		margin-left: 0 
 
 @media screen and (max-width: 1023.98px) and (min-width: 768px)
+	.delivery-address__search .input-group span.input-group-btn button.btn
+		padding: 0 20px
+	
+	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
+		padding-bottom: 6px
 	.about .teams__philosophy .philosophy__quote:before
-		right: -40px
+		right: -37px
+		top: -50px
+	.delivery-address__search .input-group span.input-group-btn button.btn:before
+		padding: 15px 0
 	.about .teams__philosophy .philosophy__quote:after
 		left: -42px
-		bottom: -30px
+		bottom: -50px
 	.delivery-terms table tr td .delivery-terms__title
 		font-size: 20px
 	.color-select__item
@@ -1592,7 +1595,8 @@ div.fancy-select ul.options
 		font-size: 12px
 	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form button.btn:after
 		margin-right: 0
-
+	.search-city form button
+		padding: 0 25px
 	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form .input-group-text:after
 		margin-right: 10px
 		margin-left: 0
@@ -1655,31 +1659,25 @@ div.fancy-select ul.options
 		padding: 15px 24px 13px 0
 		height: 100%
 	.payment-list__text .payment-list__form button img
-		margin-top: 1px
-	.subscribe .subscribe__box .subscribe__box-newsletter .subscribe__box-form input.form-control
-		padding-top: 0
-		padding-bottom: 4px
+		margin-top: 2px
  
 @media screen and (max-width: 992px)
 	.advantages .advantages__slider .slick-dots li.slick-active:before
 		left: -3px
 	.advantages .advantages__slider .slick-dots li.slick-active:after
 		left: -5px
-   
+
 
 @media screen and (max-width: 767px)
-	.wishlist-page .product__events .favorite.active
-		left: auto
-	.wishlist-page .product__events .favorite
-		bottom: 12px
 	.order-page .tabs__form input.email, .order-page .tabs__form input.phone
 		background-size: 16px
 	.order-page .tabs__form input.name
 		background-size: 14px
-	// .slick-slide
-	// 	float: right 
-	.advantages .advantages__slider .advantages__slider-item
-		float: right
+	.slick-slide
+		float: right 
+	.search-city form button, .delivery-address__search .input-group span.input-group-btn button.btn
+		padding: 0
+
 	.search-city form button 
 		position: relative
 		img 
@@ -1812,7 +1810,8 @@ div.fancy-select ul.options
 	.about .teams__philosophy .philosophy__quote:before
 		right: -8px
 		left: auto
-		transform: scaleX(1)
+		top: -10px
+		transform: scale(-1, -1)
 	.about .teams__philosophy .philosophy__quote:after
 		left: -8px
 		right: auto
@@ -1981,7 +1980,6 @@ div.fancy-select ul.options
 		display: flex
 		justify-content: center
 		align-items: center
-		padding-top: 4px
 		.cartcontents, .top-header__cart-shopping
 			display: block
 	header .top-header .top-header__cart .nav-link .cartcontents
